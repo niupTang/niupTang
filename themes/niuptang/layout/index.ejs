@@ -1,0 +1,182 @@
+<%- partial('_partial/hero') %>
+
+    <section class="tools-section">
+        <div class="section-container">
+            <!-- 分类标签 -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="all">
+                    <span class="tab-icon">⭐</span>
+                    精选工具
+                </button>
+                <button class="tab-btn" data-category="text">
+                    <span class="tab-icon">📝</span>
+                    文本工具
+                </button>
+                <button class="tab-btn" data-category="image">
+                    <span class="tab-icon">🖼️</span>
+                    图像工具
+                </button>
+                <button class="tab-btn" data-category="video">
+                    <span class="tab-icon">🎬</span>
+                    视频工具
+                </button>
+                <button class="tab-btn" data-category="audio">
+                    <span class="tab-icon">🎵</span>
+                    音频工具
+                </button>
+                <button class="tab-btn" data-category="efficiency">
+                    <span class="tab-icon">⚡</span>
+                    效率工具
+                </button>
+            </div>
+
+            <!-- 工具网格 -->
+            <div class="tools-grid">
+                <% if (site.data.tools && site.data.tools.items) { %>
+                    <% site.data.tools.items.forEach(function(tool) { %>
+                        <%- partial('_partial/tool-card', {tool: tool}) %>
+                            <% }); %>
+                                <% } else { %>
+                                    <!-- 示例工具卡片（无数据时显示） -->
+                                    <article class="tool-card" data-category="all">
+                                        <div class="tool-icon">🤖</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">ChatGPT</h3>
+                                            <p class="tool-desc">OpenAI 开发的强大对话AI助手</p>
+                                        </div>
+                                        <a href="https://chat.openai.com" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+
+                                    <article class="tool-card" data-category="all">
+                                        <div class="tool-icon">🎨</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">Midjourney</h3>
+                                            <p class="tool-desc">AI艺术图像生成工具</p>
+                                        </div>
+                                        <a href="https://midjourney.com" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+
+                                    <article class="tool-card" data-category="text">
+                                        <div class="tool-icon">✍️</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">Claude</h3>
+                                            <p class="tool-desc">Anthropic 的智能对话助手</p>
+                                        </div>
+                                        <a href="https://claude.ai" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+
+                                    <article class="tool-card" data-category="image">
+                                        <div class="tool-icon">🖌️</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">Stable Diffusion</h3>
+                                            <p class="tool-desc">开源AI图像生成模型</p>
+                                        </div>
+                                        <a href="https://stability.ai" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+
+                                    <article class="tool-card" data-category="video">
+                                        <div class="tool-icon">🎬</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">Runway</h3>
+                                            <p class="tool-desc">AI视频生成与编辑平台</p>
+                                        </div>
+                                        <a href="https://runway.ml" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+
+                                    <article class="tool-card" data-category="audio">
+                                        <div class="tool-icon">🎵</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">Suno</h3>
+                                            <p class="tool-desc">AI音乐创作生成工具</p>
+                                        </div>
+                                        <a href="https://suno.ai" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+
+                                    <article class="tool-card" data-category="efficiency">
+                                        <div class="tool-icon">📊</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">Notion AI</h3>
+                                            <p class="tool-desc">智能笔记与知识管理</p>
+                                        </div>
+                                        <a href="https://notion.so" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+
+                                    <article class="tool-card" data-category="text">
+                                        <div class="tool-icon">💬</div>
+                                        <div class="tool-info">
+                                            <h3 class="tool-name">Coze</h3>
+                                            <p class="tool-desc">字节跳动的AI Bot开发平台</p>
+                                        </div>
+                                        <a href="https://coze.cn" class="tool-link" target="_blank">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" />
+                                            </svg>
+                                        </a>
+                                    </article>
+                                    <% } %>
+            </div>
+        </div>
+    </section>
+
+    <!-- 最新博客文章 -->
+    <section class="blog-section">
+        <div class="section-container">
+            <h2 class="section-title">📚 最新文章</h2>
+            <div class="blog-grid">
+                <% page.posts.each(function(post){ %>
+                    <article class="blog-card">
+                        <div class="blog-meta">
+                            <time datetime="<%= date(post.date, 'YYYY-MM-DD') %>">
+                                <%= date(post.date, 'YYYY-MM-DD' ) %>
+                            </time>
+                        </div>
+                        <h3 class="blog-title">
+                            <a href="<%- url_for(post.path) %>">
+                                <%= post.title %>
+                            </a>
+                        </h3>
+                        <p class="blog-excerpt">
+                            <%= strip_html(post.excerpt || post.content).substring(0, 100) %>...
+                        </p>
+                        <a href="<%- url_for(post.path) %>" class="read-more">阅读更多 →</a>
+                    </article>
+                    <% }); %>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,15 @@
+menu:
+  首页: /
+  博客: /archives
+  工具: /tools
+  关于: /about
+
+# 站点信息
+site_name: 太阳鸟的AI宝藏库
+site_description: 发现最好用的AI工具，探索人工智能的无限可能
+site_author: 太阳鸟
+
+# 社交链接
+social:
+  github: 
+  weixin:

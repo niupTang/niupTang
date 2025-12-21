@@ -1,0 +1,31 @@
+<section class="archive-section">
+    <div class="section-container">
+        <h1 class="archive-title">📚 所有文章</h1>
+
+        <% var year=0; %>
+            <% page.posts.each(function(post) { %>
+                <% var postYear=date(post.date, 'YYYY' ); %>
+                    <% if (postYear !=year) { %>
+                        <% if (year !=0) { %>
+    </div>
+    <% } %>
+        <h2 class="archive-year">
+            <%= postYear %>
+        </h2>
+        <div class="archive-list">
+            <% year=postYear; %>
+                <% } %>
+                    <article class="archive-item">
+                        <time datetime="<%= date(post.date, 'YYYY-MM-DD') %>">
+                            <%= date(post.date, 'MM-DD' ) %>
+                        </time>
+                        <a href="<%- url_for(post.path) %>">
+                            <%= post.title %>
+                        </a>
+                    </article>
+                    <% }); %>
+                        <% if (year !=0) { %>
+        </div>
+        <% } %>
+            </div>
+</section>
