@@ -1,0 +1,81 @@
+<section class="tools-page">
+    <div class="tools-page-container">
+        <header class="tools-page-header">
+            <h1 class="tools-page-title">最新AI产品和工具</h1>
+            <p class="tools-page-subtitle">发现革新性的 AI 工具，让你始终领先一步</p>
+        </header>
+
+        <!-- 分类过滤 -->
+        <div class="tools-filter">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="通用Chatbot">通用Chatbot</button>
+            <button class="filter-btn" data-filter="图像">图像</button>
+            <button class="filter-btn" data-filter="视频">视频</button>
+            <button class="filter-btn" data-filter="音频">音频</button>
+            <button class="filter-btn" data-filter="开发工具">开发工具</button>
+            <button class="filter-btn" data-filter="办公">办公</button>
+            <button class="filter-btn" data-filter="基础设施">基础设施</button>
+            <button class="filter-btn" data-filter="市场营销">市场营销</button>
+        </div>
+
+        <!-- 工具卡片网格 -->
+        <div class="tools-showcase-grid">
+            <% if (site.data.tools && site.data.tools.tools) { %>
+                <% site.data.tools.tools.forEach(function(tool) { %>
+                    <article class="tool-showcase-card" data-category="<%= tool.category %>">
+                        <a href="<%= tool.url %>" target="_blank" rel="noopener" class="card-link">
+                            <div class="card-cover">
+                                <img src="<%= tool.cover %>" alt="<%= tool.name %>" loading="lazy"
+                                    onerror="this.src='https://via.placeholder.com/400x200/1e3a8a/ffffff?text=<%= encodeURIComponent(tool.name) %>'">
+                            </div>
+                            <div class="card-content">
+                                <div class="card-logo">
+                                    <%= tool.logo %>
+                                </div>
+                                <h3 class="card-title">
+                                    <%= tool.name %>
+                                </h3>
+                                <p class="card-desc">
+                                    <%= tool.desc %>
+                                </p>
+                                <span class="card-category">
+                                    <%= tool.category %>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+                    <% }); %>
+                        <% } else { %>
+                            <p class="no-tools">暂无工具数据，请在 source/_data/tools.yml 中配置</p>
+                            <% } %>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const cards = document.querySelectorAll('.tool-showcase-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const filter = this.dataset.filter;
+
+                // 更新按钮状态
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                // 过滤卡片
+                cards.forEach(card => {
+                    const category = card.dataset.category;
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.3s ease';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
+</script>

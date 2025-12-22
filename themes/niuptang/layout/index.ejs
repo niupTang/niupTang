@@ -157,9 +157,10 @@
     <!-- 最新博客文章 -->
     <section class="blog-section">
         <div class="section-container">
-            <h2 class="section-title">📚 最新文章</h2>
-            <div class="blog-grid">
-                <% page.posts.each(function(post){ %>
+            <h2 class="section-title">📚 最新文章 <span class="article-count">(<%= site.posts.length %> 篇)</span></h2>
+            <div class="blog-grid" id="blog-grid">
+                <% var allPosts=site.posts.sort('-date').toArray(); var initialCount=12; allPosts.slice(0,
+                    initialCount).forEach(function(post){ %>
                     <article class="blog-card">
                         <div class="blog-meta">
                             <time datetime="<%= date(post.date, 'YYYY-MM-DD') %>">
@@ -178,5 +179,103 @@
                     </article>
                     <% }); %>
             </div>
+
+            <!-- 加载更多按钮 -->
+            <div class="load-more-container" id="load-more-container">
+                <button class="load-more-btn" id="load-more-btn">
+                    <span class="btn-text">加载更多</span>
+                    <span class="btn-loading" style="display:none;">加载中...</span>
+                </button>
+                <p class="load-status" id="load-status"></p>
+            </div>
         </div>
     </section>
+
+    <script>
+        (function () {
+            // 所有文章数据 - 使用 JSON 安全序列化
+            var allPosts = <% - JSON.stringify(site.posts.sort('-date').toArray().map(function (post) {
+                return {
+                    title: post.title || '无标题',
+                    path: url_for(post.path),
+                    date: date(post.date, 'YYYY-MM-DD'),
+                    excerpt: strip_html(post.excerpt || post.content || '').substring(0, 100) + '...'
+                };
+            })) %>;
+
+            var currentIndex = 12; // 已加载数量
+            var batchSize = 12; // 每次加载数量
+            var blogGrid = document.getElementById('blog-grid');
+            var loadMoreBtn = document.getElementById('load-more-btn');
+            var loadStatus = document.getElementById('load-status');
+            var loadMoreContainer = document.getElementById('load-more-container');
+
+            // 检查是否还有更多
+            function checkRemaining() {
+                if (currentIndex >= allPosts.length) {
+                    loadMoreBtn.style.display = 'none';
+                    loadStatus.textContent = '已加载全部 ' + allPosts.length + ' 篇文章';
+                } else {
+                    loadStatus.textContent = '已加载 ' + currentIndex + ' / ' + allPosts.length + ' 篇';
+                }
+            }
+
+            // 加载更多文章
+            function loadMore() {
+                var btnText = loadMoreBtn.querySelector('.btn-text');
+                var btnLoading = loadMoreBtn.querySelector('.btn-loading');
+
+                btnText.style.display = 'none';
+                btnLoading.style.display = 'inline';
+
+                setTimeout(function () {
+                    var fragment = document.createDocumentFragment();
+                    var endIndex = Math.min(currentIndex + batchSize, allPosts.length);
+
+                    for (var i = currentIndex; i < endIndex; i++) {
+                        var post = allPosts[i];
+                        var article = document.createElement('article');
+                        article.className = 'blog-card';
+                        article.style.animation = 'fadeInUp 0.3s ease';
+                        article.innerHTML =
+                            '<div class="blog-meta"><time datetime="' + post.date + '">' + post.date + '</time></div>' +
+                            '<h3 class="blog-title"><a href="' + post.path + '">' + post.title + '</a></h3>' +
+                            '<p class="blog-excerpt">' + post.excerpt + '</p>' +
+                            '<a href="' + post.path + '" class="read-more">阅读更多 →</a>';
+                        fragment.appendChild(article);
+                    }
+
+                    blogGrid.appendChild(fragment);
+                    currentIndex = endIndex;
+
+                    btnText.style.display = 'inline';
+                    btnLoading.style.display = 'none';
+
+                    checkRemaining();
+                }, 300);
+            }
+
+            // 点击加载更多
+            loadMoreBtn.addEventListener('click', loadMore);
+
+            // 滚动懒加载
+            var isLoading = false;
+            window.addEventListener('scroll', function () {
+                if (isLoading || currentIndex >= allPosts.length) return;
+
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                var windowHeight = window.innerHeight;
+                var docHeight = document.documentElement.scrollHeight;
+
+                // 距离底部 300px 时自动加载
+                if (scrollTop + windowHeight >= docHeight - 300) {
+                    isLoading = true;
+                    loadMore();
+                    setTimeout(function () { isLoading = false; }, 500);
+                }
+            });
+
+            // 初始检查
+            checkRemaining();
+        })();
+    </script>

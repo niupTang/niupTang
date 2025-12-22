@@ -1,0 +1,129 @@
+# 工具数据配置文件
+# 每个工具包含：名称、描述、链接、封面图、Logo、分类
+
+tools:
+  - name: Lovart
+    desc: 全球首个设计 Agent 平台
+    url: https://lovart.ai
+    cover: https://lovart.ai/og-image.png
+    logo: 🎨
+    category: 图像
+
+  - name: KoalaQA
+    desc: 开源的智能售后问答产品，AI 大模型驱动的开源智能售后产品
+    url: https://github.com/koalaqe/koalaqe
+    cover: https://repository-images.githubusercontent.com/koalaqe.png
+    logo: 🐨
+    category: 基础设施
+
+  - name: Gemini 3 AI
+    desc: Unveiling Gemini 3 Pro AI Chat
+    url: https://gemini.google.com
+    cover: https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_hero.width-1200.format-webp.webp
+    logo: ✨
+    category: 通用Chatbot
+
+  - name: AIAI.com
+    desc: All-in-one AI video and image generator for creating stunning content
+    url: https://aiai.com
+    cover: https://aiai.com/og.png
+    logo: 🎬
+    category: 视频
+
+  - name: PPT.AI
+    desc: 世界第一 AI PPT 制作工具，在几分钟内将您的想法转化为精美PPT
+    url: https://ppt.ai
+    cover: https://ppt.ai/og-image.png
+    logo: 📊
+    category: 办公
+
+  - name: 数说Social Research
+    desc: 社媒分析Agent，全能营销助手
+    url: https://socialresearch.ai
+    cover: https://socialresearch.ai/og.png
+    logo: 📈
+    category: 市场营销
+
+  - name: GMI Cloud
+    desc: GMI Cloud 是一家北美 AI Native Cloud 服务商，数据中心遍布全球
+    url: https://gmicloud.ai
+    cover: https://gmicloud.ai/og.png
+    logo: ☁️
+    category: 基础设施
+
+  - name: Lab4AI大模型实验室
+    desc: Lab4AI大模型实验室是高性能GPU算力场景的实操平台，致力于通过AI实现更多可能
+    url: https://lab4ai.com
+    cover: https://lab4ai.com/og.png
+    logo: 🔬
+    category: 基础设施
+
+  - name: ChatGPT
+    desc: OpenAI 开发的强大对话AI助手，引领人工智能对话新时代
+    url: https://chat.openai.com
+    cover: https://openai.com/content/images/2024/01/og-chatgpt.png
+    logo: 🤖
+    category: 通用Chatbot
+
+  - name: Claude
+    desc: Anthropic 的智能对话助手，擅长长文本理解和代码编写
+    url: https://claude.ai
+    cover: https://claude.ai/images/claude-og.png
+    logo: 🧠
+    category: 通用Chatbot
+
+  - name: Midjourney
+    desc: AI艺术图像生成工具，创造惊艳的视觉作品
+    url: https://midjourney.com
+    cover: https://midjourney.com/og-image.png
+    logo: 🎨
+    category: 图像
+
+  - name: Stable Diffusion
+    desc: 开源AI图像生成模型，本地部署首选
+    url: https://stability.ai
+    cover: https://stability.ai/og.png
+    logo: 🖌️
+    category: 图像
+
+  - name: Runway
+    desc: AI视频生成与编辑平台，专业级视频创作
+    url: https://runway.ml
+    cover: https://runway.ml/og-image.png
+    logo: 🎬
+    category: 视频
+
+  - name: Suno
+    desc: AI音乐创作生成工具，让每个人都能创作音乐
+    url: https://suno.ai
+    cover: https://suno.ai/og.png
+    logo: 🎵
+    category: 音频
+
+  - name: Coze
+    desc: 字节跳动的AI Bot开发平台，零代码构建智能助手
+    url: https://coze.cn
+    cover: https://coze.cn/og.png
+    logo: 💬
+    category: 开发工具
+
+  - name: Cursor
+    desc: AI驱动的代码编辑器，让编程更高效
+    url: https://cursor.sh
+    cover: https://cursor.sh/og-image.png
+    logo: ⌨️
+    category: 开发工具
+
+  - name: v0.dev
+    desc: Vercel 的 AI UI 生成器，快速构建网页界面
+    url: https://v0.dev
+    cover: https://v0.dev/og.png
+    logo: 🎯
+    category: 开发工具
+
+  - name: Notion AI
+    desc: 智能笔记与知识管理，提升工作效率
+    url: https://notion.so
+    cover: https://notion.so/images/meta/default.png
+    logo: 📝
+    category: 办公

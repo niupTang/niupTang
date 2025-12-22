@@ -1,5 +1,5 @@
 menu:
-  首页: /
+  首页: /index
   博客: /archives
   Github 开源项目: /tools
   关于: /about
@@ -11,5 +11,5 @@ site_author: 太阳鸟
 
 # 社交链接
 social:
-  github: 
-  weixin:
+  github: https://github.com/niupTang
+  weixin: 770530662
