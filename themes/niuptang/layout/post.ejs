@@ -34,6 +34,70 @@
         </div>
         <% } %>
 
+            <!-- 发布到公众号按钮 -->
+            <div class="wechat-publish-section"
+                style="margin: 30px 0; padding: 20px; background: linear-gradient(135deg, #07c160 0%, #06ad56 100%); border-radius: 12px; text-align: center;">
+                <button id="publishBtn" onclick="publishToWechat()" style="
+            background: white;
+            color: #07c160;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        ">
+                    📤 发布到微信公众号
+                </button>
+                <p id="publishStatus" style="color: white; margin-top: 15px; font-size: 14px; display: none;"></p>
+            </div>
+
+            <script>
+    async function publishToWechat() {
+        const btn = document.getElementById('publishBtn');
+        const status = document.getElementById('publishStatus');
+        const articlePath = 'source/_posts/<%= page.source.replace("_posts/", "") %>';
+        
+        btn.disabled = true;
+        btn.textContent = '⏳ 正在发布...';
+        status.style.display = 'block';
+        status.textContent = '正在上传图片并创建草稿...';
+        
+        try {
+            const res = await fetch('http://localhost:8790/api/publish', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ articlePath })
+            });
+            
+            const data = await res.json();
+            
+            if (data.success) {
+                btn.textContent = '✅ 发布成功！';
+                btn.style.background = '#07c160';
+                btn.style.color = 'white';
+                status.textContent = '文章已保存到公众号草稿箱，请登录公众号后台查看';
+            } else {
+                throw new Error(data.error || '发布失败');
+            }
+        } catch (error) {
+            btn.textContent = '❌ 发布失败';
+            btn.style.background = '#ff4d4f';
+            btn.style.color = 'white';
+            status.textContent = '错误: ' + error.message + ' (请确保 API 服务已启动: npm run api)';
+            
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.textContent = '📤 重试发布';
+                btn.style.background = 'white';
+                btn.style.color = '#07c160';
+            }, 3000);
+        }
+    }
+            </script>
+
             <nav class="post-nav">
                 <% if (page.prev) { %>
                     <a href="<%- url_for(page.prev.path) %>" class="prev-post">

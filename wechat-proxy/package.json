@@ -1,0 +1,10 @@
+{
+    "name": "wechat-api-proxy",
+    "version": "1.0.0",
+    "description": "Cloudflare Workers proxy for WeChat Official Account API",
+    "main": "worker.js",
+    "scripts": {
+        "deploy": "wrangler deploy",
+        "dev": "wrangler dev"
+    }
+}

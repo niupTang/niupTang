@@ -30,6 +30,8 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  - editor/**
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -103,3 +105,19 @@ theme: niuptang
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# ==========================================
+# 微信公众号图床配置
+# ==========================================
+wechat_image:
+  # 是否启用微信图床
+  enable: true
+  
+  # 公众号 AppID
+  appId: wx322ff120e757e1b0
+  
+  # 公众号 AppSecret
+  appSecret: 9025976bd848dcce82c94102374b1e9e
+  
+  # 本地代理地址（使用本地代理服务）
+  proxyUrl: http://localhost:8789
