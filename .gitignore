@@ -6,3 +6,20 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+# 敏感配置文件
+_config.yml
+upload-annual-summary.js
+test-upload.js
+
+# 微信相关敏感数据
+wechat-articles.json
+wechat-articles-from-html.json
+publish_page.json
+wechat-output.html
+html/*.html
+2025-stats.json
+source/2025-stats.json
+
+# 临时文件
+sync-debug.txt

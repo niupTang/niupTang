@@ -1,0 +1,124 @@
+<link rel="stylesheet" href="<%- url_for('/css/articles.css') %>">
+
+<div class="articles-container">
+    <!-- 工具栏 -->
+    <div class="articles-toolbar">
+        <div class="toolbar-left">
+            <h2 style="margin: 0; font-size: 1.5rem; color: #333;">📚 文章列表</h2>
+            <span style="color: #999; font-size: 0.9rem;">共 <%= site.posts.length %> 篇</span>
+        </div>
+        <div class="toolbar-right">
+            <!-- 排序选择 -->
+            <select class="sort-select" id="sortSelect">
+                <option value="latest">最新发布</option>
+                <option value="popular">最热内容</option>
+                <option value="relevant">与我相关</option>
+            </select>
+
+            <!-- 视图切换 -->
+            <div class="view-toggle">
+                <button class="view-btn active" data-view="list" id="listViewBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                    列表
+                </button>
+                <button class="view-btn" data-view="grid" id="gridViewBtn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    网格
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 文章网格 -->
+    <div class="articles-grid list-view" id="articlesGrid">
+        <% site.posts.sort('-date').each(function(post){ %>
+            <article class="article-card" onclick="window.location.href='<%- url_for(post.path) %>'">
+                <!-- 卡片头部 -->
+                <div class="card-header">
+                    <span class="platform-badge">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M8.691 2.188C7.82 2.188 7.12 2.888 7.12 3.758v16.484c0 .87.7 1.57 1.571 1.57h6.618c.87 0 1.57-.7 1.57-1.57V3.758c0-.87-.7-1.57-1.57-1.57H8.691z" />
+                        </svg>
+                        微信公众号
+                    </span>
+                    <span class="author-info">
+                        <img src="<%- url_for('/images/favicon.jpg') %>" alt="太阳鸟" class="author-avatar">
+                        <span class="author-name">太阳鸟</span>
+                    </span>
+                </div>
+
+                <!-- 卡片内容 -->
+                <div class="card-content">
+                    <h3 class="card-title">
+                        <%= post.title %>
+                    </h3>
+                    <p class="card-excerpt">
+                        <%= strip_html(post.excerpt || post.content).substring(0, 150) %>...
+                    </p>
+
+                    <% if (post.tags && post.tags.length> 0) { %>
+                        <div class="card-tags">
+                            <% post.tags.slice(0, 3).each(function(tag){ %>
+                                <span class="tag">
+                                    <%= tag.name %>
+                                </span>
+                                <% }); %>
+                        </div>
+                        <% } %>
+
+                            <div class="card-footer">
+                                <% var stats=getWechatStats(post.title); %>
+                                    <div class="card-stats">
+                                        <span class="stat-item" title="阅读量">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                            <span>
+                                                <%= stats.readNum> 0 ? formatNumber(stats.readNum) : '-' %>
+                                            </span>
+                                        </span>
+                                        <span class="stat-item" title="点赞数">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path
+                                                    d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                                </path>
+                                            </svg>
+                                            <span>
+                                                <%= stats.likeNum> 0 ? formatNumber(stats.likeNum) : '-' %>
+                                            </span>
+                                        </span>
+                                        <span class="stat-item" title="评论数">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                                                </path>
+                                            </svg>
+                                            <span>
+                                                <%= stats.commentNum> 0 ? formatNumber(stats.commentNum) : '-' %>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <span class="card-date">
+                                        <%= date(post.date, 'YYYY-MM-DD' ) %>
+                                    </span>
+                            </div>
+                </div>
+            </article>
+            <% }); %>
+    </div>
+</div>
+
+<script src="<%- url_for('/js/articles.js') %>"></script>

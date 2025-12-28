@@ -1,0 +1,894 @@
+<!DOCTYPE html><html>  <head>    <script type="text/javascript">
+  if (!window.wx) {
+    window.wx = {};
+  }
+
+  // mp 不再支持 ie浏览器 @sankigan
+  (function() {
+    setTimeout(function() {
+      // 为兼容可选链等高级语法在tpl文件中的使用。未来如果需要使用更多新特性可以考虑加loader降级 @orinyang
+      function checkBrowserVersion(ua){
+        const chromeRegex = /Chrome\/([0-9]+(?:\.[0-9]+)*)/;
+        const safariRegex = /Version\/([0-9]+(?:\.[0-9]+)*)/;
+        const firefoxRegex = /Firefox\/([0-9]+(?:\.[0-9]+)*)/;
+
+        let chromeVersion = ua.match(chromeRegex);
+        if(chromeVersion){
+          return parseFloat(chromeVersion[1]) < 80;
+        }
+        let safariVersion = ua.match(safariRegex);
+        if(safariVersion){
+          return parseFloat(safariVersion[1]) < 13.1;
+        }
+        let firefoxVersion = ua.match(firefoxRegex);
+        if(firefoxVersion){
+          return parseFloat(firefoxVersion[1]) < 74;
+        }
+        return false;
+      }
+
+      function checkIE() {
+        var ua = navigator.userAgent;
+        var isSupportShadow = window.customElements && (document.head.createShadowRoot || document.head.attachShadow);
+        // 分别判断是否是 ie11 以下以及是否是 ie11 浏览器
+        if (
+          (ua.indexOf('compatible') > -1 && ua.indexOf('MSIE') > -1)
+          || (ua.indexOf('Trident') > -1 && ua.indexOf("rv:11.0") > -1)
+          || ua.indexOf('edge') > -1
+          || !isSupportShadow || checkBrowserVersion(ua)
+        ) {
+          // 因为 web1 也有同样的逻辑，这里去重
+          if (!document.querySelector('.js_ie_notsupport')) {
+            var div = document.createElement('div');
+            div.innerHTML = '<div class="js_ie_notsupport" style="width: 100%;min-width: 280px;padding: 5px 30px;display: inline-block;position: fixed;top: 0px;left: 0px;text-align: center;z-index: 9999;background-color: #EAA000;color: #FFFFFF;">当前浏览器版本过低，请将浏览器更新为新版本QQ浏览器或Chrome浏览器，以获得更好的体验</div>';
+            document.body.appendChild(div);
+          }
+        }
+      }
+
+      if (window.attachEvent) {
+        window.attachEvent('onload', checkIE);
+      } else if (window.addEventListener) {
+        window.addEventListener('load', checkIE, false);
+      }
+    }, 10);
+  })();
+
+
+      // 左侧导航栏 @jaminqian
+          window.wx.menu = {
+        list: {"tree":{"nodes":[{"data":{"id":10063,"new_seq":0,"history_seq":0,"logo_key":"home","name":"首页","nav_url":"/cgi-bin/home?t=home/index","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10131,"new_seq":0,"history_seq":0,"logo_key":"notification","name":"通知中心","nav_url":"/cgi-bin/frame?t=notification/index_frame&nav=10131","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10113,"new_seq":0,"history_seq":0,"logo_key":"create","name":"内容管理","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10114,"new_seq":0,"history_seq":0,"name":"创作","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10125,"new_seq":0,"history_seq":0,"name":"草稿箱","nav_url":"/cgi-bin/appmsg?begin=0&count=10&type=77&action=list_card","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10087,"new_seq":0,"history_seq":0,"name":"素材库","nav_url":"/cgi-bin/filepage?type=2&begin=0&count=12","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10126,"new_seq":0,"history_seq":0,"name":"发表记录","nav_url":"/cgi-bin/appmsgpublish?sub=list&begin=0&count=10","nav_new_flag":0,"selected_flag":1}},{"data":{"id":10042,"new_seq":0,"history_seq":1,"name":"原创","nav_url":"/cgi-bin/appmsgcopyright?action=orignal&type=1","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10039,"new_seq":0,"history_seq":1,"name":"合集","nav_url":"/cgi-bin/appmsgalbummgr?action=list","nav_new_flag":0,"selected_flag":0}}]}]},{"data":{"id":10140,"new_seq":0,"history_seq":0,"logo_key":"interaction","name":"互动管理","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10115,"new_seq":0,"history_seq":0,"name":"互动","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10033,"new_seq":0,"history_seq":1,"name":"留言","nav_url":"/misc/appmsgcomment?action=list_latest_comment&begin=0&count=10&sendtype=MASSSEND&scene=1","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10144,"new_seq":0,"history_seq":0,"name":"划线","nav_url":"/cgi-bin/mpunderline?action=underline&sort_type=1","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10012,"new_seq":0,"history_seq":0,"name":"私信","nav_url":"/cgi-bin/message?t=message/list&count=20&day=7","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10132,"new_seq":0,"history_seq":0,"name":"提到","nav_url":"/cgi-bin/atfunc?action=get_at_notify_list","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10038,"new_seq":0,"history_seq":1,"name":"投票","nav_url":"/cgi-bin/newoperatevote?action=list","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10104,"new_seq":0,"history_seq":0,"name":"视频弹幕","nav_url":"/cgi-bin/video?action=list_video","nav_new_flag":0,"selected_flag":0}}]},{"data":{"id":10116,"new_seq":0,"history_seq":0,"name":"内容工具","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10006,"new_seq":1,"history_seq":0,"name":"自动回复","nav_url":"/advanced/autoreply?t=ivr/reply&action=beadded","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10007,"new_seq":0,"history_seq":0,"name":"自定义菜单","nav_url":"/advanced/selfmenu?action=index&t=advanced/menu-setting","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10013,"new_seq":0,"history_seq":0,"name":"用户管理","nav_url":"/cgi-bin/contactmanage?t=user/index&pageidx=0&type=0","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10112,"new_seq":0,"history_seq":0,"name":"号内搜索","nav_url":"/cgi-bin/searchplugin?action=profilewordsinfo","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10101,"new_seq":1,"history_seq":0,"name":"微信红包封面","nav_url":"https://mp.weixin.qq.com/cgi-bin/redpacketcover?action=intro","nav_new_flag":0,"selected_flag":0}}]}]},{"data":{"id":10117,"new_seq":0,"history_seq":0,"logo_key":"statistics","name":"数据分析","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10016,"new_seq":0,"history_seq":0,"name":"内容分析","nav_url":"/misc/appmsganalysis?action=report&type=daily_v2","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10015,"new_seq":0,"history_seq":0,"name":"用户分析","nav_url":"/misc/useranalysis?","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10047,"new_seq":0,"history_seq":0,"name":"菜单分析","nav_url":"/misc/menuanalysis?","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10017,"new_seq":0,"history_seq":0,"name":"消息分析","nav_url":"/misc/messageanalysis?type=daily&t=statistics/msg","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10018,"new_seq":0,"history_seq":0,"name":"接口分析","nav_url":"/misc/interfaceanalysis?type=daily","nav_new_flag":0,"selected_flag":0}}]},{"data":{"id":10142,"new_seq":0,"history_seq":0,"logo_key":"income","name":"收入变现","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10143,"new_seq":0,"history_seq":0,"name":"变现工具","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10040,"new_seq":0,"history_seq":2,"name":"赞赏","nav_url":"/merchant/reward?action=getlatestreward","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10102,"new_seq":0,"history_seq":0,"name":"付费","nav_url":"/merchant/mppaysubscribe?action=getlatestpay","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10138,"new_seq":1,"history_seq":0,"name":"带货","nav_url":"/cgi-bin/productpage","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10027,"new_seq":2,"history_seq":0,"name":"流量主","nav_url":"/promotion/publisher/publisher_index?","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10137,"new_seq":0,"history_seq":1,"name":"微信小店","nav_url":"/cgi-bin/weshop?action=weshop_page","nav_new_flag":0,"selected_flag":0}}]}]},{"data":{"id":10118,"new_seq":0,"history_seq":0,"logo_key":"business","name":"广告与服务","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10120,"new_seq":0,"history_seq":0,"name":"服务","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10026,"new_seq":0,"history_seq":0,"name":"广告主","nav_url":"/promotion/advertiser_index?","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10060,"new_seq":0,"history_seq":0,"name":"小程序管理","nav_url":"/cgi-bin/wxopen?action=list","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10145,"new_seq":1,"history_seq":0,"name":"付费加热","nav_url":"/cgi-bin/mppromotionorder?action=dashboard","nav_new_flag":1,"selected_flag":0}}]},{"data":{"id":10121,"new_seq":0,"history_seq":0,"name":"更多能力","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10071,"new_seq":1,"history_seq":0,"name":"微信搜一搜","nav_url":"/misc/pluginloginpage?pluginuin=10071","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10129,"new_seq":1,"history_seq":0,"name":"服务市场","nav_url":"/cgi-bin/frame?t=3rd_market/common_frame&nav=10129","nav_new_flag":0,"selected_flag":0}}]}]},{"data":{"id":10122,"new_seq":0,"history_seq":0,"logo_key":"setup","name":"设置与开发","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10123,"new_seq":0,"history_seq":0,"name":"基本设置","nav_new_flag":0,"selected_flag":0},"nodes":[{"data":{"id":10019,"new_seq":0,"history_seq":0,"name":"账号设置","nav_url":"/cgi-bin/settingpage?t=setting/index&action=index","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10070,"new_seq":0,"history_seq":1,"name":"人员设置","nav_url":"/cgi-bin/safecenterstatus?action=admins&t=setting/safe-admins","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10022,"new_seq":0,"history_seq":0,"name":"安全中心","nav_url":"/cgi-bin/safecenterstatus?action=view&t=setting/safe-index","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10045,"new_seq":0,"history_seq":0,"name":"违规记录","nav_url":"/cgi-bin/illegalrecord?count=10","nav_new_flag":0,"selected_flag":0}},{"data":{"id":10141,"new_seq":0,"history_seq":0,"name":"开发接口管理","nav_url":"/cgi-bin/frame?t=pages/developsetting/page/developsetting_frame&nav=10141","nav_new_flag":0,"selected_flag":0}}]}]}]}},
+        pluginCenterNewFlag: '0' * 1,
+        redDot: {
+                      newFansMsgNum: '0' * 1,
+            newCommentNum: '0' * 1,
+            newQnaMsgNum: '' * 1,
+            newDanmuNum: '0' * 1,
+            newMentionNum: '0' * 1,
+            newUnderlineNum: '0' * 1,
+            newCreateNum: '0' * 1 + '0' * 1 + '0' * 1 + '0' * 1 + '0' * 1,
+                  }
+      };
+        // 页面公告 @jaminqian
+          window.wx.announcement = {
+        announcement_list: []
+      };
+          if (!window.wx.cgiData) {
+    window.wx.cgiData = {};
+  }
+
+  window.handlerNickname = function(str, escape) { // 临时对nickname decode
+    // var ar=['&','&amp;','<','&lt;','>','&gt;',' ','&nbsp;','"','&quot;',"'",'&#39;','\\r','<br>','\\n','<br>'];
+    var ar = ['&', '&amp;', '<', '&lt;', '>', '&gt;', ' ', '&nbsp;', '"', '&quot;', '\'', '&#39;'];
+    /*
+    // 最新版的safari 12有一个BUG，如果使用字面量定义一个数组，var a = [1, 2, 3]
+    // 当调用了 a.reverse() 方法把变量 a 元素顺序反转成 3, 2, 1 后，
+    // 即使此页面刷新了， 或者此页面使用 A标签、 window.open 打开的页面，
+    // 只要调用到同一段代码， 变量 a 的元素顺序都会变成 3, 2, 1
+    // 所以这里不用 reverse 方法
+    if (escape === false) {
+      ar.reverse();
+    }*/
+    var arReverse = ['&#39;', '\'', '&quot;', '"', '&nbsp;', ' ', '&gt;', '>', '&lt;', '<', '&amp;', '&'];
+    var target;
+    if (escape === false) {
+      target = arReverse;
+    } else {
+      target = ar;
+    }
+    var r = str;
+    for (var i = 0; i < target.length; i += 2) {
+      r = r.replace(new RegExp(target[i], 'g'), target[1 + i]);
+    }
+    return r;
+  };
+
+  window.wx.commonData = {
+    version: "5.0.0",
+    uin: "3924628841", // 兼容wx.uin
+    data: {
+      t: "1554125009" || "1554125009",
+      ticket: "bc48dcf1ae6a1966bd0866985ae25eabe9f7ac58",
+      lang: 'zh_CN',
+      param: ["&token=1554125009", '&lang=zh_CN'].join(""),
+      uin: "3924628841",
+      uin_base64: "MzkyNDYyODg0MQ==",
+      user_name: "gh_ccff5ba2362f",
+      nick_name: "牛皮糖不吹牛",  // encode一次
+      nick_name_decode: handlerNickname("牛皮糖不吹牛", false),  // encode一次 decode一次,因为空格需要特殊转义处理
+      real_nick_name: "牛皮糖不吹牛",  // 真实nick_name，后台无兜底逻辑，未设置则返回空
+      real_nick_name_decode: handlerNickname("牛皮糖不吹牛", false),  // encode一次 decode一次,因为空格需要特殊转义处理
+      time: "1766766918" || new Date().getTime() / 1000,
+      disable_head_box: "0" * 1,
+      open_app_type: '16' * 1,
+      serviceType: '1' * 1,
+      realnameType: '0' * 1, // 主体类型
+      isPersonVerify: '1' * 1, // 是否个人认证
+      isWxVerify: '0' * 1,
+      is_qverify: '0' * 1,
+      sp_login: '0' * 1,
+      sp_user_name: '',
+      sp_nick_name: '',
+      head_img: 'https://wx.qlogo.cn/mmopen/OAaY5cKEwAmtNGnbvhJvBrL1J1n6YMZBW19jlGia7XXF3CZZpZlEib5ibI9n0kia60es7c4YwS1cRMXBcX1PfFjRsFXeAEW034NO/64'.replace('http://', 'https://'),
+      head_url: '',
+      alias: '',
+      verify_status : '1' * 1,
+    },
+    path: {
+      video: '', // "https://res.wx.qq.com/mpres/zh_CN/htmledition/plprecorder/biz_web/video-js.swf",
+      audio: "https://res.wx.qq.com/mpres/zh_CN/htmledition/plprecorder/biz_web/audiojs7ae1d6.swf",
+      uploadify: "https://res.wx.qq.com/mpres/zh_CN/htmledition/plprecorder/biz_web/uploadify7ae1d6.swf",
+      webuploader: "https://res.wx.qq.com/mpres/zh_CN/htmledition/plprecorder/biz_web/webuploader7ae1d6.swf",
+      zoom: "https://res.wx.qq.com/mpres/zh_CN/htmledition/plprecorder/biz_web/zoom7ae1d6.swf",
+      zeroClipboard_new: "https://res.wx.qq.com/mpres/zh_CN/htmledition/plprecorder/biz_web/ZeroClipboard_new7ae1d6.swf",
+      rimgcrop: "https://res.wx.qq.com/mpres/htmledition/images/cut-round7ae1d6.gif",
+      icon: {
+        account_user: 'https://res.wx.qq.com/mpres/zh_CN/htmledition/weui-desktopSkin-common/svg/default/account-user7ae1d6.svg',
+        account_wxverify: 'https://res.wx.qq.com/mpres/zh_CN/htmledition/weui-desktopSkin-common/svg/default/account-wxverify7ae1d6.svg',
+        account_setting: 'https://res.wx.qq.com/mpres/zh_CN/htmledition/weui-desktopSkin-common/svg/default/account-setting7ae1d6.svg',
+        account_logout: 'https://res.wx.qq.com/mpres/zh_CN/htmledition/weui-desktopSkin-common/svg/default/account-logout7ae1d6.svg',
+        account_switch: 'https://res.wx.qq.com/mpres/zh_CN/htmledition/weui-desktopSkin-common/svg/default/common-switch7ae1d6.svg'
+      }
+    },
+    user_info: {
+            bind_finder_status: {
+                  bind_status: '3' * 1,
+          finder_nickname: '牛皮糖不吹牛',
+          finder_head_img_url: 'https://wx.qlogo.cn/finderhead/ver_1/2Ko4yLltH82FvH0dYCuQUUhAuUNqdmg0PP7uyImavhIR5bqmPxaSmic4x7PVcqaCZMQrWybaE0srjFOp85sjgeyZa1PgbA0JXKib3ib6OOhKHo4xiaicng0LbomEUxrM8Pp5h/132',
+          wx_nickname: '🍭🙈曉小糖🙉',
+          finder_username: 'v2_060000231003b20faec8cae38f1dc5d4cd0dea32b0772665913cac747984db371d99bfae59a7@finder',
+          ban_publish: '' * 1,
+          acct_ban: '0' * 1,
+          acct_secret: '0' * 1,
+          finder_user_status: '0' * 1,
+          shop_type : '1' * 1,
+              },
+      has_video_masssend_findervideo_priv: '0' * 1,
+      nick_name: '牛皮糖不吹牛',
+      service_type: '1' * 1,
+      is_unrealname: "0" * 1,
+      show_switchacct: "1" * 1
+          },
+    mplog: {
+            needUplog: "0" * 1,
+      beginTime: "",
+      endTime: "",
+      uploadCGIName: ""
+          },
+    acl: {
+
+            "msg_acl": {
+        "can_text_msg": '1' * 1,
+        "can_image_msg": '1' * 1,
+        "can_voice_msg": '1' * 1,
+        "can_video_msg": '1' * 1,
+        "can_app_msg": '1' * 1,
+        "can_commodity_app_msg": '0' * 1,
+        "can_card_msg": "0" * 1 || 0, // @cunjinli改掉
+        "can_use_shortvideo": "0" * 1,
+        "can_use_reprintapply_list": "0" * 1, ///原创二期上线前文库和订阅都暂缓不上了，只上授权申请，这里新增授权申请入口 @tunnyhuang @tedwang
+        "can_upload_2m_more_gif": "1" * 1, // 是否允许上传5M之内的Gif
+      },
+      "material_acl": {
+        "can_text_msg": '1' * 1,
+        "can_image_msg": '1' * 1,
+        "can_voice_msg": '1' * 1,
+        "can_video_msg": '1' * 1,
+        "can_app_msg": '1' * 1,
+        "can_commodity_app_msg": '0' * 1,
+        "can_card_msg": "0" * 1 || 0, // @cunjinli改掉
+        "can_use_shortvideo": "0" * 1,
+        "can_use_reprintapply_list": "0" * 1 ///原创二期上线前文库和订阅都暂缓不上了，只上授权申请，这里新增授权申请入口 @tunnyhuang @tedwang
+      },
+      "ivr_acl": {
+        "can_text_msg": '1' * 1,
+        "can_image_msg": '1' * 1,
+        "can_voice_msg": '1' * 1,
+        "can_video_msg": '1' * 1,
+        "can_app_msg": '1' * 1,
+        "can_commodity_app_msg": '0' * 1
+      },
+      "merchant_acl": {
+        "can_use_pay_tmpl": "" * 1,
+        "can_use_account_manage": "" * 1,
+        "wxa_mall_status": "0" * 1
+      },
+      "product_acl": {
+        "can_see_product": "0" * 1,
+        "can_not_use_product": "" * 1,
+        "can_c2c_reply": "2" * 1
+      },
+      "base_acl": {
+        "can_use_replay": "0" * 1,
+        "can_use_new_publish": "1" * 1,
+        "is_send_findervideo_gray_user": "1" * 1,  // 视频号消息二期灰度
+        "can_use_aff_products": "1" * 1,
+        "open_aff": "0" * 1,
+        "can_use_tlrec_promotion": "" * 1, // 是否可以使用付费加热
+      },
+      "env_acl": {
+        "hostrole": "0" * 1
+      },
+                      // x系统实验白名单
+      "exp_acl": [
+                  {
+            'multiple_posts_ban': '7,8,10' * 1 || '7,8,10',
+          },
+                  {
+            'newcommonshareeditor': '10000' * 1 || '10000',
+          },
+              ],
+                            "ad_system": {
+        "can_use_sp": "" * 1,
+                  "can_use_new_ad": "" * 1
+              }
+    },
+    ban_func_list: [
+                                          ],
+    events: {}, // 全局的事件绑定
+    canUseVuest: "",
+    load_done: "",
+    load_done_detail: [
+        ],
+  };
+
+  window.wx.getSeq = function() { // 全局生成唯一时间戳seq,用于和svr_time确定文件上传顺序
+    return new Date().getTime();
+  };
+
+  delete window.handlerNickname;
+</script><script crossorigin type="text/javascript" src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules/common/badjs7ae1d6.js"></script><script crossorigin type="text/javascript" src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules/base/jserr7ae1d6.js"></script><script type="text/javascript">
+  (function () {
+    function _addScript(uri, cb) {
+      var node = document.createElement('SCRIPT');
+      node.type = 'text/javascript';
+      node.src = uri;
+      if (cb) {
+        node.onload = cb;
+      }
+      document.getElementsByTagName('head')[0].appendChild(node);
+    }
+    if (document.cookie && document.cookie.indexOf('__xweb_remote_debug_device_token__') > -1) {
+      _addScript('https://mp.weixin.qq.com/mmbizappmsg/zh_CN/htmledition/js/scripts/mprdev-0.2.5.js', function () {
+        _addScript('https://mp.weixin.qq.com/mmbizappmsg/zh_CN/htmledition/js/scripts/xwebrd-0.0.2.js');
+      });
+    }
+  })();
+  // console.log('1','=================================verify_status')
+</script>    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="baidu-site-verification" content="code-3r8LPtTwZC" /><meta name="msvalidate.01" content="FF6EE86AAF4EBBEFCB5FFF7A2ED6CF6C" /><meta name="google-site-verification" content="Lfue77RLSBGsSNJU7BOdDwTC7lDru1Oug60qmVBNbT4" /><meta name="renderer" content="webkit"><!-- <meta name="referrer" content="origin-when-crossorigin"> --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover"><script type="text/javascript">
+  //上报测速 --初始点
+  window._points = [+new Date()];
+
+  //上报测速 --js加载完成点
+  function wx_main(mod) {
+    window._points && (window._points[3] = +new Date());
+  };
+
+  window.wx.uin = "3924628841" || "0";
+
+  //如果cdn挂了资源拉不到 触发此上报
+  window.wx_loaderror = function(ele) {
+    var _img = new Image();
+    var key = 63;
+    if (ele && ele.tagName && ele.tagName.toLowerCase() == "script") {
+      key = 64;
+      //js资源挂了页面报到特殊地方
+      if (typeof BJ_REPORT != "undefined") {
+        BJ_REPORT.destory&&BJ_REPORT.destory();
+      }
+    }
+    if (typeof BJ_REPORT != "undefined") {
+      _img.src = "https://badjs.weixinbridge.com/badjs?id=" + BJ_REPORT.IDS.LINK + "&uin="+(wx&&wx.uin)+"&msg=" + encodeURIComponent("link_error:" + (ele && (ele.href || ele.src))) + "|link&from=" + encodeURIComponent(location.href) + "&level=4&_t=" + (+new Date);
+    }
+    var key_img = new Image();
+    key_img.src = "/misc/jslog?id="+key+"&content="+encodeURIComponent(ele && (ele.href || ele.src))+"&level=error";
+
+    if (typeof WX_BJ_REPORT != "undefined" && WX_BJ_REPORT.BadJs && typeof WX_BJ_REPORT.BadJs.report == "function") {
+      if (ele && ele.tagName && ele.tagName.toLowerCase() == "script") {
+        WX_BJ_REPORT.BadJs.report("jsLoadedError", ele.href || ele.src, { mid: "mpResourceMonitor" })
+      } else {
+        WX_BJ_REPORT.BadJs.report("cssLoadedError", ele.href || ele.src, { mid: "mpResourceMonitor" })
+      }
+    }
+  };
+</script>    <title>公众号</title>    <link id="shortcut" rel="shortcut icon" type="image/x-icon" href="https://res.wx.qq.com/a/fed_upload/9300e7ac-cec5-4454-b75c-f92260dd5b47/logo-mp.ico"><link rel="mask-icon" href="https://res.wx.qq.com/a/wx_fed/assets/res/MjliNWVm.svg" color="#4C4C4C"><link rel="apple-touch-icon-precomposed" href="https://res.wx.qq.com/a/wx_fed/assets/res/OTE0YTAw.png"><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mpres/zh_CN/htmledition/js/base/layout_head7ae1d6.css"/><!-- <link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mpres/zh_CN/htmledition/comm_htmledition/style/base/base.css?i18n"/> --> <link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mpres/zh_CN/htmledition/js/base/base7ae1d6.css"/><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mpres/zh_CN/htmledition/js/base/lib7ae1d6.css"/><!-- <link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules/base/style/base.css?i18n"/> --><link rel="stylesheet" type="text/css" href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules/base/style/base7ae1d6.css"/><!--#0002#--><!--%0002%--><script type="text/javascript">
+  if(/(infringementlogin)/.test(window.location.href)) {
+    document.title = '微信公众平台'
+    document.getElementById('shortcut').href = 'https://res.wx.qq.com/a/wx_fed/assets/res/NTI4MWU5.ico';
+  } 
+</script><script type="text/javascript">
+  if (Math.random() < 0.01) {
+    try {
+      var xssdetectjs = 'https://js.aq.qq.com/js/aq_common.js';
+      var script = document.createElement('script');
+      script.src = xssdetectjs;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(script);
+    } catch (e) {}
+  }
+
+  // Windows下设置滚动条样式
+  if (navigator.userAgent.indexOf('Windows') > -1) {
+    var style = document.createElement('style');
+    style.innerHTML = '::-webkit-scrollbar-track-piece {background-color: #FFFFFF;} ::-webkit-scrollbar {width: 6px; height: 6px;} ::-webkit-scrollbar-thumb {background-color: #c2c2c2; background-clip: padding-box; min-height: 28px;} ::-webkit-scrollbar-thumb:hover {background-color: #A0A0A0;}';
+    document.head.appendChild(style);
+  }
+</script>        <link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/vendors~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~b~vendors.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~b~modules.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~cardticket/member~modules.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~comment/comment_l~modules.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~city/service_edit~modules.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~complain/public_c~modules.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~editor/editor_for_web1~home/index/index_gray~mallactivity/list/list~media/publish_history/pu~modules.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~editor/editor_for_web1~home/index/index_gray~media/appmsg_list2/appmsg_list2_gray~media/publ~modules.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/modules~home/index/index_gray~mallactivity/list/list~media/publish_history/publish_history.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/default~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~b~default.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/default~advanced/menusetting/menusetting~advanced/menusetting4Web1~cardticket/membermessage4Web1~edi~default.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/pages/default~home/index/index_gray~media/publish_history/publish_history.91453155.css" rel="stylesheet"><link href="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/media/publish_history/publish_history.91453155.css" rel="stylesheet">  </head>  <body class="zh_CN weui-desktop-page_base ">        <div id="body" class="mp-body">      <div id="js_container_box" class="weui-desktop-layout weui-desktop-layout_global">        <!-- 商户特殊权限用户不显示菜单 -->                <div class="weui-desktop-layout__side_pop__mask" id="js_mp_sidemenu_pop_mask"></div>        <div id="m_open" class="weui-desktop__unfold-menu-opr-new" style="display: none;">          <span class="weui-desktop-logo">            <i class="weui-desktop-logo__inner"></i>          </span>          <i class="icon_unfold"></i>        </div>        <div id="js_mp_sidemenu" class="weui-desktop-layout__side weui-desktop-layout__side-menu">          <a id="m_fold"  href="javascript:;" class="weui-desktop-btn__head-opr weui-desktop__fold-menu-opr">收起</a>            <!-- 新版导航栏 -->  <div class="js_global_menu weui-desktop-layout__side-menu__container" :class="{    'weui-desktop-layout__side-menu__overflown': menuOverflown  }">    <div class="weui-desktop-layout__side-menu__header">      <h1 class="weui-desktop-logo">            <a href="/" title="公众号" class="weui-desktop-logo__inner"></a>            </h1>    </div>    <mp-menu ref="menu" @overflow="onOverflow"></mp-menu>    <div class="weui-desktop-layout__side-menu__footer">      <!-- <div id="js_new_feature"></div> -->      <div id="js_notify_box"></div>      <div id="js_account_box"></div>    </div>  </div>        </div>                <div id="js_mp_main_content" class="weui-desktop-layout__main">          <div class="weui-desktop-layout__main__area">            <div class="weui-desktop-layout__main__inner">              <!-- 页面公告 @jaminqian -->              <div id="_announcement" v-if="list && list.length && list.length !== 0">  <mp-msg v-for="(item, idx) in list" :key="idx" size="mini" :icon="item.type === 0 ? 'info' : 'warn'" :title="item.content"  :closable="item.type === 0 ? true : false" highlight></mp-msg></div>              <!-- 能力封禁专用 -->              <div id="app_ban" style="display:none"></div>              <div id="app" style="visibility:hidden;">                <mp-toptips :type="baseVueToptipsData.type" :msg="baseVueToptipsData.msg" v-model="baseVueToptipsData.isShow"></mp-toptips>                <div id="app">  <div class="publish_history_page">    <mp-block :desc="publishHint">        <template slot="title">          <div class="publish_listory_title">            <div>发表记录</div>            <mp-popover class="popover-adjust" width="230" trigger="hover">              <i slot="target" class="icon-svg-common-ask local-top"></i>              <span slot="content">                <div class="weui-desktop-popover__desc2">发表相关数据均为实时人数</div>              </span>            </mp-popover>          </div>        </template>        <!-- <template slot="head-append-in">          <mp-tab :tabs="tabs" :selected="currentTab" @click="tabClick"></mp-tab>        </template> -->        <div class="head_append_in" slot="head-append-in">          <mp-button class="header_button" :class="{'currentTab': type===0}" @click="jumpToUrl(0)" type="primary">全部 {{current_count[0] | formatThousandth}}</mp-button>          <mp-button class="header_button" :class="{'currentTab': type===1}" @click="jumpToUrl(1)" type="primary">{{publishWording}} {{current_count[1] | formatThousandth}}</mp-button>          <mp-button class="header_button" :class="{'currentTab': type===2}" @click="jumpToUrl(2)" type="primary">未通知 {{current_count[2] | formatThousandth}}</mp-button>          <mp-button  class="header_button" :class="{'currentTab': type===3}" @click="jumpToFeaturedlist" type="primary">精选 {{featured_count}}</mp-button>          <!-- <a href="/cgi-bin/appmsgpublish?sub=list&begin=0&count=10&type=0">111</a> -->          <mp-search v-if="type !== 3" class="header_search" placeholder="输入标题/关键词/文章链接" @search="searchPage" v-model="currentQuery" :clear="true" @clear="onClear"></mp-search>        </div>    </mp-block>    <div class="publish_content publish_record_history">      <template v-if="list.length > 0">        <mp-publish-record :list="list" :can-use-public-tag="canUsePublicTag" :realname-type="realnameType" :customer-type="customerType" :keyword="keyword"></mp-publish-record>        <mp-pagination mode="normal" :total-num="current_count[type]" :per-page="perPage" :current="currentPage" @page-change="pageChange"></mp-pagination>      </template>      <div v-else-if="type !== 3" class="publish-list__empty">        暂无发表记录  <div v-if="!isUrl">，可尝试使用文章链接重新搜索</div>      </div>      <div v-else class="publish-list__empty">        暂无精选内容      </div>    </div>  </div>  <mp-featured-list-dialog    v-if="featureDialogProps.show"    :list="featuredlist"    :has-two-msg="featureDialogProps.hasTwoMsg"    :has-text="featureDialogProps.hasText"    :is-text="featureDialogProps.isText"    :show="featureDialogProps.show"    :loading="featureDialogProps.loading"    @replace="onFeaturedCardReplace"    @cancel="onFeaturedCardCancel"  ></mp-featured-list-dialog>  <mp-legal-check-dialog    :value="antispamDialogShowStatus"    from-audit-reject    :step="7"    :checkresultdata="antispamData"    :antispam-type="antispamType"    :antispam-msg-id="antispamMsgId"    :antispam-copy-msg-id="antispamCopyMsgId"    :antispam-modify-data="antispamModifyData"    @input="antispamDialogVisibilityChange"  ></mp-legal-check-dialog></div>              </div>            </div>          </div>        </div>      </div>    </div>    <div class="mp-foot" id="footer" style="display: none;">    <div class="weui-desktop-foot">      <div class="weui-desktop-foot__info">        <p class="weui-desktop-links weui-desktop-link-group weui-desktop-link-group_split">                <a class="weui-desktop-link" href="http://www.tencent.com/zh-cn/index.shtml" target="_blank">关于腾讯</a>        <a class="weui-desktop-link" href="/cgi-bin/announce?action=getannouncement&key=1503979103&version=1&lang=zh_CN&platform=2" target="_blank">服务协议</a>        <a class="weui-desktop-link" href="/webpoc/ruleCenter?type=oa " target="_blank">规则中心</a>        <!-- <a class="weui-desktop-link" href="/cgi-bin/opshowpage?action=dispelinfo&lang=zh_CN&begin=1&count=9" target="_blank">辟谣中心</a> -->        <a class="weui-desktop-link" href="http://kf.qq.com/product/weixinmp.html" target="_blank">腾讯客服</a>                        <!-- <a class="weui-desktop-link" href="mailto:weixinmp@qq.com" target="_blank">联系邮箱</a> -->                                    <!--<a class="weui-desktop-link" href="/cgi-bin/readtemplate?t=news/operation_guide_tmpl" target="_blank">运营中心</a>-->            <!-- <a class="weui-desktop-link" href="http://kf.qq.com/product/weixinmp.html" target="_blank">腾讯客服</a> -->            <a class="weui-desktop-link" href="/acct/infringement?action=getmanual&t=infringement/manual&type=1&lang=zh_CN&token=1554125009" target="_blank">侵权投诉</a>            <span class="weui-desktop-link">反馈官号weixingongzhong</span>                                        <a class="weui-desktop-link" href="/advanced/mplog?action=index" target="_blank">上传日志</a>        </p>      </div>      <div class="weui-desktop-foot__extra">        <!--#00002#-->        <p class="weui-desktop-link" class="copyright">Copyright &copy; 2012-2025 Tencent. All Rights Reserved.</p>        <!--%00002%-->      </div>    </div></div><script type="text/javascript">
+    //上报测速 --dom加载完成点
+    window._points&&(window._points[2]=+new Date());
+    // 初始化未读数
+    (function() {
+      // 初始化消息未读
+      var eleHeadBoxAccountNum = document.getElementById('headBoxAccountNum')
+      if (eleHeadBoxAccountNum) {
+        var headBoxAccountNum = parseInt(document.getElementById('headBoxAccountNum').dataset.notify)
+        if (headBoxAccountNum) {
+          eleHeadBoxAccountNum.style.display = 'block'
+          eleHeadBoxAccountNum.innerHTML = headBoxAccountNum > 99 ? '99+' : headBoxAccountNum
+        }
+      }
+
+      function setFootBlock() {
+        const foot = document.getElementById('footer')
+        if (foot) {
+          foot.style.display = 'block'
+        }
+      }
+
+      try {
+        //判断是否需要在login页面抬高footer
+        const ua = navigator.userAgent;
+        if (/(iPhone|iPod|iOS)/i.test(ua) || /(Android)/i.test(ua)) {
+          const footer = document.querySelector('#footer')
+          footer.classList.add('login-lift-footer')
+        }
+
+        const is_mpapp = /MPAPP\/([\d\.]+)/i.test(ua);
+
+        if (!is_mpapp) {
+          setFootBlock()
+        }
+      } catch (e) {
+        setFootBlock()
+        console.error(e);
+      }
+    })();
+</script>    <script type="text/javascript">
+  var TOPBAR_FADEOUT = 'topbar-fadeout';
+  var minWidthMedia = 1169;
+
+  function hasClass(obj, cls) {
+    return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
+  }
+  function addClass(obj, cls) {
+    if (!hasClass(obj, cls)) {
+      obj.className += " " + cls;
+    }
+  }
+  function removeClass(obj, cls) {
+    if (hasClass(obj, cls)) {
+      var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+      obj.className = obj.className.replace(reg, '');
+    }
+  }
+
+  function setBodyMinHeight() {
+    var header = document.getElementById('mp_header');
+    var footer = document.getElementById('footer');
+    if (!footer) return;
+    document.getElementById('body').style.minHeight = document.documentElement.clientHeight - ((header && header.clientHeight) || 0) - footer.clientHeight - 96 + 'px';
+  }
+  setBodyMinHeight();
+
+  function hideSidebar() {
+    // sessionStorage.setItem('HIDE_SIDE_MENU', '1');
+    removeClass(document.body, 'weui-desktop-layout_unfold');
+    removeClass(document.body, 'weui-desktop-layout_unfold_large');
+    window.top.postMessage('hideOprGroup', '*');
+    // addClass(document.body, 'weui-desktop-layout_fold');
+    // setBodyMinHeight();
+    // setTimeout(() => {
+    //   document.getElementById('js_mp_sidemenu').style.display = 'none';
+    // }, 300);
+  }
+  function showSidebar() {
+    // sessionStorage.setItem('HIDE_SIDE_MENU', '0');
+    // document.getElementById('js_mp_sidemenu').style.display = 'block';
+    // if (document.documentElement.clientWidth >= minWidthMedia) {
+    //   addClass(document.body, 'weui-desktop-layout_unfold_large');
+    // }
+    setTimeout(function () {
+      // removeClass(document.body, 'weui-desktop-layout_fold');
+      if (document.documentElement.clientWidth < minWidthMedia) {
+        addClass(document.body, 'weui-desktop-layout_unfold');
+      }
+      // setBodyMinHeight();
+    }, 10);
+    window.top.postMessage('showOprGroup', '*');
+  }
+  // function initSideMenu() {
+  //   if (document.documentElement.clientWidth >= minWidthMedia && sessionStorage.getItem('HIDE_SIDE_MENU') === '1') {
+  //     removeClass(document.body, 'weui-desktop-layout_unfold', 'weui-desktop-layout_unfold_large');
+  //     addClass(document.body, 'weui-desktop__unset-transition', 'weui-desktop-layout_fold');
+  //     setBodyMinHeight();
+  //     document.getElementById('js_mp_sidemenu').style.display = 'none';
+  //     setTimeout(() => {
+  //       removeClass(document.body, 'weui-desktop__unset-transition');
+  //     }, 300);
+  //   }
+  // }
+  // initSideMenu();
+
+  function windowResizeHanlder() {
+    setBodyMinHeight();
+    if (document.documentElement.clientWidth >= minWidthMedia && hasClass(document.body, 'weui-desktop-layout_unfold')) {
+      removeClass(document.body, 'weui-desktop-layout_unfold');
+    } else {
+      removeClass(document.body, 'weui-desktop-layout_unfold_large');
+    }
+    documentScrollHanlder();
+  }
+
+  var notAddTopbarFadeout = false;
+  function documentScrollHanlder() {
+    var classList = document.body.classList;
+    if (document.documentElement.clientWidth > minWidthMedia) {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var header = document.getElementById('mp_header');
+      if (notAddTopbarFadeout) return;
+      if (header) {
+        classList[document.body.offsetHeight - window.innerHeight > header.clientHeight && scrollTop > 0 ? 'add' : 'remove'](TOPBAR_FADEOUT);
+      } else {
+        // classList[scrollTop > 0 ? 'add' : 'remove'](TOPBAR_FADEOUT);
+      }
+    } else {
+      classList.remove(TOPBAR_FADEOUT);
+    }
+  }
+
+  var mopen = document.getElementById('m_open');
+
+  window.addEventListener('resize', windowResizeHanlder);
+  document.addEventListener('scroll', documentScrollHanlder); // 滚动页面时自动隐藏topbar
+  mopen && mopen.addEventListener('click', showSidebar);
+  document.getElementById('m_fold').addEventListener('click', hideSidebar);
+  document.getElementById('js_mp_sidemenu_pop_mask').addEventListener('click', hideSidebar);
+  document.getElementById('body').addEventListener('transitionstart', function(e) {
+    if (e.target === e.currentTarget && e.propertyName === 'padding-top') {
+      notAddTopbarFadeout = true;
+    }
+  });
+  document.getElementById('body').addEventListener('transitionend', function(e) {
+    if (e.target === e.currentTarget && e.propertyName === 'padding-top') {
+      notAddTopbarFadeout = false;
+    }
+  });
+</script>    <div id="_faq" class="x"></div>    <!--  -->    <script type="text/javascript">var PAGE_MID="mmbizweb:media/publish_history/publish_history.html";</script><script type="text/javascript">
+if (typeof WX_BJ_REPORT != "undefined" && WX_BJ_REPORT.BadJs) {
+  if (typeof PAGE_MID == "undefined") {
+    window.PAGE_MID = "";
+  }
+  WX_BJ_REPORT.BadJs.init(wx.uin, PAGE_MID, 'mmbizweb').hook(function (data) {
+    if (data.view !== 'mmbizweb') { // 返回码上报
+      return true;
+    } else { // 错误上报
+      data.cmdb_module = 'mmbizweb'; //添加cmdb_module
+      if (data.file && /^https\:\/\/(mp\.weixin\.qq\.com|res\.wx\.qq\.com)/.test(data.file) == false) {
+        return false;
+      }
+      // 兜底错误 没有file
+      if(data.name==="BadjsWindowError"&&!data.file){
+        return false;
+      }
+      // 非资源类错误（.html结尾 或者  没有monitor关键字 ）
+      if (/\.html$/i.test(data.mid) || !/monitor/i.test(data.mid)) {
+        BJ_REPORT.report(data); //保留badjs上报
+      }
+    }
+  });
+  if (typeof seajs == "undefined") {
+    WX_BJ_REPORT.BadJs.mark({ seaLoaded: 0 });
+  } else {
+    WX_BJ_REPORT.BadJs.mark({ seaLoaded: 1 }); //seajs加载成功
+  }
+  WX_BJ_REPORT.TryJs.run();
+  WX_BJ_REPORT.BadJs.mark({ tryjs: 1 }); //tryjs执行完
+  /*Vue.config.errorHandler = function(err, vm, info) {
+    console.error(err);
+    if (info) {
+      err._info = "[vue:" + JSON.stringify(info) + "]" + (err._info || "");
+    }
+    WX_BJ_REPORT.BadJs.onError(err);
+  };*/
+}
+
+function getico(i) {
+  var _img = new Image(1, 1);
+  _img.src = location.protocol + "//" + location.host + "/misc/getico" + "?location=" + (i || -1) + "&rand=" + Math.random() + window.wx.commonData.data.param;
+};
+window._points && (window._points[4] = +new Date()); // DOMContentLoaded dom树解析完成
+getico('17102');
+
+// todo: 将request的上报改造成别的形式
+// seajs.on('request', function(reqData) {
+//   setTimeout((function(data) {
+//     return function() {
+//       if (location.host.indexOf('dev') === 0 || location.host.indexOf('localhost') === 0) {
+//         return;
+//       }
+//       if (/[a-f0-9]{6}\.(js|css)$/.test(data.requestUri)) {
+//         return;
+//       }
+
+//       var opts = {
+//         res: data.requestUri,
+//         page: location.pathname + '?' + location.search
+//       };
+//       BJ_REPORT && BJ_REPORT.monitor(59, 'res[' + opts.page + ']; page[' + opts.res + ']', 121);
+//       if (typeof WX_BJ_REPORT != "undefined" && WX_BJ_REPORT.BadJs && typeof WX_BJ_REPORT.BadJs.report === 'function') {
+//         WX_BJ_REPORT.BadJs.report('ResoucenoVersion', data.requestUri, { mid: "mpResourceMonitor" });
+//       }
+//     };
+//   })(reqData), 3000);
+// });
+
+(function() {
+  /**
+   * 获取a标签对象的search参数和hash参数，会自动补全公共参数
+   *
+   * @param  {HTMLElement} target a链接元素
+   * @param  {Object} params 附加参数
+   * @return {Object}        含hash和search参数的对象
+   */
+  function getLinkInfo(target, params) {
+    var query = {};
+    var search = target.search;
+    var hash = target.hash;
+    var baseQuery = {
+      token: '1554125009',
+      lang: 'zh_CN'
+    };
+
+    if (search) {
+      search = search.slice(1);
+      search = search.split('&');
+
+      if (search.length) {
+        for (var i = 0; i < search.length; i++) {
+          var idx = search[i].indexOf('=');
+          query[search[i].slice(0, idx)] = search[i].slice(idx + 1);
+        }
+      }
+
+    }
+
+    // 把附加参数对象中的参数补上
+    if (params) {
+      for (var key in params) {
+        if (!query[key] && params.hasOwnProperty(key)) {
+          query[key] = params[key];
+        }
+      }
+    }
+
+    // 补上公共参数
+    for (var key in baseQuery) {
+      if (!query[key] && baseQuery.hasOwnProperty(key)) {
+        query[key] = baseQuery[key];
+      }
+    }
+
+    var newSearch = [];
+    for (var queryKey in query) {
+      if (query.hasOwnProperty(queryKey)) {
+        newSearch.push(queryKey + '=' + query[queryKey]);
+      }
+    }
+    newSearch = '?' + newSearch.join('&');
+    return {
+      hash: hash,
+      search: newSearch
+    };
+  }
+
+  /**
+   * 全局函数，重载页面，用于自动化测试，会将url存入store
+   */
+  window.reloadPage = function(force) {
+    window.location.reload(force);
+  }
+
+  /**
+   * 全局函数，打开一个链接，将自动补全公共参数
+   *
+   * @param  {string} link   要打开的链接，可以是https://mp.weixin.qq.com/cgi-bin/home形式的，也可以是/cgi-bin/home形式的，也可以带参数比如/cgi-bin/home?key=value
+   * @param  {Object} params 链接search参数
+   * @param  {boolean} newTab 是否使用新的窗口打开
+   */
+  window.openUrl = function(link, params, newTab) {
+    var target = document.createElement('a');
+    target.href = link;
+    var linkInfo = getLinkInfo(target, params);
+    var idx = link.indexOf('?') !== -1 ? link.indexOf('?') : (link.indexOf('#') !== -1 ? link.indexOf('#') : link.length);
+    var url = link.slice(0, idx);
+    url += linkInfo.search + linkInfo.hash;
+    if (!newTab) {
+      location.href = url;
+    } else {
+      window.open(url);
+    }
+  };
+
+  // 全局代理，处理a链接参数
+  document.body.addEventListener('click', function(e) {
+
+    var target = e.target;
+    // 到了body也结束，兜底
+    while (target && target.tagName !== 'A' && target.tagName !== 'BODY') {
+      target = target.parentNode;
+    }
+
+    // 只有本站的链接才处理
+    if (
+      !target ||
+      !target.href ||
+      target.href.indexOf('javascript') === 0 
+      || (target.host !== location.host && target.getAttribute('href').indexOf('/') !== 0)
+      || (target.host === location.host && target.getAttribute('href').indexOf('/s/') >= 0) // 图文 c 端链接也不用
+    ) {
+      return;
+    }
+
+    var linkInfo = getLinkInfo(target);
+    var idx = target.href.indexOf('?') !== -1 ? target.href.indexOf('?') : (target.href.indexOf('#') !== -1 ? target.href.indexOf('#') : target.href.length);
+    var url = target.href.slice(0, idx);
+
+    target.href = url + linkInfo.search + linkInfo.hash;
+  });
+  // 针对a链接右键在新标签打开处理参数
+  document.body.addEventListener('contextmenu', function(e) {
+
+    var target = e.target;
+    // 到了body也结束，兜底
+    while (target && target.tagName !== 'A' && target.tagName !== 'BODY') {
+      target = target.parentNode;
+    }
+
+    // 只有本站的链接才处理
+    if (
+      !target ||
+      !target.href ||
+      target.href.indexOf('javascript') === 0 ||
+      (target.host !== location.host && target.getAttribute('href').indexOf('/') !== 0)
+    ) {
+      return;
+    }
+
+    var linkInfo = getLinkInfo(target);
+    var idx = target.href.indexOf('?') !== -1 ? target.href.indexOf('?') : (target.href.indexOf('#') !== -1 ? target.href.indexOf('#') : target.href.length);
+    var url = target.href.slice(0, idx);
+
+    target.href = url + linkInfo.search + linkInfo.hash;
+  });
+
+})();
+
+if (document.querySelectorAll) {
+  var jsNavItems = document.querySelectorAll('.js_nav_item');
+
+  for (var i = 0; i < jsNavItems.length; i++) {
+    jsNavItems[i].addEventListener('click', function(e) {
+      try {
+        var itemId = e.currentTarget.getAttribute('data-id');
+        var itemNew = e.currentTarget.getAttribute('data-new');
+        var itemHref = e.currentTarget.getAttribute('href');
+
+        if (!itemHref) { // 没有href则找父节点A标签
+          var tmpNode = e.currentTarget.parentNode;
+          while (tmpNode && !/^BODY$/i.test(tmpNode.nodeName)) { // 存在节点且非body
+            if (/^A$/i.test(tmpNode.nodeName)) { // A标签
+              itemHref = tmpNode.getAttribute('href');
+              break;
+            }
+            tmpNode = tmpNode.parentNode;
+          }
+          if (!itemHref) { // 还是找不到href就放弃
+            return;
+          }
+        }
+
+        if (parseInt(itemNew) == 1) {
+          nativeAjax.post('/misc/navoperation', {
+            action: 'click',
+            id: itemId,
+            token: '1554125009'
+          }, function(resp) {
+            console.log(resp);
+
+            //这里真正去做跳转
+            window.location.href = itemHref;
+          })
+        }
+
+        //阻止跳转 一定要消了红点才能跳转
+        if (itemHref != null && parseInt(itemNew) == 1) {
+          e.preventDefault();
+          return false;
+        }
+
+      } catch (e) {
+        //消红点报错就算了
+        console.log('cannot remove red dot');
+      }
+
+    }, true);
+  }
+}
+
+var nativeAjax = {};
+nativeAjax.x = function() {
+  if (typeof XMLHttpRequest !== 'undefined') {
+    return new XMLHttpRequest();
+  }
+  var versions = [
+    "MSXML2.XmlHttp.6.0",
+    "MSXML2.XmlHttp.5.0",
+    "MSXML2.XmlHttp.4.0",
+    "MSXML2.XmlHttp.3.0",
+    "MSXML2.XmlHttp.2.0",
+    "Microsoft.XmlHttp"
+  ];
+
+  var xhr;
+  for (var i = 0; i < versions.length; i++) {
+    try {
+      xhr = new ActiveXObject(versions[i]);
+      break;
+    } catch (e) {}
+  }
+  return xhr;
+};
+
+nativeAjax.send = function(url, callback, method, data, async) {
+  if (async ===undefined) {
+    async = true;
+  }
+  var x = nativeAjax.x();
+  x.open(method, url, async);
+  x.onreadystatechange = function() {
+    if (x.readyState == 4) {
+      callback(x.responseText)
+    }
+  };
+  if (method == 'POST') {
+    x.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+  }
+  x.send(data)
+};
+
+nativeAjax.get = function(url, data, callback, async) {
+  var query = [];
+  for (var key in data) {
+    query.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));
+  }
+  nativeAjax.send(url + (query.length ? '?' + query.join('&') : ''), callback, 'GET', null, async)
+};
+
+nativeAjax.post = function(url, data, callback, async) {
+  var query = [];
+  for (var key in data) {
+    query.push(encodeURIComponent(key) + '=' + encodeURIComponent(data[key]));
+  }
+  nativeAjax.send(url, callback, 'POST', query.join('&'), async)
+};
+</script><!-- <script onerror="wx_loaderror(this)" type="text/javascript" src="https://res.wx.qq.com/mpres/zh_CN/htmledition/js/vuest.js"></script>-->    <script type="text/javascript">var PAGE_MID="mmbizweb:media/publish_history/publish_history.html";</script><script type="text/javascript">
+if (!window.CGI_DATA) {
+window.CGI_DATA = {};
+}
+
+window.CGI_DATA['pages/media/publish_history'] = {
+dfs: ""
+}
+</script> <script type="text/javascript">
+// 后台在publish_page里会做转义 把引号变为&quot;因此优先读取publish_page_noencode
+  let publish_page;
+  let isPublishPageNoEncod;
+      publish_page = {"total_count":650,"publish_count":122,"masssend_count":528,"publish_list":[{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000500,&quot;sent_info&quot;:{&quot;time&quot;:1760884706,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10160,&quot;succ&quot;:10160,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760884802},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491579,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491579_1&quot;,&quot;title&quot;:&quot;GitHub 开源 —— 程序员做副业如何避坑？&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQH6uAsfKMrJGlf1RDwrFWnmhxzmwymqrIhKavnpmnhhQHv6pUKDuqMkFBibFLZTHfGaaw9T33FBzQ\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/BPvyzCQ7WOTcA5hjNXtwtw&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1760884704,&quot;appmsgid&quot;:2247491579,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760884704,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:1,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQH6uAsfKMrJGlf1RDwrFWnhQUibddecviciaLO6hicpVQXku5pTLVgQnxxxMNVlYNeezwF7A8FqJRMfg\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQH6uAsfKMrJGlf1RDwrFWnmhxzmwymqrIhKavnpmnhhQHv6pUKDuqMkFBibFLZTHfGaaw9T33FBzQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQH6uAsfKMrJGlf1RDwrFWnmhxzmwymqrIhKavnpmnhhQHv6pUKDuqMkFBibFLZTHfGaaw9T33FBzQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:255,&quot;g&quot;:255,&quot;b&quot;:255},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:1,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:1,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007927,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000499,&quot;sent_info&quot;:{&quot;time&quot;:1760624972,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10155,&quot;succ&quot;:10155,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760625069},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491573,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491573_1&quot;,&quot;title&quot;:&quot;开源视频生成新纪元：Open-Sora让每个人都能创作Sora级视频&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRqIrQPhu5WHyAsr2uicwa4TvKJ4GEnboB5J9lTJehA6icAWrnd6576nJxew5DFaddtnXfia2XiciarAqw\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/XnXhXPXmPApYY9lyvSDBuw&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1760624971,&quot;appmsgid&quot;:2247491573,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760624971,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:1,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRqIrQPhu5WHyAsr2uicwa4T3SWKG0joChg5GNqWDib05jJiau7KBib0ocQM4VxI7Z7veqmLkhGKLCg3Q\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRqIrQPhu5WHyAsr2uicwa4TvKJ4GEnboB5J9lTJehA6icAWrnd6576nJxew5DFaddtnXfia2XiciarAqw\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRqIrQPhu5WHyAsr2uicwa4TvKJ4GEnboB5J9lTJehA6icAWrnd6576nJxew5DFaddtnXfia2XiciarAqw\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:255,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:1,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007916,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000498,&quot;sent_info&quot;:{&quot;time&quot;:1760537540,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10153,&quot;succ&quot;:10153,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760537640},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491563,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491563_1&quot;,&quot;title&quot;:&quot;GitHub 高星项目 nanoGPT：小白轻松训练专属 GPT 模型，新手也能快速上手&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSGoutS7k1YDKpeOOAricia3B03By7nxr8y8WcbMTbzPaKZWVySWsuuNHCFicP0wiafPd3gV4ZOx4aghA\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/F45CIwowkA3M_m4jGVlepw&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1760537538,&quot;appmsgid&quot;:2247491563,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760537538,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:1,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSGoutS7k1YDKpeOOAricia3B1gg9Z2UuwZVfwInN0NxPV5OSo0YJlNWd57Vdw3OoVEiaJpDmT2uL93Q\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSGoutS7k1YDKpeOOAricia3B03By7nxr8y8WcbMTbzPaKZWVySWsuuNHCFicP0wiafPd3gV4ZOx4aghA\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSGoutS7k1YDKpeOOAricia3B03By7nxr8y8WcbMTbzPaKZWVySWsuuNHCFicP0wiafPd3gV4ZOx4aghA\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:255,&quot;b&quot;:255},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:1,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007909,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000497,&quot;sent_info&quot;:{&quot;time&quot;:1760451936,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10150,&quot;succ&quot;:10150,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760452036},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491546,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491546_1&quot;,&quot;title&quot;:&quot;终于到了分分钟爬取抖音、B站、快手、小红书的视频链接的方法了&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTIIylAibDouDuKKMKzic6Lia7OeQBt4kRdTiayedLa98DG0vwFBB2geS9cXgWQRYkPltGaobaUnV2kAg\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/YBMLZO4ye9aWNQGbgdOCtw&quot;,&quot;digest&quot;:&quot;推荐阅读• Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝字“&quot;,&quot;update_time&quot;:1760451934,&quot;appmsgid&quot;:2247491546,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760451935,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTIIylAibDouDuKKMKzic6Lia7Mdic9KX0dlhiayT46z61YkkogWJ1ZLWNesp3z9vKXicdgxd5pSiaP7sm2g\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTIIylAibDouDuKKMKzic6Lia7OeQBt4kRdTiayedLa98DG0vwFBB2geS9cXgWQRYkPltGaobaUnV2kAg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTIIylAibDouDuKKMKzic6Lia7OeQBt4kRdTiayedLa98DG0vwFBB2geS9cXgWQRYkPltGaobaUnV2kAg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:248,&quot;g&quot;:250,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007890,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000496,&quot;sent_info&quot;:{&quot;time&quot;:1760365801,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10145,&quot;succ&quot;:10145,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760365897},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491529,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491529_1&quot;,&quot;title&quot;:&quot;AI工具卷疯了？GitHub 这个项目直接把“卷出来的丝”扎成了锦绣！&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSeUh4GCuFzyZRcFd1neu9JBLic0vdOYmsKhGoyS58I9lib5vJmM8zU6ibt8HXo2w06CcMOVnicFiazVSg\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/FyfAlAJ3bmSA8rFaX5UOxg&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1760365799,&quot;appmsgid&quot;:2247491529,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760365800,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSeUh4GCuFzyZRcFd1neu9JaWgGEbMheOiczNMJoyLcgNQbUfmzKuxZVkCs7wqMicaDrKiaU17KYApkw\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSeUh4GCuFzyZRcFd1neu9JBLic0vdOYmsKhGoyS58I9lib5vJmM8zU6ibt8HXo2w06CcMOVnicFiazVSg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSeUh4GCuFzyZRcFd1neu9JBLic0vdOYmsKhGoyS58I9lib5vJmM8zU6ibt8HXo2w06CcMOVnicFiazVSg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:23,&quot;g&quot;:20,&quot;b&quot;:17},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:1,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007875,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000495,&quot;sent_info&quot;:{&quot;time&quot;:1760195789,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10138,&quot;succ&quot;:10138,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760195883},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491520,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491520_1&quot;,&quot;title&quot;:&quot;GitHub 趋势 | 500 AI Agents Projects：人工智能代理用例大全，覆盖20大领域&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTu8vWqTdAERHvZY3In356BGQNNicic2LSXuPQDlJdPicichu82D3PUteicaD1ufIMjjmo028owNjbwlCw\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/N-cAsOdE6dWmKOsjKyRgaA&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1760195787,&quot;appmsgid&quot;:2247491520,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760195787,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTu8vWqTdAERHvZY3In356BfLb3PLYguNYzIJoxevtUUbRgAE87OlQZQunvkvOdnhrqk4usBicAHNw\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTu8vWqTdAERHvZY3In356BGQNNicic2LSXuPQDlJdPicichu82D3PUteicaD1ufIMjjmo028owNjbwlCw\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTu8vWqTdAERHvZY3In356BGQNNicic2LSXuPQDlJdPicichu82D3PUteicaD1ufIMjjmo028owNjbwlCw\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:126,&quot;g&quot;:179,&quot;b&quot;:189},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:2,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007869,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000494,&quot;sent_info&quot;:{&quot;time&quot;:1760104314,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10140,&quot;succ&quot;:10140,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760104416},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:8,&quot;appmsgid&quot;:2247491513,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:8,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491513_1&quot;,&quot;title&quot;:&quot;GitHub 开源国内数学教程？竟然有52k Stars&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibYrvUfuMyABpbG58oO2ReH0VcGOEOeTEWa5KiblA2wdJiasDZkUmA0skw\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/zVPTHeD7bu2s_95cr8CB-A&quot;,&quot;digest&quot;:&quot;&lt;a class=\\&quot;wx_topic_link\\&quot; topic-id=\\&quot;\\&quot; style=\\&quot;color: #576B95 !important;\\&quot; data-topic=\\&quot;1\\&quot;&gt;#中国教育资料大全\\n&lt;\\/a&gt;一生爱卷的中国人吧数学教程开源了，我没想到的是这个在GitHub 上竟然还有52 K 的 Stars , 看来中国数学在全球还是很受欢迎的。\\n\\n由于 GitHub 对单个文件的上传有最大限制，超过 100MB 的文件会被拒绝上传，超过 50MB 的文件上传时会收到警告。因此，文件大小超过 50MB 的文件会被拆分成每个 35MB 的多个文件。\\n\\n作者还特意做了一个文件合并工具。\\n\\nhttps:\\/\\/github.com\\/TapXWorld\\/ChinaTextbook&quot;,&quot;update_time&quot;:1760104313,&quot;appmsgid&quot;:2247491513,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:8,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760104313,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibUCfGDy9A3Blh4lM0xc3GnGwGfkia1iaYib4AYUuTQOLXlcHwQYY5JHfRQ\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibUCfGDy9A3Blh4lM0xc3GnGwGfkia1iaYib4AYUuTQOLXlcHwQYY5JHfRQ\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibFFNGKspMwDqKqceNo5vZI32ibLKyOicOjI5mpVKQ6oYbSPU2mhibBaskg\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibYrvUfuMyABpbG58oO2ReH0VcGOEOeTEWa5KiblA2wdJiasDZkUmA0skw\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_first&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibME8kicQj9nTFsoic0qeEgZicnVFdItSZGuIGB19JNbADYylvhareW28icQ\\/0?wx_fmt=png&amp;from=appmsg&quot;,&quot;img_first_theme_color&quot;:{&quot;r&quot;:255,&quot;g&quot;:255,&quot;b&quot;:255},&quot;cover_img_3_4&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibFFNGKspMwDqKqceNo5vZI32ibLKyOicOjI5mpVKQ6oYbSPU2mhibBaskg\\/0?wx_fmt=jpeg&quot;,&quot;img_3_4_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:255,&quot;b&quot;:255},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:3,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[{&quot;file_id&quot;:100007849,&quot;cdn_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibME8kicQj9nTFsoic0qeEgZicnVFdItSZGuIGB19JNbADYylvhareW28icQ\\/0?wx_fmt=png&amp;from=appmsg&quot;,&quot;width&quot;:599,&quot;height&quot;:135,&quot;cover_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibME8kicQj9nTFsoic0qeEgZicnVFdItSZGuIGB19JNbADYylvhareW28icQ\\/0?wx_fmt=png&amp;from=appmsg&quot;,&quot;pic_type&quot;:0,&quot;pic_text&quot;:&quot;&quot;,&quot;pic_cfg&quot;:&quot;&quot;,&quot;theme_color&quot;:{&quot;r&quot;:255,&quot;g&quot;:255,&quot;b&quot;:255},&quot;cal_version&quot;:7,&quot;ori_picture&quot;:{&quot;file_id&quot;:0,&quot;cdn_url&quot;:&quot;&quot;,&quot;width&quot;:0,&quot;height&quot;:0,&quot;crop_ratio&quot;:&quot;&quot;,&quot;crop_list&quot;:&quot;{}&quot;},&quot;format_info&quot;:{&quot;format&quot;:&quot;png&quot;,&quot;frame&quot;:1,&quot;channel&quot;:3,&quot;opacity&quot;:100,&quot;thumbnail&quot;:[{&quot;format&quot;:0,&quot;file_size&quot;:17318,&quot;width&quot;:599,&quot;height&quot;:135},{&quot;format&quot;:640,&quot;file_size&quot;:17318,&quot;width&quot;:599,&quot;height&quot;:135},{&quot;format&quot;:300,&quot;file_size&quot;:3277,&quot;width&quot;:150,&quot;height&quot;:34}]},&quot;poi_info&quot;:[],&quot;wxa_info&quot;:[],&quot;disable_theme&quot;:1,&quot;bind_ad_info&quot;:[],&quot;cps_ad_info&quot;:[],&quot;pic_window_product&quot;:{&quot;product_encrypt_key&quot;:&quot;&quot;,&quot;product_type&quot;:0,&quot;title&quot;:&quot;&quot;,&quot;data_type&quot;:0,&quot;product_id&quot;:&quot;&quot;},&quot;spot_product_info&quot;:[],&quot;watermark_info&quot;:{&quot;cdn_url&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibzeWpHIWDLQBeXfguGwh5oKndwm9rcbjpPMKKRjRkHqJvEEAQbG0CQA\\/0?wx_fmt=png&quot;,&quot;type&quot;:2,&quot;bizuin&quot;:3924628841,&quot;nickname&quot;:&quot;牛皮糖不吹牛&quot;,&quot;is_ai_pic&quot;:false,&quot;watermark_region_lightness&quot;:0.999576330185},&quot;ai_pic_id&quot;:&quot;&quot;,&quot;client_info&quot;:{&quot;pic_id&quot;:&quot;&quot;},&quot;share_cover&quot;:{&quot;file_id&quot;:100007861,&quot;width&quot;:180,&quot;height&quot;:135,&quot;cdn_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibdYcSc4N9Ww3pvutlLSLUYicsnNzeKZ6ibhBpaD3TnOCo7MqiaHdRh5ibaw\\/0?wx_fmt=jpeg&quot;,&quot;crop_info&quot;:&quot;{\\&quot;ori_url\\&quot;:\\&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibME8kicQj9nTFsoic0qeEgZicnVFdItSZGuIGB19JNbADYylvhareW28icQ\\/0?wx_fmt=png&amp;from=appmsg\\&quot;,\\&quot;x1\\&quot;:0.349749595,\\&quot;y1\\&quot;:0.000000000,\\&quot;x2\\&quot;:0.650250435,\\&quot;y2\\&quot;:1.000000000}&quot;},&quot;ai_pic_source&quot;:0},{&quot;file_id&quot;:100007853,&quot;cdn_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibCakicLhWpHYiallHh4oOibIBqHCMcFBksDKZicanGwct0rc7CfDtzVgtsA\\/0?wx_fmt=png&amp;from=appmsg&quot;,&quot;width&quot;:970,&quot;height&quot;:1184,&quot;cover_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibCakicLhWpHYiallHh4oOibIBqHCMcFBksDKZicanGwct0rc7CfDtzVgtsA\\/0?wx_fmt=png&amp;from=appmsg&quot;,&quot;pic_type&quot;:0,&quot;pic_text&quot;:&quot;&quot;,&quot;pic_cfg&quot;:&quot;&quot;,&quot;theme_color&quot;:{&quot;r&quot;:255,&quot;g&quot;:255,&quot;b&quot;:255},&quot;cal_version&quot;:7,&quot;ori_picture&quot;:{&quot;file_id&quot;:0,&quot;cdn_url&quot;:&quot;&quot;,&quot;width&quot;:0,&quot;height&quot;:0,&quot;crop_ratio&quot;:&quot;&quot;,&quot;crop_list&quot;:&quot;{}&quot;},&quot;format_info&quot;:{&quot;format&quot;:&quot;png&quot;,&quot;frame&quot;:1,&quot;channel&quot;:3,&quot;opacity&quot;:100,&quot;thumbnail&quot;:[{&quot;format&quot;:0,&quot;file_size&quot;:68173,&quot;width&quot;:970,&quot;height&quot;:1184},{&quot;format&quot;:640,&quot;file_size&quot;:68173,&quot;width&quot;:970,&quot;height&quot;:1184},{&quot;format&quot;:300,&quot;file_size&quot;:4562,&quot;width&quot;:123,&quot;height&quot;:150}]},&quot;poi_info&quot;:[],&quot;wxa_info&quot;:[],&quot;disable_theme&quot;:1,&quot;bind_ad_info&quot;:[],&quot;cps_ad_info&quot;:[],&quot;pic_window_product&quot;:{&quot;product_encrypt_key&quot;:&quot;&quot;,&quot;product_type&quot;:0,&quot;title&quot;:&quot;&quot;,&quot;data_type&quot;:0,&quot;product_id&quot;:&quot;&quot;},&quot;spot_product_info&quot;:[],&quot;watermark_info&quot;:{&quot;cdn_url&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrRgHia1AJJrVv5zQRxGNy9nibIBr5Eibl9iaDK0tdF5OL9nO8OvJ7zen3myq4IYk59g31r0310ktFcpgQ\\/0?wx_fmt=png&quot;,&quot;type&quot;:2,&quot;bizuin&quot;:3924628841,&quot;nickname&quot;:&quot;牛皮糖不吹牛&quot;,&quot;is_ai_pic&quot;:false,&quot;watermark_region_lightness&quot;:1},&quot;ai_pic_id&quot;:&quot;&quot;,&quot;client_info&quot;:{&quot;pic_id&quot;:&quot;&quot;},&quot;ai_pic_source&quot;:0}]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007860,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000493,&quot;sent_info&quot;:{&quot;time&quot;:1760003640,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10135,&quot;succ&quot;:10135,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1760003759},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491496,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491496_1&quot;,&quot;title&quot;:&quot;GitHub  开源的顶级过肺小程序&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrR2qUjlZuKlEyHEk5MR3meEiaWnO7vibgI4ouo7v43j590TYtP03R9r6Wr3x1N8fnibsUCNNsrTbSQicg\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/Gxr5-tMRmQVwyJbc8hbrLw&quot;,&quot;digest&quot;:&quot;推荐阅读• Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝字“&quot;,&quot;update_time&quot;:1760003638,&quot;appmsgid&quot;:2247491496,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1760003639,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrR2qUjlZuKlEyHEk5MR3meEPjBbdaMmqZSHntCRdGtLmK1icQR5N4cSFYhnJV3DpIFdb3bbG0QwTiaA\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrR2qUjlZuKlEyHEk5MR3meEiaWnO7vibgI4ouo7v43j590TYtP03R9r6Wr3x1N8fnibsUCNNsrTbSQicg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrR2qUjlZuKlEyHEk5MR3meEiaWnO7vibgI4ouo7v43j590TYtP03R9r6Wr3x1N8fnibsUCNNsrTbSQicg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:254,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007844,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000492,&quot;sent_info&quot;:{&quot;time&quot;:1759936733,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10134,&quot;succ&quot;:10134,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1759936830},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491490,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491490_1&quot;,&quot;title&quot;:&quot;GitHub高星推荐 | 这款免费开源语音转录工具，让创作效率翻倍&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS2mVDWaZlwWUjZtvfgfXUgxMzQ7PqwTCqg2MNuuZPb7aHHsEuZe5vbdeYZdM7ovIG8L8Oz5XAn4Q\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/DPCMEGKL8lhuxswpqbnCzA&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝&quot;,&quot;update_time&quot;:1759936732,&quot;appmsgid&quot;:2247491490,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1759936732,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:1,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS2mVDWaZlwWUjZtvfgfXUgnTFZE8NCmSRXOtL5VR7khNspWHgicQpoFKwiaNE0jNLPRCfib3ACw6lkQ\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS2mVDWaZlwWUjZtvfgfXUgxMzQ7PqwTCqg2MNuuZPb7aHHsEuZe5vbdeYZdM7ovIG8L8Oz5XAn4Q\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS2mVDWaZlwWUjZtvfgfXUgxMzQ7PqwTCqg2MNuuZPb7aHHsEuZe5vbdeYZdM7ovIG8L8Oz5XAn4Q\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:251,&quot;g&quot;:249,&quot;b&quot;:244},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:2,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:1,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007837,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000491,&quot;sent_info&quot;:{&quot;time&quot;:1759847093,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10132,&quot;succ&quot;:10132,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1759847192},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491482,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491482_1&quot;,&quot;title&quot;:&quot;GitHub 开源自然语言生成工作流？&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTzwxDib7YpJINVdr43x8Oopjp6pwfwkLqe7WOOauQm5RQOjW1qNgGCqbzEuKLY8mxu3ID0bq633ew\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/GzwaeWd_kGN8yHJTb6wJJQ&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1759847091,&quot;appmsgid&quot;:2247491482,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1759847092,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:1,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTzwxDib7YpJINVdr43x8OopGT6SgiacFj6vtbVnHYAaxNAJyjhPUkwTwbNLiboF7WjXnrzlMnvt1lcw\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTzwxDib7YpJINVdr43x8Oopjp6pwfwkLqe7WOOauQm5RQOjW1qNgGCqbzEuKLY8mxu3ID0bq633ew\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTzwxDib7YpJINVdr43x8Oopjp6pwfwkLqe7WOOauQm5RQOjW1qNgGCqbzEuKLY8mxu3ID0bq633ew\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:254,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:2,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:1,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007829,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000490,&quot;sent_info&quot;:{&quot;time&quot;:1759761080,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10130,&quot;succ&quot;:10130,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1759761179},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491475,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491475_1&quot;,&quot;title&quot;:&quot;GitHub 10k AB Download Manager：给下载加速，也给效率加分！&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSKRDppx4nZHcj4BHm30Ln5icwtUJE7icL2icYWdXBRfy3gFZXicb2qatZ5M1sEZ0e3LoybozTACibKGNQ\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/k8fzBXjJEJreUsQyj-Hrew&quot;,&quot;digest&quot;:&quot;推荐阅读• Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝字“&quot;,&quot;update_time&quot;:1759761078,&quot;appmsgid&quot;:2247491475,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1759761079,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSKRDppx4nZHcj4BHm30Ln5FQkyJ15R3Ep6D4eKjoXLAerlb9iaQPiaaqudTCb5NuBCazBBKyWPHj6Q\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSKRDppx4nZHcj4BHm30Ln5icwtUJE7icL2icYWdXBRfy3gFZXicb2qatZ5M1sEZ0e3LoybozTACibKGNQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSKRDppx4nZHcj4BHm30Ln5icwtUJE7icL2icYWdXBRfy3gFZXicb2qatZ5M1sEZ0e3LoybozTACibKGNQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:30,&quot;g&quot;:30,&quot;b&quot;:31},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007823,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000489,&quot;sent_info&quot;:{&quot;time&quot;:1759673245,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10129,&quot;succ&quot;:10129,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1759673342},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491467,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491467_1&quot;,&quot;title&quot;:&quot;微软开源扔出AI“深水炸弹”：CPU都能跑1000亿参数大模型！&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS0kaMzKH6x0HoNvMu5QKDZ7iaEeV8NrAGMRvgz6NPDDibuOBkW5WueYo1BEeqGseWicGlKAZCMyePWQ\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/FzUt7c_RtIQAXnRPZLoNfA&quot;,&quot;digest&quot;:&quot;推荐阅读• Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝字“&quot;,&quot;update_time&quot;:1759673243,&quot;appmsgid&quot;:2247491467,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1759673243,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS0kaMzKH6x0HoNvMu5QKDZtHG3fgT3LYWuLNBVx8nQHkp4u1ZrUlrN0c9XhcuwLXWtfZKHkkygPw\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS0kaMzKH6x0HoNvMu5QKDZ7iaEeV8NrAGMRvgz6NPDDibuOBkW5WueYo1BEeqGseWicGlKAZCMyePWQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrS0kaMzKH6x0HoNvMu5QKDZ7iaEeV8NrAGMRvgz6NPDDibuOBkW5WueYo1BEeqGseWicGlKAZCMyePWQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:254,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:2,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007814,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000488,&quot;sent_info&quot;:{&quot;time&quot;:1759581724,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10127,&quot;succ&quot;:10127,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1759581823},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491461,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491461_1&quot;,&quot;title&quot;:&quot;GitHub “屎山”代码&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRcJ3ZVIl4b1Atbias5WRruxGPTMVP8XicosTzemntZZ3rCDrDS6NIKvvW0EKIaicPm1T7a5NQiarS9ZA\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/eHjn5nMbHPiOo3HLS5SFvQ&quot;,&quot;digest&quot;:&quot;推荐阅读• Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝字“&quot;,&quot;update_time&quot;:1759581722,&quot;appmsgid&quot;:2247491461,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1759581722,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRcJ3ZVIl4b1Atbias5WRrux0LQgNiaUfGfbShliauUQKpicGFcTWltr3LbBMajpePBwPVEgyZaXGVoIw\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRcJ3ZVIl4b1Atbias5WRruxGPTMVP8XicosTzemntZZ3rCDrDS6NIKvvW0EKIaicPm1T7a5NQiarS9ZA\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRcJ3ZVIl4b1Atbias5WRruxGPTMVP8XicosTzemntZZ3rCDrDS6NIKvvW0EKIaicPm1T7a5NQiarS9ZA\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:255,&quot;g&quot;:255,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:2,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007809,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000487,&quot;sent_info&quot;:{&quot;time&quot;:1759068900,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10111,&quot;succ&quot;:10111,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1759069016},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491454,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491454_1&quot;,&quot;title&quot;:&quot;Coze 工作流解析：公众号\\/抖音内容自动化处理系统（提取+总结+存档）&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/sz_mmbiz_jpg\\/b4TGia2ia562My40Sf561QmqIrKGPZDaztSfUfHc8PvvUwV0UWeaWay1GDPjEODnnoiaQdibYYR25P3XHR0smFQtBA\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/seFIOqjAh7iwNkQEly84Ng&quot;,&quot;digest&quot;:&quot;大家好，我是程序员太阳鸟，主要介绍副业和AI 合集，在这里整理了一份开源的 AI合集  50个 AI 开源项&quot;,&quot;update_time&quot;:1759068898,&quot;appmsgid&quot;:2247491454,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:11,&quot;author_name&quot;:&quot;太阳鸟&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1759068898,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:2,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/sz_mmbiz_jpg\\/b4TGia2ia562My40Sf561QmqIrKGPZDazthjLmicZAuw4s0eY0ZS8k8Nutxia4gFA4S9KUx1awhVr3trKLwS2b450Q\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/sz_mmbiz_jpg\\/b4TGia2ia562My40Sf561QmqIrKGPZDaztSfUfHc8PvvUwV0UWeaWay1GDPjEODnnoiaQdibYYR25P3XHR0smFQtBA\\/0?wx_fmt=jpeg&quot;,&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:2,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007805,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000486,&quot;sent_info&quot;:{&quot;time&quot;:1758987875,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10107,&quot;succ&quot;:10107,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1758987984},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491452,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491452_1&quot;,&quot;title&quot;:&quot;AI 编程新章程， GitHub 自主开源Spec-kit 两周获得27k Stars&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRaYYvrPF2SdlfPic1HvbCJhSBXhFtwQBC4c9SK4Hflia3jqZhByMKc8eppbZJCbTRQMOOiaetT3xEmg\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/kt3ucMzGfcT8g0ODmwuLAw&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1758987873,&quot;appmsgid&quot;:2247491452,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1758987874,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:1,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRaYYvrPF2SdlfPic1HvbCJhCMiakm7keUKVDicTUxdiaMCVgFiakJ8LxN4ECZiawWTqcE2u2FulZxIDFVw\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRaYYvrPF2SdlfPic1HvbCJhSBXhFtwQBC4c9SK4Hflia3jqZhByMKc8eppbZJCbTRQMOOiaetT3xEmg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrRaYYvrPF2SdlfPic1HvbCJhSBXhFtwQBC4c9SK4Hflia3jqZhByMKc8eppbZJCbTRQMOOiaetT3xEmg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:254,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:3,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:1,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007798,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000485,&quot;sent_info&quot;:{&quot;time&quot;:1758898088,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10102,&quot;succ&quot;:10102,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1758898188},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491445,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491445_1&quot;,&quot;title&quot;:&quot;哔哩哔哩开源 IndexTTS2 ，要你的情绪以假乱真。&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTNhiaZia6xKr8Sfib5nynuRB1icgWhktuIbYe7ibbMKzKlribJoV2YRCzsUicfKSz7hicK02o0aibSlnaq0MA\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/V-LsbGANSeTu9HFF5-dzDw&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1758898086,&quot;appmsgid&quot;:2247491445,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;牛皮糖&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1758898086,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;audio_info&quot;:{&quot;audio_infos&quot;:[{&quot;audio_id&quot;:&quot;MzkyNDYyODg0MV8yMjQ3NDkxNDQ0&quot;,&quot;title&quot;:&quot;spk_1758896789&quot;,&quot;play_length&quot;:9}]},&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTNhiaZia6xKr8Sfib5nynuRB1qQDB4GOoibh9g3oPaibnuy3Mvu1oPKqvUicKI9Qpo2SLCuBvljwmudn7Q\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTNhiaZia6xKr8Sfib5nynuRB1icgWhktuIbYe7ibbMKzKlribJoV2YRCzsUicfKSz7hicK02o0aibSlnaq0MA\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTNhiaZia6xKr8Sfib5nynuRB1icgWhktuIbYe7ibbMKzKlribJoV2YRCzsUicfKSz7hicK02o0aibSlnaq0MA\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:255,&quot;g&quot;:255,&quot;b&quot;:255},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007775,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000484,&quot;sent_info&quot;:{&quot;time&quot;:1758815268,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10097,&quot;succ&quot;:10097,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1758815364},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:8,&quot;appmsgid&quot;:2247491422,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:8,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491422_1&quot;,&quot;title&quot;:&quot;只可以说链接不能说内容的&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxykettzMh03J4hZx6oniajgfXTYksNyGXgE6ibwWKkST1858qkTz7hGLA\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/9uCgnt22JdP2IumioHRsvQ&quot;,&quot;digest&quot;:&quot;在GitHub 上看到一个 40 k stars 的项目，但是针对于国内来说就算一个黑盒。\\n\\nhttps:\\/\\/github.com\\/bannedbook\\/fanqiang&quot;,&quot;update_time&quot;:1758815266,&quot;appmsgid&quot;:2247491422,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:8,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1758815266,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxd2RMwMraVFLoJcXYdS5PttdiasLsK4bA18xLLZP0yXURTZYaAtzEMXA\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxd2RMwMraVFLoJcXYdS5PttdiasLsK4bA18xLLZP0yXURTZYaAtzEMXA\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxzU1rt6an6tCY9AgyEtX6xl4zs1BBEic3jpMwwC0mkyhmwN8cDBtnh3A\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxykettzMh03J4hZx6oniajgfXTYksNyGXgE6ibwWKkST1858qkTz7hGLA\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_first&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxscOcGG6WWwc551xQjKKhGO2BIUgHMEUb3ibHCOtaXiaZ4s3ajaYOn19Q\\/0?wx_fmt=jpeg&quot;,&quot;img_first_theme_color&quot;:{&quot;r&quot;:252,&quot;g&quot;:253,&quot;b&quot;:254},&quot;cover_img_3_4&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxzU1rt6an6tCY9AgyEtX6xl4zs1BBEic3jpMwwC0mkyhmwN8cDBtnh3A\\/0?wx_fmt=jpeg&quot;,&quot;img_3_4_theme_color&quot;:{&quot;r&quot;:253,&quot;g&quot;:253,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:4,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[{&quot;file_id&quot;:100007769,&quot;cdn_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxscOcGG6WWwc551xQjKKhGO2BIUgHMEUb3ibHCOtaXiaZ4s3ajaYOn19Q\\/0?wx_fmt=jpeg&quot;,&quot;width&quot;:393,&quot;height&quot;:525,&quot;cover_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxscOcGG6WWwc551xQjKKhGO2BIUgHMEUb3ibHCOtaXiaZ4s3ajaYOn19Q\\/0?wx_fmt=jpeg&quot;,&quot;pic_type&quot;:0,&quot;pic_text&quot;:&quot;&quot;,&quot;pic_cfg&quot;:&quot;&quot;,&quot;theme_color&quot;:{&quot;r&quot;:252,&quot;g&quot;:253,&quot;b&quot;:254},&quot;cal_version&quot;:7,&quot;ori_picture&quot;:{&quot;file_id&quot;:100007765,&quot;cdn_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_png\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fx6oISrvt3lqK3VBhRefEaBIiaZa0JhKgrjK6oIKm8vtw32kcoqBTwslg\\/0?wx_fmt=png&amp;from=appmsg&quot;,&quot;width&quot;:0,&quot;height&quot;:0,&quot;crop_ratio&quot;:&quot;3_4&quot;,&quot;crop_list&quot;:&quot;{\\&quot;crop_list\\&quot;:[{\\&quot;ratio\\&quot;:\\&quot;3_4\\&quot;,\\&quot;x1\\&quot;:6,\\&quot;y1\\&quot;:0,\\&quot;x2\\&quot;:139,\\&quot;y2\\&quot;:178},{\\&quot;ratio\\&quot;:\\&quot;1_1\\&quot;,\\&quot;x1\\&quot;:188,\\&quot;y1\\&quot;:0,\\&quot;x2\\&quot;:366,\\&quot;y2\\&quot;:178},{\\&quot;ratio\\&quot;:\\&quot;free\\&quot;,\\&quot;x1\\&quot;:0,\\&quot;y1\\&quot;:0,\\&quot;x2\\&quot;:554,\\&quot;y2\\&quot;:178}],\\&quot;crop_list_percent\\&quot;:[{\\&quot;ratio\\&quot;:\\&quot;3_4\\&quot;,\\&quot;x1\\&quot;:0.010830325,\\&quot;y1\\&quot;:0.000000000,\\&quot;x2\\&quot;:0.251805067,\\&quot;y2\\&quot;:1.000000000},{\\&quot;ratio\\&quot;:\\&quot;1_1\\&quot;,\\&quot;x1\\&quot;:0.339350194,\\&quot;y1\\&quot;:0.000000000,\\&quot;x2\\&quot;:0.660649836,\\&quot;y2\\&quot;:1.000000000},{\\&quot;ratio\\&quot;:\\&quot;free\\&quot;,\\&quot;x1\\&quot;:0.000000000,\\&quot;y1\\&quot;:0.000000000,\\&quot;x2\\&quot;:1.000000000,\\&quot;y2\\&quot;:1.000000000}]}&quot;},&quot;format_info&quot;:{&quot;format&quot;:&quot;jpeg&quot;,&quot;frame&quot;:1,&quot;channel&quot;:3,&quot;opacity&quot;:100,&quot;thumbnail&quot;:[{&quot;format&quot;:0,&quot;file_size&quot;:20937,&quot;width&quot;:393,&quot;height&quot;:525},{&quot;format&quot;:640,&quot;file_size&quot;:20992,&quot;width&quot;:393,&quot;height&quot;:525},{&quot;format&quot;:300,&quot;file_size&quot;:3193,&quot;width&quot;:112,&quot;height&quot;:150}]},&quot;poi_info&quot;:[],&quot;wxa_info&quot;:[],&quot;disable_theme&quot;:1,&quot;bind_ad_info&quot;:[],&quot;cps_ad_info&quot;:[],&quot;pic_window_product&quot;:{&quot;product_encrypt_key&quot;:&quot;&quot;,&quot;product_type&quot;:0,&quot;title&quot;:&quot;&quot;,&quot;data_type&quot;:0,&quot;product_id&quot;:&quot;&quot;},&quot;spot_product_info&quot;:[],&quot;watermark_info&quot;:{&quot;cdn_url&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxmBELclSQiavmjcqwMH548U6o53XUoUHTuzFvHMjmkU9RCJSAheBsp1w\\/0?wx_fmt=jpeg&quot;,&quot;type&quot;:2,&quot;bizuin&quot;:3924628841,&quot;nickname&quot;:&quot;牛皮糖不吹牛&quot;,&quot;is_ai_pic&quot;:false,&quot;watermark_region_lightness&quot;:0.991783380508},&quot;ai_pic_id&quot;:&quot;&quot;,&quot;client_info&quot;:{&quot;pic_id&quot;:&quot;&quot;},&quot;share_cover&quot;:{&quot;file_id&quot;:100007770,&quot;width&quot;:393,&quot;height&quot;:524,&quot;cdn_url&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxBCdKNzYrXJaEEialKDpFrHsTLbaCo70hFibMgvpg81XRySf3pORVVloQ\\/0?wx_fmt=jpeg&quot;,&quot;crop_info&quot;:&quot;{\\&quot;ori_url\\&quot;:\\&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQBqLgxjFt2xh4BCBt0d2fxscOcGG6WWwc551xQjKKhGO2BIUgHMEUb3ibHCOtaXiaZ4s3ajaYOn19Q\\/0?wx_fmt=jpeg\\&quot;,\\&quot;x1\\&quot;:0.000000000,\\&quot;y1\\&quot;:0.000952381,\\&quot;x2\\&quot;:1.000000000,\\&quot;y2\\&quot;:0.999047637}&quot;},&quot;ai_pic_source&quot;:0}]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007760,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000483,&quot;sent_info&quot;:{&quot;time&quot;:1758728678,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10094,&quot;succ&quot;:10094,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1758728776},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491407,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491407_1&quot;,&quot;title&quot;:&quot;语音合成迎来革命！VoxCPM端到端架构登顶SOTA，在家用显卡上流畅运行&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQZD0LibWLmuU9mTZSBpzEROHz82lOl7pCEvCpjCgdJdfoXtoIpLSfA5zwImMY1PudjBfZNU24yjXg\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/WkELCbp1XxPLEW3pWI1ufw&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝&quot;,&quot;update_time&quot;:1758728677,&quot;appmsgid&quot;:2247491407,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1758728677,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQZD0LibWLmuU9mTZSBpzEROod4gicZJupe8XxnwETPSA1nsy9uMSOnDGNOaZwZDTWSIcgGv8EdibCaQ\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQZD0LibWLmuU9mTZSBpzEROHz82lOl7pCEvCpjCgdJdfoXtoIpLSfA5zwImMY1PudjBfZNU24yjXg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrQZD0LibWLmuU9mTZSBpzEROHz82lOl7pCEvCpjCgdJdfoXtoIpLSfA5zwImMY1PudjBfZNU24yjXg\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:255,&quot;g&quot;:255,&quot;b&quot;:255},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007754,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000482,&quot;sent_info&quot;:{&quot;time&quot;:1758554854,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10092,&quot;succ&quot;:10092,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1758554953},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491401,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491401_1&quot;,&quot;title&quot;:&quot;GitHub 开源 xiaohongshu-mcp：当AI智能体学会自动发小红书，内容创作要变天了！&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSWrIESk8VRgY6vxLhBfABb9dibQhT2lCAQVEtEubUTfZvK5AjymyshNMUMPXmRqku2Upn0j5UbdnQ\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/fDbZMDGwFP9Gt1wqAWXF5g&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集• 50个 AI 开源项目合集• 80 款AI 开源合集* 戳上方蓝&quot;,&quot;update_time&quot;:1758554852,&quot;appmsgid&quot;:2247491401,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1758554852,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSWrIESk8VRgY6vxLhBfABbykm3Tc4X2hDNfia4OItzfJxIbAJcEdWKIxphSbBvTZpia9kVN5vjZYyA\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSWrIESk8VRgY6vxLhBfABb9dibQhT2lCAQVEtEubUTfZvK5AjymyshNMUMPXmRqku2Upn0j5UbdnQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrSWrIESk8VRgY6vxLhBfABb9dibQhT2lCAQVEtEubUTfZvK5AjymyshNMUMPXmRqku2Upn0j5UbdnQ\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:1,&quot;g&quot;:96,&quot;b&quot;:223},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007750,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"},{"publish_type":101,"publish_info":"{&quot;type&quot;:9,&quot;msgid&quot;:1000000481,&quot;sent_info&quot;:{&quot;time&quot;:1758465740,&quot;func_flag&quot;:32770,&quot;is_send_all&quot;:true,&quot;is_published&quot;:0},&quot;sent_status&quot;:{&quot;total&quot;:10089,&quot;succ&quot;:10089,&quot;fail&quot;:0,&quot;progress&quot;:100,&quot;userprotect&quot;:0},&quot;sent_result&quot;:{&quot;msg_status&quot;:2,&quot;refuse_reason&quot;:&quot;&quot;,&quot;reject_index_list&quot;:[],&quot;update_time&quot;:1758465833},&quot;appmsg_info&quot;:[{&quot;share_type&quot;:0,&quot;appmsgid&quot;:2247491397,&quot;vote_id&quot;:[],&quot;super_vote_id&quot;:[],&quot;smart_product&quot;:0,&quot;appmsg_like_type&quot;:2,&quot;itemidx&quot;:1,&quot;is_pay_subscribe&quot;:0,&quot;is_from_transfer&quot;:0,&quot;open_fansmsg&quot;:0,&quot;share_imageinfo&quot;:[],&quot;item_show_type&quot;:0,&quot;audio_in_appmsg&quot;:[],&quot;modify_detail_wording&quot;:[]}],&quot;appmsgex&quot;:[{&quot;aid&quot;:&quot;2247491397_1&quot;,&quot;title&quot;:&quot;GitHub 开源： Taskmaster AI ：10 倍 AI 编码并减少 90% 的错误&quot;,&quot;cover&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTMLBsHOqEfoeiaE6QEL7OIewzDnibHzNb9ARyibxJjFDibZMBAcV5pJT1ALWqbsrskNX702pKbZudib7w\\/0?wx_fmt=jpeg&quot;,&quot;link&quot;:&quot;https:\\/\\/mp.weixin.qq.com\\/s\\/oqfpnzTgsnfVVMx4ebEXgg&quot;,&quot;digest&quot;:&quot;推荐阅读•   Github 资料项目合集•   50个 AI 开源项目合集•   80 款AI 开源合集*&quot;,&quot;update_time&quot;:1758465738,&quot;appmsgid&quot;:2247491397,&quot;itemidx&quot;:1,&quot;item_show_type&quot;:0,&quot;author_name&quot;:&quot;&quot;,&quot;tagid&quot;:[],&quot;create_time&quot;:1758465738,&quot;is_pay_subscribe&quot;:0,&quot;has_red_packet_cover&quot;:0,&quot;album_id&quot;:&quot;0&quot;,&quot;checking&quot;:0,&quot;media_duration&quot;:&quot;0:00&quot;,&quot;mediaapi_publish_status&quot;:0,&quot;copyright_type&quot;:0,&quot;appmsg_album_infos&quot;:[],&quot;pay_album_info&quot;:{&quot;appmsg_album_infos&quot;:[]},&quot;is_deleted&quot;:false,&quot;ban_flag&quot;:0,&quot;pic_cdn_url_235_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTMLBsHOqEfoeiaE6QEL7OIefoibGJP8DBpsW09n0UibHHSibkuktBh2O1O3Wf0kyI7SMeGsw1dHdtpicQ\\/0?wx_fmt=jpeg&quot;,&quot;pic_cdn_url_16_9&quot;:&quot;&quot;,&quot;pic_cdn_url_3_4&quot;:&quot;&quot;,&quot;pic_cdn_url_1_1&quot;:&quot;https:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTMLBsHOqEfoeiaE6QEL7OIewzDnibHzNb9ARyibxJjFDibZMBAcV5pJT1ALWqbsrskNX702pKbZudib7w\\/0?wx_fmt=jpeg&quot;,&quot;cover_img&quot;:&quot;http:\\/\\/mmbiz.qpic.cn\\/mmbiz_jpg\\/p1ESIQQvfrTMLBsHOqEfoeiaE6QEL7OIewzDnibHzNb9ARyibxJjFDibZMBAcV5pJT1ALWqbsrskNX702pKbZudib7w\\/0?wx_fmt=jpeg&quot;,&quot;cover_img_theme_color&quot;:{&quot;r&quot;:254,&quot;g&quot;:253,&quot;b&quot;:254},&quot;line_info&quot;:{&quot;use_line&quot;:1,&quot;line_count&quot;:0,&quot;is_appmsg_flag&quot;:1,&quot;is_use_flag&quot;:0},&quot;copyright_stat&quot;:0,&quot;is_rumor_refutation&quot;:0,&quot;multi_picture_cover&quot;:0,&quot;share_imageinfo&quot;:[]}],&quot;copy_type&quot;:77,&quot;copy_appmsg_id&quot;:100007736,&quot;new_publish&quot;:0,&quot;publish_type&quot;:101}"}],"featured_count":2};
+    isPublishPageNoEncode = false;
+    window.wx.cgiData = {
+    publish_count: publish_page.publish_count,
+    masssend_count: publish_page.masssend_count,
+    total_count: publish_page.total_count,
+    featured_count: publish_page.featured_count,
+    publish_list: publish_page.publish_list,
+    begin: '40' * 1,
+    count: '20' * 1,
+    type: '101_1',
+    keyword: '',
+    service_type: '1' * 1,
+    realname_type: '0' * 1,
+    can_use_public_tag: '1' * 1,
+    can_use_comment: '1'* 1,
+    customer_type: '0' * 1,
+    isPublishPageNoEncode: isPublishPageNoEncode,
+    claim_source_list: '{"list":[{"claim_source_type":1,"claim_source":"内容由AI生成"},{"claim_source_type":2,"claim_source":"素材来源官方媒体\/网络新闻"},{"claim_source_type":3,"claim_source":"内容剧情演绎，仅供娱乐"},{"claim_source_type":4,"claim_source":"个人观点，仅供参考"},{"claim_source_type":5,"claim_source":"健康医疗分享，仅供参考"},{"claim_source_type":6,"claim_source":"投资观点，仅供参考"}]}'
+  }
+</script>    <!--[if (IE 9)|(IE 10)|(IE 11)]>  <script type="text/javascript">
+function findSvgUseTag () {
+  var useTags = document.querySelectorAll('use')
+  var symbols = document.querySelectorAll('symbol')
+  if (!Array.prototype.forEach) {
+    Array.prototype.forEach = function(fn, scope) {
+      for(var i = 0, len = this.length; i < len; ++i) {
+        fn.call(scope, this[i], i, this);
+      }
+    }
+  }
+  if (useTags.length > 0) {
+    [].forEach.call( useTags , function(item) {
+      var baseVal = item.href.baseVal.toString()
+      var symbolElement = document.querySelector('symbol'+baseVal)
+      symbolStr = new XMLSerializer().serializeToString(symbolElement)
+      var svgStr = symbolStr.replace(/symbol/g, "svg")
+      svgElement = new DOMParser().parseFromString(svgStr, "image/svg+xml")
+      var svgContent = item.parentNode
+      svgContent.removeChild(item)
+      svgContent.appendChild(svgElement.firstChild)
+    })
+  }
+}
+if (window.attachEvent) {
+  window.attachEvent("onload",
+    function() {
+      findSvgUseTag()
+    });
+} else {
+  window.addEventListener("load",
+    function() {
+      findSvgUseTag()
+    },
+  true);
+}
+</script><![endif]-->    <!--#0002#-->    <!--%0002%-->    <script>
+      (function() {
+        function setOpenFlex() {
+          const m_open = document.getElementById('m_open');
+          if (m_open) {
+            m_open.style.display = 'flex';
+          }
+        }
+
+        // 在 mpapp 中打开不会显示悬浮菜单
+        try {
+          const ua = navigator.userAgent;
+          const is_mpapp = /MPAPP\/([\d\.]+)/i.test(ua);
+
+          if (!is_mpapp) {
+            setOpenFlex();
+          }
+        } catch (e) {
+          setOpenFlex();
+          console.error(e);
+        }
+      })();
+    </script>  </body></html><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/vendors~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~b~vendors.5bf95cce.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~b~modules.79305f0c.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/threerd~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~b~threerd.a0b8e414.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/threerd~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~c~threerd.d04bfab6.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~cardticket/member~modules.2d10d84d.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/vendors~advanced/menusetting/menusetting~advanced/menusetting4Web1~cardticket/membermessage4Web1~edi~vendors.f84a4380.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~comment/comment_l~modules.0477e41c.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/threerd~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~comment/comment_l~threerd.2b5e04ce.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~city/service_edit~modules.a2760e56.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/vendors~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~city/service_edit~vendors.617505eb.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~complain/public_c~modules.d4dec23e.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~editor/editor_for_web1~home/index/index_gray~mallactivity/list/list~media/publish_history/pu~modules.7fbedb65.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~editor/editor_for_web1~home/index/index_gray~media/appmsg_list2/appmsg_list2_gray~media/publ~modules.279a9073.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/modules~home/index/index_gray~mallactivity/list/list~media/publish_history/publish_history.ba991069.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/default~advanced/menusetting/menusetting~advanced/menusetting4Web1~album/edit/edit~album/list/list~b~default.bc9c7dd7.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/default~advanced/menusetting/menusetting~advanced/menusetting4Web1~cardticket/membermessage4Web1~edi~default.4cfa2ef8.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/default~comment/comment_list/comment_list~editor/ai_layout/ai_layout~editor/editor_for_web1~home/ind~default.e5371998.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/default~editor/editor_for_web1~home/index/index_gray~media/appmsg_list2/appmsg_list2_gray~media/publ~default.89bbc5f3.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/default~home/index/index_gray~media/publish_history/publish_history.2a7372b7.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script><script src="https://res.wx.qq.com/mpres/zh_CN/htmledition/pages/media/publish_history/publish_history.57880e8b.js" onerror="wx_loaderror(this)" crossorigin="anonymous"></script>

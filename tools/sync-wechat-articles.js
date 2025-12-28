@@ -14,9 +14,9 @@ const CONFIG = {
     // 微信公众号 API 配置
     wechat: {
         apiUrl: 'https://mp.weixin.qq.com/cgi-bin/appmsgpublish',
-        token: '12359247', // 从浏览器请求中获取
+        token: '1554125009', // 从浏览器请求中获取
         fakeid: '',
-        cookie: 'appmsglist_action_3593704948=card; wxuin=49979974884298; mm_lang=zh_CN; pgv_pvid=3274745332; ts_uid=2089898620; yyb_muid=165CE98C2D2A67B30652FF802C606657; qq_domain_video_guid_verify=c0d5b50794d59dc4; _qimei_uuid42=196131518021009e72d2ef079b9d9937e47dd02fef; _qimei_fingerprint=142cac50177c2084f9e84bb54941c5c2; _qimei_q36=; _qimei_h38=969d071872d2ef079b9d993702000001f19613; RK=4X3N5wMba/; ptcz=67d99c22c3de04bf37e2b19c9e5dbfe5e3ddc33da20b9b512008ad4d7c84492c; pac_uid=0_Xx13NkK5F1Jx4; omgid=0_Xx13NkK5F1Jx4; _hp2_id.1405110977=%7B%22userId%22%3A%227905684737679069%22%2C%22pageviewId%22%3A%226144639135585601%22%2C%22sessionId%22%3A%225613094879634153%22%2C%22identity%22%3Anull%2C%22trackerVersion%22%3A%224.0%22%7D; markHashId_L=f4ad0da6-2165-48de-87df-81a88836a9bf; ua_id=2cRPiy96I2Vx7vN7AAAAAKGallFATPHihw84lH-tKHk=; poc_sid=HCqMRmmjv41rzauOQhcGej04PWQs7RmeIDhDiDiE; xid=7aa56fe976feb3e0847f55505ef7491f; _clck=3593704948|1|g25|0; rewardsn=; wxtokenkey=777; cert=KNGke_5YY6DHtu2ofhpx9pjTefqqVo1r; slave_sid=YkZmSmhIN1M0QzVlN1hKbmNlMTFIM2ZSVURZVlJ6MUFwcjhhU3BLZVlidGJ3M1VBd3RTUUdEam1JMWIxTEFrUnhuNGRoY1RsZXVNbnk0VTlhRjdDbW9EOFlTMkV4YWZDcFNtTmEwUjdBRXlyVzFaZDZWMHdUYUlUSUVmeFdacmhXd05JR2tkcE5sNWk4c3FP; slave_user=gh_ccff5ba2362f; rand_info=CAESIADW7thwnDilLbo0UDYsJaCWLaNmJ01/DmlDfRwLaQ6l; slave_bizuin=3924628841; bizuin=3924628841', // 完整的 Cookie
+        cookie: 'appmsglist_action_3924628841=card; wxuin=54278202233241; mm_lang=zh_CN; pgv_pvid=9704872890; RK=vW2FsQM6O9; ptcz=5967a6fa49d140403da8478084977acfd36671eef1961fff3a03f17b03e5aef9; markHashId_L=e8c0682b-a9a5-4cc9-9724-fb4e651e3b3d; ua_id=m9Mlqvtsprr3p1hSAAAAAJ3C5vo1jE-3iRouFPOB4MA=; _clck=3924628841|1|g26|0; uuid=66f4c9395b97b87fb19e90ced60c2b88; rand_info=CAESIP240gxPvqfbveX2jB8dYLGBaQV/33OSg4joXRQv2OEa; slave_bizuin=3924628841; data_bizuin=3924628841; bizuin=3924628841; data_ticket=52sfFgXTx+VA02M4YtETJi7f/1VdF/ZSg8GlBOMAfirhys9e3u1EKuCVW7MD9NL7; slave_sid=SEE3NmNuZlB6ZEtYVEpoUFQzTWxyMTdtMmM3VWNaN2Q2QWhDRkFJQTV0aEVxSDFpcnE4Z09ockFKV2R6V1VrSDRxek1jZkdYa3pzNEVtWU9FS0x3WE8xQlI1dndwTlFVWUNpMXphS2hqUVhweUViOGRUZlljdWE5dlBtQlJYbmZleTRPVkVDRld6akdzZnlX; slave_user=gh_ccff5ba2362f; xid=8d8752e30a8016ffd1073dce98984b8f; rewardsn=; wxtokenkey=777; _clsk=dgp3dz|1766761818328|13|1|mp.weixin.qq.com/weheat-agent/payload/record', // 完整的 Cookie
     },
 
     // 文件路径配置
@@ -116,8 +116,6 @@ async function fetchArticles(begin = 0, count = 20) {
             sub_action: 'list_ex',
             token: CONFIG.wechat.token,
             lang: 'zh_CN',
-            f: 'json',
-            ajax: '1',
         };
 
         const response = await axios.get(CONFIG.wechat.apiUrl, {
@@ -129,7 +127,46 @@ async function fetchArticles(begin = 0, count = 20) {
             },
         });
 
-        return response.data;
+        let data = response.data;
+
+        // 如果返回的是HTML,从中提取publish_page变量
+        if (typeof data === 'string' && data.includes('publish_page')) {
+            try {
+                // 找到 publish_page = {
+                const startMatch = data.match(/publish_page\s*=\s*(\{)/);
+                if (!startMatch) {
+                    console.error('❌ 未找到 publish_page = {');
+                    return null;
+                }
+
+                const startIndex = startMatch.index + startMatch[0].length - 1;
+
+                // 找到最后一个 };
+                const endMatch = data.lastIndexOf('};');
+                if (endMatch === -1 || endMatch < startIndex) {
+                    console.error('❌ 未找到结束的 };');
+                    return null;
+                }
+
+                // 提取JSON部分
+                const jsonStr = data.substring(startIndex, endMatch + 1);
+
+                // 解析JSON
+                const publishPageData = JSON.parse(jsonStr);
+
+                // 构造返回数据格式
+                data = {
+                    publish_page: JSON.stringify(publishPageData)
+                };
+
+                console.log('✅ 成功从HTML中提取publish_page数据');
+            } catch (e) {
+                console.error('❌ 解析publish_page失败:', e.message);
+                return null;
+            }
+        }
+
+        return data;
     } catch (error) {
         console.error('获取文章失败:', error.message);
         return null;
@@ -153,8 +190,40 @@ function parseArticles(apiResponse) {
         const publishList = publishPage.publish_list || [];
 
         for (const item of publishList) {
-            const publishInfo = JSON.parse(item.publish_info);
+            // 解码HTML实体
+            let publishInfoStr = item.publish_info
+                .replace(/&quot;/g, '"')
+                .replace(/&amp;/g, '&')
+                .replace(/&lt;/g, '<')
+                .replace(/&gt;/g, '>')
+                .replace(/&#39;/g, "'")
+                .replace(/&nbsp;/g, ' ')
+                .replace(/\\\//g, '/');
+
+            const publishInfo = JSON.parse(publishInfoStr);
+
+            // 调试:输出第一个publishInfo的结构
+            if (articles.length === 0) {
+                console.log('📝 publishInfo 结构:');
+                console.log('  appmsg_info 数量:', (publishInfo.appmsg_info || []).length);
+                console.log('  appmsgex 数量:', (publishInfo.appmsgex || []).length);
+                if (publishInfo.appmsg_info && publishInfo.appmsg_info.length > 0) {
+                    const allFields = Object.keys(publishInfo.appmsg_info[0]);
+                    console.log('  appmsg_info[0] 所有字段 (' + allFields.length + '个):');
+                    console.log('  ', allFields.join(', '));
+
+                    // 检查关键字段
+                    const article = publishInfo.appmsg_info[0];
+                    console.log('\n  关键字段值:');
+                    console.log('    title:', article.title || '(不存在)');
+                    console.log('    read_num:', article.read_num !== undefined ? article.read_num : '(不存在)');
+                    console.log('    like_num:', article.like_num !== undefined ? article.like_num : '(不存在)');
+                    console.log('    comment_num:', article.comment_num !== undefined ? article.comment_num : '(不存在)');
+                }
+            }
+
             const appmsgex = publishInfo.appmsgex || [];
+            const appmsgInfo = publishInfo.appmsg_info || [];
 
             // 检查 sent_info 是否存在
             if (!publishInfo.sent_info || !publishInfo.sent_info.time) {
@@ -162,15 +231,30 @@ function parseArticles(apiResponse) {
                 continue;
             }
 
-            for (const article of appmsgex) {
+            // 合并 appmsg_info 和 appmsgex
+            const allArticles = [...appmsgInfo, ...appmsgex];
+
+            for (const article of allArticles) {
+                // 调试:输出第一篇文章的完整数据
+                if (articles.length === 0) {
+                    console.log('📝 第一篇文章完整数据:');
+                    console.log(JSON.stringify(article, null, 2).substring(0, 1500));
+                }
+
                 articles.push({
                     title: article.title,
-                    link: article.link,
+                    link: article.content_url,
                     digest: article.digest || '',
                     publishDate: timestampToDate(publishInfo.sent_info.time),
                     timestamp: publishInfo.sent_info.time,
                     author: article.author_name || '太阳鸟',
                     category: categorizeArticle(article.title, article.digest),
+                    // 新增互动数据
+                    readNum: article.read_num || 0,
+                    likeNum: article.like_num || 0,
+                    oldLikeNum: article.old_like_num || 0,
+                    commentNum: article.comment_num || 0,
+                    shareNum: article.share_num || 0,
                 });
             }
         }

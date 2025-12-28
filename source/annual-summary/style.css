@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #f7e1ad;
+    --text-color: #4a403a;
+    --bg-gradient: linear-gradient(180deg, #fffcf0 0%, #f7e1ad 100%);
+    --accent-color: #8c7851;
+    --animation-speed: 0.8s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--text-color);
+    overflow: hidden;
+    background: #fffcf0;
+    user-select: none;
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    touch-action: none;
+}
+
+.scene {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.6s ease;
+    background: var(--bg-gradient);
+    z-index: 1;
+}
+
+.scene.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+.scene.prev {
+    transform: translateY(-100%);
+}
+
+.scene.next {
+    transform: translateY(100%);
+}
+
+.content {
+    text-align: center;
+    max-width: 80%;
+}
+
+/* Animations */
+.animate-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--animation-speed) ease, transform var(--animation-speed) ease;
+}
+
+.active .animate-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.6s; }
+.delay-3 { transition-delay: 0.9s; }
+
+/* Welcome Scene */
+.welcome-scene h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.welcome-scene h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.author-info {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.scroll-tip {
+    position: absolute;
+    bottom: 40px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+/* Stats Styling */
+.stat-main {
+    margin: 40px 0;
+}
+
+.stat-main .number {
+    font-size: 5rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+    color: #333;
+}
+
+.stat-main .label {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.stat-detail {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.stat-detail .item {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-detail .num {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.stat-detail .txt {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.quote {
+    margin-top: 60px;
+    font-style: italic;
+    opacity: 0.7;
+    writing-mode: vertical-rl;
+    height: 150px;
+    display: inline-block;
+}
+
+/* Content Scene */
+.big-number {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.small-text {
+    font-size: 0.9rem;
+    opacity: 0.6;
+    margin-top: 20px;
+}
+
+/* Achievement Scene */
+.achievement-card {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card-head {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+.card-body h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.streak-card {
+    margin: 40px 0;
+}
+
+.streak-num {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+/* Final Scene */
+.qr-placeholder {
+    margin-top: 60px;
+}
+
+.qr-mock {
+    width: 120px;
+    height: 120px;
+    border: 2px solid var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 10px;
+}

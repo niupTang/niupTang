@@ -1,0 +1,98 @@
+{
+  "totalArticles": 105,
+  "totalReads": 82548,
+  "totalLikes": 463,
+  "totalComments": 120,
+  "totalShares": 10829,
+  "totalOldLikes": 1405,
+  "articlesByMonth": {
+    "8": 24,
+    "9": 27,
+    "10": 23,
+    "11": 14,
+    "12": 17
+  },
+  "topArticles": [
+    {
+      "title": "Github 开源 NoteBookLM ， Google 直接被掀桌子",
+      "url": "https://mp.weixin.qq.com/s/UP2fq2w8OK-l2lxlOvd83Q",
+      "read": 11388,
+      "like": 40,
+      "comment": 10,
+      "share": 870,
+      "oldLike": 82,
+      "date": "2025-12-14",
+      "timestamp": 1765725212
+    },
+    {
+      "title": "Github 超强代理 —— 一键要你使用上Google Antigravity",
+      "url": "http://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&amp;tempkey=MTM1NF9Fc1NpSmF1V0ZHSll1UDNVVXR0NGI1MDQyemxTQXJGQXRLcWRXZDZYaUpEbHY2ak9XVzBRMkU0aVMtRm1QVnd5TkNLTDEzTEpBWnExSFVLcFA0MkpVYjY3ak1UN0FNSDNjS0ZoeFRwNkVyT3FDcUI0VFoxOUlNVUZncVZHbkFJSGtTZ0dOMDBWZ3dnd2ZNYWY1UVlONmVwT2tSNWo2WHozNnhUdGF3fn4%3D&amp;chksm=c1d0431ef6a7ca08db70f6f8814a18ada4c2179ab0c9e4b97095d1f878db84df8f6dfd09747c#rd",
+      "read": 6090,
+      "like": 24,
+      "comment": 15,
+      "share": 532,
+      "oldLike": 46,
+      "date": "2025-11-27",
+      "timestamp": 1764254999
+    },
+    {
+      "title": "GitHub 爆火的 AI 编程操作系统，这个世界只需要创意了！！",
+      "url": "https://mp.weixin.qq.com/s/LioQRz0FRjQJxUzpFg68mQ",
+      "read": 5563,
+      "like": 24,
+      "comment": 3,
+      "share": 483,
+      "oldLike": 54,
+      "date": "2025-08-22",
+      "timestamp": 1755877218
+    },
+    {
+      "title": "GitHub 6.3k 苹果开源 Embedding Atlas：秒级可视化上百万条向量数据！",
+      "url": "https://mp.weixin.qq.com/s/_ZTGrNKIhKwz3wZqskij-A",
+      "read": 4471,
+      "like": 34,
+      "comment": 0,
+      "share": 723,
+      "oldLike": 66,
+      "date": "2025-08-14",
+      "timestamp": 1755181281
+    },
+    {
+      "title": "【网盘邪修】，用游戏加速器提高网盘下载速度",
+      "url": "https://mp.weixin.qq.com/s/rEA1F7wYLB3wD9nylbgwMA",
+      "read": 3637,
+      "like": 37,
+      "comment": 10,
+      "share": 401,
+      "oldLike": 81,
+      "date": "2025-08-13",
+      "timestamp": 1755094969
+    }
+  ],
+  "monthlyInteraction": {},
+  "firstArticle": {
+    "title": "GPT 终于开源了！！！",
+    "url": "https://mp.weixin.qq.com/s/grCKSJvNpzM1A8Vc3H3N3A",
+    "read": 280,
+    "like": 1,
+    "comment": 1,
+    "share": 7,
+    "oldLike": 2,
+    "date": "2025-08-08",
+    "timestamp": 1754656871
+  },
+  "lastArticle": {
+    "title": "665 篇 GitHub 开源项目合集，实用工具170篇 AI 相关 173 篇",
+    "url": "https://mp.weixin.qq.com/s/T-p0UDhpPFZ7IQas9RKs_A",
+    "read": 389,
+    "like": 3,
+    "comment": 1,
+    "share": 76,
+    "oldLike": 12,
+    "date": "2025-12-25",
+    "timestamp": 1766675323
+  },
+  "daysPublished": {},
+  "maxStreak": 20,
+  "uniqueDays": 98
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>2025 年度总结 · 太阳鸟</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <section class="scene welcome-scene active" id="scene-1">
+            <div class="content">
+                <h2 class="animate-up">2025</h2>
+                <h1 class="animate-up delay-1">公众号年度总结报告</h1>
+                <p class="animate-up delay-2">这是一份属于你的，也是属于文字的年度记忆</p>
+                <div class="author-info animate-up delay-3">
+                    <span class="avatar">鸟</span>
+                    <span class="name">太阳鸟</span>
+                </div>
+            </div>
+            <div class="scroll-tip">↑ 向上滑动开启</div>
+        </section>
+
+        <section class="scene interaction-scene" id="scene-2">
+            <div class="content">
+                <p class="animate-up">这一年，你与粉丝有过</p>
+                <div class="stat-main animate-up delay-1">
+                    <span class="number" id="interaction-count">0</span>
+                    <span class="label">次互动</span>
+                </div>
+                <div class="stat-detail animate-up delay-2">
+                    <div class="item">
+                        <span class="num" id="like-count">0</span>
+                        <span class="txt">次点赞</span>
+                    </div>
+                    <div class="item">
+                        <span class="num" id="comment-count">0</span>
+                        <span class="txt">条评论</span>
+                    </div>
+                </div>
+                <p class="quote animate-up delay-3">是文字连接了我们...</p>
+            </div>
+        </section>
+
+        <section class="scene content-scene" id="scene-3">
+            <div class="content">
+                <p class="animate-up">2025 年</p>
+                <div class="stat-main animate-up delay-1">
+                    <span class="label">你共发布了</span>
+                    <span class="number" id="article-count">0</span>
+                    <span class="label">篇文章</span>
+                </div>
+                <div class="stat-highlights animate-up delay-2">
+                    <p>累计被点击阅读了</p>
+                    <div class="big-number"><span id="read-count">0</span> 次</div>
+                </div>
+                <p class="small-text animate-up delay-3">每一篇文章，都是一次思想的传递</p>
+            </div>
+        </section>
+
+        <section class="scene achievement-scene" id="scene-4">
+            <div class="content">
+                <div class="achievement-card animate-up">
+                    <div class="card-head">年度封面文章</div>
+                    <div class="card-body">
+                        <h3 id="top-article-title">加载中...</h3>
+                        <p>这篇文章共获得了 <span id="top-article-read">0</span> 次阅读</p>
+                    </div>
+                </div>
+                <div class="streak-card animate-up delay-2">
+                    <p>你曾保持了</p>
+                    <div class="streak-num"><span id="max-streak">0</span> 天</div>
+                    <p>每天更文的全勤记录</p>
+                </div>
+                <p class="closing-quote animate-up delay-3">这份坚持，是你送给自己的礼物</p>
+            </div>
+        </section>
+
+        <section class="scene final-scene" id="scene-5">
+            <div class="content">
+                <h1 class="animate-up">感谢你的关注</h1>
+                <p class="animate-up delay-1">2026</p>
+                <p class="animate-up delay-2">我们继续，在文字里相见</p>
+                <div class="qr-placeholder animate-up delay-3">
+                    <!-- 这里可以放二维码或其他分享信息 -->
+                    <div class="qr-mock">
+                        <img src="../image/2025-12-23/b6cf5831e63e481baebc21787f936753.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
