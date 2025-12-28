@@ -1,5 +1,6 @@
 ---
-title: AgentGPT：一个在浏览器运行的Agent
+title: "AgentGPT：一个在浏览器运行的Agent"
+permalink: agentgpt-一个在浏览器运行的agent
 date: 2025-05-28 23:31:09
 tags:
   - 公众号

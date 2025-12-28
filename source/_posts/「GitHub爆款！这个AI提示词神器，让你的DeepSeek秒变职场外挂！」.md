@@ -1,5 +1,6 @@
 ---
-title: 「GitHub爆款！这个AI提示词神器，让你的DeepSeek秒变职场外挂！」
+title: "「GitHub爆款！这个AI提示词神器，让你的DeepSeek秒变职场外挂！」"
+permalink: github爆款-这个ai提示词神器-让你的deepseek秒变职场外挂
 date: 2025-03-31 20:42:10
 tags:
   - 公众号

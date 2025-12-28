@@ -1,5 +1,6 @@
 ---
-title: GitHub 1.5k Star！视频秒变数据库：你的AI视频记忆库，知识不再丢失！
+title: "GitHub 1.5k Star！视频秒变数据库：你的AI视频记忆库，知识不再丢失！"
+permalink: github-1-5k-star-视频秒变数据库-你的ai视频记忆库-知识不再丢失
 date: 2025-06-02 23:20:54
 tags:
   - 公众号

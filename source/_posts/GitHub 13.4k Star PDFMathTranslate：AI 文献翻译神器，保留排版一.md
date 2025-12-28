@@ -1,5 +1,6 @@
 ---
-title: GitHub 13.4k Star PDFMathTranslate：AI 文献翻译神器，保留排版一键搞定！
+title: "GitHub 13.4k Star PDFMathTranslate：AI 文献翻译神器，保留排版一键搞定！"
+permalink: github-13-4k-star-pdfmathtranslate-ai-文献翻译神器-保留排版一
 date: 2025-01-03 22:53:25
 tags:
   - 公众号

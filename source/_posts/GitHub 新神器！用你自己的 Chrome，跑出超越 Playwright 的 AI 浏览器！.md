@@ -1,5 +1,6 @@
 ---
-title: GitHub 新神器！用你自己的 Chrome，跑出超越 Playwright 的 AI 浏览器！
+title: "GitHub 新神器！用你自己的 Chrome，跑出超越 Playwright 的 AI 浏览器！"
+permalink: github-新神器-用你自己的-chrome-跑出超越-playwright-的-ai-浏览器
 date: 2025-06-23 22:08:27
 tags:
   - 公众号

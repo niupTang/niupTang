@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源 xiaohongshu-mcp：当AI智能体学会自动发小红书，内容创作要变天了！
+title: "GitHub 开源 xiaohongshu-mcp：当AI智能体学会自动发小红书，内容创作要变天了！"
+permalink: github-开源-xiaohongshu-mcp-当ai智能体学会自动发小红书-内容创作要变天了
 date: 2025-09-22 23:27:34
 tags:
   - 公众号

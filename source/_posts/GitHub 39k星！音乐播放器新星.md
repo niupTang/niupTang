@@ -1,5 +1,6 @@
 ---
-title: GitHub 39k星！音乐播放器新星
+title: "GitHub 39k星！音乐播放器新星"
+permalink: github-39k星-音乐播放器新星
 date: 2024-09-30 13:04:34
 tags:
   - 公众号

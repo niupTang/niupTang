@@ -1,5 +1,6 @@
 ---
-title: Coze 智能体——免费要AI 给你打工！
+title: "Coze 智能体——免费要AI 给你打工！"
+permalink: coze-智能体-免费要ai-给你打工
 date: 2025-06-03 23:29:05
 tags:
   - 公众号

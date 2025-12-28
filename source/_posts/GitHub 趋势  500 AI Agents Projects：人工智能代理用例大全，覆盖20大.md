@@ -1,5 +1,6 @@
 ---
-title: GitHub 趋势 | 500 AI Agents Projects：人工智能代理用例大全，覆盖20大领域
+title: "GitHub 趋势 | 500 AI Agents Projects：人工智能代理用例大全，覆盖20大领域"
+permalink: github-趋势-500-ai-agents-projects-人工智能代理用例大全-覆盖20大
 date: 2025-10-11 23:16:29
 tags:
   - 公众号

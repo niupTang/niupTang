@@ -1,5 +1,6 @@
 ---
-title: GitHub 4.9k Star 开源项目：AI 智能体可视化开发圣器
+title: "GitHub 4.9k Star 开源项目：AI 智能体可视化开发圣器"
+permalink: github-4-9k-star-开源项目-ai-智能体可视化开发圣器
 date: 2025-05-21 22:25:49
 tags:
   - 公众号

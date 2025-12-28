@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目：MCP Registry——AI工具生态的「应用商店」
+title: "GitHub 开源项目：MCP Registry——AI工具生态的「应用商店」"
+permalink: github-开源项目-mcp-registry-ai工具生态的-应用商店
 date: 2025-05-22 22:59:21
 tags:
   - 公众号

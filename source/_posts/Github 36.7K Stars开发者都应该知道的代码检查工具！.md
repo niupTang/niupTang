@@ -1,5 +1,6 @@
 ---
-title: Github 36.7K Stars开发者都应该知道的代码检查工具！
+title: "Github 36.7K Stars开发者都应该知道的代码检查工具！"
+permalink: github-36-7k-stars开发者都应该知道的代码检查工具
 date: 2025-01-01 19:44:17
 tags:
   - 公众号

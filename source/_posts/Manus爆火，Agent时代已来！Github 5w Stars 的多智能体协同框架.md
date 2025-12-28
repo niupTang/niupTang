@@ -1,5 +1,6 @@
 ---
-title: Manus爆火，Agent时代已来！Github 5w Stars 的多智能体协同框架
+title: "Manus爆火，Agent时代已来！Github 5w Stars 的多智能体协同框架"
+permalink: manus爆火-agent时代已来-github-5w-stars-的多智能体协同框架
 date: 2025-03-10 17:36:49
 tags:
   - 公众号

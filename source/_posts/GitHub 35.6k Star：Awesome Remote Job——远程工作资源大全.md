@@ -1,5 +1,6 @@
 ---
-title: GitHub 35.6k Star：Awesome Remote Job——远程工作资源大全
+title: "GitHub 35.6k Star：Awesome Remote Job——远程工作资源大全"
+permalink: github-35-6k-star-awesome-remote-job-远程工作资源大全
 date: 2024-12-24 20:57:30
 tags:
   - 公众号

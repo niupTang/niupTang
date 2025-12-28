@@ -1,5 +1,6 @@
 ---
-title: 下一个AI风口：这四款 Agent 已开源！
+title: "下一个AI风口：这四款 Agent 已开源！"
+permalink: 下一个ai风口-这四款-agent-已开源
 date: 2025-05-29 22:42:41
 tags:
   - 公众号

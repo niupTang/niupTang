@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | Anthropic官方课程：学习AI的"百科全书"
+title: "GitHub 开源项目 | Anthropic官方课程：学习AI的百科全书"
+permalink: github-开源项目-anthropic官方课程-学习ai的百科全书
 date: 2025-04-24 12:43:28
 tags:
   - 公众号

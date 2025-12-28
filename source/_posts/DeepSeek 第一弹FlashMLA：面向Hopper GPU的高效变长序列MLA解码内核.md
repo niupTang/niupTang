@@ -1,5 +1,6 @@
 ---
-title: DeepSeek 第一弹FlashMLA：面向Hopper GPU的高效变长序列MLA解码内核
+title: "DeepSeek 第一弹FlashMLA：面向Hopper GPU的高效变长序列MLA解码内核"
+permalink: deepseek-第一弹flashmla-面向hopper-gpu的高效变长序列mla解码内核
 date: 2025-02-24 12:56:38
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 上的 agents-flex 项目：基于 Java 的 LLM 应用开发框架
+title: "GitHub 上的 agents-flex 项目：基于 Java 的 LLM 应用开发框架"
+permalink: github-上的-agents-flex-项目-基于-java-的-llm-应用开发框架
 date: 2025-03-05 21:23:05
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: Github开源文本转语音神器Spark-TTS开源了，克隆声音仅需3秒？
+title: "Github开源文本转语音神器Spark-TTS开源了，克隆声音仅需3秒？"
+permalink: github开源文本转语音神器spark-tts开源了-克隆声音仅需3秒
 date: 2025-03-09 22:38:45
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 5.0k Star 开源项目：AI 逆向工程神器 GhidraMCP
+title: "GitHub 5.0k Star 开源项目：AI 逆向工程神器 GhidraMCP"
+permalink: github-5-0k-star-开源项目-ai-逆向工程神器-ghidramcp
 date: 2025-05-19 22:18:35
 tags:
   - 公众号

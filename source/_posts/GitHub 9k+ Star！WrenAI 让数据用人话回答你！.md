@@ -1,5 +1,6 @@
 ---
-title: GitHub 9k+ Star！WrenAI 让数据用人话回答你！
+title: "GitHub 9k+ Star！WrenAI 让数据用人话回答你！"
+permalink: github-9k-star-wrenai-让数据用人话回答你
 date: 2025-07-31 23:09:50
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源的 60 + 技术栈全覆盖！这款 AI 地表最强 Rules，让 Windsurf 编辑器秒懂你的专属代码规范
+title: "GitHub 开源的 60 + 技术栈全覆盖！这款 AI 地表最强 Rules，让 Windsurf 编辑器秒懂你的专属代码规范"
+permalink: github-开源的-60-技术栈全覆盖-这款-ai-地表最强-rules-让-windsurf
 date: 2025-08-21 23:07:49
 tags:
   - 公众号

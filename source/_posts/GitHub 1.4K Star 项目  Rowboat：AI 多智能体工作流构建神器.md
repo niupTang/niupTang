@@ -1,5 +1,6 @@
 ---
-title: GitHub 1.4K Star 项目 | Rowboat：AI 多智能体工作流构建神器
+title: "GitHub 1.4K Star 项目 | Rowboat：AI 多智能体工作流构建神器"
+permalink: github-1-4k-star-项目-rowboat-ai-多智能体工作流构建神器
 date: 2025-04-27 22:49:44
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源神器，打造自媒体系统聚合平台
+title: "GitHub 开源神器，打造自媒体系统聚合平台"
+permalink: github-开源神器-打造自媒体系统聚合平台
 date: 2025-07-15 21:55:36
 tags:
   - 公众号

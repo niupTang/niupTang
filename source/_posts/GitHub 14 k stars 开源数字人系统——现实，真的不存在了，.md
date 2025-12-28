@@ -1,5 +1,6 @@
 ---
-title: GitHub 14 k stars 开源数字人系统——现实，真的不存在了，
+title: "GitHub 14 k stars 开源数字人系统——现实，真的不存在了，"
+permalink: github-14-k-stars-开源数字人系统-现实-真的不存在了
 date: 2025-05-20 20:33:14
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 38k Star 超强合集 | 300+ Mac 开源应用全收录，效率瞬间拉满！
+title: "GitHub 38k Star 超强合集 | 300+ Mac 开源应用全收录，效率瞬间拉满！"
+permalink: github-38k-star-超强合集-300-mac-开源应用全收录-效率瞬间拉满
 date: 2025-01-31 20:57:22
 tags:
   - 公众号

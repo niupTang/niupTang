@@ -1,5 +1,6 @@
 ---
-title: GitHub 高星项目 nanoGPT：小白轻松训练专属 GPT 模型，新手也能快速上手
+title: "GitHub 高星项目 nanoGPT：小白轻松训练专属 GPT 模型，新手也能快速上手"
+permalink: github-高星项目-nanogpt-小白轻松训练专属-gpt-模型-新手也能快速上手
 date: 2025-10-15 22:12:20
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源：Meeting Minutes AI：智能会议记录与知识管理神器
+title: "GitHub 开源：Meeting Minutes AI：智能会议记录与知识管理神器"
+permalink: github-开源-meeting-minutes-ai-智能会议记录与知识管理神器
 date: 2025-05-14 22:18:23
 tags:
   - 公众号

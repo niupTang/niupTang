@@ -1,5 +1,6 @@
 ---
-title: GitHub 78.4K Star！超火的UI开源项目，助力前端开发！
+title: "GitHub 78.4K Star！超火的UI开源项目，助力前端开发！"
+permalink: github-78-4k-star-超火的ui开源项目-助力前端开发
 date: 2025-02-01 15:24:15
 tags:
   - 公众号

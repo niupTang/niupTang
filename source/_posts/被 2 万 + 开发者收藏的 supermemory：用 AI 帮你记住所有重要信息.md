@@ -1,5 +1,6 @@
 ---
-title: 被 2 万 + 开发者收藏的 supermemory：用 AI 帮你记住所有重要信息
+title: "被 2 万 + 开发者收藏的 supermemory：用 AI 帮你记住所有重要信息"
+permalink: 被-2-万-开发者收藏的-supermemory-用-ai-帮你记住所有重要信息
 date: 2025-09-01 22:44:29
 tags:
   - 公众号

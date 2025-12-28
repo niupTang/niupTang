@@ -1,5 +1,6 @@
 ---
-title: GitHub 25k Star！ AI 和你有个轻对话
+title: "GitHub 25k Star！ AI 和你有个轻对话"
+permalink: github-25k-star-ai-和你有个轻对话
 date: 2025-06-16 22:28:23
 tags:
   - 公众号

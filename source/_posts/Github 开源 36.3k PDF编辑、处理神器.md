@@ -1,5 +1,6 @@
 ---
-title: Github 开源 36.3k PDF编辑、处理神器
+title: "Github 开源 36.3k PDF编辑、处理神器"
+permalink: github-开源-36-3k-pdf编辑-处理神器
 date: 2024-08-10 13:54:59
 tags:
   - 公众号

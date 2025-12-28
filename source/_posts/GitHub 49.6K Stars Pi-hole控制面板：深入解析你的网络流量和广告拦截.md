@@ -1,5 +1,6 @@
 ---
-title: GitHub 49.6K Stars Pi-hole控制面板：深入解析你的网络流量和广告拦截
+title: "GitHub 49.6K Stars Pi-hole控制面板：深入解析你的网络流量和广告拦截"
+permalink: github-49-6k-stars-pi-hole控制面板-深入解析你的网络流量和广告拦截
 date: 2024-12-23 18:46:05
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub爆火！AI工程师私藏"全能工具箱"，超 41 款AI 应用教程
+title: "GitHub爆火！AI工程师私藏全能工具箱，超 41 款AI 应用教程"
+permalink: github爆火-ai工程师私藏全能工具箱-超-41-款ai-应用教程
 date: 2025-03-17 21:39:45
 tags:
   - 公众号

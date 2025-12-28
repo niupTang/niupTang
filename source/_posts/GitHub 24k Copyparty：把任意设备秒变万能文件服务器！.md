@@ -1,5 +1,6 @@
 ---
-title: GitHub 24k Copyparty：把任意设备秒变万能文件服务器！
+title: "GitHub 24k Copyparty：把任意设备秒变万能文件服务器！"
+permalink: github-24k-copyparty-把任意设备秒变万能文件服务器
 date: 2025-08-18 23:18:44
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: github开源B站UP主都在用的下载神器！Cobalt让你轻松搬运高清素材！"
+title: "github开源B站UP主都在用的下载神器！Cobalt让你轻松搬运高清素材！"
+permalink: github开源b站up主都在用的下载神器-cobalt让你轻松搬运高清素材
 date: 2025-04-01 21:41:55
 tags:
   - 公众号

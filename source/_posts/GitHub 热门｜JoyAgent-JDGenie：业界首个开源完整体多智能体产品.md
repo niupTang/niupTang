@@ -1,5 +1,6 @@
 ---
-title: GitHub 热门｜JoyAgent-JDGenie：业界首个开源完整体多智能体产品
+title: "GitHub 热门｜JoyAgent-JDGenie：业界首个开源完整体多智能体产品"
+permalink: github-热门-joyagent-jdgenie-业界首个开源完整体多智能体产品
 date: 2025-08-26 22:20:03
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源 63,000 Stars 前端小白必看项目：从入门到进阶的宝藏资源
+title: "GitHub 开源 63,000 Stars 前端小白必看项目：从入门到进阶的宝藏资源"
+permalink: github-开源-63-000-stars-前端小白必看项目-从入门到进阶的宝藏资源
 date: 2025-01-25 21:50:00
 tags:
   - 公众号

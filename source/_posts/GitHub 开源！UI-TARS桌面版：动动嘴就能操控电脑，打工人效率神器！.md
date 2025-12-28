@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源！UI-TARS桌面版：动动嘴就能操控电脑，打工人效率神器！
+title: "GitHub 开源！UI-TARS桌面版：动动嘴就能操控电脑，打工人效率神器！"
+permalink: github-开源-ui-tars桌面版-动动嘴就能操控电脑-打工人效率神器
 date: 2025-03-26 22:08:30
 tags:
   - 公众号

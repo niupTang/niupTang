@@ -1,5 +1,6 @@
 ---
-title: Cherry Studio MCP 协议调用全攻略！
+title: "Cherry Studio MCP 协议调用全攻略！"
+permalink: cherry-studio-mcp-协议调用全攻略
 date: 1970-01-01 08:00:00
 tags:
   - 公众号

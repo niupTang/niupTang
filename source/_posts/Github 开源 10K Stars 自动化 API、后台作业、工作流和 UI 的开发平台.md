@@ -1,5 +1,6 @@
 ---
-title: Github 开源 10K Stars 自动化 API、后台作业、工作流和 UI 的开发平台
+title: "Github 开源 10K Stars 自动化 API、后台作业、工作流和 UI 的开发平台"
+permalink: github-开源-10k-stars-自动化-api-后台作业-工作流和-ui-的开发平台
 date: 2024-11-17 17:49:53
 tags:
   - 公众号

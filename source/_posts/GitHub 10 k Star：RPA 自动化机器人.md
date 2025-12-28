@@ -1,5 +1,6 @@
 ---
-title: GitHub 10 k Star：RPA 自动化机器人
+title: "GitHub 10 k Star：RPA 自动化机器人"
+permalink: github-10-k-star-rpa-自动化机器人
 date: 2024-10-18 21:34:03
 tags:
   - 公众号

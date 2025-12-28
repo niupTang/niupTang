@@ -1,5 +1,6 @@
 ---
-title: GitHub 8280 Star电视直播资源库，让直播更简单
+title: "GitHub 8280 Star电视直播资源库，让直播更简单"
+permalink: github-8280-star电视直播资源库-让直播更简单
 date: 2025-01-24 21:01:24
 tags:
   - 公众号

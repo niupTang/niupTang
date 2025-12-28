@@ -1,5 +1,6 @@
 ---
-title: 爆！！Github 一天涨1200 Stars 的股票系统
+title: "爆！！Github 一天涨1200 Stars 的股票系统"
+permalink: 爆-github-一天涨1200-stars-的股票系统
 date: 2024-12-02 22:09:44
 tags:
   - 公众号

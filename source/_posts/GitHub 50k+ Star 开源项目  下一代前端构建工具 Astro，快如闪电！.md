@@ -1,5 +1,6 @@
 ---
-title: GitHub 50k+ Star 开源项目 | 下一代前端构建工具 Astro，快如闪电！
+title: "GitHub 50k+ Star 开源项目 | 下一代前端构建工具 Astro，快如闪电！"
+permalink: github-50k-star-开源项目-下一代前端构建工具-astro-快如闪电
 date: 2025-04-10 21:40:24
 tags:
   - 公众号

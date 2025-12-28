@@ -1,5 +1,6 @@
 ---
-title: Github 开源给你的 Claude Code 加上海马体！！
+title: "Github 开源给你的 Claude Code 加上海马体！！"
+permalink: github-开源给你的-claude-code-加上海马体
 date: 2025-12-15 22:59:11
 tags:
   - 公众号

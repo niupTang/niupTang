@@ -1,5 +1,6 @@
 ---
-title: AI卷向3D建模！Blender-MCP重磅神器问世，一句话创造一个世界！
+title: "AI卷向3D建模！Blender-MCP重磅神器问世，一句话创造一个世界！"
+permalink: ai卷向3d建模-blender-mcp重磅神器问世-一句话创造一个世界
 date: 2025-09-11 20:06:48
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 30.5K Star 项目 | AI工具设计的"藏宝图"：揭秘9大顶级AI助手的系统提示词
+title: "GitHub 30.5K Star 项目 | AI工具设计的藏宝图：揭秘9大顶级AI助手的系统提示词"
+permalink: github-30-5k-star-项目-ai工具设计的藏宝图-揭秘9大顶级ai助手的系统提示词
 date: 2025-04-25 22:57:21
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: Perplexica：200亿美金估值的Perplexity AI，开源平替版来了！自己搭建AI搜索的时代已到
+title: "Perplexica：200亿美金估值的Perplexity AI，开源平替版来了！自己搭建AI搜索的时代已到"
+permalink: perplexica-200亿美金估值的perplexity-ai-开源平替版来了-自己搭建ai搜索
 date: 2025-09-17 23:50:53
 tags:
   - 公众号

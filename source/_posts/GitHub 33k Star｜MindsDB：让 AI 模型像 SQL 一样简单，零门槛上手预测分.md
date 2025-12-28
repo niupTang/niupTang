@@ -1,5 +1,6 @@
 ---
-title: GitHub 33k Star｜MindsDB：让 AI 模型像 SQL 一样简单，零门槛上手预测分析！
+title: "GitHub 33k Star｜MindsDB：让 AI 模型像 SQL 一样简单，零门槛上手预测分析！"
+permalink: github-33k-star-mindsdb-让-ai-模型像-sql-一样简单-零门槛上手预测分
 date: 2025-07-04 23:42:49
 tags:
   - 公众号

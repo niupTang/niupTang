@@ -1,5 +1,6 @@
 ---
-title: GitHub 5K Star: 爱盘开源网盘搜索平台，完美支持批量导入导出与在线播放！
+title: "GitHub 5K Star: 爱盘开源网盘搜索平台，完美支持批量导入导出与在线播放！"
+permalink: github-5k-star-爱盘开源网盘搜索平台-完美支持批量导入导出与在线播放
 date: 2024-11-26 18:58:11
 tags:
   - 公众号

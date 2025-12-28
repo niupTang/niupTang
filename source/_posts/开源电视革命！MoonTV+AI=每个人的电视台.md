@@ -1,5 +1,6 @@
 ---
-title: 开源电视革命！MoonTV+AI=每个人的电视台
+title: "开源电视革命！MoonTV+AI=每个人的电视台"
+permalink: 开源电视革命-moontv-ai-每个人的电视台
 date: 2025-07-26 23:37:13
 tags:
   - 公众号

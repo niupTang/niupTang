@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源学习新框架从此不用看文档？Skill Seeker让Claude成为你的技术导师
+title: "GitHub 开源学习新框架从此不用看文档？Skill Seeker让Claude成为你的技术导师"
+permalink: github-开源学习新框架从此不用看文档-skill-seeker让claude成为你的技术导师
 date: 2025-11-23 23:04:07
 tags:
   - 公众号

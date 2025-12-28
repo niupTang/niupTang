@@ -1,5 +1,6 @@
 ---
-title: 失业程序员靠AI逆袭：我如何用GitHub打开副业？
+title: "失业程序员靠AI逆袭：我如何用GitHub打开副业？"
+permalink: 失业程序员靠ai逆袭-我如何用github打开副业
 date: 2025-03-12 22:30:02
 tags:
   - 公众号

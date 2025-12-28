@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源全能视频嗅探神器，可识别 m3u8，极速下载！支持平台：B站/抖音/YouTube
+title: "GitHub 开源全能视频嗅探神器，可识别 m3u8，极速下载！支持平台：B站/抖音/YouTube"
+permalink: github-开源全能视频嗅探神器-可识别-m3u8-极速下载-支持平台-b站抖音youtube
 date: 2025-02-08 21:40:23
 tags:
   - 公众号

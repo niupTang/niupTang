@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | SkyReels-V2：无限时长电影级AI视频生成神器
+title: "GitHub 开源项目 | SkyReels-V2：无限时长电影级AI视频生成神器"
+permalink: github-开源项目-skyreels-v2-无限时长电影级ai视频生成神器
 date: 2025-04-26 22:40:57
 tags:
   - 公众号

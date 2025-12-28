@@ -1,5 +1,6 @@
 ---
-title: Github 开源的AI 编辑器，让开发变成聊天一样容易
+title: "Github 开源的AI 编辑器，让开发变成聊天一样容易"
+permalink: github-开源的ai-编辑器-让开发变成聊天一样容易
 date: 2024-11-01 19:26:28
 tags:
   - 公众号

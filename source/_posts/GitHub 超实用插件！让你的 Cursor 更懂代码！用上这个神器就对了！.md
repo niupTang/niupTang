@@ -1,5 +1,6 @@
 ---
-title: GitHub 超实用插件！让你的 Cursor 更懂代码！用上这个神器就对了！
+title: "GitHub 超实用插件！让你的 Cursor 更懂代码！用上这个神器就对了！"
+permalink: github-超实用插件-让你的-cursor-更懂代码-用上这个神器就对了
 date: 2025-04-17 22:29:07
 tags:
   - 公众号

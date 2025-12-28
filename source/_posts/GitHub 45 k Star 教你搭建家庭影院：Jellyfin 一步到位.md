@@ -1,5 +1,6 @@
 ---
-title: GitHub 45 k Star 教你搭建家庭影院：Jellyfin 一步到位
+title: "GitHub 45 k Star 教你搭建家庭影院：Jellyfin 一步到位"
+permalink: github-45-k-star-教你搭建家庭影院-jellyfin-一步到位
 date: 2025-10-28 22:46:36
 tags:
   - 公众号

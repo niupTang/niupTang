@@ -1,5 +1,6 @@
 ---
-title: 微软开源神器Data Formulator：告别代码，用自然语言让数据说话！
+title: "微软开源神器Data Formulator：告别代码，用自然语言让数据说话！"
+permalink: 微软开源神器data-formulator-告别代码-用自然语言让数据说话
 date: 2025-03-11 23:01:03
 tags:
   - 公众号

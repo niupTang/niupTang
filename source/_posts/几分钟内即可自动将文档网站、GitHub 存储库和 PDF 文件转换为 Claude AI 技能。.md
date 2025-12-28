@@ -1,5 +1,6 @@
 ---
-title: 几分钟内即可自动将文档网站、GitHub 存储库和 PDF 文件转换为 Claude AI 技能。
+title: "几分钟内即可自动将文档网站、GitHub 存储库和 PDF 文件转换为 Claude AI 技能。"
+permalink: 几分钟内即可自动将文档网站-github-存储库和-pdf-文件转换为-claude-ai-技能
 date: 2025-12-17 23:22:25
 tags:
   - 公众号

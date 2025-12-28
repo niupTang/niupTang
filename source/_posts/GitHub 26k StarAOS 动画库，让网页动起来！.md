@@ -1,5 +1,6 @@
 ---
-title: GitHub 26k StarAOS 动画库，让网页动起来！
+title: "GitHub 26k StarAOS 动画库，让网页动起来！"
+permalink: github-26k-staraos-动画库-让网页动起来
 date: 2024-09-20 20:53:19
 tags:
   - 公众号

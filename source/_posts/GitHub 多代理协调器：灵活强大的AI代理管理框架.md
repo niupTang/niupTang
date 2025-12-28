@@ -1,5 +1,6 @@
 ---
-title: GitHub 多代理协调器：灵活强大的AI代理管理框架
+title: "GitHub 多代理协调器：灵活强大的AI代理管理框架"
+permalink: github-多代理协调器-灵活强大的ai代理管理框架
 date: 2024-11-23 20:01:11
 tags:
   - 公众号

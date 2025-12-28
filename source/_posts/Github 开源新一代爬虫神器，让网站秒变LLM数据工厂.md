@@ -1,5 +1,6 @@
 ---
-title: Github 开源新一代爬虫神器，让网站秒变LLM数据工厂
+title: "Github 开源新一代爬虫神器，让网站秒变LLM数据工厂"
+permalink: github-开源新一代爬虫神器-让网站秒变llm数据工厂
 date: 2025-03-13 18:54:18
 tags:
   - 公众号

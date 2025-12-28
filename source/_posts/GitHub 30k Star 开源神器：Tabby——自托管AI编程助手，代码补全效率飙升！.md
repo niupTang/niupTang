@@ -1,5 +1,6 @@
 ---
-title: GitHub 30k Star 开源神器：Tabby——自托管AI编程助手，代码补全效率飙升！
+title: "GitHub 30k Star 开源神器：Tabby——自托管AI编程助手，代码补全效率飙升！"
+permalink: github-30k-star-开源神器-tabby-自托管ai编程助手-代码补全效率飙升
 date: 2025-04-07 22:21:35
 tags:
   - 公众号

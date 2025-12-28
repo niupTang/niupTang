@@ -1,5 +1,6 @@
 ---
-title: 轻松穿透内网：Frpc-Desktop，开源免费的内网穿透工具
+title: "轻松穿透内网：Frpc-Desktop，开源免费的内网穿透工具"
+permalink: 轻松穿透内网-frpc-desktop-开源免费的内网穿透工具
 date: 2024-12-19 20:53:39
 tags:
   - 公众号

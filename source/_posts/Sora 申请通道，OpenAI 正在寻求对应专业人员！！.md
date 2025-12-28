@@ -1,5 +1,6 @@
 ---
-title: Sora 申请通道，OpenAI 正在寻求对应专业人员！！
+title: "Sora 申请通道，OpenAI 正在寻求对应专业人员！！"
+permalink: sora-申请通道-openai-正在寻求对应专业人员
 date: 2024-02-21 11:13:06
 tags:
   - 公众号

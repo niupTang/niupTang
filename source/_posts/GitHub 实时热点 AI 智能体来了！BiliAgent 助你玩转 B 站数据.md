@@ -1,5 +1,6 @@
 ---
-title: GitHub 实时热点 AI 智能体来了！BiliAgent 助你玩转 B 站数据
+title: "GitHub 实时热点 AI 智能体来了！BiliAgent 助你玩转 B 站数据"
+permalink: github-实时热点-ai-智能体来了-biliagent-助你玩转-b-站数据
 date: 2025-06-24 23:30:21
 tags:
   - 公众号

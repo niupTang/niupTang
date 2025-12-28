@@ -1,5 +1,6 @@
 ---
-title: 自动化任务一键搞定！BrowserOS 教你用 AI 重构上网方式
+title: "自动化任务一键搞定！BrowserOS 教你用 AI 重构上网方式"
+permalink: 自动化任务一键搞定-browseros-教你用-ai-重构上网方式
 date: 2025-08-11 22:38:25
 tags:
   - 公众号

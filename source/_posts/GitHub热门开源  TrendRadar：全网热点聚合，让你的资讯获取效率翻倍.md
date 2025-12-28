@@ -1,5 +1,6 @@
 ---
-title: GitHub热门开源 | TrendRadar：全网热点聚合，让你的资讯获取效率翻倍
+title: "GitHub热门开源 | TrendRadar：全网热点聚合，让你的资讯获取效率翻倍"
+permalink: github热门开源-trendradar-全网热点聚合-让你的资讯获取效率翻倍
 date: 2025-11-12 23:07:40
 tags:
   - 公众号

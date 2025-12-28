@@ -1,5 +1,6 @@
 ---
-title: 0 元复刻 AI 小智！！
+title: "0 元复刻 AI 小智！！"
+permalink: 0-元复刻-ai-小智
 date: 2025-06-27 23:57:07
 tags:
   - 公众号

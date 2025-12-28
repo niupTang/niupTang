@@ -1,5 +1,6 @@
 ---
-title: DeepSeek 真的不如Gemini ？ 我用 DeepSeek 给我的摄像头加上 人脸识别！！
+title: "DeepSeek 真的不如Gemini ？ 我用 DeepSeek 给我的摄像头加上 人脸识别！！"
+permalink: deepseek-真的不如gemini-我用-deepseek-给我的摄像头加上-人脸识别
 date: 2025-11-30 21:39:48
 tags:
   - 公众号

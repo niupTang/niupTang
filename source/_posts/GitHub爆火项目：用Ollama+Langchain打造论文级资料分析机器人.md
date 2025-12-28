@@ -1,5 +1,6 @@
 ---
-title: GitHub爆火项目：用Ollama+Langchain打造论文级资料分析机器人
+title: "GitHub爆火项目：用Ollama+Langchain打造论文级资料分析机器人"
+permalink: github爆火项目-用ollama-langchain打造论文级资料分析机器人
 date: 2025-03-16 22:49:39
 tags:
   - 公众号

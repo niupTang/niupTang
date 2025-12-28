@@ -1,5 +1,6 @@
 ---
-title: GitHub 热点速递：DeepSeek-OCR革新文档处理，200页资料秒转结构化文本！
+title: "GitHub 热点速递：DeepSeek-OCR革新文档处理，200页资料秒转结构化文本！"
+permalink: github-热点速递-deepseek-ocr革新文档处理-200页资料秒转结构化文本
 date: 2025-10-22 23:30:23
 tags:
   - 公众号

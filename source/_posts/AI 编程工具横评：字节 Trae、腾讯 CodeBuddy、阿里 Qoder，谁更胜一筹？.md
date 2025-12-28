@@ -1,5 +1,6 @@
 ---
-title: AI 编程工具横评：字节 Trae、腾讯 CodeBuddy、阿里 Qoder，谁更胜一筹？
+title: "AI 编程工具横评：字节 Trae、腾讯 CodeBuddy、阿里 Qoder，谁更胜一筹？"
+permalink: ai-编程工具横评-字节-trae-腾讯-codebuddy-阿里-qoder-谁更胜一筹
 date: 2025-10-27 23:33:33
 tags:
   - 公众号

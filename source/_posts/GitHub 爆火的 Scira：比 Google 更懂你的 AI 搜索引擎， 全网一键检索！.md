@@ -1,5 +1,6 @@
 ---
-title: GitHub 爆火的 Scira：比 Google 更懂你的 AI 搜索引擎， 全网一键检索！
+title: "GitHub 爆火的 Scira：比 Google 更懂你的 AI 搜索引擎， 全网一键检索！"
+permalink: github-爆火的-scira-比-google-更懂你的-ai-搜索引擎-全网一键检索
 date: 2025-07-28 23:16:39
 tags:
   - 公众号

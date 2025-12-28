@@ -1,5 +1,6 @@
 ---
-title: GitHub开源最强MCP客户端指南！手把手教你玩转AI交互！
+title: "GitHub开源最强MCP客户端指南！手把手教你玩转AI交互！"
+permalink: github开源最强mcp客户端指南-手把手教你玩转ai交互
 date: 2025-04-02 23:25:55
 tags:
   - 公众号

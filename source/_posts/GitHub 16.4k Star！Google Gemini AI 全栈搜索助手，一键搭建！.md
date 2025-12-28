@@ -1,5 +1,6 @@
 ---
-title: GitHub 16.4k Star！Google Gemini AI 全栈搜索助手，一键搭建！
+title: "GitHub 16.4k Star！Google Gemini AI 全栈搜索助手，一键搭建！"
+permalink: github-16-4k-star-google-gemini-ai-全栈搜索助手-一键搭建
 date: 2025-08-15 22:44:51
 tags:
   - 公众号

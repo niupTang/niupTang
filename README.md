@@ -63,19 +63,55 @@ cd niupTang
 npm install
 ```
 
-3. **启动本地服务器**
+### 本地开发
 
 ```bash
-npm run server
+# 复制配置模板
+cp _config.example.yml _config.yml
+
+# 编辑 _config.yml 填入真实配置（此文件不会被提交到 Git）
+
+# 启动开发服务器
+npm run dev
 ```
 
 访问 `http://localhost:4000` 查看博客
 
-### 构建部署
+### 部署到 Vercel
+
+**🚀 [查看快速部署指南](./QUICK_DEPLOY.md)**
+
+1. **安全检查**
+
+```bash
+# 运行安全检查，确保没有敏感信息泄露
+node scripts/security-check.js
+```
+
+2. **推送到 GitHub**
+
+```bash
+git add .
+git commit -m "准备部署"
+git push origin main
+```
+
+3. **在 Vercel 中配置**
+
+- 导入 GitHub 仓库
+- Build Command: `npm run vercel-build`
+- Output Directory: `public`
+- 添加环境变量:
+  - `WECHAT_APP_ID`: 您的微信 AppID
+  - `WECHAT_APP_SECRET`: 您的微信 AppSecret
+
+**📚 详细部署文档**: [VERCEL_DEPLOY_GUIDE.md](./VERCEL_DEPLOY_GUIDE.md)
+
+### 传统部署
 
 ```bash
 # 清理缓存
-npm run clean
+hexo clean
 
 # 生成静态文件
 npm run build
@@ -104,15 +140,22 @@ npm run publish
 
 ### 配置说明
 
+**⚠️ 重要**: `_config.yml` 包含敏感信息，已在 `.gitignore` 中，不会被提交到 Git。
+
 在 `_config.yml` 中配置微信公众号参数:
 
 ```yaml
 wechat_image:
   enable: true
-  appId: your_app_id
-  appSecret: your_app_secret
+  appId: wx1234567890abcdef  # 您的真实 AppID
+  appSecret: 1234567890abcdef1234567890abcdef  # 您的真实 AppSecret
   proxyUrl: http://localhost:8789
 ```
+
+**首次使用**:
+1. 复制配置模板: `cp _config.example.yml _config.yml`
+2. 编辑 `_config.yml` 填入真实配置
+3. 运行安全检查: `node scripts/security-check.js`
 
 ## 📂 项目结构
 
@@ -148,12 +191,27 @@ niupTang/
 
 | 命令 | 说明 |
 |------|------|
-| `npm run server` | 启动本地开发服务器 |
+| `npm run dev` | 启动本地开发服务器 |
 | `npm run build` | 生成静态文件 |
-| `npm run clean` | 清理缓存和生成的文件 |
+| `npm run vercel-build` | Vercel 部署构建（自动生成配置） |
 | `npm run deploy` | 部署博客 |
 | `npm run publish` | 发布文章到微信公众号 |
 | `npm run api` | 启动本地 API 代理服务 |
+| `npm run sync-articles` | 同步微信公众号文章 |
+| `npm run year-summary` | 生成年度总结 |
+| `node scripts/security-check.js` | 运行安全检查 |
+| `node fix-frontmatter.js` | 修复文章 Front Matter 格式 |
+
+## 🔒 安全说明
+
+本项目已配置完善的安全措施，保护敏感信息不被泄露：
+
+- ✅ `_config.yml` 已在 `.gitignore` 中
+- ✅ 提供 `_config.example.yml` 配置模板
+- ✅ 自动安全检查脚本
+- ✅ Vercel 环境变量支持
+
+**部署前必读**: [VERCEL_DEPLOY_GUIDE.md](./VERCEL_DEPLOY_GUIDE.md)
 
 ## 🤝 贡献指南
 

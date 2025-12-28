@@ -1,5 +1,6 @@
 ---
-title: Manus 核心技术！！
+title: "Manus 核心技术！！"
+permalink: manus-核心技术
 date: 2025-03-08 23:05:11
 tags:
   - 公众号

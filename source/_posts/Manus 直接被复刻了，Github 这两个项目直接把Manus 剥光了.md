@@ -1,5 +1,6 @@
 ---
-title: Manus 直接被复刻了，Github 这两个项目直接把Manus 剥光了
+title: "Manus 直接被复刻了，Github 这两个项目直接把Manus 剥光了"
+permalink: manus-直接被复刻了-github-这两个项目直接把manus-剥光了
 date: 2025-03-07 21:11:42
 tags:
   - 公众号

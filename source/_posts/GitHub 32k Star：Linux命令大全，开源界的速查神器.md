@@ -1,5 +1,6 @@
 ---
-title: GitHub 32k Star：Linux命令大全，开源界的速查神器
+title: "GitHub 32k Star：Linux命令大全，开源界的速查神器"
+permalink: github-32k-star-linux命令大全-开源界的速查神器
 date: 2024-12-26 19:21:56
 tags:
   - 公众号

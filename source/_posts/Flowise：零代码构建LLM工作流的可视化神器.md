@@ -1,5 +1,6 @@
 ---
-title: Flowise：零代码构建LLM工作流的可视化神器
+title: "Flowise：零代码构建LLM工作流的可视化神器"
+permalink: flowise-零代码构建llm工作流的可视化神器
 date: 2025-06-03 23:29:05
 tags:
   - 公众号

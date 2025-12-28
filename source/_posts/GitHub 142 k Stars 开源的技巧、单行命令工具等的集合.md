@@ -1,5 +1,6 @@
 ---
-title: GitHub 142 k Stars 开源的技巧、单行命令工具等的集合
+title: "GitHub 142 k Stars 开源的技巧、单行命令工具等的集合"
+permalink: github-142-k-stars-开源的技巧-单行命令工具等的集合
 date: 2024-09-03 20:36:30
 tags:
   - 公众号

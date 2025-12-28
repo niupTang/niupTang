@@ -1,5 +1,6 @@
 ---
-title: 语音合成迎来革命！VoxCPM端到端架构登顶SOTA，在家用显卡上流畅运行
+title: "语音合成迎来革命！VoxCPM端到端架构登顶SOTA，在家用显卡上流畅运行"
+permalink: 语音合成迎来革命-voxcpm端到端架构登顶sota-在家用显卡上流畅运行
 date: 2025-09-24 23:44:38
 tags:
   - 公众号

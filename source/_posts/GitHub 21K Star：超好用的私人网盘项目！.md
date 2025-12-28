@@ -1,5 +1,6 @@
 ---
-title: GitHub 21K Star：超好用的私人网盘项目！
+title: "GitHub 21K Star：超好用的私人网盘项目！"
+permalink: github-21k-star-超好用的私人网盘项目
 date: 2024-10-16 22:23:28
 tags:
   - 公众号

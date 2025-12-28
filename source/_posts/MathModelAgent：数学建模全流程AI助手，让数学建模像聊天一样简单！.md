@@ -1,5 +1,6 @@
 ---
-title: MathModelAgent：数学建模全流程AI助手，让数学建模像聊天一样简单！
+title: "MathModelAgent：数学建模全流程AI助手，让数学建模像聊天一样简单！"
+permalink: mathmodelagent-数学建模全流程ai助手-让数学建模像聊天一样简单
 date: 2025-05-17 22:27:34
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 超级热门 4 款RAG（Retrieval-Augmented Generation）
+title: "GitHub 超级热门 4 款RAG（Retrieval-Augmented Generation）"
+permalink: github-超级热门-4-款rag-retrieval-augmented-generation
 date: 2024-07-17 22:46:44
 tags:
   - 公众号

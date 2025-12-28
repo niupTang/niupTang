@@ -1,5 +1,6 @@
 ---
-title: Github 开源 NoteBookLM ， Google 直接被掀桌子
+title: "Github 开源 NoteBookLM ， Google 直接被掀桌子"
+permalink: github-开源-notebooklm-google-直接被掀桌子
 date: 2025-12-14 23:13:32
 tags:
   - 公众号

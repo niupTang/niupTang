@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | 打通Notion、GitHub、搜索引擎的AI超脑
+title: "GitHub 开源项目 | 打通Notion、GitHub、搜索引擎的AI超脑"
+permalink: github-开源项目-打通notion-github-搜索引擎的ai超脑
 date: 2025-05-11 23:17:03
 tags:
   - 公众号

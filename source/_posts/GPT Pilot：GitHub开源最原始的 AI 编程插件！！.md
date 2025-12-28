@@ -1,5 +1,6 @@
 ---
-title: GPT Pilot：GitHub开源最原始的 AI 编程插件！！
+title: "GPT Pilot：GitHub开源最原始的 AI 编程插件！！"
+permalink: gpt-pilot-github开源最原始的-ai-编程插件
 date: 2025-09-02 22:03:05
 tags:
   - 公众号

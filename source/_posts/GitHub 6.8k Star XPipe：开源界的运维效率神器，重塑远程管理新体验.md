@@ -1,5 +1,6 @@
 ---
-title: GitHub 6.8k Star XPipe：开源界的运维效率神器，重塑远程管理新体验
+title: "GitHub 6.8k Star XPipe：开源界的运维效率神器，重塑远程管理新体验"
+permalink: github-6-8k-star-xpipe-开源界的运维效率神器-重塑远程管理新体验
 date: 2025-03-14 22:42:50
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 12.2K Star！必备聚合阅读神器 NewsNow，告别信息焦虑！
+title: "GitHub 12.2K Star！必备聚合阅读神器 NewsNow，告别信息焦虑！"
+permalink: github-12-2k-star-必备聚合阅读神器-newsnow-告别信息焦虑
 date: 2025-07-27 23:25:33
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: Github 3k Stars 微信聊天记录持久化备份本地硬盘，释放手机存储空间。
+title: "Github 3k Stars 微信聊天记录持久化备份本地硬盘，释放手机存储空间。"
+permalink: github-3k-stars-微信聊天记录持久化备份本地硬盘-释放手机存储空间
 date: 2024-09-11 22:29:22
 tags:
   - 公众号

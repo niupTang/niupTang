@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源：把 Claude Code 打造成“六边形战士”
+title: "GitHub 开源：把 Claude Code 打造成“六边形战士”"
+permalink: github-开源-把-claude-code-打造成-六边形战士
 date: 2025-12-16 22:49:59
 tags:
   - 公众号

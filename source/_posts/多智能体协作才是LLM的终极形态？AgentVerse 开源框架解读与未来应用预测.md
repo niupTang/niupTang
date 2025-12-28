@@ -1,5 +1,6 @@
 ---
-title: 多智能体协作才是LLM的终极形态？AgentVerse 开源框架解读与未来应用预测
+title: "多智能体协作才是LLM的终极形态？AgentVerse 开源框架解读与未来应用预测"
+permalink: 多智能体协作才是llm的终极形态-agentverse-开源框架解读与未来应用预测
 date: 2025-09-05 23:47:13
 tags:
   - 公众号

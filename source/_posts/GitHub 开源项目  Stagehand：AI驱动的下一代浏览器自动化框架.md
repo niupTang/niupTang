@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | Stagehand：AI驱动的下一代浏览器自动化框架
+title: "GitHub 开源项目 | Stagehand：AI驱动的下一代浏览器自动化框架"
+permalink: github-开源项目-stagehand-ai驱动的下一代浏览器自动化框架
 date: 2025-04-15 22:59:09
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | KoalaWiki：两天复刻DeepWiki
+title: "GitHub 开源项目 | KoalaWiki：两天复刻DeepWiki"
+permalink: github-开源项目-koalawiki-两天复刻deepwiki
 date: 2025-05-01 22:31:45
 tags:
   - 公众号

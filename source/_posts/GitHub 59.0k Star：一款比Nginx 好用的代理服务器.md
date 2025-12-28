@@ -1,5 +1,6 @@
 ---
-title: GitHub 59.0k Star：一款比Nginx 好用的代理服务器
+title: "GitHub 59.0k Star：一款比Nginx 好用的代理服务器"
+permalink: github-59-0k-star-一款比nginx-好用的代理服务器
 date: 2025-01-02 21:14:57
 tags:
   - 公众号

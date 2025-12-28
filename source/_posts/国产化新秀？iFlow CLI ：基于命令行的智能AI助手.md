@@ -1,5 +1,6 @@
 ---
-title: 国产化新秀？iFlow CLI ：基于命令行的智能AI助手
+title: "国产化新秀？iFlow CLI ：基于命令行的智能AI助手"
+permalink: 国产化新秀-iflow-cli-基于命令行的智能ai助手
 date: 2025-09-07 22:35:11
 tags:
   - 公众号

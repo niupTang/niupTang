@@ -1,5 +1,6 @@
 ---
-title: Github 开源自托管 AI 编程助手，提升团队生产力！
+title: "Github 开源自托管 AI 编程助手，提升团队生产力！"
+permalink: github-开源自托管-ai-编程助手-提升团队生产力
 date: 2025-01-14 22:43:39
 tags:
   - 公众号

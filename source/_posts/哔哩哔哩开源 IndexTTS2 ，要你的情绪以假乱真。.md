@@ -1,5 +1,6 @@
 ---
-title: 哔哩哔哩开源 IndexTTS2 ，要你的情绪以假乱真。
+title: "哔哩哔哩开源 IndexTTS2 ，要你的情绪以假乱真。"
+permalink: 哔哩哔哩开源-indextts2-要你的情绪以假乱真
 date: 2025-09-26 22:48:08
 tags:
   - 公众号

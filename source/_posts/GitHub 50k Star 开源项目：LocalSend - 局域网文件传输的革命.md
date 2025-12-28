@@ -1,5 +1,6 @@
 ---
-title: GitHub 50k Star 开源项目：LocalSend - 局域网文件传输的革命
+title: "GitHub 50k Star 开源项目：LocalSend - 局域网文件传输的革命"
+permalink: github-50k-star-开源项目-localsend-局域网文件传输的革命
 date: 2024-12-14 19:00:56
 tags:
   - 公众号

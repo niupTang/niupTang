@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源：侧重于 Claude Code 工具与实战（适合教程/工具推荐）
+title: "GitHub 开源：侧重于 Claude Code 工具与实战（适合教程/工具推荐）"
+permalink: github-开源-侧重于-claude-code-工具与实战-适合教程工具推荐
 date: 2025-12-20 23:29:48
 tags:
   - 公众号

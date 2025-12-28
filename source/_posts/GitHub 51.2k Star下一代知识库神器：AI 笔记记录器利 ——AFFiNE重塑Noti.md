@@ -1,5 +1,6 @@
 ---
-title: GitHub 51.2k Star下一代知识库神器：AI 笔记记录器利 ——AFFiNE重塑Notion式协作
+title: "GitHub 51.2k Star下一代知识库神器：AI 笔记记录器利 ——AFFiNE重塑Notion式协作"
+permalink: github-51-2k-star下一代知识库神器-ai-笔记记录器利-affine重塑noti
 date: 2025-05-31 23:10:03
 tags:
   - 公众号

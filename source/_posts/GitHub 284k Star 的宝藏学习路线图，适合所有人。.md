@@ -1,5 +1,6 @@
 ---
-title: GitHub 284k Star 的宝藏学习路线图，适合所有人。
+title: "GitHub 284k Star 的宝藏学习路线图，适合所有人。"
+permalink: github-284k-star-的宝藏学习路线图-适合所有人
 date: 2024-07-29 21:34:21
 tags:
   - 公众号

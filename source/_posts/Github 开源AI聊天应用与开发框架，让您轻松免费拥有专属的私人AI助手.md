@@ -1,5 +1,6 @@
 ---
-title: Github 开源AI聊天应用与开发框架，让您轻松免费拥有专属的私人AI助手
+title: "Github 开源AI聊天应用与开发框架，让您轻松免费拥有专属的私人AI助手"
+permalink: github-开源ai聊天应用与开发框架-让您轻松免费拥有专属的私人ai助手
 date: 2025-01-08 21:38:54
 tags:
   - 公众号

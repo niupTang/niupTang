@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源！！OCR效果强的离谱，打工人必备
+title: "GitHub 开源！！OCR效果强的离谱，打工人必备"
+permalink: github-开源-ocr效果强的离谱-打工人必备
 date: 2025-06-12 21:45:34
 tags:
   - 公众号

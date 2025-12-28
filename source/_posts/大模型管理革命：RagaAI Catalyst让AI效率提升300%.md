@@ -1,5 +1,6 @@
 ---
-title: 大模型管理革命：RagaAI Catalyst让AI效率提升300%
+title: "大模型管理革命：RagaAI Catalyst让AI效率提升300%"
+permalink: ragaai-catalyst-llm-management
 date: 2025-03-19 22:02:38
 tags:
   - 公众号

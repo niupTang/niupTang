@@ -1,5 +1,6 @@
 ---
-title: GitHub 14k Star！这款开源神器让抖音、TikTok 下载变得前所未有的简单！
+title: "GitHub 14k Star！这款开源神器让抖音、TikTok 下载变得前所未有的简单！"
+permalink: github-14k-star-这款开源神器让抖音-tiktok-下载变得前所未有的简单
 date: 2025-07-09 22:17:42
 tags:
   - 公众号

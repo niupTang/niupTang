@@ -1,5 +1,6 @@
 ---
-title: vscode 重磅开源AI 编程工具：cursor 护城河在哪？
+title: "vscode 重磅开源AI 编程工具：cursor 护城河在哪？"
+permalink: vscode-重磅开源ai-编程工具-cursor-护城河在哪
 date: 2025-05-16 22:57:12
 tags:
   - 公众号

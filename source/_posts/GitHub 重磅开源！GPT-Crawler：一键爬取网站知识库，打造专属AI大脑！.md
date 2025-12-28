@@ -1,5 +1,6 @@
 ---
-title: GitHub 重磅开源！GPT-Crawler：一键爬取网站知识库，打造专属AI大脑！
+title: "GitHub 重磅开源！GPT-Crawler：一键爬取网站知识库，打造专属AI大脑！"
+permalink: github-重磅开源-gpt-crawler-一键爬取网站知识库-打造专属ai大脑
 date: 2025-03-28 22:27:02
 tags:
   - 公众号

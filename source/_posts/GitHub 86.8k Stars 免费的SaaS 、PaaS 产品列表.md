@@ -1,5 +1,6 @@
 ---
-title: GitHub 86.8k Stars 免费的SaaS 、PaaS 产品列表
+title: "GitHub 86.8k Stars 免费的SaaS 、PaaS 产品列表"
+permalink: github-86-8k-stars-免费的saas-paas-产品列表
 date: 2024-09-02 22:25:58
 tags:
   - 公众号

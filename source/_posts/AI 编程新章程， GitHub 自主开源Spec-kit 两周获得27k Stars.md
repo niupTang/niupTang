@@ -1,5 +1,6 @@
 ---
-title: AI 编程新章程， GitHub 自主开源Spec-kit 两周获得27k Stars
+title: "AI 编程新章程， GitHub 自主开源Spec-kit 两周获得27k Stars"
+permalink: ai-编程新章程-github-自主开源spec-kit-两周获得27k-stars
 date: 2025-09-27 23:44:35
 tags:
   - 公众号

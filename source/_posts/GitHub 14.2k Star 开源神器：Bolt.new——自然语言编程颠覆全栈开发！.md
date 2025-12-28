@@ -1,5 +1,6 @@
 ---
-title: GitHub 14.2k Star 开源神器：Bolt.new——自然语言编程颠覆全栈开发！
+title: "GitHub 14.2k Star 开源神器：Bolt.new——自然语言编程颠覆全栈开发！"
+permalink: github-14-2k-star-开源神器-bolt-new-自然语言编程颠覆全栈开发
 date: 2025-04-12 09:59:44
 tags:
   - 公众号

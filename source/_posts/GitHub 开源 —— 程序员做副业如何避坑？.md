@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源 —— 程序员做副业如何避坑？
+title: "GitHub 开源 —— 程序员做副业如何避坑？"
+permalink: github-开源-程序员做副业如何避坑
 date: 2025-10-19 22:38:26
 tags:
   - 公众号

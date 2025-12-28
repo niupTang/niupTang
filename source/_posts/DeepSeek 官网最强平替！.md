@@ -1,5 +1,6 @@
 ---
-title: DeepSeek 官网最强平替！
+title: "DeepSeek 官网最强平替！"
+permalink: deepseek-官网最强平替
 date: 2025-02-05 23:20:19
 tags:
   - 公众号

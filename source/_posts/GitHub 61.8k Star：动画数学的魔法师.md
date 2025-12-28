@@ -1,5 +1,6 @@
 ---
-title: GitHub 61.8k Star：动画数学的魔法师
+title: "GitHub 61.8k Star：动画数学的魔法师"
+permalink: github-61-8k-star-动画数学的魔法师
 date: 2024-10-13 21:55:20
 tags:
   - 公众号

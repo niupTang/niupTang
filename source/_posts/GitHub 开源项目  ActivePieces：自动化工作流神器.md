@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | ActivePieces：自动化工作流神器
+title: "GitHub 开源项目 | ActivePieces：自动化工作流神器"
+permalink: github-开源项目-activepieces-自动化工作流神器
 date: 2025-04-22 12:32:08
 tags:
   - 公众号

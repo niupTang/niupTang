@@ -1,5 +1,6 @@
 ---
-title: GitHub 18.2k Star STORM：用AI打造知识宝库，从零开始撰写维基百科式文章
+title: "GitHub 18.2k Star STORM：用AI打造知识宝库，从零开始撰写维基百科式文章"
+permalink: github-18-2k-star-storm-用ai打造知识宝库-从零开始撰写维基百科式文章
 date: 2025-01-07 20:49:03
 tags:
   - 公众号

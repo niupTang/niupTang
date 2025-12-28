@@ -1,5 +1,6 @@
 ---
-title: Github 开源的扣子空间！！
+title: "Github 开源的扣子空间！！"
+permalink: github-开源的扣子空间
 date: 2025-04-21 22:25:09
 tags:
   - 公众号

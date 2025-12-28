@@ -1,5 +1,6 @@
 ---
-title: 下一个AI风口：自主Agent已开源！比Manus更懂多任务协同
+title: "下一个AI风口：自主Agent已开源！比Manus更懂多任务协同"
+permalink: 下一个ai风口-自主agent已开源-比manus更懂多任务协同
 date: 2025-05-26 22:11:16
 tags:
   - 公众号

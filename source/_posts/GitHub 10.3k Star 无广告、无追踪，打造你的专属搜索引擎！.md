@@ -1,5 +1,6 @@
 ---
-title: GitHub 10.3k Star 无广告、无追踪，打造你的专属搜索引擎！
+title: "GitHub 10.3k Star 无广告、无追踪，打造你的专属搜索引擎！"
+permalink: github-10-3k-star-无广告-无追踪-打造你的专属搜索引擎
 date: 2025-01-21 20:34:07
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 60k星项目：程序员必访的36个最佳主题
+title: "GitHub 60k星项目：程序员必访的36个最佳主题"
+permalink: github-60k星项目-程序员必访的36个最佳主题
 date: 2024-09-25 21:33:26
 tags:
   - 公众号

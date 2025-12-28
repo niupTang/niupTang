@@ -1,5 +1,6 @@
 ---
-title: Umi-OCR：开源的文字识别工具
+title: "Umi-OCR：开源的文字识别工具"
+permalink: umi-ocr-开源的文字识别工具
 date: 2024-09-08 18:39:48
 tags:
   - 公众号

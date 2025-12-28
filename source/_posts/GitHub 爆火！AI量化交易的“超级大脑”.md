@@ -1,5 +1,6 @@
 ---
-title: GitHub 爆火！AI量化交易的“超级大脑”
+title: "GitHub 爆火！AI量化交易的“超级大脑”"
+permalink: github-爆火-ai量化交易的-超级大脑
 date: 2025-02-11 22:43:21
 tags:
   - 公众号

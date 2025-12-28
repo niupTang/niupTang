@@ -1,5 +1,6 @@
 ---
-title: GitHub 14k Star 项目 Katana：自动化扫描必备的“爬行神器“
+title: "GitHub 14k Star 项目 Katana：自动化扫描必备的“爬行神器“"
+permalink: github-14k-star-项目-katana-自动化扫描必备的-爬行神器
 date: 2025-08-09 22:17:35
 tags:
   - 公众号

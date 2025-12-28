@@ -1,5 +1,6 @@
 ---
-title: 推荐 3 个开源 MCP 神器，yyds。
+title: "推荐 3 个开源 MCP 神器，yyds。"
+permalink: 推荐-3-个开源-mcp-神器-yyds
 date: 2025-06-11 21:42:26
 tags:
   - 公众号

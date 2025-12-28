@@ -1,5 +1,6 @@
 ---
-title: GitHub 15k Stars 开源动态壁纸软件，打造个性化桌面体验！
+title: "GitHub 15k Stars 开源动态壁纸软件，打造个性化桌面体验！"
+permalink: github-15k-stars-开源动态壁纸软件-打造个性化桌面体验
 date: 2024-11-30 19:51:42
 tags:
   - 公众号

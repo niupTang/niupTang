@@ -1,5 +1,6 @@
 ---
-title: GitHub开源项目：中科院AI神器，一键文档转PPT！
+title: "GitHub开源项目：中科院AI神器，一键文档转PPT！"
+permalink: github开源项目-中科院ai神器-一键文档转ppt
 date: 2025-04-03 23:19:09
 tags:
   - 公众号

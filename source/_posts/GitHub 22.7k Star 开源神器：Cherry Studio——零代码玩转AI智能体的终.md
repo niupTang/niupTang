@@ -1,5 +1,6 @@
 ---
-title: GitHub 22.7k Star 开源神器：Cherry Studio——零代码玩转AI智能体的终极利器！
+title: "GitHub 22.7k Star 开源神器：Cherry Studio——零代码玩转AI智能体的终极利器！"
+permalink: github-22-7k-star-开源神器-cherry-studio-零代码玩转ai智能体的终
 date: 2025-04-05 21:38:42
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 26kStar 项目：程序员的公务员考试宝典
+title: "GitHub 26kStar 项目：程序员的公务员考试宝典"
+permalink: github-26kstar-项目-程序员的公务员考试宝典
 date: 2024-09-08 18:39:48
 tags:
   - 公众号

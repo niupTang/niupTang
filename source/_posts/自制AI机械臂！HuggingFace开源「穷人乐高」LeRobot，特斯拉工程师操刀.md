@@ -1,5 +1,6 @@
 ---
-title: 自制AI机械臂！HuggingFace开源「穷人乐高」LeRobot，特斯拉工程师操刀
+title: "自制AI机械臂！HuggingFace开源「穷人乐高」LeRobot，特斯拉工程师操刀"
+permalink: 自制ai机械臂-huggingface开源-穷人乐高-lerobot-特斯拉工程师操刀
 date: 2025-03-25 21:40:16
 tags:
   - 公众号

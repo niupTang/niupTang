@@ -1,5 +1,6 @@
 ---
-title: GPT 终于开源了！！！
+title: "GPT 终于开源了！！！"
+permalink: gpt-终于开源了
 date: 2025-08-08 20:41:11
 tags:
   - 公众号

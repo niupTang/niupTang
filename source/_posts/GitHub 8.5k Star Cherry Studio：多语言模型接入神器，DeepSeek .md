@@ -1,5 +1,6 @@
 ---
-title: GitHub 8.5k Star Cherry Studio：多语言模型接入神器，DeepSeek 本地知识库也能轻松搞定！
+title: "GitHub 8.5k Star Cherry Studio：多语言模型接入神器，DeepSeek 本地知识库也能轻松搞定！"
+permalink: github-8-5k-star-cherry-studio-多语言模型接入神器-deepseek
 date: 2025-02-09 22:12:18
 tags:
   - 公众号

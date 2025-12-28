@@ -1,5 +1,6 @@
 ---
-title: GitHub 爆火 快速搭建企业级别知识库！！
+title: "GitHub 爆火 快速搭建企业级别知识库！！"
+permalink: github-爆火-快速搭建企业级别知识库
 date: 2025-07-29 22:19:20
 tags:
   - 公众号

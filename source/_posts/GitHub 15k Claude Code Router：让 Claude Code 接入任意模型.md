@@ -1,5 +1,6 @@
 ---
-title: GitHub 15k Claude Code Router：让 Claude Code 接入任意模型自由发挥！
+title: "GitHub 15k Claude Code Router：让 Claude Code 接入任意模型自由发挥！"
+permalink: github-15k-claude-code-router-让-claude-code-接入任意模型
 date: 2025-08-25 23:57:34
 tags:
   - 公众号

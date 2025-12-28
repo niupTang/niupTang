@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | 反AI爬虫神器 Anubis：用工作量证明保护你的网站
+title: "GitHub 开源项目 | 反AI爬虫神器 Anubis：用工作量证明保护你的网站"
+permalink: github-开源项目-反ai爬虫神器-anubis-用工作量证明保护你的网站
 date: 2025-05-06 20:30:16
 tags:
   - 公众号

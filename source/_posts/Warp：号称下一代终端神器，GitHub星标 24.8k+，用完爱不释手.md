@@ -1,5 +1,6 @@
 ---
-title: Warp：号称下一代终端神器，GitHub星标 24.8k+，用完爱不释手
+title: "Warp：号称下一代终端神器，GitHub星标 24.8k+，用完爱不释手"
+permalink: warp-号称下一代终端神器-github星标-24-8k-用完爱不释手
 date: 2025-09-13 23:10:47
 tags:
   - 公众号

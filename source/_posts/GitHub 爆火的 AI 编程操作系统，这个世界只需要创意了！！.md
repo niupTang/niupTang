@@ -1,5 +1,6 @@
 ---
-title: GitHub 爆火的 AI 编程操作系统，这个世界只需要创意了！！
+title: "GitHub 爆火的 AI 编程操作系统，这个世界只需要创意了！！"
+permalink: github-爆火的-ai-编程操作系统-这个世界只需要创意了
 date: 2025-08-22 23:40:18
 tags:
   - 公众号

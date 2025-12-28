@@ -1,5 +1,6 @@
 ---
-title: ColossalAI开源神器，助力AI开发者轻松搞定大规模模型训练
+title: "ColossalAI开源神器，助力AI开发者轻松搞定大规模模型训练"
+permalink: colossalai开源神器-助力ai开发者轻松搞定大规模模型训练
 date: 2025-01-20 18:45:51
 tags:
   - 公众号

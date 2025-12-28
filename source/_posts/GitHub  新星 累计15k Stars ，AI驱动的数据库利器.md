@@ -1,5 +1,6 @@
 ---
-title: GitHub  新星 累计15k Stars ，AI驱动的数据库利器
+title: "GitHub  新星 累计15k Stars ，AI驱动的数据库利器"
+permalink: github-新星-累计15k-stars-ai驱动的数据库利器
 date: 2024-11-02 20:40:13
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 6.8K Star 微信排版神器升级！AI加持的Markdown编辑器doocs/md
+title: "GitHub 6.8K Star 微信排版神器升级！AI加持的Markdown编辑器doocs/md"
+permalink: github-6-8k-star-微信排版神器升级-ai加持的markdown编辑器doocs-md
 date: 2025-12-22 23:10:00
 tags:
   - 公众号

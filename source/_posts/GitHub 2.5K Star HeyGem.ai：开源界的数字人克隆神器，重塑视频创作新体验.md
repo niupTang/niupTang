@@ -1,5 +1,6 @@
 ---
-title: GitHub 2.5K Star HeyGem.ai：开源界的数字人克隆神器，重塑视频创作新体验
+title: "GitHub 2.5K Star HeyGem.ai：开源界的数字人克隆神器，重塑视频创作新体验"
+permalink: github-2-5k-star-heygem-ai-开源界的数字人克隆神器-重塑视频创作新体验
 date: 2025-03-15 22:46:55
 tags:
   - 公众号

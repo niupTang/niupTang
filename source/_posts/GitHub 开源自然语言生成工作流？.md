@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源自然语言生成工作流？
+title: "GitHub 开源自然语言生成工作流？"
+permalink: github-开源自然语言生成工作流
 date: 2025-10-07 22:24:53
 tags:
   - 公众号

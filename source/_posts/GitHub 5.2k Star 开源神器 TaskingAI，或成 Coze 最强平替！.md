@@ -1,5 +1,6 @@
 ---
-title: GitHub 5.2k Star 开源神器 TaskingAI，或成 Coze 最强平替！
+title: "GitHub 5.2k Star 开源神器 TaskingAI，或成 Coze 最强平替！"
+permalink: github-5-2k-star-开源神器-taskingai-或成-coze-最强平替
 date: 2025-07-05 22:59:08
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 16k Star Postiz-App：AI加持的社交媒体排程工具，运营效率翻倍不是梦
+title: "GitHub 16k Star Postiz-App：AI加持的社交媒体排程工具，运营效率翻倍不是梦"
+permalink: github-16k-star-postiz-app-ai加持的社交媒体排程工具-运营效率翻倍不是梦
 date: 2025-01-04 20:53:14
 tags:
   - 公众号

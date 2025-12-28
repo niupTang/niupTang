@@ -1,5 +1,6 @@
 ---
-title: AI 智能体落地？GitHub 开源 Manus 完美的替代品！！！
+title: "AI 智能体落地？GitHub 开源 Manus 完美的替代品！！！"
+permalink: ai-智能体落地-github-开源-manus-完美的替代品
 date: 2025-03-06 13:01:19
 tags:
   - 公众号

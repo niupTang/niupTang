@@ -1,5 +1,6 @@
 ---
-title: GitHub  开源神器：BabelDOC——让文档自动同步代码的神器！
+title: "GitHub  开源神器：BabelDOC——让文档自动同步代码的神器！"
+permalink: github-开源神器-babeldoc-让文档自动同步代码的神器
 date: 2025-04-06 21:22:48
 tags:
   - 公众号

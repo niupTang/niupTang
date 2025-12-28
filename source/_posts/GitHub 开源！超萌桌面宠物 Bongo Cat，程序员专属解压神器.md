@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源！超萌桌面宠物 Bongo Cat，程序员专属解压神器
+title: "GitHub 开源！超萌桌面宠物 Bongo Cat，程序员专属解压神器"
+permalink: github-开源-超萌桌面宠物-bongo-cat-程序员专属解压神器
 date: 2025-05-17 22:27:34
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: AFFiNE横空出世！这款开源神器正悄悄取代Notion，生产力飙升200%！
+title: "AFFiNE横空出世！这款开源神器正悄悄取代Notion，生产力飙升200%！"
+permalink: affine横空出世-这款开源神器正悄悄取代notion-生产力飙升200
 date: 2025-07-25 23:55:22
 tags:
   - 公众号

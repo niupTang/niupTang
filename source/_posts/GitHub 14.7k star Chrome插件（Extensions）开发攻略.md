@@ -1,5 +1,6 @@
 ---
-title: GitHub 14.7k star Chrome插件（Extensions）开发攻略
+title: "GitHub 14.7k star Chrome插件（Extensions）开发攻略"
+permalink: github-14-7k-star-chrome插件-extensions-开发攻略
 date: 2024-07-13 11:44:11
 tags:
   - 公众号

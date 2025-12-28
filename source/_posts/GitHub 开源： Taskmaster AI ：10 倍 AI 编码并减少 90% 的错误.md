@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源： Taskmaster AI ：10 倍 AI 编码并减少 90% 的错误
+title: "GitHub 开源： Taskmaster AI ：10 倍 AI 编码并减少 90% 的错误"
+permalink: github-开源-taskmaster-ai-10-倍-ai-编码并减少-90-的错误
 date: 2025-09-21 22:42:20
 tags:
   - 公众号

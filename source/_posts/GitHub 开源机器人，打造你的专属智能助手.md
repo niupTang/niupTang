@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源机器人，打造你的专属智能助手
+title: "GitHub 开源机器人，打造你的专属智能助手"
+permalink: github-开源机器人-打造你的专属智能助手
 date: 2025-02-28 21:44:57
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 4.1k Star 神器：把AI 嵌入 draw-io 用自然语言，秒画专业流程图和架构图！
+title: "GitHub 4.1k Star 神器：把AI 嵌入 draw-io 用自然语言，秒画专业流程图和架构图！"
+permalink: github-4-1k-star-神器-把ai-嵌入-draw-io-用自然语言-秒画专业流程图和架
 date: 2025-12-06 18:09:32
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub最硬核AI资源！手把手教你打造会思考的AI助理
+title: "GitHub最硬核AI资源！手把手教你打造会思考的AI助理"
+permalink: github最硬核ai资源-手把手教你打造会思考的ai助理
 date: 2025-02-25 21:32:21
 tags:
   - 公众号

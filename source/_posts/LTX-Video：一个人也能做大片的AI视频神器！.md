@@ -1,5 +1,6 @@
 ---
-title: LTX-Video：一个人也能做大片的AI视频神器！
+title: "LTX-Video：一个人也能做大片的AI视频神器！"
+permalink: ltx-video-一个人也能做大片的ai视频神器
 date: 2025-07-18 23:31:46
 tags:
   - 公众号

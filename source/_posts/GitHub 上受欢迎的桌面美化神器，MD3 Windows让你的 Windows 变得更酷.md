@@ -1,5 +1,6 @@
 ---
-title: GitHub 上受欢迎的桌面美化神器，MD3 Windows让你的 Windows 变得更酷
+title: "GitHub 上受欢迎的桌面美化神器，MD3 Windows让你的 Windows 变得更酷"
+permalink: github-上受欢迎的桌面美化神器-md3-windows让你的-windows-变得更酷
 date: 2024-12-16 20:19:22
 tags:
   - 公众号

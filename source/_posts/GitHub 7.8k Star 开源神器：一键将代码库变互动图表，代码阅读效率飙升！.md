@@ -1,5 +1,6 @@
 ---
-title: GitHub 7.8k Star 开源神器：一键将代码库变互动图表，代码阅读效率飙升！
+title: "GitHub 7.8k Star 开源神器：一键将代码库变互动图表，代码阅读效率飙升！"
+permalink: github-7-8k-star-开源神器-一键将代码库变互动图表-代码阅读效率飙升
 date: 2025-04-04 22:19:32
 tags:
   - 公众号

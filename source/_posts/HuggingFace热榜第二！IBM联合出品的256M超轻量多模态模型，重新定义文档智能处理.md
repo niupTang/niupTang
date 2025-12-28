@@ -1,5 +1,6 @@
 ---
-title: HuggingFace热榜第二！IBM联合出品的256M超轻量多模态模型，重新定义文档智能处理
+title: "HuggingFace热榜第二！IBM联合出品的256M超轻量多模态模型，重新定义文档智能处理"
+permalink: huggingface热榜第二-ibm联合出品的256m超轻量多模态模型-重新定义文档智能处理
 date: 2025-03-27 22:09:07
 tags:
   - 公众号

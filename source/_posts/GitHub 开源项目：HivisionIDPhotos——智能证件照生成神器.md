@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目：HivisionIDPhotos——智能证件照生成神器
+title: "GitHub 开源项目：HivisionIDPhotos——智能证件照生成神器"
+permalink: github-开源项目-hivisionidphotos-智能证件照生成神器
 date: 2025-05-23 23:09:43
 tags:
   - 公众号

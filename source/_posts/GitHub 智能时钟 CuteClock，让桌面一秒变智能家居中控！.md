@@ -1,5 +1,6 @@
 ---
-title: GitHub 智能时钟 CuteClock，让桌面一秒变智能家居中控！
+title: "GitHub 智能时钟 CuteClock，让桌面一秒变智能家居中控！"
+permalink: github-智能时钟-cuteclock-让桌面一秒变智能家居中控
 date: 2025-08-16 22:58:50
 tags:
   - 公众号

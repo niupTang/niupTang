@@ -1,5 +1,6 @@
 ---
-title: 无需写 SQL！！Vanna AI 教你“聊天”式提问，自动生成查询！
+title: "无需写 SQL！！Vanna AI 教你“聊天”式提问，自动生成查询！"
+permalink: 无需写-sql-vanna-ai-教你-聊天-式提问-自动生成查询
 date: 2025-07-17 22:54:08
 tags:
   - 公众号

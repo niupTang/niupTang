@@ -1,5 +1,6 @@
 ---
-title: GitHub 23k Star：比特币技术指南，从入门到精通
+title: "GitHub 23k Star：比特币技术指南，从入门到精通"
+permalink: github-23k-star-比特币技术指南-从入门到精通
 date: 2024-09-27 19:25:03
 tags:
   - 公众号

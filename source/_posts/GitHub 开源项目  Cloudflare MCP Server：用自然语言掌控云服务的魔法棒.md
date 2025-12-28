@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | Cloudflare MCP Server：用自然语言掌控云服务的"魔法棒"
+title: "GitHub 开源项目 | Cloudflare MCP Server：用自然语言掌控云服务的魔法棒"
+permalink: github-开源项目-cloudflare-mcp-server-用自然语言掌控云服务的魔法棒
 date: 2025-05-03 22:06:46
 tags:
   - 公众号

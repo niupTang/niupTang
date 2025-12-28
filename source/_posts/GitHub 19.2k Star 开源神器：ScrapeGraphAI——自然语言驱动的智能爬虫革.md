@@ -1,5 +1,6 @@
 ---
-title: GitHub 19.2k Star 开源神器：ScrapeGraphAI——自然语言驱动的智能爬虫革命！
+title: "GitHub 19.2k Star 开源神器：ScrapeGraphAI——自然语言驱动的智能爬虫革命！"
+permalink: github-19-2k-star-开源神器-scrapegraphai-自然语言驱动的智能爬虫革
 date: 2025-04-16 21:34:22
 tags:
   - 公众号

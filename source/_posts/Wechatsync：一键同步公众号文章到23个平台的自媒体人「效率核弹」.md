@@ -1,5 +1,6 @@
 ---
-title: Wechatsync：一键同步公众号文章到23个平台的自媒体人「效率核弹」
+title: "Wechatsync：一键同步公众号文章到23个平台的自媒体人「效率核弹」"
+permalink: wechatsync-一键同步公众号文章到23个平台的自媒体人-效率核弹
 date: 2025-05-13 21:49:47
 tags:
   - 公众号

@@ -6,6 +6,7 @@
     "dev": "hexo server",
     "build": "hexo generate",
     "deploy": "hexo deploy",
+    "vercel-build": "node scripts/generate-config.js && hexo generate",
     "sync-articles": "node tools/sync-wechat-articles.js",
     "year-summary": "node tools/generate-year-summary.js",
     "save-html": "node tools/save-html-responses.js",

@@ -1,5 +1,6 @@
 ---
-title: GitHub 万星项目合集：强大又好用的 LLM 应用库
+title: "GitHub 万星项目合集：强大又好用的 LLM 应用库"
+permalink: github-万星项目合集-强大又好用的-llm-应用库
 date: 2025-01-11 19:27:53
 tags:
   - 公众号

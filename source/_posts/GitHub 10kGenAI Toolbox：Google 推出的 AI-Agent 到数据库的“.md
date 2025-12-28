@@ -1,5 +1,6 @@
 ---
-title: GitHub 10kGenAI Toolbox：Google 推出的 AI-Agent 到数据库的“万能桥梁”！
+title: "GitHub 10kGenAI Toolbox：Google 推出的 AI-Agent 到数据库的“万能桥梁”！"
+permalink: github-10kgenai-toolbox-google-推出的-ai-agent-到数据库的
 date: 2025-08-27 23:57:23
 tags:
   - 公众号

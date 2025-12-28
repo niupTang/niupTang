@@ -1,5 +1,6 @@
 ---
-title: Github 推荐！5分钟上手Chrome MCP。
+title: "Github 推荐！5分钟上手Chrome MCP。"
+permalink: github-推荐-5分钟上手chrome-mcp
 date: 2025-08-06 23:17:08
 tags:
   - 公众号

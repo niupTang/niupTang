@@ -1,5 +1,6 @@
 ---
-title: GitHub星标项目 | 告别AI幻觉，Parlant让智能体100%听话
+title: "GitHub星标项目 | 告别AI幻觉,Parlant让智能体100%听话"
+permalink: github-parlant-ai-agent
 date: 2025-10-25 23:19:17
 tags:
   - 公众号

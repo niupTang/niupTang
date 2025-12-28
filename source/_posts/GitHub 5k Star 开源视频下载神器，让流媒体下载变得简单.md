@@ -1,5 +1,6 @@
 ---
-title: GitHub 5k Star 开源视频下载神器，让流媒体下载变得简单
+title: "GitHub 5k Star 开源视频下载神器，让流媒体下载变得简单"
+permalink: github-5k-star-开源视频下载神器-让流媒体下载变得简单
 date: 2024-12-18 19:48:18
 tags:
   - 公众号

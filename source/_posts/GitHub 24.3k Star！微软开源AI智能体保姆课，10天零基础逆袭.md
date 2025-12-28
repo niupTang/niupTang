@@ -1,5 +1,6 @@
 ---
-title: GitHub 24.3k Star！微软开源AI智能体保姆课，10天零基础逆袭
+title: "GitHub 24.3k Star！微软开源AI智能体保姆课，10天零基础逆袭"
+permalink: github-24-3k-star-微软开源ai智能体保姆课-10天零基础逆袭
 date: 2025-06-01 23:12:01
 tags:
   - 公众号

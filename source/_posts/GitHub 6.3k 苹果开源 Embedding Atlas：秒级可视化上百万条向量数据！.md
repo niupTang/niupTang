@@ -1,5 +1,6 @@
 ---
-title: GitHub 6.3k 苹果开源 Embedding Atlas：秒级可视化上百万条向量数据！
+title: "GitHub 6.3k 苹果开源 Embedding Atlas：秒级可视化上百万条向量数据！"
+permalink: github-6-3k-苹果开源-embedding-atlas-秒级可视化上百万条向量数据
 date: 2025-08-14 22:21:21
 tags:
   - 公众号

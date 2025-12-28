@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | AI 设计转代码神器MCP ，一键对接 Cursor！
+title: "GitHub 开源项目 | AI 设计转代码神器MCP ，一键对接 Cursor！"
+permalink: github-开源项目-ai-设计转代码神器mcp-一键对接-cursor
 date: 2025-04-13 22:37:33
 tags:
   - 公众号

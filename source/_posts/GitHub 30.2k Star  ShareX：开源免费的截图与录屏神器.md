@@ -1,5 +1,6 @@
 ---
-title: GitHub 30.2k Star | ShareX：开源免费的截图与录屏神器
+title: "GitHub 30.2k Star | ShareX：开源免费的截图与录屏神器"
+permalink: github-30-2k-star-sharex-开源免费的截图与录屏神器
 date: 2024-12-29 20:38:07
 tags:
   - 公众号

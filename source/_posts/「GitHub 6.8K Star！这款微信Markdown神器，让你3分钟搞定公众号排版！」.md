@@ -1,5 +1,6 @@
 ---
-title: 「GitHub 6.8K Star！这款微信Markdown神器，让你3分钟搞定公众号排版！」
+title: "「GitHub 6.8K Star！这款微信Markdown神器，让你3分钟搞定公众号排版！」"
+permalink: github-6-8k-star-这款微信markdown神器-让你3分钟搞定公众号排版
 date: 2025-03-30 20:45:36
 tags:
   - 公众号

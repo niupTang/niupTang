@@ -1,5 +1,5 @@
 ---
-title: GitHub 14.2K Star 项目 | AI角色扮演的"次元穿梭机"
+title: "GitHub 14.2K Star 项目 | AI角色扮演的次元穿梭机"
 date: 2025-05-04 10:13:49
 tags:
   - 公众号

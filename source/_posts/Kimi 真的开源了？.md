@@ -1,5 +1,6 @@
 ---
-title: Kimi 真的开源了？
+title: "Kimi 真的开源了？"
+permalink: kimi-真的开源了
 date: 2025-07-14 22:36:33
 tags:
   - 公众号

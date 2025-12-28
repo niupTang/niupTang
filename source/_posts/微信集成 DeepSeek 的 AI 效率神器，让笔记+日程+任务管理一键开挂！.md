@@ -1,5 +1,6 @@
 ---
-title: 微信集成 DeepSeek 的 AI 效率神器，让笔记+日程+任务管理一键开挂！
+title: "微信集成 DeepSeek 的 AI 效率神器，让笔记+日程+任务管理一键开挂！"
+permalink: 微信集成-deepseek-的-ai-效率神器-让笔记-日程-任务管理一键开挂
 date: 2025-02-03 23:29:22
 tags:
   - 公众号

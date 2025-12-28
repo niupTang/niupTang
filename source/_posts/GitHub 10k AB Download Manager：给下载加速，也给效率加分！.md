@@ -1,5 +1,6 @@
 ---
-title: GitHub 10k AB Download Manager：给下载加速，也给效率加分！
+title: "GitHub 10k AB Download Manager：给下载加速，也给效率加分！"
+permalink: github-10k-ab-download-manager-给下载加速-也给效率加分
 date: 2025-10-06 22:31:20
 tags:
   - 公众号

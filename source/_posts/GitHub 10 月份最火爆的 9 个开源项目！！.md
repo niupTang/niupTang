@@ -1,5 +1,6 @@
 ---
-title: GitHub 10 月份最火爆的 9 个开源项目！！
+title: "GitHub 10 月份最火爆的 9 个开源项目！！"
+permalink: github-10-月份最火爆的-9-个开源项目
 date: 2025-12-04 23:32:00
 tags:
   - 公众号

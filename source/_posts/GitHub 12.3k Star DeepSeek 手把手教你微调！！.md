@@ -1,5 +1,6 @@
 ---
-title: GitHub 12.3k Star DeepSeek 手把手教你微调！！
+title: "GitHub 12.3k Star DeepSeek 手把手教你微调！！"
+permalink: github-12-3k-star-deepseek-手把手教你微调
 date: 2025-02-10 21:42:12
 tags:
   - 公众号

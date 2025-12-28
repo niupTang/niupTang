@@ -1,5 +1,6 @@
 ---
-title: Github 一天新增1k Stars 的项目是什么？
+title: "Github 一天新增1k Stars 的项目是什么？"
+permalink: github-一天新增1k-stars-的项目是什么
 date: 2024-10-26 21:34:29
 tags:
   - 公众号

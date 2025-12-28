@@ -1,5 +1,6 @@
 ---
-title: Github 开源 UI 页面识别，只需要图片就能识别UI以控制
+title: "Github 开源 UI 页面识别，只需要图片就能识别UI以控制"
+permalink: github-开源-ui-页面识别-只需要图片就能识别ui以控制
 date: 2025-02-17 23:20:27
 tags:
   - 公众号

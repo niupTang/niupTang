@@ -1,5 +1,6 @@
 ---
-title: Agent AI 大模型到来：谷歌Gemma领衔开源大模型革新
+title: "Agent AI 大模型到来：谷歌Gemma领衔开源大模型革新"
+permalink: agent-ai-大模型到来-谷歌gemma领衔开源大模型革新
 date: 2024-02-23 21:30:51
 tags:
   - 公众号

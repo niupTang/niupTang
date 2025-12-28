@@ -1,5 +1,6 @@
 ---
-title: GitHub 26.3k Star 大模型驱动，构建属于你的智能多模态聊天机器人！
+title: "GitHub 26.3k Star 大模型驱动，构建属于你的智能多模态聊天机器人！"
+permalink: github-26-3k-star-大模型驱动-构建属于你的智能多模态聊天机器人
 date: 2025-01-30 21:20:44
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: 别再手动“复制粘贴”了！谷歌Gemini新功能，一键把Word/PDF转成PPT。（含三种保姆级使用教程）
+title: "别再手动“复制粘贴”了！谷歌Gemini新功能，一键把Word/PDF转成PPT。（含三种保姆级使用教程）"
+permalink: 别再手动-复制粘贴-了-谷歌gemini新功能-一键把wordpdf转成ppt-含三种保姆级使用教
 date: 2025-11-11 23:18:24
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 10K Star！这个AI系统开源课程，让你彻底搞懂AI底层技术
+title: "GitHub 10K Star！这个AI系统开源课程，让你彻底搞懂AI底层技术"
+permalink: github-10k-star-这个ai系统开源课程-让你彻底搞懂ai底层技术
 date: 2025-07-30 22:25:34
 tags:
   - 公众号

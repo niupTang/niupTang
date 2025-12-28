@@ -1,5 +1,6 @@
 ---
-title: 简单两步实现离线部署ChatGPT，ChatGPT平替版，无需GPU离线搭建ChatGPT
+title: "简单两步实现离线部署ChatGPT，ChatGPT平替版，无需GPU离线搭建ChatGPT"
+permalink: 简单两步实现离线部署chatgpt-chatgpt平替版-无需gpu离线搭建chatgpt
 date: 2024-01-12 12:26:18
 tags:
   - 公众号

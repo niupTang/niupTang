@@ -1,5 +1,6 @@
 ---
-title: GitHub 5k Star 开源神器：DeepClaude——双模型协作的AI开发新范式！
+title: "GitHub 5k Star 开源神器：DeepClaude——双模型协作的AI开发新范式！"
+permalink: github-5k-star-开源神器-deepclaude-双模型协作的ai开发新范式
 date: 2025-04-09 12:48:42
 tags:
   - 公众号

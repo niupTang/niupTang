@@ -1,5 +1,6 @@
 ---
-title: GitHub 万字长文项目，从零教你复刻一个 ChatGPT！
+title: "GitHub 万字长文项目，从零教你复刻一个 ChatGPT！"
+permalink: github-万字长文项目-从零教你复刻一个-chatgpt
 date: 2025-06-22 22:27:07
 tags:
   - 公众号

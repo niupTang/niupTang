@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | Deep Research：科研界的"AI 福尔摩斯"，一键生成深度研究报告
+title: "GitHub 开源项目 | Deep Research：科研界的AI 福尔摩斯，一键生成深度研究报告"
+permalink: github-开源项目-deep-research-科研界的ai-福尔摩斯-一键生成深度研究报告
 date: 2025-05-07 23:06:49
 tags:
   - 公众号

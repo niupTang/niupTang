@@ -1,5 +1,6 @@
 ---
-title: GitHub Trending | Crawl4AI：为 AI 而生的开源爬虫，轻松产出结构化 Markdown
+title: "GitHub Trending | Crawl4AI：为 AI 而生的开源爬虫，轻松产出结构化 Markdown"
+permalink: github-trending-crawl4ai-为-ai-而生的开源爬虫-轻松产出结构化-mar
 date: 2025-08-04 23:29:00
 tags:
   - 公众号

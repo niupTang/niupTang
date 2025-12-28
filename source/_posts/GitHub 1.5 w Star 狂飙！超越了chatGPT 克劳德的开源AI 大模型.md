@@ -1,5 +1,6 @@
 ---
-title: GitHub 1.5 w Star 狂飙！超越了chatGPT 克劳德的开源AI 大模型
+title: "GitHub 1.5 w Star 狂飙！超越了chatGPT 克劳德的开源AI 大模型"
+permalink: github-1-5-w-star-狂飙-超越了chatgpt-克劳德的开源ai-大模型
 date: 2025-01-18 20:31:36
 tags:
   - 公众号

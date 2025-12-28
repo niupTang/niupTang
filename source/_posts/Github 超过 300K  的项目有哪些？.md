@@ -1,5 +1,6 @@
 ---
-title: Github 超过 300K  的项目有哪些？
+title: "Github 超过 300K  的项目有哪些？"
+permalink: github-超过-300k-的项目有哪些
 date: 2024-09-21 18:04:39
 tags:
   - 公众号

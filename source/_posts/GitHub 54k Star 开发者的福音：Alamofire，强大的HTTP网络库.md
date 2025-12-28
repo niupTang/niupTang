@@ -1,5 +1,6 @@
 ---
-title: GitHub 54k Star 开发者的福音：Alamofire，强大的HTTP网络库
+title: "GitHub 54k Star 开发者的福音：Alamofire，强大的HTTP网络库"
+permalink: github-54k-star-开发者的福音-alamofire-强大的http网络库
 date: 2024-11-28 14:33:38
 tags:
   - 公众号

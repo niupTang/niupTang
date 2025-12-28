@@ -1,5 +1,6 @@
 ---
-title: chatGLM  短视频生成上线了，重点是API 对外
+title: "chatGLM  短视频生成上线了，重点是API 对外"
+permalink: chatglm-短视频生成上线了-重点是api-对外
 date: 2024-07-26 21:48:51
 tags:
   - 公众号

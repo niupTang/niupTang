@@ -1,5 +1,6 @@
 ---
-title: 小米开源Home Assistant，一天就顶热榜
+title: "小米开源Home Assistant，一天就顶热榜"
+permalink: 小米开源home-assistant-一天就顶热榜
 date: 2024-12-21 22:54:33
 tags:
   - 公众号

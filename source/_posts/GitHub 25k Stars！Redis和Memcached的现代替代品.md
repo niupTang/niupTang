@@ -1,5 +1,6 @@
 ---
-title: GitHub 25k Stars！Redis和Memcached的现代替代品
+title: "GitHub 25k Stars！Redis和Memcached的现代替代品"
+permalink: github-25k-stars-redis和memcached的现代替代品
 date: 2024-10-15 22:37:19
 tags:
   - 公众号

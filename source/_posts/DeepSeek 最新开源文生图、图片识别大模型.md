@@ -1,5 +1,6 @@
 ---
-title: DeepSeek 最新开源文生图、图片识别大模型
+title: "DeepSeek 最新开源文生图、图片识别大模型"
+permalink: deepseek-最新开源文生图-图片识别大模型
 date: 2025-01-28 14:11:26
 tags:
   - 公众号

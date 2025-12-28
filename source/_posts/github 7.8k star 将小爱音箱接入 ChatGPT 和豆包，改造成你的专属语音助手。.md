@@ -1,5 +1,6 @@
 ---
-title: github 7.8k star 将小爱音箱接入 ChatGPT 和豆包，改造成你的专属语音助手。
+title: "github 7.8k star 将小爱音箱接入 ChatGPT 和豆包，改造成你的专属语音助手。"
+permalink: github-7-8k-star-将小爱音箱接入-chatgpt-和豆包-改造成你的专属语音助手
 date: 2024-07-15 12:11:51
 tags:
   - 公众号

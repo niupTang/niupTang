@@ -1,5 +1,6 @@
 ---
-title: GitHub趋势榜新宠！15k Star的LLM应用开发圣经——awesome-llm-apps深度解析
+title: "GitHub趋势榜新宠！15k Star的LLM应用开发圣经——awesome-llm-apps深度解析"
+permalink: github趋势榜新宠-15k-star的llm应用开发圣经-awesome-llm-apps深度
 date: 2025-02-12 21:59:42
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub开源30K Stars ：Mem-0 要你的MCP 带上记忆功能！！
+title: "GitHub开源30K Stars ：Mem-0 要你的MCP 带上记忆功能！！"
+permalink: github开源30k-stars-mem-0-要你的mcp-带上记忆功能
 date: 2025-05-15 23:30:20
 tags:
   - 公众号

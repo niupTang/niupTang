@@ -1,5 +1,6 @@
 ---
-title: 开源视频生成新纪元：Open-Sora让每个人都能创作Sora级视频
+title: "开源视频生成新纪元：Open-Sora让每个人都能创作Sora级视频"
+permalink: 开源视频生成新纪元-open-sora让每个人都能创作sora级视频
 date: 2025-10-16 22:29:32
 tags:
   - 公众号

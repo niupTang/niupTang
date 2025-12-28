@@ -1,5 +1,6 @@
 ---
-title: GitHub 38k  项目 Quivr：打造你的第二大脑，只需几行代码！
+title: "GitHub 38k  项目 Quivr：打造你的第二大脑，只需几行代码！"
+permalink: github-38k-项目-quivr-打造你的第二大脑-只需几行代码
 date: 2025-08-10 23:20:16
 tags:
   - 公众号

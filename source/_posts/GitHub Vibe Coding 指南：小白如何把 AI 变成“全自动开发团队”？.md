@@ -1,5 +1,6 @@
 ---
-title: GitHub Vibe Coding 指南：小白如何把 AI 变成“全自动开发团队”？
+title: "GitHub Vibe Coding 指南：小白如何把 AI 变成“全自动开发团队”？"
+permalink: github-vibe-coding-指南-小白如何把-ai-变成-全自动开发团队
 date: 2025-12-18 23:51:01
 tags:
   - 公众号

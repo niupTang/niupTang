@@ -1,5 +1,6 @@
 ---
-title: GitHub 4.5K Star 项目 | 深度揭秘：全球18款顶级AI产品的系统提示词黑箱
+title: "GitHub 4.5K Star 项目 | 深度揭秘：全球18款顶级AI产品的系统提示词黑箱"
+permalink: github-4-5k-star-项目-深度揭秘-全球18款顶级ai产品的系统提示词黑箱
 date: 2025-04-28 22:48:15
 tags:
   - 公众号

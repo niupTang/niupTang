@@ -1,5 +1,6 @@
 ---
-title: GitHub 16k Star 英语提升必备！让你边打字边学英语开源神器！！
+title: "GitHub 16k Star 英语提升必备！让你边打字边学英语开源神器！！"
+permalink: github-16k-star-英语提升必备-让你边打字边学英语开源神器
 date: 2025-01-12 22:34:50
 tags:
   - 公众号

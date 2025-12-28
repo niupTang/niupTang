@@ -1,5 +1,6 @@
 ---
-title: GitHub 25851 Star：Quasar框架，打造高性能跨平台应用的利器
+title: "GitHub 25851 Star：Quasar框架，打造高性能跨平台应用的利器"
+permalink: github-25851-star-quasar框架-打造高性能跨平台应用的利器
 date: 2024-12-27 20:38:59
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: GitHub 16k+ Star！快手开源「真人漫改」神器，单图生成动态主播
+title: "GitHub 16k+ Star！快手开源「真人漫改」神器，单图生成动态主播"
+permalink: github-16k-star-快手开源-真人漫改-神器-单图生成动态主播
 date: 2025-06-06 23:23:07
 tags:
   - 公众号

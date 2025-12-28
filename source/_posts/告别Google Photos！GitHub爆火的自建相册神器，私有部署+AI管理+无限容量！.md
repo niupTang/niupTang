@@ -1,5 +1,6 @@
 ---
-title: 告别Google Photos！GitHub爆火的自建相册神器，私有部署+AI管理+无限容量！
+title: "告别Google Photos！GitHub爆火的自建相册神器，私有部署+AI管理+无限容量！"
+permalink: 告别google-photos-github爆火的自建相册神器-私有部署-ai管理-无限容量
 date: 2025-03-02 22:41:06
 tags:
   - 公众号

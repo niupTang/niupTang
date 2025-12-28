@@ -1,5 +1,6 @@
 ---
-title: GitHub 10k Star DeepSeek-Coder：让代码自己写自己
+title: "GitHub 10k Star DeepSeek-Coder：让代码自己写自己"
+permalink: github-10k-star-deepseek-coder-让代码自己写自己
 date: 2025-01-05 20:18:19
 tags:
   - 公众号

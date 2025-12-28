@@ -1,5 +1,6 @@
 ---
-title: GitHub 重磅推荐 | 腾讯开源的「AI-Infra-Guard」：AI 基础设施的智能管家，运维效率提升 50%！
+title: "GitHub 重磅推荐 | 腾讯开源的「AI-Infra-Guard」：AI 基础设施的智能管家，运维效率提升 50%！"
+permalink: github-重磅推荐-腾讯开源的-ai-infra-guard-ai-基础设施的智能管家-运维
 date: 2025-05-08 20:26:05
 tags:
   - 公众号

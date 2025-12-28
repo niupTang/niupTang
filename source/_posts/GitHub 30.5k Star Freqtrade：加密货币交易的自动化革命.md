@@ -1,5 +1,6 @@
 ---
-title: GitHub 30.5k Star Freqtrade：加密货币交易的自动化革命
+title: "GitHub 30.5k Star Freqtrade：加密货币交易的自动化革命"
+permalink: github-30-5k-star-freqtrade-加密货币交易的自动化革命
 date: 2024-11-19 17:27:33
 tags:
   - 公众号

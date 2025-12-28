@@ -1,5 +1,6 @@
 ---
-title: GitHub 22.6k Star Bilibili Evolved：提升你的B站观看体验
+title: "GitHub 22.6k Star Bilibili Evolved：提升你的B站观看体验"
+permalink: github-22-6k-star-bilibili-evolved-提升你的b站观看体验
 date: 2024-08-20 17:32:09
 tags:
   - 公众号

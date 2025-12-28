@@ -1,5 +1,6 @@
 ---
-title: GitHub 33k Stars ：NPS 内网穿透一件搞定
+title: "GitHub 33k Stars ：NPS 内网穿透一件搞定"
+permalink: github-33k-stars-nps-内网穿透一件搞定
 date: 2025-08-17 23:35:32
 tags:
   - 公众号

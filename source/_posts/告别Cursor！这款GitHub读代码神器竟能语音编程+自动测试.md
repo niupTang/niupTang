@@ -1,5 +1,6 @@
 ---
-title: 告别Cursor！这款GitHub读代码神器竟能语音编程+自动测试
+title: "告别Cursor！这款GitHub读代码神器竟能语音编程+自动测试"
+permalink: 告别cursor-这款github读代码神器竟能语音编程-自动测试
 date: 2025-03-21 22:35:38
 tags:
   - 公众号

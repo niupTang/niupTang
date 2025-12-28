@@ -1,5 +1,6 @@
 ---
-title: GitHub 开源项目 | WeClone：微信生态的"克隆军团"，打造聊天记录的大模型
+title: "GitHub 开源项目 | WeClone：微信生态的克隆军团，打造聊天记录的大模型"
+permalink: github-开源项目-weclone-微信生态的克隆军团-打造聊天记录的大模型
 date: 2025-05-09 21:52:26
 tags:
   - 公众号

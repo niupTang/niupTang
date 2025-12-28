@@ -1,5 +1,6 @@
 ---
-title: Github 最新开源AI 视频笔记| BiliNote：B站学习党的"第二大脑"
+title: "Github 最新开源AI 视频笔记| BiliNote：B站学习党的第二大脑"
+permalink: github-最新开源ai-视频笔记-bilinote-b站学习党的第二大脑
 date: 2025-04-30 22:45:33
 tags:
   - 公众号

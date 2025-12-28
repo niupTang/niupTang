@@ -1,5 +1,6 @@
 ---
-title: Github 开源 《黑神话：悟空》八项“修改器”
+title: "Github 开源 《黑神话：悟空》八项“修改器”"
+permalink: github-开源-黑神话-悟空-八项-修改器
 date: 2024-08-21 16:57:51
 tags:
   - 公众号

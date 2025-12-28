@@ -1,5 +1,6 @@
 ---
-title: Github 技术平权开源两周获取 6 K Stars，要普通人也能打破信息差！！
+title: "Github 技术平权开源两周获取 6 K Stars，要普通人也能打破信息差！！"
+permalink: github-技术平权开源两周获取-6-k-stars-要普通人也能打破信息差
 date: 2025-11-03 23:07:24
 tags:
   - 公众号

@@ -1,5 +1,6 @@
 ---
-title: LangChain与Embeddings技术：构建高效RAG系统的核心组件
+title: "LangChain与Embeddings技术：构建高效RAG系统的核心组件"
+permalink: langchain与embeddings技术-构建高效rag系统的核心组件
 date: 2025-06-23 22:08:27
 tags:
   - 公众号

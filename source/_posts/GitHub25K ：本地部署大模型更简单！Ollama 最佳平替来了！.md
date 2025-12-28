@@ -1,5 +1,6 @@
 ---
-title: GitHub25K ：本地部署大模型更简单！Ollama 最佳平替来了！
+title: "GitHub25K ：本地部署大模型更简单！Ollama 最佳平替来了！"
+permalink: github25k-本地部署大模型更简单-ollama-最佳平替来了
 date: 2025-07-07 21:06:28
 tags:
   - 公众号

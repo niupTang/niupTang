@@ -1,5 +1,6 @@
 ---
-title: GitHub open source AI 小说生成器！！
+title: "GitHub open source AI 小说生成器！！"
+permalink: github-open-source-ai-小说生成器
 date: 2025-12-09 00:08:14
 tags:
   - 公众号

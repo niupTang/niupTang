@@ -1,5 +1,6 @@
 ---
-title: 【GitHub 26k+星开源神器！】不会写代码也能玩转Telegram机器人？
+title: "【GitHub 26k+星开源神器！】不会写代码也能玩转Telegram机器人？"
+permalink: github-26k-星开源神器-不会写代码也能玩转telegram机器人
 date: 1970-01-01 08:00:00
 tags:
   - 公众号

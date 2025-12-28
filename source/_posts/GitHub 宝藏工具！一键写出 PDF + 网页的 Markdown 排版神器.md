@@ -1,5 +1,6 @@
 ---
-title: GitHub 宝藏工具！一键写出 PDF + 网页的 Markdown 排版神器
+title: "GitHub 宝藏工具！一键写出 PDF + 网页的 Markdown 排版神器"
+permalink: github-宝藏工具-一键写出-pdf-网页的-markdown-排版神器
 date: 2025-06-18 22:16:00
 tags:
   - 公众号

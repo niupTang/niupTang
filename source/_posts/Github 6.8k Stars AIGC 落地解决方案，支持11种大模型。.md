@@ -1,5 +1,6 @@
 ---
-title: Github 6.8k Stars AIGC 落地解决方案，支持11种大模型。
+title: "Github 6.8k Stars AIGC 落地解决方案，支持11种大模型。"
+permalink: github-6-8k-stars-aigc-落地解决方案-支持11种大模型
 date: 2024-11-14 19:36:23
 tags:
   - 公众号

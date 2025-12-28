@@ -1,5 +1,6 @@
 ---
-title: DeepSeek 本地部署满血大模型！
+title: "DeepSeek 本地部署满血大模型！"
+permalink: deepseek-本地部署满血大模型
 date: 2025-02-06 21:28:28
 tags:
   - 公众号

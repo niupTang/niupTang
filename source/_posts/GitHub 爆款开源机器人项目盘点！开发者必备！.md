@@ -1,5 +1,6 @@
 ---
-title: GitHub 爆款开源机器人项目盘点！开发者必备！
+title: "GitHub 爆款开源机器人项目盘点！开发者必备！"
+permalink: github-爆款开源机器人项目盘点-开发者必备
 date: 2025-03-01 09:20:59
 tags:
   - 公众号
