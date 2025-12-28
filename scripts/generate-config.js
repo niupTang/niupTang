@@ -45,15 +45,25 @@ if (isVercel) {
     console.log('✅ 配置文件已生成');
     console.log('📝 微信图床已禁用（Vercel 环境不支持本地代理）');
 } else {
-    console.log('ℹ️  非 Vercel 环境，跳过配置生成');
-    console.log('💡 请确保本地已有 _config.yml 文件');
+    console.log('ℹ️  非 Vercel 环境，使用本地配置');
 
     // 检查本地是否有配置文件
     if (!fs.existsSync(configPath)) {
-        console.warn('⚠️  警告: 未找到 _config.yml');
-        console.warn('💡 请运行: cp _config.example.yml _config.yml');
-        console.warn('💡 然后编辑 _config.yml 填入真实的配置信息');
-        process.exit(1);
+        console.log('📋 未找到 _config.yml，从模板创建...');
+
+        // 从模板复制
+        const templateContent = fs.readFileSync(exampleConfigPath, 'utf-8');
+        fs.writeFileSync(configPath, templateContent, 'utf-8');
+
+        console.log('✅ 已创建 _config.yml');
+        console.log('⚠️  请编辑 _config.yml 填入真实的配置信息:');
+        console.log('   - appId: 您的微信 AppID');
+        console.log('   - appSecret: 您的微信 AppSecret');
+        console.log('');
+        console.log('💡 配置文件位置: _config.yml');
+        console.log('💡 此文件不会被提交到 Git（已在 .gitignore 中）');
+    } else {
+        console.log('✅ 找到本地配置文件');
     }
 }
 
