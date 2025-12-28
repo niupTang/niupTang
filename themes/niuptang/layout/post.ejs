@@ -1,21 +1,38 @@
-<article class="post-detail">
+<article class="post-detail" itemscope itemtype="https://schema.org/BlogPosting">
     <header class="post-header">
-        <h1 class="post-title">
+        <h1 class="post-title" itemprop="headline">
             <%= page.title %>
         </h1>
         <div class="post-meta">
-            <time datetime="<%= date(page.date, 'YYYY-MM-DD') %>">
+            <!-- 作者信息 -->
+            <span class="post-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+                👤 <span itemprop="name">
+                    <%= config.author || '太阳鸟' %>
+                </span>
+            </span>
+
+            <!-- 发布时间 -->
+            <time datetime="<%= date(page.date, 'YYYY-MM-DD') %>" itemprop="datePublished">
                 📅 <%= date(page.date, 'YYYY年MM月DD日' ) %>
             </time>
-            <% if (page.categories && page.categories.length> 0) { %>
-                <span class="post-category">
-                    📁 <% page.categories.each(function(cat) { %>
-                        <a href="<%- url_for(cat.path) %>">
-                            <%= cat.name %>
-                        </a>
-                        <% }); %>
-                </span>
+
+            <!-- 更新时间 -->
+            <% if (page.updated && date(page.updated) !==date(page.date)) { %>
+                <time datetime="<%= date(page.updated, 'YYYY-MM-DD') %>" itemprop="dateModified">
+                    🔄 更新于 <%= date(page.updated, 'YYYY年MM月DD日' ) %>
+                </time>
                 <% } %>
+
+                    <!-- 分类 -->
+                    <% if (page.categories && page.categories.length> 0) { %>
+                        <span class="post-category">
+                            📁 <% page.categories.each(function(cat) { %>
+                                <a href="<%- url_for(cat.path) %>" itemprop="articleSection">
+                                    <%= cat.name %>
+                                </a>
+                                <% }); %>
+                        </span>
+                        <% } %>
         </div>
     </header>
 
@@ -55,47 +72,47 @@
             </div>
 
             <script>
-    async function publishToWechat() {
-        const btn = document.getElementById('publishBtn');
-        const status = document.getElementById('publishStatus');
-        const articlePath = 'source/_posts/<%= page.source.replace("_posts/", "") %>';
-        
-        btn.disabled = true;
-        btn.textContent = '⏳ 正在发布...';
-        status.style.display = 'block';
-        status.textContent = '正在上传图片并创建草稿...';
-        
-        try {
-            const res = await fetch('http://localhost:8790/api/publish', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ articlePath })
-            });
-            
-            const data = await res.json();
-            
-            if (data.success) {
-                btn.textContent = '✅ 发布成功！';
-                btn.style.background = '#07c160';
-                btn.style.color = 'white';
-                status.textContent = '文章已保存到公众号草稿箱，请登录公众号后台查看';
-            } else {
-                throw new Error(data.error || '发布失败');
-            }
-        } catch (error) {
-            btn.textContent = '❌ 发布失败';
-            btn.style.background = '#ff4d4f';
-            btn.style.color = 'white';
-            status.textContent = '错误: ' + error.message + ' (请确保 API 服务已启动: npm run api)';
-            
-            setTimeout(() => {
-                btn.disabled = false;
-                btn.textContent = '📤 重试发布';
-                btn.style.background = 'white';
-                btn.style.color = '#07c160';
-            }, 3000);
-        }
-    }
+                async function publishToWechat() {
+                    const btn = document.getElementById('publishBtn');
+                    const status = document.getElementById('publishStatus');
+                    const articlePath = 'source/_posts/<%= page.source.replace("_posts/", "") %>';
+
+                    btn.disabled = true;
+                    btn.textContent = '⏳ 正在发布...';
+                    status.style.display = 'block';
+                    status.textContent = '正在上传图片并创建草稿...';
+
+                    try {
+                        const res = await fetch('http://localhost:8790/api/publish', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ articlePath })
+                        });
+
+                        const data = await res.json();
+
+                        if (data.success) {
+                            btn.textContent = '✅ 发布成功！';
+                            btn.style.background = '#07c160';
+                            btn.style.color = 'white';
+                            status.textContent = '文章已保存到公众号草稿箱，请登录公众号后台查看';
+                        } else {
+                            throw new Error(data.error || '发布失败');
+                        }
+                    } catch (error) {
+                        btn.textContent = '❌ 发布失败';
+                        btn.style.background = '#ff4d4f';
+                        btn.style.color = 'white';
+                        status.textContent = '错误: ' + error.message + ' (请确保 API 服务已启动: npm run api)';
+
+                        setTimeout(() => {
+                            btn.disabled = false;
+                            btn.textContent = '📤 重试发布';
+                            btn.style.background = 'white';
+                            btn.style.color = '#07c160';
+                        }, 3000);
+                    }
+                }
             </script>
 
             <nav class="post-nav">

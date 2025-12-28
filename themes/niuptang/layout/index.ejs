@@ -194,14 +194,14 @@
     <script>
         (function () {
             // 所有文章数据 - 使用 JSON 安全序列化
-            var allPosts = <% - JSON.stringify(site.posts.sort('-date').toArray().map(function (post) {
+            var allPosts = JSON.stringify(site.posts.sort('-date').toArray().map(function (post) {
                 return {
                     title: post.title || '无标题',
                     path: url_for(post.path),
                     date: date(post.date, 'YYYY-MM-DD'),
                     excerpt: strip_html(post.excerpt || post.content || '').substring(0, 100) + '...'
                 };
-            })) %>;
+            }));
 
             var currentIndex = 12; // 已加载数量
             var batchSize = 12; // 每次加载数量

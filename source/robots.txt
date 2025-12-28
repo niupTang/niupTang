@@ -1,0 +1,39 @@
+# Robots.txt for niuptang.online
+# 允许所有搜索引擎和 AI 爬虫访问
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.niuptang.online/sitemap.xml
+
+# 允许 AI 搜索引擎爬虫
+# OpenAI GPTBot
+User-agent: GPTBot
+Allow: /
+
+# ChatGPT User Agent
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude
+User-agent: Claude-Web
+Allow: /
+
+# Google Bard/Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# 禁止访问的目录
+Disallow: /build-scripts/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# 爬取延迟（可选，对友好爬虫）
+Crawl-delay: 1
