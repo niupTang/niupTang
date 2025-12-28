@@ -1,0 +1,223 @@
+// 关于页面样式
+.about-page
+  max-width: 900px
+  margin: 0 auto
+  padding: 2rem 1rem
+
+.about-container
+  background: #fff
+  border-radius: 12px
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08)
+  overflow: hidden
+
+.about-header
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+  padding: 3rem 2rem
+  text-align: center
+  color: #fff
+
+.about-title
+  font-size: 2.5rem
+  font-weight: 700
+  margin: 0
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+
+.about-content
+  padding: 2rem
+  line-height: 1.8
+  color: #333
+
+  h1, h2, h3
+    color: #2c3e50
+    margin-top: 2rem
+    margin-bottom: 1rem
+
+  h1
+    font-size: 2rem
+    border-bottom: 3px solid #667eea
+    padding-bottom: 0.5rem
+
+  h2
+    font-size: 1.5rem
+    position: relative
+    padding-left: 1rem
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 4px
+      height: 1.2em
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+      border-radius: 2px
+
+  ul
+    list-style: none
+    padding-left: 0
+
+    li
+      padding-left: 1.5rem
+      margin-bottom: 0.5rem
+      position: relative
+
+      &:before
+        content: '✓'
+        position: absolute
+        left: 0
+        color: #667eea
+        font-weight: bold
+
+  p
+    margin-bottom: 1rem
+
+  hr
+    border: none
+    border-top: 1px solid #e0e0e0
+    margin: 2rem 0
+
+// 二维码展示区域
+.qrcode-section
+  padding: 2rem
+  background: #f8f9fa
+
+.section-title
+  font-size: 1.8rem
+  color: #2c3e50
+  text-align: center
+  margin-bottom: 2rem
+  font-weight: 600
+
+.qrcode-grid
+  display: grid
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+  gap: 2rem
+  max-width: 700px
+  margin: 0 auto
+
+.qrcode-card
+  background: #fff
+  border-radius: 12px
+  padding: 2rem
+  text-align: center
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+  transition: all 0.3s ease
+
+  &:hover
+    transform: translateY(-5px)
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15)
+
+.qrcode-wrapper
+  margin-bottom: 1.5rem
+  display: inline-block
+  padding: 1rem
+  background: #fff
+  border-radius: 8px
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+
+.qrcode-image
+  width: 200px
+  height: 200px
+  display: block
+  border-radius: 4px
+  transition: transform 0.3s ease
+
+  .qrcode-card:hover &
+    transform: scale(1.05)
+
+.qrcode-info
+  .icon
+    vertical-align: middle
+    margin-right: 0.5rem
+
+.qrcode-title
+  font-size: 1.2rem
+  color: #2c3e50
+  margin-bottom: 0.5rem
+  font-weight: 600
+  display: flex
+  align-items: center
+  justify-content: center
+
+.qrcode-desc
+  color: #666
+  font-size: 0.95rem
+  margin-bottom: 0.5rem
+
+.qrcode-tip
+  display: inline-block
+  padding: 0.3rem 1rem
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+  color: #fff
+  border-radius: 20px
+  font-size: 0.85rem
+  font-weight: 500
+
+// 社交链接区域
+.social-section
+  padding: 2rem
+  background: #fff
+
+.social-links
+  display: flex
+  justify-content: center
+  gap: 1.5rem
+  flex-wrap: wrap
+
+.social-link
+  display: flex
+  align-items: center
+  gap: 0.5rem
+  padding: 0.8rem 1.5rem
+  background: #f8f9fa
+  border-radius: 8px
+  color: #2c3e50
+  text-decoration: none
+  transition: all 0.3s ease
+  font-weight: 500
+
+  &:hover
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+    color: #fff
+    transform: translateY(-2px)
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4)
+
+.social-icon
+  width: 24px
+  height: 24px
+
+// 响应式设计
+@media (max-width: 768px)
+  .about-page
+    padding: 1rem 0.5rem
+
+  .about-header
+    padding: 2rem 1rem
+
+  .about-title
+    font-size: 2rem
+
+  .about-content
+    padding: 1.5rem
+
+  .qrcode-section
+    padding: 1.5rem
+
+  .qrcode-grid
+    grid-template-columns: 1fr
+    gap: 1.5rem
+
+  .qrcode-image
+    width: 180px
+    height: 180px
+
+  .social-section
+    padding: 1.5rem
+
+  .social-links
+    flex-direction: column
+    align-items: stretch
+
+  .social-link
+    justify-content: center

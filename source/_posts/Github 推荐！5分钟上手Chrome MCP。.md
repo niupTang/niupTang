@@ -1,37 +1,37 @@
 ---
-title: "Github 推荐！5分钟上手Chrome MCP。"
+title: "Github 推荐�?分钟上手Chrome MCP�?
 permalink: github-推荐-5分钟上手chrome-mcp
 date: 2025-08-06 23:17:08
 tags:
-  - 公众号
+  - 公众�?
   - 原创
 categories:
-  - 公众号文章
+  - 公众号文�?
 ---
 
 ### **推荐阅读**
-•  [Github 资料项目合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247488210&idx=1&sn=9b97cc6da4bdaf42ba779d4d0d66f5a1&scene=21#wechat_redirect)
+�? [Github 资料项目合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247488210&idx=1&sn=9b97cc6da4bdaf42ba779d4d0d66f5a1&scene=21#wechat_redirect)
 
-• [50个 AI 开源项目合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489466&idx=1&sn=656577c7880b921ed675c55ba12c1c09&scene=21#wechat_redirect)• [80 款AI 开源合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489951&idx=1&sn=eb4684ba6062440ea2939bd2a9772fc0&scene=21#wechat_redirect)
+• [50�?AI 开源项目合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489466&idx=1&sn=656577c7880b921ed675c55ba12c1c09&scene=21#wechat_redirect)• [80 款AI 开源合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489951&idx=1&sn=eb4684ba6062440ea2939bd2a9772fc0&scene=21#wechat_redirect)
 
-* 戳上方蓝字“**牛皮糖不吹牛**”关注我
+* 戳上方蓝字�?*牛皮糖不吹牛**”关注我
 
-**什么是MCP Chrome？**
+**什么是MCP Chrome�?*
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGXVWwsqUHDz6vll0tdiah0b7PYogZ8Jc3a4wsQctSWOX6iah4wQ6p2EHw/640?wx_fmt=png&from=appmsg)
 
 **
 **
 
-大家好，我是牛皮糖，最近发现用 Chrome mcp 替代大部分付费AI工具！ ，**浏览器自动化**已经成为开发者必备技能。今天要给大家介绍的这个开源项目 - **MCP Chrome**，可能会彻底改变你对浏览器自动化的认知！
+大家好，我是牛皮糖，最近发现用 Chrome mcp 替代大部分付费AI工具�?�?*浏览器自动化**已经成为开发者必备技能。今天要给大家介绍的这个开源项�?- **MCP Chrome**，可能会彻底改变你对浏览器自动化的认知！
 
 # 核心功能解析
-### 基于MCP协议的革命性设计
-**MCP (Model Context Protocol)** 是一种新兴的AI协议标准，MCP Chrome巧妙地将这一协议应用到浏览器自动化中：
+### 基于MCP协议的革命性设�?
+**MCP (Model Context Protocol)** 是一种新兴的AI协议标准，MCP Chrome巧妙地将这一协议应用到浏览器自动化中�?
 
 `# 传统方式 vs MCP方式对比
 
-# ❌ 传统方式 - 复杂且不稳定
+# �?传统方式 - 复杂且不稳定
 from selenium import webdriver
 driver = webdriver.Chrome()
 driver.get("https://example.com")`### Chrome DevTools Protocol深度集成
@@ -73,9 +73,9 @@ asyncdefconcurrent_tasks():
         chrome.screenshot(url) for url in urls
     ])
     
-    return results`## 📦 快速上手
+    return results`## 📦 快速上�?
 ### 安装方式
-安装浏览器插件![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGQCibXqxVqUe7LibeXk6K0KOdAiaqnU1GCZ2w1I6PRzA0ERx4hRThgYweQ/640?wx_fmt=png&from=appmsg)
+安装浏览器插�?[](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGQCibXqxVqUe7LibeXk6K0KOdAiaqnU1GCZ2w1I6PRzA0ERx4hRThgYweQ/640?wx_fmt=png&from=appmsg)
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGGgTtgtdZrXciaSWCNOyhEovX9UvLsiaPQrqRNA37tl3vtVnA2gd7XrEg/640?wx_fmt=png&from=appmsg)
 
@@ -89,7 +89,7 @@ asyncdefconcurrent_tasks():
 
 将配置MCP 配置到客户端，我用的是Trea.![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGvxw6YbK3vfMa321XYKWpryyLneZpSdKqu9acDqZeymCefm0nqQfFdA/640?wx_fmt=png&from=appmsg)
 
-配置完成后可以看到对应的MCP 功能如下图![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGyHdC8Z1giaKwIdREmouCTvnD64eSKBDFShRuNRFnJJvGrn0qQWb6zqA/640?wx_fmt=png&from=appmsg)
+配置完成后可以看到对应的MCP 功能如下�?[](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGyHdC8Z1giaKwIdREmouCTvnD64eSKBDFShRuNRFnJJvGrn0qQWb6zqA/640?wx_fmt=png&from=appmsg)
 
 ## 🎯 实战应用场景
 
@@ -97,25 +97,25 @@ asyncdefconcurrent_tasks():
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR3xVEGibKqHOyx3XZfhf1QGugOc3Gd0myb4ZfZrJoibml8KDRVN0ammiaJ1kCj8qfNR8YR8uzy3muag/640?wx_fmt=png&from=appmsg)
 
-不仅仅能够整理网站内容，对于自媒体来说还能自己整理自己想要的资源。
+不仅仅能够整理网站内容，对于自媒体来说还能自己整理自己想要的资源�?
 
 # 总结
-**MCP Chrome** 不仅仅是一个浏览器自动化工具，它代表了AI时代开发工具的新范式。通过简洁的API设计、强大的并发能力和丰富的功能特性，它让浏览器自动化变得前所未有的简单。
+**MCP Chrome** 不仅仅是一个浏览器自动化工具，它代表了AI时代开发工具的新范式。通过简洁的API设计、强大的并发能力和丰富的功能特性，它让浏览器自动化变得前所未有的简单�?
 
-无论你是开发者、测试工程师还是数据分析师，MCP Chrome都能为你的工作带来质的飞跃。现在就访问GitHub，给这个项目点个⭐吧！
+无论你是开发者、测试工程师还是数据分析师，MCP Chrome都能为你的工作带来质的飞跃。现在就访问GitHub，给这个项目点个⭐吧�?
 
-# 快速链接
-- • 🔗 **GitHub仓库**: hangwin/mcp-chrome
+# 快速链�?
+- �?🔗 **GitHub仓库**: hangwin/mcp-chrome
 
-- • 📖 **官方文档**: 项目Wiki
+- �?📖 **官方文档**: 项目Wiki
 
-- • 💬 **讨论区**: GitHub Issues
+- �?💬 **讨论�?*: GitHub Issues
 
-- • 🐦 **Twitter**: @hangwin_dev
+- �?🐦 **Twitter**: @hangwin_dev
 
-**💡 小贴士**: 如果觉得有用，别忘了分享给身边的朋友！开源项目需要社区的支持才能越来越好！
+**💡 小贴�?*: 如果觉得有用，别忘了分享给身边的朋友！开源项目需要社区的支持才能越来越好�?
 
-**#技术分享 #开源项目 #Python开发 #自动化工具 #AI编程**
+**#技术分�?#开源项�?#Python开�?#自动化工�?#AI编程**
 
 ![](https://mmbiz.qpic.cn/mmbiz_gif/7ibzJsmgW5wguO21SlkBAdxJgAicEOVCzDiaObyzEAEMTI527clib7gHvKfBtDu8MJZLwwEIVuVBmqfn01fmLDdTfQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 
@@ -129,9 +129,9 @@ asyncdefconcurrent_tasks():
 
 [Github 26k Stars 开源换脸神器](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247486822&idx=1&sn=9a45d16ce51f161bff37a5982965ad05&scene=21#wechat_redirect)
 
-[Github 开源无代码的 Web 数据提取平台，2分钟内训练机器人自动抓取网页数据](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247487477&idx=1&sn=05c86cb5a688db02d134b04710f020e1&scene=21#wechat_redirect)
+[Github 开源无代码�?Web 数据提取平台�?分钟内训练机器人自动抓取网页数据](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247487477&idx=1&sn=05c86cb5a688db02d134b04710f020e1&scene=21#wechat_redirect)
 
-每日更新，期待与你一起成长
+每日更新，期待与你一起成�?
 
 欢迎围观副业知识星球
 

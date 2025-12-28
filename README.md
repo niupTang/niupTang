@@ -85,7 +85,7 @@ npm run dev
 
 ```bash
 # 运行安全检查，确保没有敏感信息泄露
-node scripts/security-check.js
+node build-scripts/security-check.js
 ```
 
 2. **推送到 GitHub**
@@ -155,7 +155,7 @@ wechat_image:
 **首次使用**:
 1. 复制配置模板: `cp _config.example.yml _config.yml`
 2. 编辑 `_config.yml` 填入真实配置
-3. 运行安全检查: `node scripts/security-check.js`
+3. 运行安全检查: `node build-scripts/security-check.js`
 
 ## 📂 项目结构
 
@@ -199,7 +199,7 @@ niupTang/
 | `npm run api` | 启动本地 API 代理服务 |
 | `npm run sync-articles` | 同步微信公众号文章 |
 | `npm run year-summary` | 生成年度总结 |
-| `node scripts/security-check.js` | 运行安全检查 |
+| `node build-scripts/security-check.js` | 运行安全检查 |
 | `node fix-frontmatter.js` | 修复文章 Front Matter 格式 |
 
 ## 🔒 安全说明

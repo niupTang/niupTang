@@ -1,55 +1,55 @@
 ---
 title: "AI 编程工具——除了编程不适用，其他的都很实用！！"
-permalink: ai-编程工具-除了编程不适用-其他的都很实用
+permalink: ai-编程工具-除了编程不适用-其他的都很实�?
 date: 2025-09-03 23:41:22
 tags:
-  - 公众号
+  - 公众�?
   - 原创
 categories:
-  - 公众号文章
+  - 公众号文�?
 ---
 
 ### **推荐阅读**
 • [Github 资料项目合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247488210&idx=1&sn=9b97cc6da4bdaf42ba779d4d0d66f5a1&scene=21#wechat_redirect)
 
-• [50个 AI 开源项目合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489466&idx=1&sn=656577c7880b921ed675c55ba12c1c09&scene=21#wechat_redirect)• [80 款AI 开源合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489951&idx=1&sn=eb4684ba6062440ea2939bd2a9772fc0&scene=21#wechat_redirect)
+• [50�?AI 开源项目合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489466&idx=1&sn=656577c7880b921ed675c55ba12c1c09&scene=21#wechat_redirect)• [80 款AI 开源合集](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247489951&idx=1&sn=eb4684ba6062440ea2939bd2a9772fc0&scene=21#wechat_redirect)
 
-* 戳上方蓝字“**牛皮糖不吹牛**”关注我
+* 戳上方蓝字�?*牛皮糖不吹牛**”关注我
 
-大家好，我是牛皮糖！作为一个程序员 用 AI 编程工具最多的应该用来做编程吧！！ 其实 AI 编程工具对我来说是最强爬虫软件，之前我有介绍过一个 AI 爬虫 Crawl4AI， 用一句话就能帮我爬取我想要的东西了，唯一不好的就是需要等待，今天再配置上Chrome自动化 简直无敌。
+大家好，我是牛皮糖！作为一个程序员 �?AI 编程工具最多的应该用来做编程吧！！ 其实 AI 编程工具对我来说是最强爬虫软件，之前我有介绍过一�?AI 爬虫 Crawl4AI�?用一句话就能帮我爬取我想要的东西了，唯一不好的就是需要等待，今天再配置上Chrome自动�?简直无敌�?
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrQic9B2RibaibRiaYBaPEicsoq376Z8HloQwD3anTBvwIic3aHmWozToaPHqT32EeIhZw0iayhp4tlYBwxCA/640?wx_fmt=png&from=appmsg)
 
-**作者**：hangwin
+**作�?*：hangwin
 **项目地址**：GitHub - hangwin/mcp-chrome
-**发布时间**：2025年9月3日
-**阅读时长**：5分钟
-**关键词**：#MCP #Chrome自动化 #AI工具 #Python开发
+**发布时间**�?025�?�?�?
+**阅读时长**�?分钟
+**关键�?*�?MCP #Chrome自动化�?AI工具 #Python开�?
 
-## 🎯 什么是MCP Chrome？
-在AI快速发展的今天，**浏览器自动化**已经成为开发者必备技能。今天要给大家介绍的这个开源项目 - **MCP Chrome**，可能会彻底改变你对浏览器自动化的认知！
+## 🎯 什么是MCP Chrome�?
+在AI快速发展的今天�?*浏览器自动化**已经成为开发者必备技能。今天要给大家介绍的这个开源项�?- **MCP Chrome**，可能会彻底改变你对浏览器自动化的认知！
 
 ### 🌟 项目亮点
-- • ⭐ **GitHub Stars**: 1.2k+ (持续增长中)
+- �?⭐�?*GitHub Stars**: 1.2k+ (持续增长�?
 
-- • 🐍 **开发语言**: Python
+- �?🐍 **开发语言**: Python
 
-- • 📄 **开源协议**: MIT
+- �?📄 **开源协�?*: MIT
 
-- • 🚀 **核心特色**: 基于Model Context Protocol的浏览器自动化
+- �?🚀 **核心特色**: 基于Model Context Protocol的浏览器自动�?
 
-## 🛠️ 核心功能解析
-### 1️⃣ 基于MCP协议的革命性设计
-**MCP (Model Context Protocol)** 是一种新兴的AI协议标准，MCP Chrome巧妙地将这一协议应用到浏览器自动化中：
+## 🛠�?核心功能解析
+### 1️⃣ 基于MCP协议的革命性设�?
+**MCP (Model Context Protocol)** 是一种新兴的AI协议标准，MCP Chrome巧妙地将这一协议应用到浏览器自动化中�?
 
 `# 传统方式 vs MCP方式对比
 
-# ❌ 传统方式 - 复杂且不稳定
+# �?传统方式 - 复杂且不稳定
 from selenium import webdriver
 driver = webdriver.Chrome()
 driver.get("https://example.com")
 
-# ✅ MCP方式 - 简洁且强大
+# �?MCP方式 - 简洁且强大
 from mcp_chrome import ChromeMCP
 chrome = ChromeMCP()
 await chrome.navigate("https://example.com")`### 2️⃣ Chrome DevTools Protocol深度集成
@@ -91,8 +91,8 @@ asyncdefconcurrent_tasks():
         chrome.screenshot(url) for url in urls
     ])
     
-    return results`## 📦 快速上手
-### 安装方式（三选一）
+    return results`## 📦 快速上�?
+### 安装方式（三选一�?
 🐍 Python安装```
 `pip install mcp-chrome`
 ```
@@ -113,7 +113,7 @@ python setup.py install`
 asyncdeftake_screenshot():
     chrome = ChromeMCP()
     
-    # 访问页面并截图
+    # 访问页面并截�?
     await chrome.navigate("https://github.com/hangwin/mcp-chrome")
     screenshot = await chrome.screenshot(
         full_page=True,
@@ -125,7 +125,7 @@ asyncdeftake_screenshot():
     withopen("github_page.png", "wb") as f:
         f.write(screenshot)
     
-    print("✅ 截图已保存")`
+    print("�?截图已保�?)`
 ```
 📄 PDF生成```
 `async defgenerate_pdf():
@@ -147,7 +147,7 @@ asyncdeftake_screenshot():
     withopen("documentation.pdf", "wb") as f:
         f.write(pdf)
     
-    print("📄 PDF已生成")`
+    print("📄 PDF已生�?)`
 ```
 🔍 数据提取```
 `async def extract_data():
@@ -164,7 +164,7 @@ asyncdeftake_screenshot():
     print(f"项目信息: {data}")`
 ```
 ## 🎯 实战应用场景
-### 1️⃣ 自动化测试
+### 1️⃣ 自动化测�?
 ```
 `# 测试电商网站
 asyncdeftest_ecommerce():
@@ -180,13 +180,13 @@ asyncdeftest_ecommerce():
     # 添加到购物车
     await chrome.click(".add-to-cart:first")
     
-    # 验证购物车内容
+    # 验证购物车内�?
     cart_items = await chrome.extract_text(".cart-items")
     assert"MacBook Pro"in cart_items
     
-    print("✅ 自动化测试通过")`
+    print("�?自动化测试通过")`
 ```
-### 2️⃣ 数据采集与分析
+### 2️⃣ 数据采集与分�?
 ```
 `# 批量采集GitHub项目信息
 asyncdefcollect_github_data():
@@ -243,29 +243,29 @@ chrome = ChromeMCP(
 chrome = ChromeMCP(
     cache_enabled=True,
     cache_ttl=3600,  # 1小时
-    cache_size=100   # 100个页面
+    cache_size=100   # 100个页�?
 )`
 ```
 ### 3️⃣ 并发优化
 ```
-`# 连接池管理
+`# 连接池管�?
 chrome = ChromeMCP(
     connection_pool_size=10,
     max_retries=3,
     retry_delay=1
 )`
 ```
-## 🎨 高级特性
-### 1️⃣ 自定义插件系统
+## 🎨 高级特�?
+### 1️⃣ 自定义插件系�?
 ```
-`# 创建自定义插件
+`# 创建自定义插�?
 classMyCustomPlugin:
     asyncdefbefore_request(self, request):
-        # 请求前处理
+        # 请求前处�?
         print(f"即将访问: {request.url}")
     
     asyncdefafter_response(self, response):
-        # 响应后处理
+        # 响应后处�?
         print(f"收到响应: {response.status}")
 
 # 使用插件
@@ -280,49 +280,49 @@ chrome = ChromeMCP(
     proxy_auth={"username": "user", "password": "pass"}
 )`
 ```
-## 📊 社区反馈与案例
+## 📊 社区反馈与案�?
 ### 🌟 用户好评
-**@开发者小王**: "用了MCP Chrome后，我的自动化脚本减少了70%的代码量，稳定性提升了200%！"
+**@开发者小�?*: "用了MCP Chrome后，我的自动化脚本减少了70%的代码量，稳定性提升了200%�?
 
-**@测试工程师小李**: "并发测试从未如此简单，10个浏览器同时运行毫无压力！"
+**@测试工程师小�?*: "并发测试从未如此简单，10个浏览器同时运行毫无压力�?
 
-**@数据分析师小张**: "数据采集效率提升了5倍，内存占用还降低了50%！"
+**@数据分析师小�?*: "数据采集效率提升�?倍，内存占用还降低了50%�?
 
-## 🔮 未来路线图
-### 🚀 即将推出的功能
-- • **v2.0版本**: 支持Playwright后端
+## 🔮 未来路线�?
+### 🚀 即将推出的功�?
+- •�?*v2.0版本**: 支持Playwright后端
 
-- • **AI集成**: 智能元素定位
+- •�?*AI集成**: 智能元素定位
 
-- • **云端部署**: Serverless架构支持
+- •�?*云端部署**: Serverless架构支持
 
-- • **可视化界面**: 拖拽式自动化设计
+- •�?*可视化界�?*: 拖拽式自动化设计
 
-- • **移动端支持**: Android/iOS自动化
+- •�?*移动端支�?*: Android/iOS自动�?
 
 ## 📝 总结
-**AI 编程工具 + MCP Chrome** 不仅仅是一个浏览器自动化工具，它代表了AI时代开发工具的新范式。通过简洁的API设计、强大的并发能力和丰富的功能特性，它让浏览器自动化变得前所未有的简单。
+**AI 编程工具 + MCP Chrome** 不仅仅是一个浏览器自动化工具，它代表了AI时代开发工具的新范式。通过简洁的API设计、强大的并发能力和丰富的功能特性，它让浏览器自动化变得前所未有的简单�?
 
 - 
 `上文包含AI 创作`
 
-**#技术分享 #开源项目 #Python开发 #自动化工具 #AI编程**
+**#技术分享�?开源项目�?Python开发�?自动化工具�?AI编程**
 
 ![](https://mmbiz.qpic.cn/mmbiz_gif/7ibzJsmgW5wguO21SlkBAdxJgAicEOVCzDiaObyzEAEMTI527clib7gHvKfBtDu8MJZLwwEIVuVBmqfn01fmLDdTfQ/640?wx_fmt=gif&tp=webp&wxfrom=5&wx_lazy=1)
 
 ·················END·················
 
-很多小伙伴想用 AI 做副业但是不知有什么项目可以赚钱，大冲这个AI私域赚钱星球，现在还是 59 元 一年，一万多个星球中，已经连续 4 个月排名前 3，很多超级大佬都在亲自推荐，性价比极高的星球，很多人在这里搞到几千上万块。
+很多小伙伴想�?AI 做副业但是不知有什么项目可以赚钱，大冲这个AI私域赚钱星球，现在还�?59 �?一年，一万多个星球中，已经连�?4 个月排名�?3，很多超级大佬都在亲自推荐，性价比极高的星球，很多人在这里搞到几千上万块�?
 
 ![](https://mmbiz.qpic.cn/mmbiz_jpg/p1ESIQQvfrRJBhujeib7LiaNhR02x7xF3ueJSa3BmYhDBdo2SpP0BLicmW0koVabTULgiaZkibuOcvm4yVJEb9ckz5Q/640?wx_fmt=jpeg&from=appmsg)
 
-星球能免费参加几十个小项目，有教练和教程，直播答疑，打卡还可以退还押金，所有历史小项目文档全公开(以后可自学)。
+星球能免费参加几十个小项目，有教练和教程，直播答疑，打卡还可以退还押金，所有历史小项目文档全公开(以后可自�?�?
 
-项目有：闲鱼虚拟资料，小红书引流，小红书虚拟资料，网盘拉新，闲鱼无货源，闲鱼电影票， AI写作（教案，PPT，答辩，简历，数据分析，VBA，商业计划书等），AI 公众号爆文，AI编程，AI 智能体，公众号 SEO，知乎，私域 CPS 分销等项目。
+项目有：闲鱼虚拟资料，小红书引流，小红书虚拟资料，网盘拉新，闲鱼无货源，闲鱼电影票， AI写作（教案，PPT，答辩，简历，数据分析，VBA，商业计划书等），AI 公众号爆文，AI编程，AI 智能体，公众�?SEO，知乎，私域 CPS 分销等项目�?
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrRJBhujeib7LiaNhR02x7xF3uwDRiabBSfcQmeicWb8dFS1q4pOqVMmR3y4OD5nLbR3KktrpxGNpibsRSg/640?wx_fmt=png&from=appmsg)
 
-关注公众号回复 AI 副业星球即可获取 26 元的优惠劵。
+关注公众号回�?AI 副业星球即可获取 26 元的优惠劵�?
 
  
 
@@ -336,4 +336,4 @@ chrome = ChromeMCP(
 
 [Github 26k Stars 开源换脸神器](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247486822&idx=1&sn=9a45d16ce51f161bff37a5982965ad05&scene=21#wechat_redirect)
 
-[Github 开源无代码的 Web 数据提取平台，2分钟内训练机器人自动抓取网页数据](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247487477&idx=1&sn=05c86cb5a688db02d134b04710f020e1&scene=21#wechat_redirect)
+[Github 开源无代码�?Web 数据提取平台�?分钟内训练机器人自动抓取网页数据](https://mp.weixin.qq.com/s?__biz=MzkyNDYyODg0MQ==&mid=2247487477&idx=1&sn=05c86cb5a688db02d134b04710f020e1&scene=21#wechat_redirect)

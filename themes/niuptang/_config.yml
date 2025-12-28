@@ -3,7 +3,7 @@ menu:
   博客: /archives
   Github 开源项目: /tools
   公众号文章: /articles
-  关于: /about
+  # 关于: /about
 
 # 站点信息
 site_name: 太阳鸟的AI宝藏库
