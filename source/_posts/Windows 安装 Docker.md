@@ -1,11 +1,10 @@
 ---
 title: Windows 安装 Docker
-date: 2024-08-10 13:54:59
-tags:
-  - 公众号
-  - 原创
-categories:
-  - 公众号文章
+date: '2026-01-04T16:26:13.382214'
+updated: '2026-01-05T23:18:09.829521'
+tags: []
+categories: []
+cover: null
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

@@ -1,11 +1,10 @@
 ---
 title: GitHub 6.6k Star 程序员顾家开源项目家庭ERP 系统
-date: 2024-08-12 18:44:06
-tags:
-  - 公众号
-  - 原创
-categories:
-  - 公众号文章
+date: '2026-01-04T16:26:13.305876'
+updated: '2026-01-05T23:18:09.908301'
+tags: []
+categories: []
+cover: null
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

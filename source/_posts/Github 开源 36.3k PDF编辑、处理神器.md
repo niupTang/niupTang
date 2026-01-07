@@ -1,12 +1,10 @@
 ---
-title: "Github 开源 36.3k PDF编辑、处理神器"
-permalink: github-开源-36-3k-pdf编辑-处理神器
-date: 2024-08-10 13:54:59
-tags:
-  - 公众号
-  - 原创
-categories:
-  - 公众号文章
+title: Github 开源 36.3k PDF编辑、处理神器
+date: '2026-01-04T16:26:13.342510'
+updated: '2026-01-05T23:18:09.857639'
+tags: []
+categories: []
+cover: null
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

@@ -1,27 +1,31 @@
-<% // 生成结构化数据（JSON-LD）用于 SEO 和 GEO 优化 var structuredData={}; // 基础网站信息 var websiteData={ "@context"
+<% /* 生成结构化数据（JSON-LD）用于 SEO 和 GEO 优化 */ var structuredData={}; /* 基础网站信息 */ var websiteData={ "@context"
     : "https://schema.org" , "@type" : "WebSite" , "name" : config.title, "url" : config.url, "description" :
     config.description, "author" : { "@type" : "Person" , "name" : config.author || "太阳鸟" , "url" : config.url
     + "/about/" , "jobTitle" : "全栈开发工程师 & AI 技术博主" , "description" : "6年开发经验，专注于 AI 工具分享和技术探索" , "sameAs" :
     [ "https://github.com/niupTang" ] }, "potentialAction" : { "@type" : "SearchAction" , "target" : config.url
-    + "/search?q={search_term_string}" , "query-input" : "required name=search_term_string" } }; // 文章页面 if
+    + "/search?q={search_term_string}" , "query-input" : "required name=search_term_string" } }; /* 文章页面 */ if
     (page.layout==='post' ) { structuredData={ "@context" : "https://schema.org" , "@type" : "BlogPosting" , "headline"
     : page.title, "description" : page.description || strip_html(page.excerpt) || config.description, "image" :
     page.thumbnail || config.url + "/images/og-image.jpg" , "datePublished" : date(page.date, 'YYYY-MM-DD'
     ), "dateModified" : page.updated ? date(page.updated, 'YYYY-MM-DD' ) : date(page.date, 'YYYY-MM-DD' ), "author" :
     { "@type" : "Person" , "name" : config.author || "太阳鸟" , "url" : config.url + "/about/" }, "publisher" : { "@type"
     : "Organization" , "name" : config.title, "url" : config.url, "logo" : { "@type" : "ImageObject" , "url" :
-    config.url + "/images/favicon.jpg" } }, "mainEntityOfPage" : { "@type" : "WebPage" , "@id" : page.permalink } }; //
-    添加标签 if (page.tags && page.tags.length> 0) {
-    structuredData.keywords = page.tags.map(function(tag) { return tag.name; }).join(', ');
+    config.url + "/images/favicon.jpg" } }, "mainEntityOfPage" : { "@type" : "WebPage" , "@id" : page.permalink } }; /*
+    添加标签 */ if (page.tags && page.tags.length> 0) {
+    structuredData.keywords = page.tags.map(function(tag) {
+    return tag.name;
+    }).join(', ');
     }
 
-    // 添加分类
+    /* 添加分类 */
     if (page.categories && page.categories.length > 0) {
-    structuredData.articleSection = page.categories.map(function(cat) { return cat.name; }).join(', ');
+    structuredData.articleSection = page.categories.map(function(cat) {
+    return cat.name;
+    }).join(', ');
     }
     }
 
-    // 关于页面
+    /* 关于页面 */
     else if (page.layout === 'about' || page.path === 'about/index.html') {
     structuredData = {
     "@context": "https://schema.org",
@@ -49,12 +53,12 @@
     };
     }
 
-    // 首页
+    /* 首页 */
     else if (is_home()) {
     structuredData = websiteData;
     }
 
-    // 其他页面
+    /* 其他页面 */
     else {
     structuredData = {
     "@context": "https://schema.org",
@@ -65,14 +69,14 @@
     };
     }
 
-    // 面包屑导航
+    /* 面包屑导航 */
     var breadcrumbData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": []
     };
 
-    // 添加首页
+    /* 添加首页 */
     breadcrumbData.itemListElement.push({
     "@type": "ListItem",
     "position": 1,
@@ -80,7 +84,7 @@
     "item": config.url
     });
 
-    // 如果是文章页，添加归档
+    /* 如果是文章页，添加归档 */
     if (page.layout === 'post') {
     breadcrumbData.itemListElement.push({
     "@type": "ListItem",
@@ -100,12 +104,12 @@
 
     <!-- Structured Data (JSON-LD) for SEO & GEO -->
     <script type="application/ld+json">
-<%- JSON.stringify(structuredData, null, 2) %>
+    <%- JSON.stringify(structuredData, null, 2) %>
 </script>
 
     <!-- Breadcrumb Structured Data -->
     <% if (breadcrumbData.itemListElement.length> 1) { %>
         <script type="application/ld+json">
-<%- JSON.stringify(breadcrumbData, null, 2) %>
+    <%- JSON.stringify(breadcrumbData, null, 2) %>
 </script>
         <% } %>

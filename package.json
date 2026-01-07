@@ -12,13 +12,22 @@
     "save-html": "node tools/save-html-responses.js",
     "extract-html": "node tools/extract-from-html-batch.js",
     "full-summary": "npm run extract-html && npm run year-summary",
-    "test-html": "node tools/test-html-extraction.js"
+    "test-html": "node tools/test-html-extraction.js",
+    "article:auto": "node tools/article-auto.js",
+    "article:materials": "node tools/fetch-article-materials.js",
+    "article:outline": "node tools/generate-article-outline.js",
+    "article:images": "node tools/fetch-article-images.js",
+    "article:generate": "node tools/generate-full-article.js",
+    "article:publish": "node tools/publish-to-wechat-auto.js",
+    "ppt:generate": "node tools/generate-ppt-auto.js",
+    "ppt:auto": "node tools/generate-ppt-auto.js"
   },
   "hexo": {
     "version": "8.1.1"
   },
   "dependencies": {
     "axios": "^1.13.2",
+    "commander": "^14.0.2",
     "cors": "^2.8.5",
     "express": "^5.2.1",
     "form-data": "^4.0.5",

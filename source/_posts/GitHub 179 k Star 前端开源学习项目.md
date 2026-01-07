@@ -1,11 +1,10 @@
 ---
 title: GitHub 179 k Star 前端开源学习项目
-date: 2024-08-17 18:12:32
-tags:
-  - 公众号
-  - 原创
-categories:
-  - 公众号文章
+date: '2026-01-04T16:26:13.173368'
+updated: '2026-01-05T23:18:10.062530'
+tags: []
+categories: []
+cover: null
 ---
 
 大家好，我是牛皮糖！最近几天在研究前端项目，在GitHub 上面找到一个有179k Star的开源项目 —— You-Dont-Know-JS（你不知道的JavaScript）。这是一系列深入探讨 JavaScript 语言核心机制的书籍.

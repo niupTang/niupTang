@@ -1,11 +1,10 @@
 ---
 title: Github 48k star 开源浏览器插件翻过付费的墙
-date: 2024-08-18 18:03:34
-tags:
-  - 公众号
-  - 原创
-categories:
-  - 公众号文章
+date: '2026-01-04T16:26:13.152190'
+updated: '2026-01-05T23:18:10.085471'
+tags: []
+categories: []
+cover: null
 ---
 
 大家好，我是牛皮糖！今天在GitHub 上面发现一个很强的一款开源浏览器插件，它的名字叫做 "bypass-paywalls-chrome"，他就是可以翻过一些需要付费的的网站。现在在GitHub 上面差不多有 50 k Star 了。

@@ -1,11 +1,10 @@
 ---
 title: Github 4.5k Star 的微信缓存清理工具
-date: 2024-08-06 22:07:52
-tags:
-  - 公众号
-  - 原创
-categories:
-  - 公众号文章
+date: '2026-01-04T16:26:13.439310'
+updated: '2026-01-05T23:18:09.741523'
+tags: []
+categories: []
+cover: null
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

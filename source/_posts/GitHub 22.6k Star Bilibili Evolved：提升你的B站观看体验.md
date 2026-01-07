@@ -1,12 +1,10 @@
 ---
-title: "GitHub 22.6k Star Bilibili Evolved：提升你的B站观看体验"
-permalink: github-22-6k-star-bilibili-evolved-提升你的b站观看体验
-date: 2024-08-20 17:32:09
-tags:
-  - 公众号
-  - 原创
-categories:
-  - 公众号文章
+title: GitHub 22.6k Star Bilibili Evolved：提升你的B站观看体验
+date: '2026-01-04T16:26:13.078021'
+updated: '2026-01-05T23:18:10.189864'
+tags: []
+categories: []
+cover: null
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我
