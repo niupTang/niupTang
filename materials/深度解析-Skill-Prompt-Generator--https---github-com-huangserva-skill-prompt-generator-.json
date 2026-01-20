@@ -1,0 +1,12 @@
+{
+  "source": "web",
+  "topic": "深度解析 Skill Prompt Generator (https://github.com/huangserva/skill-prompt-generator)",
+  "note": "请配置 Perplexity 或 Tavily API Key 以获取真实数据",
+  "suggestions": [
+    "访问 GitHub 搜索相关开源项目",
+    "查看技术博客和官方文档",
+    "搜索相关论文和研究报告",
+    "查看社交媒体讨论"
+  ],
+  "timestamp": "2026-01-09T15:12:46.305Z"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% for post in posts %}
+  <url>
+    <loc>{{ post.permalink }}</loc>
+    {% if post.updated %}
+    <lastmod>{{ post.updated.toISOString() }}</lastmod>
+    {% elif post.date %}
+    <lastmod>{{ post.date.toISOString() }}</lastmod>
+    {% endif %}
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  {% endfor %}
+  {% for page in pages %}
+  <url>
+    <loc>{{ page.permalink }}</loc>
+    {% if page.updated %}
+    <lastmod>{{ page.updated.toISOString() }}</lastmod>
+    {% elif page.date %}
+    <lastmod>{{ page.date.toISOString() }}</lastmod>
+    {% endif %}
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+</urlset>
