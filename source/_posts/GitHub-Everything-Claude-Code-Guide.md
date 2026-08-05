@@ -1,14 +1,16 @@
 ---
-title: GitHub 爆火！Claude Code 最强“配置全家桶”：不仅有 Agents，还能教 AI 持续进化！
+title: "GitHub 爆火！Claude Code 最强“配置全家桶”：不仅有 Agents，还能教 AI 持续进化！"
+permalink: github-everything-claude-code-guide
 date: 2026-01-26 23:25:00
+categories:
+  - 开源项目
 tags:
   - AI
   - Claude Code
   - GitHub
   - Open Source
   - Programming
-categories:
-  - 技术分享
+  - 开源项目
 ---
 
 # GitHub 爆火！Claude Code 最强“配置全家桶”：不仅有 Agents，还能教 AI 持续进化！

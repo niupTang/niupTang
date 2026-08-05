@@ -1,11 +1,14 @@
 ---
 title: GitHub 开源26k Star强大的数据备份工具
+permalink: github-26k-star
 date: 2024-10-28 18:05:50
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 大家好，我是牛皮糖！在这个数据爆炸的时代，数据备份的重要性不言而喻。今天，我要向大家介绍一个在 GitHub 上拥有 26k 星的开源项目——**restic**。这是一个开源的备份程序，它可以帮助我们安全、可靠地备份数据。

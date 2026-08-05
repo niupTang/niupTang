@@ -1,10 +1,15 @@
 ---
-title: GitHUb 6.9K Stars 自行托管能强大的聊天机器人构建器�?
-date: '2026-01-04T16:26:12.577069'
-updated: '2026-01-05T23:18:10.660960'
-tags: []
-categories: []
-cover: null
+title: "GitHUb 6.9K Stars 自行托管能强大的聊天机器人构建器�?"
+permalink: github-6-9k-stars
+date: 2026-01-04T16:26:12.577069
+updated: 2026-01-05T23:18:10.660960
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

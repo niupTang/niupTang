@@ -2,11 +2,12 @@
 title: "6个超强的DeepSeek万能提问公式！让AI秒懂你，效率翻倍！90%的人都用错了"
 permalink: 6个超强的deepseek万能提问公式-让ai秒懂你-效率翻倍-90-的人都用错了
 date: 2025-02-11 22:43:21
+categories:
+  - 个人记录
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - DeepSeek
+  - 个人记录
 ---
 
 大家好，我是泽安！

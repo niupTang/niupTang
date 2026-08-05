@@ -1,10 +1,14 @@
 ---
 title: Windows 安装 Docker
-date: '2026-01-04T16:26:13.382214'
-updated: '2026-01-05T23:18:09.829521'
-tags: []
-categories: []
-cover: null
+permalink: windows-docker
+date: 2026-01-04T16:26:13.382214
+updated: 2026-01-05T23:18:09.829521
+categories:
+  - 教程实践
+tags:
+  - 教程
+  - 教程实践
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

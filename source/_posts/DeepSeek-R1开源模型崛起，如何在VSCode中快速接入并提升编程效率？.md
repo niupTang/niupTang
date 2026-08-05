@@ -1,12 +1,14 @@
 ---
-title: "DeepSeek-R1开源模型崛起，如何在VSCode中快速接入并提升编程效率？"
+title: DeepSeek-R1开源模型崛起，如何在VSCode中快速接入并提升编程效率？
 permalink: deepseek-r1开源模型崛起-如何在vscode中快速接入并提升编程效率
 date: 2025-01-27 22:45:56
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - DeepSeek
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

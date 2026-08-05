@@ -1,10 +1,14 @@
 ---
 title: GitHub Star 226k 大规模系统设计的艺术和科学
-date: '2026-01-04T16:26:13.496187'
-updated: '2026-01-05T23:18:09.637830'
-tags: []
-categories: []
-cover: null
+permalink: github-star-226k
+date: 2026-01-04T16:26:13.496187
+updated: 2026-01-05T23:18:09.637830
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

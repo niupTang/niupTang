@@ -1,10 +1,13 @@
 ---
 title: 又一家大公司 将All in AI
-date: '2026-01-04T16:26:14.022239'
-updated: '2026-01-05T23:18:08.736619'
-tags: []
-categories: []
-cover: null
+permalink: all-in-ai
+date: 2026-01-04T16:26:14.022239
+updated: 2026-01-05T23:18:08.736619
+categories:
+  - 开源项目
+tags:
+  - 开源项目
+cover: "null"
 ---
 
 苹果�?0年造车梦，终究是梦碎，人散了�?

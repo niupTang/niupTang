@@ -1,56 +1,58 @@
 ---
-title: "LangChain与Embeddings技术：构建高效RAG系统的核心组�?
-permalink: langchain与embeddings技�?构建高效rag系统的核心组�?
+title: "LangChain与Embeddings技术：构建高效RAG系统的核心组�?"
+permalink: "langchain与embeddings技�?构建高效rag系统的核心组�?"
 date: 2025-06-23 22:08:27
-tags:
-  - 公众�?
-  - 原创
 categories:
-  - 公众号文�?
+  - 开源项目
+tags:
+  - GitHub
+  - 自动化
+  - 开源项目
+cleanup_status: needs_review
 ---
 
 ## 目录
-- LangChain简�?
+- LangChain简�?
 
-- Embeddings技术概�?
+- Embeddings技术概�?
 
 - 主流Embedding模型比较
 
 - LangChain中的Embedding集成
 
-- 实践案例：构建本地知识问答系�?
+- 实践案例：构建本地知识问答系�?
 
-- 总结与展�?
+- 总结与展�?
 
-## LangChain简�?
-LangChain作为当前最热门的开源RAG（Retrieval-Augmented Generation，检索增强生成）框架，正在重塑我们处理非结构化数据的方式。在RAG框架中，检索环节至关重要，而Embeddings技术则是实现高效检索的核心组件之一�?
+## LangChain简�?
+LangChain作为当前最热门的开源RAG（Retrieval-Augmented Generation，检索增强生成）框架，正在重塑我们处理非结构化数据的方式。在RAG框架中，检索环节至关重要，而Embeddings技术则是实现高效检索的核心组件之一�?
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR80FibIe325gricCQFrWcfgauwvu5kaqMfL3urHP2Dq6mTQztOjghMkI2icicWHlRUTDozfQAkBZ7XAA/640?wx_fmt=png&from=appmsg)
 
-RAG框架的工作流程通常包括�?
+RAG框架的工作流程通常包括�?
 
 - 文本预处理与分块
 
-- 通过Embedding模型转换为向量表�?
+- 通过Embedding模型转换为向量表�?
 
 - 存储到向量数据库
 
-- 查询时进行相似性检�?
+- 查询时进行相似性检�?
 
-- 将检索结果输入生成模�?
+- 将检索结果输入生成模�?
 
-LangChain的独特价值在于它提供了标准化的接口，使开发者能够灵活组合不同的嵌入模型、向量数据库和LLM，构建端到端的智能应用�?
+LangChain的独特价值在于它提供了标准化的接口，使开发者能够灵活组合不同的嵌入模型、向量数据库和LLM，构建端到端的智能应用�?
 
-## Embeddings技术概�?
+## Embeddings技术概�?
 Embedding技术通过将离散的符号（如单词、句子）映射到连续的向量空间，使计算机能够理解和处理语义信息。这种表示方法具有几个关键优势：
 
-- **语义保留**：语义相似的项在向量空间中距离相�?
+- **语义保留**：语义相似的项在向量空间中距离相�?
 
 - **维度压缩**：将高维稀疏表示转换为低维稠密向量
 
-- **跨模态能�?*：同一空间可嵌入文本、图像、音频等多种数据类型
+- **跨模态能�?*：同一空间可嵌入文本、图像、音频等多种数据类型
 
-现代Embedding模型通常基于深度神经网络，特别是Transformer架构，能够捕捉复杂的上下文关系�?
+现代Embedding模型通常基于深度神经网络，特别是Transformer架构，能够捕捉复杂的上下文关系�?
 
 ## 主流Embedding模型比较
 模型名称
@@ -60,15 +62,15 @@ Embedding技术通过将离散的符号（如单词、句子）映射到连续�
 Word2Vec
 2013
 基于浅层神经网络，CBOW/Skip-Gram架构
-词语相似度计算，简单语义分�?
+词语相似度计算，简单语义分�?
 GloVe
 2014
 基于全局词共现统计，结合矩阵分解
-需要全局语义信息的任�?
+需要全局语义信息的任�?
 FastText
 2016
-引入子词(subword)概念，处理未登录�?
-多语言应用，拼写错误容�?
+引入子词(subword)概念，处理未登录�?
+多语言应用，拼写错误容�?
 BERT
 2018
 双向Transformer，上下文相关表示
@@ -102,23 +104,23 @@ openai_embeddings = OpenAIEmbeddings(model="text-embedding-ada-002")
 cohere_embeddings = CohereEmbeddings(model="embed-english-v2.0")
 `![](https://mmbiz.qpic.cn/mmbiz_png/p1ESIQQvfrR80FibIe325gricCQFrWcfgayB0Bownic7YPOhuTPIMlyqP8MEyPNnxKrU0dLCDQJVjMaAT2icoLia85Q/640?wx_fmt=png&from=appmsg)
 
-关键配置参数�?
+关键配置参数�?
 
 - `model_name`：指定预训练模型
 
-- `model_kwargs`：模型推理参数（如设备选择�?
+- `model_kwargs`：模型推理参数（如设备选择�?
 
 - `encode_kwargs`：编码过程参数（如归一化）
 
-## 实践案例：构建本地知识问答系�?
+## 实践案例：构建本地知识问答系�?
 ### 系统架构
-- **数据�?*：本地文本文件存储知识库
+- **数据�?*：本地文本文件存储知识库
 
-- **嵌入�?*：Sentence-Transformers处理文本
+- **嵌入�?*：Sentence-Transformers处理文本
 
-- **存储�?*：Chroma向量数据�?
+- **存储�?*：Chroma向量数据�?
 
-- **应用�?*：LangChain编排处理流程
+- **应用�?*：LangChain编排处理流程
 
 `
 # -*- coding: utf-8 -*-
@@ -126,7 +128,7 @@ cohere_embeddings = CohereEmbeddings(model="embed-english-v2.0")
 LangChain RAG完整实现
 基于本地文档构建问答系统
 使用sentence-transformers/all-MiniLM-L6-v2嵌入模型
-Chroma向量数据库存�?
+Chroma向量数据库存�?
 """
 
 import os
@@ -139,7 +141,7 @@ load_dotenv()
 # 设置国内镜像源（加速下载）
 os.environ['HF_ENDPOINT']='https://hf-mirror.com'
 
-# 1. 导入所需�?
+# 1. 导入所需�?
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
@@ -157,10 +159,10 @@ def__init__(self, config: Dict[str, Any]):
         初始化RAG系统
 
         参数:
-            config: 配置字典，包�?
+            config: 配置字典，包�?
                 - document_path: 文档路径
                 - embedding_model: 嵌入模型名称
-                - persist_directory: 向量数据库存储路�?
+                - persist_directory: 向量数据库存储路�?
                 - chunk_size: 文本分块大小
                 - chunk_overlap: 分块重叠大小
                 - llm_config: LLM配置
@@ -186,7 +188,7 @@ return ChatOpenAI(
 )
 
 def_initialize_embeddings(self)-> HuggingFaceEmbeddings:
-"""初始化嵌入模�?""
+"""初始化嵌入模�?""
 return HuggingFaceEmbeddings(
             model_name=self.config.get("embedding_model","sentence-transformers/all-MiniLM-L6-v2"),
             model_kwargs={'device':'cpu'},
@@ -215,23 +217,23 @@ return Chroma.from_documents(
 )
 
 def_create_chain(self):
-"""创建处理�?""
+"""创建处理�?""
 # 定义提示模板
-        template ="""你是一个专业的知识助手，请基于以下上下文回答问题�?
-        如果不知道答案，就说你不知道，不要编造答案�?
+        template ="""你是一个专业的知识助手，请基于以下上下文回答问题�?
+        如果不知道答案，就说你不知道，不要编造答案�?
 
-        上下�?
+        上下�?
         {context}
 
         问题: {question}
         回答:"""
         prompt = ChatPromptTemplate.from_template(template)
 
-# 格式化检索结�?
+# 格式化检索结�?
 defformat_docs(docs: List[Document])->str:
 return"\n\n".join(doc.page_content for doc in docs)
 
-# 构建处理�?
+# 构建处理�?
 return(
 {"context": self.retriever | format_docs,"question": RunnablePassthrough()}
 | prompt
@@ -244,15 +246,15 @@ defquery(self, question:str)->str:
 return self.chain.invoke(question)
 
 defsave_vectorstore(self):
-"""保存向量数据�?""
+"""保存向量数据�?""
         self.vectorstore.persist()
 
 if __name__ =="__main__":
 # 配置参数
     config ={
-"document_path":"knowledge.txt",# 替换为你的文档路�?
+"document_path":"knowledge.txt",# 替换为你的文档路�?
 "embedding_model":"sentence-transformers/all-MiniLM-L6-v2",
-"persist_directory":"db",# 向量数据库存储目�?
+"persist_directory":"db",# 向量数据库存储目�?
 "chunk_size":1000,
 "chunk_overlap":200,
 "llm_config":{
@@ -260,11 +262,11 @@ if __name__ =="__main__":
 }
 }
 
-# 初始化系�?
+# 初始化系�?
     rag = RAGSystem(config)
 
-# 交互式问�?
-print("知识问答系统已启动，输入'exit'退�?)
+# 交互式问�?
+print("知识问答系统已启动，输入'exit'退�?)
 whileTrue:
 try:
             question =input("\n提问: ")
@@ -289,7 +291,7 @@ continue
 
 ### 核心代码实现
 ```
-`# 初始化组�?
+`# 初始化组�?
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
@@ -319,29 +321,29 @@ qa_chain = RetrievalQA.from_chain_type(
 )
 `
 ```
-### 性能优化技�?
-- **分块策略**�?
+### 性能优化技�?
+- **分块策略**�?
 
-- 技术文档：500-1000字符，重�?00字符
+- 技术文档：500-1000字符，重�?00字符
 
 - 对话记录：按对话轮次分块
 
-- 代码文件：按函数/类分�?
+- 代码文件：按函数/类分�?
 
-- **检索优�?*�?
+- **检索优�?*�?
 
 `retriever = vectorstore.as_retriever(
-    search_type="mmr",# 最大边际相关�?
+    search_type="mmr",# 最大边际相关�?
     search_kwargs={"k":5,"lambda_mult":0.5}
 )
 `
-- **缓存机制**�?
+- **缓存机制**�?
 
 `from langchain.cache import SQLiteCache
 import langchain
 langchain.llm_cache = SQLiteCache(database_path=".langchain.db")
 `
-## 总结与展�?
+## 总结与展�?
 LangChain与Embeddings技术的结合为构建智能应用提供了强大基础。未来发展趋势包括：
 
 - **多模态Embedding**：统一处理文本、图像、视频等数据
@@ -352,4 +354,4 @@ LangChain与Embeddings技术的结合为构建智能应用提供了强大基础�
 
 - **领域自适应**：针对垂直领域微调Embedding模型
 
-通过合理选择Embedding模型和优化RAG流程，开发者可以构建出高效、准确的智能问答系统，将非结构化数据的价值最大化�
+通过合理选择Embedding模型和优化RAG流程，开发者可以构建出高效、准确的智能问答系统，将非结构化数据的价值最大化�

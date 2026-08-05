@@ -1,12 +1,15 @@
 ---
-title: "DeepSeek 本地部署满血大模型！"
+title: DeepSeek 本地部署满血大模型！
 permalink: deepseek-本地部署满血大模型
 date: 2025-02-06 21:28:28
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - DeepSeek
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

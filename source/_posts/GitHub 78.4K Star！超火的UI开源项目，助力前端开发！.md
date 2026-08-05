@@ -1,12 +1,13 @@
 ---
-title: "GitHub 78.4K Star！超火的UI开源项目，助力前端开发！"
+title: GitHub 78.4K Star！超火的UI开源项目，助力前端开发！
 permalink: github-78-4k-star-超火的ui开源项目-助力前端开发
 date: 2025-02-01 15:24:15
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

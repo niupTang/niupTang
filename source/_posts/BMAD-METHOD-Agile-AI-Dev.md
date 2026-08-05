@@ -1,15 +1,16 @@
 ---
-title: "GitHub 21k Star！BMAD-METHOD：重新定义 AI 驱动的敏捷开发，21个智能体帮你干活！"
+title: GitHub 21k Star！BMAD-METHOD：重新定义 AI 驱动的敏捷开发，21个智能体帮你干活！
 permalink: bmad-method-agile-ai-dev
 date: 2026-01-25 15:20:00
+categories:
+  - 开源项目
 tags:
   - AI Agent
   - Open Source
   - Agile Development
   - BMAD
   - GitHub
-categories:
-  - 公众号文章
+  - 开源项目
 ---
 
 大家好，我是太阳鸟。

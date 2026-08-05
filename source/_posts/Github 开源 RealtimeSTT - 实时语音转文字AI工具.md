@@ -1,11 +1,13 @@
 ---
 title: Github 开源 RealtimeSTT - 实时语音转文字AI工具
+permalink: github-realtimestt-ai
 date: 2025-01-16 21:08:25
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 *** 戳上方蓝字“牛皮糖不吹牛**”关注我

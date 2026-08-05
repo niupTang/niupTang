@@ -1,10 +1,15 @@
 ---
-title: 4�?16G 就能 RAGFlow Quick start 快速入�?
-date: '2026-01-04T16:26:13.735766'
-updated: '2026-01-05T23:18:09.243172'
-tags: []
-categories: []
-cover: null
+title: "4�?16G 就能 RAGFlow Quick start 快速入�?"
+permalink: 4-16g-ragflow-quick-start
+date: 2026-01-04T16:26:13.735766
+updated: 2026-01-05T23:18:09.243172
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 大家好，我是牛皮糖！github 上面得到AI 项目太火了，而火爆了的就是RAG（Retrieval-Augmented Generation）检索增强生成�?

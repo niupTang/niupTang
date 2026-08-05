@@ -1,12 +1,13 @@
 ---
-title: "Github 热榜榜首 ，快速构建AI应用的Typescript框架"
+title: Github 热榜榜首 ，快速构建AI应用的Typescript框架
 permalink: github-热榜榜首-快速构建ai应用的typescript框架
 date: 2025-02-23 22:42:46
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

@@ -1,10 +1,14 @@
 ---
 title: Agent AI 大模型到来：谷歌Gemma领衔开源大模型革新
-date: '2026-01-04T16:26:14.049722'
-updated: '2026-01-05T23:18:08.703348'
-tags: []
-categories: []
-cover: null
+permalink: agent-ai-gemma
+date: 2026-01-04T16:26:14.049722
+updated: 2026-01-05T23:18:08.703348
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 谷歌前面两天发布了Gemma大模型，并且7B性能超越Llama 2 13B！谷歌和OpenAI，已经卷出了新高度。这轮番放深夜炸弹的频率，让人不得不怀疑双方都已经攒了一堆大的。�?

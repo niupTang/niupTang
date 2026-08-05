@@ -1,10 +1,14 @@
 ---
-title: 2025 AI 编程工具的进化：从代码补全到“人机结对”，我最喜欢的 AI 编程工具
-date: '2026-01-04T16:26:14.832764'
-updated: '2026-01-05T23:18:08.072501'
-tags: []
-categories: []
-cover: null
+title: "2025 AI 编程工具的进化：从代码补全到“人机结对”，我最喜欢的 AI 编程工具"
+permalink: 2025-ai-coding-evolution
+date: 2026-01-04T16:26:14.832764
+updated: 2026-01-05T23:18:08.072501
+categories:
+  - AI编程
+tags:
+  - Claude Code
+  - AI编程
+cover: "null"
 ---
 
 ![2025 AI Tool Evolution](/brain/ebc11756-dff4-419d-a1fb-e10b5dbe25a6/ai_coding_evolution_2025_1767192288120.png)

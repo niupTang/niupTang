@@ -1,8 +1,16 @@
 ---
 title: 从程序员到 Coze 商单实战：我在破局智能体训练营的收获
+permalink: coze-training-bootcamp-experience
 date: 2026-01-15
-tags: [Coze, AI智能体, 破局训练营, 商单实战, 副业]
-categories: [经验分享]
+categories:
+  - 自动化
+tags:
+  - Coze
+  - AI智能体
+  - 破局训练营
+  - 商单实战
+  - 副业
+  - 自动化
 cover: /images/coze-training/coze_training_cover.png
 ---
 

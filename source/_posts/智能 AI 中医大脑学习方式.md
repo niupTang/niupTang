@@ -1,10 +1,14 @@
 ---
 title: 智能 AI 中医大脑学习方式
-date: '2026-01-04T16:26:13.116020'
-updated: '2026-01-05T23:18:10.134384'
-tags: []
-categories: []
-cover: null
+permalink: ai
+date: 2026-01-04T16:26:13.116020
+updated: 2026-01-05T23:18:10.134384
+categories:
+  - 教程实践
+tags:
+  - 教程
+  - 教程实践
+cover: "null"
 ---
 
 ：* 戳上方蓝字“**牛皮糖不吹牛**”关注我

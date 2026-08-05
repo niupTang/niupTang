@@ -1,12 +1,15 @@
 ---
-title: "GitHub 12.3k Star DeepSeek 手把手教你微调！！"
+title: GitHub 12.3k Star DeepSeek 手把手教你微调！！
 permalink: github-12-3k-star-deepseek-手把手教你微调
 date: 2025-02-10 21:42:12
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - DeepSeek
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

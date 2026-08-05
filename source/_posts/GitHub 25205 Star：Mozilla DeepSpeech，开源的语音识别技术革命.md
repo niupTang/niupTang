@@ -1,12 +1,14 @@
 ---
-title: "GitHub 25205 Star：Mozilla DeepSpeech，开源的语音识别技术革命"
+title: GitHub 25205 Star：Mozilla DeepSpeech，开源的语音识别技术革命
 permalink: github-25205-star-mozilla-deepspeech-开源的语音识别技术革命
 date: 2025-01-26 21:55:13
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

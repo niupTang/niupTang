@@ -2,11 +2,13 @@
 title: "GIthub 开源29.6k Stars AI 控制浏览器”新神器！Browser-use 让自动化任务变得超简单"
 permalink: github-开源29-6k-stars-ai-控制浏览器-新神器-browser-use-让自动化
 date: 2025-02-04 22:07:52
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 自动化
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我*

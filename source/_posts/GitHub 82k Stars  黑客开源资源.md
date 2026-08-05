@@ -1,10 +1,17 @@
 ---
-title: GitHub 82k Stars  黑客开源资�?
-date: '2026-01-04T16:26:12.743972'
-updated: '2026-01-05T23:18:10.448786'
-tags: []
-categories: []
-cover: null
+title: "GitHub 82k Stars  黑客开源资�?"
+permalink: github-82k-stars
+date: 2026-01-04T16:26:12.743972
+updated: 2026-01-05T23:18:10.448786
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - n8n
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

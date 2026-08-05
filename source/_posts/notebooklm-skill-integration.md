@@ -1,16 +1,18 @@
 ---
-title: 10分钟让 AI 编程助手拥有「记忆」：NotebookLM 知识库集成实战
+title: "10分钟让 AI 编程助手拥有「记忆」：NotebookLM 知识库集成实战"
+permalink: notebooklm-skill-integration
 date: 2026-01-05 22:50:00
+categories:
+  - AI编程
 tags:
   - AI 编程工具
   - NotebookLM
   - Claude Code
   - 知识库
   - Workflow
-categories:
-  - AI 编程工具
+  - 教程
+cover: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200"
 description: 手把手教你将 NotebookLM 集成到 Claude Code，让 AI 编程助手能查询你的历史文章，避免重复创作，实现真正的知识积累。
-cover: https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200
 ---
 
 ## 问题：AI 编程助手的「失忆症」

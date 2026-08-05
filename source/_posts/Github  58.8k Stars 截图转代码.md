@@ -1,11 +1,14 @@
 ---
 title: Github  58.8k Stars 截图转代码
+permalink: github-58-8k-stars
 date: 2024-11-06 21:15:59
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

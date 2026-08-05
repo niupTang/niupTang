@@ -1,12 +1,14 @@
 ---
-title: "DeepSeek 第一弹FlashMLA：面向Hopper GPU的高效变长序列MLA解码内核"
+title: DeepSeek 第一弹FlashMLA：面向Hopper GPU的高效变长序列MLA解码内核
 permalink: deepseek-第一弹flashmla-面向hopper-gpu的高效变长序列mla解码内核
 date: 2025-02-24 12:56:38
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - DeepSeek
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

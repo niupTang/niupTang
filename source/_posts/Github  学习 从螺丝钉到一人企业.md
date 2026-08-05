@@ -1,10 +1,16 @@
 ---
-title: Github  学习 从螺丝钉到一人企�?
-date: '2026-01-04T16:26:12.682334'
-updated: '2026-01-05T23:18:10.534736'
-tags: []
-categories: []
-cover: null
+title: "Github  学习 从螺丝钉到一人企�?"
+permalink: github
+date: 2026-01-04T16:26:12.682334
+updated: 2026-01-05T23:18:10.534736
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 副业
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

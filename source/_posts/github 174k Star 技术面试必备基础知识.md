@@ -1,10 +1,14 @@
 ---
 title: github 174k Star 技术面试必备基础知识
-date: '2026-01-04T16:26:13.552455'
-updated: '2026-01-05T23:18:09.542206'
-tags: []
-categories: []
-cover: null
+permalink: github-174k-star
+date: 2026-01-04T16:26:13.552455
+updated: 2026-01-05T23:18:09.542206
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

@@ -1,10 +1,14 @@
 ---
-title: GitHub 6.8K Star 微信排版神器升级！AI加持的Markdown编辑器doocs/md
-date: '2026-01-04T16:26:14.338395'
-updated: '2026-01-05T23:18:08.292845'
-tags: []
-categories: []
-cover: null
+title: "GitHub 6.8K Star 微信排版神器升级！AI加持的Markdown编辑器doocs/md"
+permalink: github-6-8k-star-ai-markdown-doocs-md
+date: 2026-01-04T16:26:14.338395
+updated: 2026-01-05T23:18:08.292845
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝�?**牛皮糖不吹牛**"关注�?

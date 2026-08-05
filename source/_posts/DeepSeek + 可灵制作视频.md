@@ -1,11 +1,13 @@
 ---
 title: DeepSeek + 可灵制作视频
+permalink: deepseek
 date: 2025-02-14 23:38:12
+categories:
+  - AI工具
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - DeepSeek
+  - AI工具
 ---
 
 点击上方🔺公众号🔺关注我✅

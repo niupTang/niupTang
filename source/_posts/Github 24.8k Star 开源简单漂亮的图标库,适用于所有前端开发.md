@@ -1,10 +1,15 @@
 ---
-title: Github 24.8k Star 开源简单漂亮的图标�?适用于所有前端开�?
-date: '2026-01-04T16:26:12.915456'
-updated: '2026-01-05T23:18:10.342692'
-tags: []
-categories: []
-cover: null
+title: "Github 24.8k Star 开源简单漂亮的图标�?适用于所有前端开�?"
+permalink: github-24-8k-star
+date: 2026-01-04T16:26:12.915456
+updated: 2026-01-05T23:18:10.342692
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 �? 戳上方蓝字�?*牛皮糖不吹牛**”关注我

@@ -2,11 +2,12 @@
 title: "GitHub 38k Star 超强合集 | 300+ Mac 开源应用全收录，效率瞬间拉满！"
 permalink: github-38k-star-超强合集-300-mac-开源应用全收录-效率瞬间拉满
 date: 2025-01-31 20:57:22
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

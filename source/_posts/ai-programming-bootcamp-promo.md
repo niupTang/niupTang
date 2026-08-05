@@ -1,10 +1,14 @@
 ---
 title: 2026年副业新风口：普通人如何用 AI 编程不仅省钱还能赚钱？
-date: '2026-01-04T16:26:14.925222'
-updated: '2026-01-05T23:18:07.922216'
-tags: []
-categories: []
-cover: null
+permalink: ai-programming-bootcamp-promo
+date: 2026-01-04T16:26:14.925222
+updated: 2026-01-05T23:18:07.922216
+categories:
+  - AI编程
+tags:
+  - 副业
+  - AI编程
+cover: "null"
 ---
 
 ![AI Programming Future](/images/ai-programming/cover.png)

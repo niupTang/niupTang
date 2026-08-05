@@ -1,15 +1,16 @@
 ---
-title: "Skill Seekers：20 分钟自动生成 Claude Skills，文档+代码+PDF 一键转换"
+title: Skill Seekers：20 分钟自动生成 Claude Skills，文档+代码+PDF 一键转换
 permalink: skill-seekers-auto-generate-claude-skills
 date: 2026-01-20 20:30:00
+categories:
+  - 开源项目
 tags:
   - Claude Skills
   - AI工具
   - 开源项目
   - 自动化
   - GitHub
-categories:
-  - 公众号文章
+  - Claude Code
 ---
 
 如果你正在使用 Claude Code 或其他 AI 编程助手，你一定知道 **Skills** 的重要性。

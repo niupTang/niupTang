@@ -1,10 +1,17 @@
 ---
-title: Github 开源使�?Python 进行更轻量的 Web 自动化程序包
-date: '2026-01-04T16:26:12.519689'
-updated: '2026-01-05T23:18:10.735287'
-tags: []
-categories: []
-cover: null
+title: "Github 开源使�?Python 进行更轻量的 Web 自动化程序包"
+permalink: github-python-web
+date: 2026-01-04T16:26:12.519689
+updated: 2026-01-05T23:18:10.735287
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 自动化
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

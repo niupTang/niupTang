@@ -1,10 +1,14 @@
 ---
 title: Github 61.7k Star 开源的简历生成器
-date: '2026-01-04T16:26:12.809558'
-updated: '2026-01-05T23:18:10.367889'
-tags: []
-categories: []
-cover: null
+permalink: github-61-7k-star
+date: 2026-01-04T16:26:12.809558
+updated: 2026-01-05T23:18:10.367889
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

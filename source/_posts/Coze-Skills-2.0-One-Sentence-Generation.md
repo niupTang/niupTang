@@ -1,15 +1,16 @@
 ---
-title: "Coze Skills 2.0：一句话生成你的专属 AI Skill，2026 Skill 元年来了"
+title: Coze Skills 2.0：一句话生成你的专属 AI Skill，2026 Skill 元年来了
 permalink: coze-skills-2-0-one-sentence-generation
 date: 2026-01-19 23:20:00
+categories:
+  - 自动化
 tags:
   - Coze
   - Skills
   - AI
   - 提示词
   - 工作流
-categories:
-  - 公众号文章
+  - 自动化
 ---
 
 **Coze 再次伟大！**

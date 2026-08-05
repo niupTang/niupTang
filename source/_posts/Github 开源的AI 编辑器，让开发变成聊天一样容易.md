@@ -1,12 +1,13 @@
 ---
-title: "Github 开源的AI 编辑器，让开发变成聊天一样容易"
+title: Github 开源的AI 编辑器，让开发变成聊天一样容易
 permalink: github-开源的ai-编辑器-让开发变成聊天一样容易
 date: 2024-11-01 19:26:28
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

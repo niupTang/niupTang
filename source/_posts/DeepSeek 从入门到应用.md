@@ -1,11 +1,14 @@
 ---
 title: DeepSeek 从入门到应用
+permalink: deepseek
 date: 2025-02-10 21:42:12
+categories:
+  - 教程实践
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - DeepSeek
+  - 教程
+  - 教程实践
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

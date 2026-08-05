@@ -1,10 +1,14 @@
 ---
 title: Umi-OCR：开源的文字识别工具
-date: '2026-01-04T16:26:12.458795'
-updated: '2026-01-05T23:18:10.814146'
-tags: []
-categories: []
-cover: null
+permalink: umi-ocr
+date: 2026-01-04T16:26:12.458795
+updated: 2026-01-05T23:18:10.814146
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

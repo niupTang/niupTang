@@ -1,8 +1,16 @@
 ---
 title: Antigravity Skills 来了！与 Workflow 的终极对决
+permalink: antigravity-skills-vs-workflow
 date: 2026-01-14
-tags: [AI编程, Antigravity, Skills, Workflow, 效率工具]
-categories: [技术分享]
+categories:
+  - AI编程
+tags:
+  - AI编程
+  - Antigravity
+  - Skills
+  - Workflow
+  - 效率工具
+  - 自动化
 cover: /images/skills-workflow/skills_workflow_comparison.png
 ---
 

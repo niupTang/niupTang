@@ -1,10 +1,16 @@
 ---
 title: 最受欢迎的5款开源RPA 框架
-date: '2026-01-04T16:26:13.845449'
-updated: '2026-01-05T23:18:09.102015'
-tags: []
-categories: []
-cover: null
+permalink: 5-rpa
+date: 2026-01-04T16:26:13.845449
+updated: 2026-01-05T23:18:09.102015
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 自动化
+  - 教程
+  - 开源项目
+cover: "null"
 ---
 
 大家好，我是牛皮糖！

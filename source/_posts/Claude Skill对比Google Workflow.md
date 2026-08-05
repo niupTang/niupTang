@@ -1,10 +1,15 @@
 ---
 title: Claude Skills vs Gemini Workflow：谁是效率之王？
-date: '2026-01-04T16:26:14.472983'
-updated: '2026-01-05T23:18:08.120671'
-tags: []
-categories: []
-cover: null
+permalink: claude-skill-google-workflow
+date: 2026-01-04T16:26:14.472983
+updated: 2026-01-05T23:18:08.120671
+categories:
+  - AI编程
+tags:
+  - Claude Code
+  - 自动化
+  - AI编程
+cover: "null"
 ---
 
 ## 前言：AI 编程助手的"隐藏技能"

@@ -1,8 +1,16 @@
 ---
 title: Claude Skills 终极指南：GitHub 上的 AI 军火库，带你把 Agent 武装到牙齿
+permalink: awesome-claude-skills-deep-dive
 date: 2026-01-07 23:30:00
-tags: [Claude, AI Agent, GitHub, 开源资源, 效率工具, MCP]
-categories: [AI前沿]
+categories:
+  - 开源项目
+tags:
+  - Claude
+  - AI Agent
+  - GitHub
+  - 开源资源
+  - 效率工具
+  - MCP
 cover: images/awesome-claude-skills-cover.png
 ---
 

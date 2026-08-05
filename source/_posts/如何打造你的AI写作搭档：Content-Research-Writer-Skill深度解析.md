@@ -1,8 +1,16 @@
 ---
 title: 如何打造你的AI写作搭档：Content Research Writer Skill 深度解析
+permalink: ai-content-research-writer-skill
 date: 2026-01-07 23:00:00
-tags: [AI Agent, 写作, Claude, 提示词工程, 效率工具]
-categories: [AI实战]
+categories:
+  - 教程实践
+tags:
+  - AI Agent
+  - 写作
+  - Claude
+  - 提示词工程
+  - 效率工具
+  - 教程实践
 cover: images/content-writer-skill-cover.png
 ---
 

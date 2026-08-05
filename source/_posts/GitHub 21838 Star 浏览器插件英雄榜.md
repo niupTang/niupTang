@@ -1,11 +1,13 @@
 ---
 title: GitHub 21838 Star 浏览器插件英雄榜
+permalink: github-21838-star
 date: 2024-11-05 19:05:49
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

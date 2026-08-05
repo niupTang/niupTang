@@ -1,10 +1,16 @@
 ---
-title: ​FastGPT --- 一款可以快速部署的本地大模�?
-date: '2026-01-04T16:26:14.005138'
-updated: '2026-01-05T23:18:08.786348'
-tags: []
-categories: []
-cover: null
+title: "​FastGPT --- 一款可以快速部署的本地大模�?"
+permalink: fastgpt
+date: 2026-01-04T16:26:14.005138
+updated: 2026-01-05T23:18:08.786348
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 🤖 FastGPT 在线使用：https://fastgpt.in

@@ -1,11 +1,14 @@
 ---
 title: DeepSeek + coze 做飞书知识库
+permalink: deepseek-coze
 date: 2025-02-19 23:24:25
+categories:
+  - 自动化
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - DeepSeek
+  - Coze
+  - 自动化
 ---
 
 点击上方🔺公众号🔺关注我✅

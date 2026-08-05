@@ -1,14 +1,16 @@
 ---
-title: 开源版“微信Coze”来了？ChatWiki：解锁公众号的超级 Agent 形态
+title: "开源版“微信Coze”来了？ChatWiki：解锁公众号的超级 Agent 形态"
+permalink: chatwiki-wechat-agent-platform
 date: 2026-01-13 23:00:00
+categories:
+  - 开源项目
 tags:
   - 公众号运营
   - AI Agent
   - RAG
   - 开源项目
   - ChatWiki
-categories:
-  - 技术探索
+  - GitHub
 ---
 
 # 开源版“微信Coze”来了？ChatWiki：解锁公众号的超级 Agent 形态

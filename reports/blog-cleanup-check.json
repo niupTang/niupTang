@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "garbled posts remain marked for review"
+  ],
+  "invalidCategoryPosts": [],
+  "invalidDatePosts": [],
+  "garbledPostCount": 350
+}

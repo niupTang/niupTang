@@ -1,10 +1,15 @@
 ---
 title: GitHub 11.9k Star 开源项目操作系统从0到1
-date: '2026-01-04T16:26:13.324439'
-updated: '2026-01-05T23:18:09.882744'
-tags: []
-categories: []
-cover: null
+permalink: github-11-9k-star-0-1
+date: 2026-01-04T16:26:13.324439
+updated: 2026-01-05T23:18:09.882744
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

@@ -1,10 +1,16 @@
 ---
 title: Claude Code Workflow Studio：可视化设计你的 AI 智能体工作流
-date: '2026-01-04T16:26:14.935026'
-updated: '2026-01-05T23:18:07.891570'
-tags: []
-categories: []
-cover: null
+permalink: claude-code-workflow-studio
+date: 2026-01-04T16:26:14.935026
+updated: 2026-01-05T23:18:07.891570
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - Claude Code
+  - 自动化
+  - 开源项目
+cover: "null"
 ---
 
 ![Claude Code Workflow Studio](/images/cc-wf-studio/cover.png)

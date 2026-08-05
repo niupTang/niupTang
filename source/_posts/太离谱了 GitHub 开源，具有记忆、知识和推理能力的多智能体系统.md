@@ -1,11 +1,13 @@
-﻿---
+---
 title: "太离谱了 GitHub 开源，具有记忆、知识和推理能力的多智能体系�?permalink: 太离谱了-github-开�?具有记忆-知识和推理能力的多智能体系统"
+permalink: github
 date: 2025-06-09 21:03:21
-tags:
-  - 公众�?
-  - 原创
 categories:
-  - 公众号文�?
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cleanup_status: needs_review
 ---
 
 ### **推荐阅读**

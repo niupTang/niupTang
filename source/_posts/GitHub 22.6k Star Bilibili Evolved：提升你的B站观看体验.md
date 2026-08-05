@@ -1,10 +1,15 @@
 ---
 title: GitHub 22.6k Star Bilibili Evolved：提升你的B站观看体验
-date: '2026-01-04T16:26:13.078021'
-updated: '2026-01-05T23:18:10.189864'
-tags: []
-categories: []
-cover: null
+permalink: github-22-6k-star-bilibili-evolved-b
+date: 2026-01-04T16:26:13.078021
+updated: 2026-01-05T23:18:10.189864
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - n8n
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

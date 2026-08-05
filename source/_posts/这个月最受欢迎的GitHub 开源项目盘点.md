@@ -1,11 +1,13 @@
 ---
 title: 这个月最受欢迎的GitHub 开源项目盘点
+permalink: github
 date: 2024-10-30 20:09:51
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

@@ -1,12 +1,13 @@
 ---
-title: "Github 开源自托管 AI 编程助手，提升团队生产力！"
+title: Github 开源自托管 AI 编程助手，提升团队生产力！
 permalink: github-开源自托管-ai-编程助手-提升团队生产力
 date: 2025-01-14 22:43:39
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 ### **Tabby VSCode 扩展：高效编程的 AI 助手**

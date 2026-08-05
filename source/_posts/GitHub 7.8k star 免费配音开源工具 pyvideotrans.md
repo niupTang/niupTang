@@ -1,10 +1,16 @@
 ---
-title: GitHub 7.8k star 免费配音开源工�?pyvideotrans
-date: '2026-01-04T16:26:13.865459'
-updated: '2026-01-05T23:18:09.055528'
-tags: []
-categories: []
-cover: null
+title: "GitHub 7.8k star 免费配音开源工�?pyvideotrans"
+permalink: github-7-8k-star-pyvideotrans
+date: 2026-01-04T16:26:13.865459
+updated: 2026-01-05T23:18:09.055528
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 大家好，我是牛皮糖！

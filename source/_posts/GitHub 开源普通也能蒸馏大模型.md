@@ -1,11 +1,14 @@
 ---
 title: GitHub 开源普通也能蒸馏大模型
+permalink: github
 date: 2025-02-10 21:42:12
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 大家好，我是太阳鸟！我发现了一个非常实用的开源项目——**Kiln AI**。对于像需要本地蒸馏大语言模型进行开发和研究的人来说，Kiln AI 简直就是一款“神器”。

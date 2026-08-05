@@ -1,10 +1,15 @@
 ---
-title: Github 24.3k 金融量化交易开源项�?
-date: '2026-01-04T16:26:12.403715'
-updated: '2026-01-05T23:18:10.865980'
-tags: []
-categories: []
-cover: null
+title: "Github 24.3k 金融量化交易开源项�?"
+permalink: github-24-3k
+date: 2026-01-04T16:26:12.403715
+updated: 2026-01-05T23:18:10.865980
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

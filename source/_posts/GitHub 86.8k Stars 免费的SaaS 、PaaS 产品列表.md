@@ -1,10 +1,15 @@
 ---
 title: GitHub 86.8k Stars 免费的SaaS 、PaaS 产品列表
-date: '2026-01-04T16:26:12.625308'
-updated: '2026-01-05T23:18:10.608452'
-tags: []
-categories: []
-cover: null
+permalink: github-86-8k-stars-saas-paas
+date: 2026-01-04T16:26:12.625308
+updated: 2026-01-05T23:18:10.608452
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 自动化
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

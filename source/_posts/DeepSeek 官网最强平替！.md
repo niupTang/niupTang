@@ -1,12 +1,13 @@
 ---
-title: "DeepSeek 官网最强平替！"
+title: DeepSeek 官网最强平替！
 permalink: deepseek-官网最强平替
 date: 2025-02-05 23:20:19
+categories:
+  - AI工具
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - DeepSeek
+  - AI工具
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

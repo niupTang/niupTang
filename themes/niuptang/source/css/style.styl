@@ -543,16 +543,29 @@ img {
 }
 
 .post-content, .page-content {
-  line-height: 1.8;
+  width: calc(100% - 16px);
+  max-width: calc(100% - 16px);
+  margin: 30px 8px;
+  font-family: Optima-Regular, PingFangSC-light;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 32px;
+  font-size: 16px;
+  overflow-wrap: anywhere;
 }
 
 .post-content h2, .post-content h3 {
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-md);
+  overflow-wrap: anywhere;
 }
 
 .post-content p {
   margin-bottom: var(--spacing-md);
+}
+
+.post-title, .page-title {
+  overflow-wrap: anywhere;
 }
 
 .post-content code {
@@ -563,17 +576,178 @@ img {
 }
 
 .post-content pre {
-  background: var(--bg-dark);
-  color: var(--text-white);
-  padding: var(--spacing-lg);
-  border-radius: var(--radius-md);
+  position: relative;
+  background: #1d1f21;
+  color: #f5f5f7;
+  padding: 52px 20px 20px;
+  border-radius: 10px;
   overflow-x: auto;
-  margin: var(--spacing-lg) 0;
+  margin: 30px 0;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+.post-content > pre::before,
+.post-content figure.highlight::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f57;
+  box-shadow: 20px 0 #febc2e, 40px 0 #28c840;
 }
 
 .post-content pre code {
   background: none;
   padding: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+/* Hexo renders fenced code as figure.highlight with a line-number table. */
+.post-content figure.highlight {
+  position: relative;
+  background: #1d1f21;
+  color: #f5f5f7;
+  padding: 52px 0 20px;
+  border-radius: 10px;
+  overflow-x: auto;
+  margin: 30px 0;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.16);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  word-spacing: 0;
+}
+
+.post-content figure.highlight table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.post-content figure.highlight td {
+  padding: 0;
+  border: 0;
+}
+
+.post-content figure.highlight .gutter {
+  width: 1%;
+  min-width: 42px;
+  padding: 0 14px 0 20px;
+  color: #6e7681;
+  text-align: right;
+  user-select: none;
+}
+
+.post-content figure.highlight .code {
+  padding: 0 20px 0 0;
+}
+
+.post-content figure.highlight pre {
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  color: inherit;
+}
+
+.post-content figure.highlight code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
+.code-copy-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 28px;
+  padding: 4px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #c9d1d9;
+  cursor: pointer;
+  font: 12px/1.2 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.code-copy-button svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.code-copy-button:hover,
+.code-copy-button:focus-visible {
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.code-copy-button:focus-visible {
+  outline: 2px solid var(--primary-light);
+  outline-offset: 2px;
+}
+
+.code-copy-button.is-copied {
+  background: #166534;
+  border-color: #22c55e;
+  color: #dcfce7;
+}
+
+.code-diagram-shell {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 180px;
+  margin: 30px 0;
+  padding: 52px 24px 24px;
+  overflow-x: auto;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  background: #f8fafc;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.12);
+}
+
+.code-diagram {
+  display: flex;
+  justify-content: center;
+  min-width: max-content;
+  color: var(--text-primary);
+}
+
+.code-diagram svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.code-diagram-shell .code-copy-button {
+  background: #1d1f21;
+  color: #c9d1d9;
 }
 
 .post-tags {
@@ -920,5 +1094,4 @@ img {
 }
 
 
-// 导入关于页面样式
 @import '_partial/about'

@@ -1,9 +1,16 @@
 ---
 title: 告别剪辑软件！Remotion 让 AI Agent 帮你写代码生成视频
 date: 2026-01-23 23:50:00
-tags: [Remotion, React, AI, 视频生成, 自动化]
-categories: [AI实战]
-cover: https://images.unsplash.com/photo-1626544827763-d516dce335ca?q=80&w=1200&auto=format&fit=crop
+categories:
+  - 开源项目
+tags:
+  - Remotion
+  - React
+  - AI
+  - 视频生成
+  - 自动化
+  - GitHub
+cover: "https://images.unsplash.com/photo-1626544827763-d516dce335ca?q=80&w=1200&auto=format&fit=crop"
 ---
 
 在这个 AI 编程爆炸的时代，**"Video as Code"（视频即代码）** 正在成为新的创作范式。

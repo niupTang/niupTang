@@ -1,11 +1,14 @@
 ---
-title: GitHub 星选|Flowise:拖拽式搭建AI工作流,零代码玩转大模型!
+title: "GitHub 星选|Flowise:拖拽式搭建AI工作流,零代码玩转大模型!"
+permalink: github-flowise-ai
 date: 2025-02-05 23:20:19
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 自动化
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

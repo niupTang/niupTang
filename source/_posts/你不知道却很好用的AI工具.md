@@ -1,10 +1,14 @@
 ---
 title: 你不知道却很好用的AI工具
-date: '2026-01-04T16:26:13.950253'
-updated: '2026-01-05T23:18:08.886670'
-tags: []
-categories: []
-cover: null
+permalink: ai
+date: 2026-01-04T16:26:13.950253
+updated: 2026-01-05T23:18:08.886670
+categories:
+  - 教程实践
+tags:
+  - 教程
+  - 教程实践
+cover: "null"
 ---
 
 chatGPT尽管�?GPT 语⾔⼯具的最佳宣传选项，但演示者应该检查其�?AI 替代⽅案以⽣�?

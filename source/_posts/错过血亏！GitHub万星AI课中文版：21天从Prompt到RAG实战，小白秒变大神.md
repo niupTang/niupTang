@@ -1,12 +1,14 @@
 ---
-title: "错过血亏！GitHub万星AI课中文版：21天从Prompt到RAG实战，小白秒变大神"
+title: 错过血亏！GitHub万星AI课中文版：21天从Prompt到RAG实战，小白秒变大神
 permalink: 错过血亏-github万星ai课中文版-21天从prompt到rag实战-小白秒变大神
 date: 2025-02-20 20:55:13
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

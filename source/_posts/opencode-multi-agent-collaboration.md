@@ -1,8 +1,16 @@
 ---
 title: AI 农场主时代来了！Open Code 让你管理 10+ 个 Agent 并行工作
+permalink: opencode-multi-agent-collaboration
 date: 2026-01-15
-tags: [AI, Open Code, 多智能体, Agent协作, 效率工具]
-categories: [AI工具]
+categories:
+  - 开源项目
+tags:
+  - AI
+  - Open Code
+  - 多智能体
+  - Agent协作
+  - 效率工具
+  - GitHub
 cover: /images/opencode/opencode_multi_agent_cover.png
 ---
 

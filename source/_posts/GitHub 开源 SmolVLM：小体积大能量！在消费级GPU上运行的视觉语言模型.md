@@ -1,10 +1,16 @@
 ---
-title: GitHub 开�?SmolVLM：小体积大能量！在消费级GPU上运行的视觉语言模型
-date: '2026-01-04T16:26:14.379532'
-updated: '2026-01-05T23:18:08.239990'
-tags: []
-categories: []
-cover: null
+title: "GitHub 开�?SmolVLM：小体积大能量！在消费级GPU上运行的视觉语言模型"
+permalink: github-smolvlm-gpu
+date: 2026-01-04T16:26:14.379532
+updated: 2026-01-05T23:18:08.239990
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝�?**牛皮糖不吹牛**"关注�?

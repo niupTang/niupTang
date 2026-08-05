@@ -1,10 +1,14 @@
 ---
 title: Github 开源 36.3k PDF编辑、处理神器
-date: '2026-01-04T16:26:13.342510'
-updated: '2026-01-05T23:18:09.857639'
-tags: []
-categories: []
-cover: null
+permalink: github-36-3k-pdf
+date: 2026-01-04T16:26:13.342510
+updated: 2026-01-05T23:18:09.857639
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

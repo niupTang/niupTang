@@ -1,14 +1,17 @@
 ---
 title: 深度解析 Skill Prompt Generator：基于 Claude Skill 的智能提示词生成系统
+permalink: deep-dive-skill-prompt-generator
 date: 2026-01-09 23:15:00
+categories:
+  - 开源项目
 tags:
   - AI
   - Claude Skills
   - Prompt Engineering
   - Python
-categories:
-  - AI Tools
-cover: https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop
+  - GitHub
+  - Claude Code
+cover: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1965&auto=format&fit=crop"
 excerpt: 深入探索 Skill Prompt Generator，这是一个基于 Claude Skill 的智能提示词生成系统，拥有 12 个专业领域的 Skills 和自动学习能力，彻底改变我们生成 Prompt 的方式。
 ---
 

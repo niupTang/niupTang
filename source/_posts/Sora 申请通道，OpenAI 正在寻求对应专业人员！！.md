@@ -1,10 +1,13 @@
 ---
 title: Sora 申请通道，OpenAI 正在寻求对应专业人员！！
-date: '2026-01-04T16:26:14.068044'
-updated: '2026-01-05T23:18:08.662336'
-tags: []
-categories: []
-cover: null
+permalink: sora-openai
+date: 2026-01-04T16:26:14.068044
+updated: 2026-01-05T23:18:08.662336
+categories:
+  - 个人记录
+tags:
+  - 个人记录
+cover: "null"
 ---
 
 实际上，根据 OpenAI 官方网站的通知，Sora 目前并没有开放使用，所以也不用费劲去找了。当前你找到的所有号称是 Sora 的应用，全部都是冒牌货，所以不要上当受骗�?

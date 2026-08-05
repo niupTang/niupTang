@@ -1,15 +1,15 @@
 ---
-title: "揭秘顶尖大模型背后的秘密：GitHub开源项目System Prompts Leaks全深度解析"
+title: 揭秘顶尖大模型背后的秘密：GitHub开源项目System Prompts Leaks全深度解析
 permalink: system-prompts-leaks-deep-dive
 date: 2026-01-28 23:56:00
+categories:
+  - 开源项目
 tags:
   - AI
   - 大模型
   - Prompt Engineering
   - GitHub
   - 开源项目
-categories:
-  - 公众号文章
 ---
 
 ## 🎯 前言：AI的"操作手册"被公开了

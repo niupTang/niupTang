@@ -1,12 +1,13 @@
 ---
-title: "GitHub  新星 累计15k Stars ，AI驱动的数据库利器"
+title: GitHub  新星 累计15k Stars ，AI驱动的数据库利器
 permalink: github-新星-累计15k-stars-ai驱动的数据库利器
 date: 2024-11-02 20:40:13
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 戳上方蓝字“**牛皮糖不吹牛**”关注我

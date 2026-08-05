@@ -1,10 +1,14 @@
 ---
 title: github Trending  榜首 一天收获1600+ Star 直播换脸神器
-date: '2026-01-04T16:26:13.286678'
-updated: '2026-01-05T23:18:09.932727'
-tags: []
-categories: []
-cover: null
+permalink: github-trending-1600-star
+date: 2026-01-04T16:26:13.286678
+updated: 2026-01-05T23:18:09.932727
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

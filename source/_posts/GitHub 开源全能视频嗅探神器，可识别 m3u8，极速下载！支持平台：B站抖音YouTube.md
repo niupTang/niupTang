@@ -2,11 +2,13 @@
 title: "GitHub 开源全能视频嗅探神器，可识别 m3u8，极速下载！支持平台：B站/抖音/YouTube"
 permalink: github-开源全能视频嗅探神器-可识别-m3u8-极速下载-支持平台-b站抖音youtube
 date: 2025-02-08 21:40:23
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 # MediaGo 视频嗅探神器使用指南

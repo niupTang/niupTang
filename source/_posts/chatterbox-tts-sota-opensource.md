@@ -1,10 +1,14 @@
 ---
 title: Chatterbox TTS：Resemble AI 开源的最先进文本转语音模型
-date: '2026-01-04T16:26:14.886757'
-updated: '2026-01-05T23:18:07.984544'
-tags: []
-categories: []
-cover: null
+permalink: chatterbox-tts-sota-opensource
+date: 2026-01-04T16:26:14.886757
+updated: 2026-01-05T23:18:07.984544
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 ## 引言

@@ -1,8 +1,15 @@
 ---
-title: GitHub 开源的个人 AI 助手 —— 数据安全才是最后防线！！
+title: "GitHub 开源的个人 AI 助手 —— 数据安全才是最后防线！！"
 date: 2026-01-27 21:15:00
-tags: [AI助手, Moltbot, 私有化部署, 数据安全, 开源项目]
-categories: [AI工具]
+categories:
+  - 开源项目
+tags:
+  - AI助手
+  - Moltbot
+  - 私有化部署
+  - 数据安全
+  - 开源项目
+  - GitHub
 cover: /images/moltbot/moltbot_cover.png
 ---
 

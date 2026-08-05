@@ -1,8 +1,15 @@
 ---
-title: 小白 AI 编程入门首选！这款“openClaude”命令行工具让开发变简单
+title: "小白 AI 编程入门首选！这款“openClaude”命令行工具让开发变简单"
 date: 2026-01-27 21:20:00
-tags: [AI编程, Claude Code, OpenCode, 命令行工具, 入门教程]
-categories: [AI工具]
+categories:
+  - 开源项目
+tags:
+  - AI编程
+  - Claude Code
+  - OpenCode
+  - 命令行工具
+  - 入门教程
+  - GitHub
 cover: /images/opencode/opencode_beginner_cover.png
 ---
 

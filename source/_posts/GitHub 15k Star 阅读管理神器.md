@@ -1,11 +1,13 @@
 ---
 title: GitHub 15k Star 阅读管理神器
+permalink: github-15k-star
 date: 2024-10-31 19:50:54
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

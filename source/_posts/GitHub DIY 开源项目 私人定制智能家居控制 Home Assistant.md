@@ -1,10 +1,17 @@
 ---
-title: GitHub DIY 开源项�?私人定制智能家居控制 Home Assistant
-date: '2026-01-04T16:26:13.766992'
-updated: '2026-01-05T23:18:09.206545'
-tags: []
-categories: []
-cover: null
+title: "GitHub DIY 开源项�?私人定制智能家居控制 Home Assistant"
+permalink: github-diy-home-assistant
+date: 2026-01-04T16:26:13.766992
+updated: 2026-01-05T23:18:09.206545
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 自动化
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 大家好，我是牛皮糖！

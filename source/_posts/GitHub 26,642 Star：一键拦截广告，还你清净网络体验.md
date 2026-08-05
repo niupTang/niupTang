@@ -1,12 +1,13 @@
 ---
-title: "GitHub 26,642 Star：一键拦截广告，还你清净网络体验"
+title: GitHub 26,642 Star：一键拦截广告，还你清净网络体验
 permalink: github-26-642-star-一键拦截广告-还你清净网络体验
 date: 2024-10-27 20:03:43
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

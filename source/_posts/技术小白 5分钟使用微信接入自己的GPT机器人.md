@@ -1,10 +1,16 @@
 ---
-title: 技术小�?5分钟使用微信接入自己的GPT机器�?
-date: '2026-01-04T16:26:14.280090'
-updated: '2026-01-05T23:18:08.369012'
-tags: []
-categories: []
-cover: null
+title: "技术小�?5分钟使用微信接入自己的GPT机器�?"
+permalink: 5-gpt
+date: 2026-01-04T16:26:14.280090
+updated: 2026-01-05T23:18:08.369012
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 所需要的环境

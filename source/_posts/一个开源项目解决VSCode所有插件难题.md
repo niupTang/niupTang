@@ -1,10 +1,16 @@
 ---
-title: 一个开源项目解决VSCode所有插件难�?
-date: '2026-01-04T16:26:12.940099'
-updated: '2026-01-05T23:18:10.317857'
-tags: []
-categories: []
-cover: null
+title: "一个开源项目解决VSCode所有插件难�?"
+permalink: vscode
+date: 2026-01-04T16:26:12.940099
+updated: 2026-01-05T23:18:10.317857
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 *戳上方蓝字�?*牛皮糖不吹牛**”关注我*

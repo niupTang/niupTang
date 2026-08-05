@@ -1,11 +1,12 @@
 ---
 title: Manus 29个工具以及他的提示词
+permalink: manus-29
 date: 2025-03-12 22:30:02
+categories:
+  - AI工具
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - AI工具
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

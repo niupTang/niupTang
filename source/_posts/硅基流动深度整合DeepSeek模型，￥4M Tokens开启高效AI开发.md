@@ -2,11 +2,12 @@
 title: "硅基流动深度整合DeepSeek模型，￥4/M Tokens开启高效AI开发"
 permalink: 硅基流动深度整合deepseek模型-4m-tokens开启高效ai开发
 date: 2025-02-02 19:33:42
+categories:
+  - AI工具
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - DeepSeek
+  - AI工具
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

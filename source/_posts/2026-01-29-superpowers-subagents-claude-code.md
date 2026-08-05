@@ -1,8 +1,15 @@
 ---
 title: "GitHub 爆火！一人如何把 Claude Code 拆分成你的专属『小助手团队』？"
 date: 2026-01-29 23:00:00
-tags: [AI编程, Claude Code, Superpowers, Agentic Coding, 效率工具]
-categories: [AI实战]
+categories:
+  - 开源项目
+tags:
+  - AI编程
+  - Claude Code
+  - Superpowers
+  - Agentic Coding
+  - 效率工具
+  - GitHub
 cover: /images/superpowers/superpowers_cover.png
 ---
 

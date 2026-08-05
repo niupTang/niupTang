@@ -1,18 +1,18 @@
 ---
-title: "如何实现从零拆解一个Skills项目？（硬核重制版）"
+title: 如何实现从零拆解一个Skills项目？（硬核重制版）
 permalink: 如何实现从零拆解一个Skills项目
 date: 2026-01-06 21:34:29
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
   - MCP
   - AI Skills
   - Python
   - Playwright
-categories:
-  - 公众号文
-description: 2026 年是 Skills 元年。我们推翻了之前的猜想，深入源码真机拆解 GitHub 开源项目 notebooklm-skill，带你看看一个生产级的 AI Skill 究竟是如何用 Python 和 Patchright 炼成的。
+  - GitHub
 cover: /images/skills-dismantle/cover.png
+description: 2026 年是 Skills 元年。我们推翻了之前的猜想，深入源码真机拆解 GitHub 开源项目 notebooklm-skill，带你看看一个生产级的 AI Skill 究竟是如何用 Python 和 Patchright 炼成的。
 ---
 
 大家好，我是太阳鸟。

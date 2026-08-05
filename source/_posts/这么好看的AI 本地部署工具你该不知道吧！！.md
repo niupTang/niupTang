@@ -1,10 +1,15 @@
 ---
 title: 这么好看的AI 本地部署工具你该不知道吧！！
-date: '2026-01-04T16:26:14.165372'
-updated: '2026-01-05T23:18:08.532205'
-tags: []
-categories: []
-cover: null
+permalink: ai
+date: 2026-01-04T16:26:14.165372
+updated: 2026-01-05T23:18:08.532205
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
 ---
 
 Stable Diffusion是一个可以和MJ相媲美的AI出图工具，简称SD

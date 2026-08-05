@@ -1,10 +1,14 @@
 ---
 title: 重磅开源！Resemble AI 发布 Chatterbox TTS：超低延迟、支持23种语言的语音合成新霸主
-date: '2026-01-04T16:26:14.905887'
-updated: '2026-01-05T23:18:07.959254'
-tags: []
-categories: []
-cover: null
+permalink: chatterbox-tts-wechat
+date: 2026-01-04T16:26:14.905887
+updated: 2026-01-05T23:18:07.959254
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 ![Chatterbox TTS](/images/chatterbox/cover.png)

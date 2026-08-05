@@ -1,10 +1,14 @@
 ---
 title: GitHub Star 17.1 k 一款强大的本地优先个人知识管理系统
-date: '2026-01-04T16:26:13.477022'
-updated: '2026-01-05T23:18:09.674073'
-tags: []
-categories: []
-cover: null
+permalink: github-star-17-1-k
+date: 2026-01-04T16:26:13.477022
+updated: 2026-01-05T23:18:09.674073
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

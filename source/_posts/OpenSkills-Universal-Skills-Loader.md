@@ -1,15 +1,16 @@
 ---
-title: "OpenSkills：让 Claude Code 的 Skills 系统在所有 AI 编程助手中通用"
+title: OpenSkills：让 Claude Code 的 Skills 系统在所有 AI 编程助手中通用
 permalink: openskills-universal-skills-loader
 date: 2026-01-18 23:30:00
+categories:
+  - 开源项目
 tags:
   - AI编程
   - Claude Code
   - Skills
   - 开发工具
   - GitHub项目
-categories:
-  - 公众号文章
+  - 教程
 ---
 
 如果你正在使用 **Claude Code、Cursor、Windsurf** 或其他 AI 编程助手，你可能遇到过这样的困境：

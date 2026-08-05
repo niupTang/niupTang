@@ -1,10 +1,15 @@
 ---
 title: 2024-2025 年度创作年度总结报告
-date: '2026-01-04T16:26:14.814181'
-updated: '2026-01-05T23:18:08.096457'
-tags: []
-categories: []
-cover: null
+permalink: 2024-2025-annual-summary
+date: 2026-01-04T16:26:14.814181
+updated: 2026-01-05T23:18:08.096457
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
 ---
 
 ## 引言：两年的征程与沉淀

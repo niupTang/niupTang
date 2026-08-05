@@ -1,10 +1,15 @@
 ---
-title: github 51.6k Star 的ChatGPT中文提示�?
-date: '2026-01-04T16:26:13.601768'
-updated: '2026-01-05T23:18:09.479684'
-tags: []
-categories: []
-cover: null
+title: "github 51.6k Star 的ChatGPT中文提示�?"
+permalink: github-51-6k-star-chatgpt
+date: 2026-01-04T16:26:13.601768
+updated: 2026-01-05T23:18:09.479684
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

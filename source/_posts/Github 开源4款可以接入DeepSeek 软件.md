@@ -1,11 +1,14 @@
 ---
 title: Github 开源4款可以接入DeepSeek 软件
+permalink: github-4-deepseek
 date: 2025-02-06 21:28:28
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - DeepSeek
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

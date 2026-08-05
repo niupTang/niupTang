@@ -1,8 +1,16 @@
 ---
-title: 告别流氓软件！GitHub 30k+ Star 神器 Cobalt：全网视频下载的终极“洁癖”方案
+title: "告别流氓软件！GitHub 30k+ Star 神器 Cobalt：全网视频下载的终极“洁癖”方案"
+permalink: cobalt-guide
 date: 2026-01-17 18:00:00
-tags: [开源神器, Cobalt, 媒体下载, Docker, 隐私保护]
-categories: [技术分享, 开源推荐]
+categories:
+  - 开源项目
+tags:
+  - 开源神器
+  - Cobalt
+  - 媒体下载
+  - Docker
+  - 隐私保护
+  - GitHub
 ---
 
 # 告别流氓软件！GitHub 30k+ Star 神器 Cobalt：全网视频下载的终极“洁癖”方案

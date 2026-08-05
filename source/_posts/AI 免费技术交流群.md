@@ -1,11 +1,12 @@
 ---
 title: AI 免费技术交流群
+permalink: ai
 date: 2025-01-04 20:53:14
+categories:
+  - AI工具
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - AI工具
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

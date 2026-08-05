@@ -1,7 +1,9 @@
 ---
-title: "Agentic Workflow 的终极形态：Skill Seekers 打造最强外挂，Happy 让 AI 编程随身行"
+title: Agentic Workflow 的终极形态：Skill Seekers 打造最强外挂，Happy 让 AI 编程随身行
 permalink: integrated-agent-workflow-skill-seekers-happy
 date: 2026-01-20 22:00:00
+categories:
+  - 开源项目
 tags:
   - AI Agent
   - Claude Code
@@ -9,8 +11,6 @@ tags:
   - Happy Coder
   - 工作流
   - 移动编程
-categories:
-  - 公众号文章
 ---
 
 最近一周，AI 编程圈的进化速度已经让很多人直呼"跟不上了"。

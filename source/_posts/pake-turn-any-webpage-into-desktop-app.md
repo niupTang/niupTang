@@ -1,14 +1,16 @@
 ---
-title: 终结 Electron 的“内存霸权”？Pake：5MB 打包任意网页，让你的桌面重获新生
+title: "终结 Electron 的“内存霸权”？Pake：5MB 打包任意网页，让你的桌面重获新生"
+permalink: pake-turn-any-webpage-into-desktop-app
 date: 2026-01-12 22:20:00
+categories:
+  - 开源项目
 tags:
   - 效率工具
   - 开源项目
   - Pake
   - Rust
   - Tauri
-categories:
-  - 技术分享
+  - GitHub
 ---
 
 # 终结 Electron 的“内存霸权”？Pake：5MB 打包任意网页，让你的桌面重获新生

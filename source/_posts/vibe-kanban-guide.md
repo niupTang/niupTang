@@ -1,7 +1,15 @@
 ---
 title: 挑战全网最癫：一个项目让 10 个 AI 同时一起写代码
+permalink: vibe-kanban-guide
 date: 2026-01-02 22:30:00
-tags: [AI编程, VibeKanban, 效率工具, Agent]
+categories:
+  - 开源项目
+tags:
+  - AI编程
+  - VibeKanban
+  - 效率工具
+  - Agent
+  - 开源项目
 cover: /images/vibe_kanban_cover.png
 ---
 

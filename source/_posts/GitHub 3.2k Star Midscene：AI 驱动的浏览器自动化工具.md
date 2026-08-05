@@ -1,12 +1,14 @@
 ---
-title: "GitHub 3.2k Star Midscene：AI 驱动的浏览器自动化工具"
+title: GitHub 3.2k Star Midscene：AI 驱动的浏览器自动化工具
 permalink: github-3-2k-star-midscene-ai-驱动的浏览器自动化工具
 date: 2025-01-17 22:53:00
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 自动化
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

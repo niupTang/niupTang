@@ -1,12 +1,13 @@
 ---
-title: "GitHub 开源 1分钟生成爆款视频！这个AI神器让小白秒变剪辑大师"
+title: GitHub 开源 1分钟生成爆款视频！这个AI神器让小白秒变剪辑大师
 permalink: github-开源-1分钟生成爆款视频-这个ai神器让小白秒变剪辑大师
 date: 2025-02-18 23:14:25
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

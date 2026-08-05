@@ -1,10 +1,14 @@
 ---
 title: 简单两步实现离线部署ChatGPT，ChatGPT平替版，无需GPU离线搭建ChatGPT
-date: '2026-01-04T16:26:14.238809'
-updated: '2026-01-05T23:18:08.399321'
-tags: []
-categories: []
-cover: null
+permalink: chatgpt-chatgpt-gpu-chatgpt
+date: 2026-01-04T16:26:14.238809
+updated: 2026-01-05T23:18:08.399321
+categories:
+  - 教程实践
+tags:
+  - 教程
+  - 教程实践
+cover: "null"
 ---
 
 ## **GPT4All****-亲测******

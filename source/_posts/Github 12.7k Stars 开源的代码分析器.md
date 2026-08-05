@@ -1,11 +1,14 @@
 ---
 title: Github 12.7k Stars 开源的代码分析器
+permalink: github-12-7k-stars
 date: 2024-11-03 19:45:08
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

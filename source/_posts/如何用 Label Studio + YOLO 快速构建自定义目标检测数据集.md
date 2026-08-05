@@ -1,10 +1,15 @@
 ---
 title: 如何用 Label Studio + YOLO 快速构建自定义目标检测数据集（保姆级教程）
-date: '2026-01-04T16:26:14.447086'
-updated: '2026-01-05T23:18:08.149870'
-tags: []
-categories: []
-cover: null
+permalink: label-studio-yolo
+date: 2026-01-04T16:26:14.447086
+updated: 2026-01-05T23:18:08.149870
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 教程
+  - 开源项目
+cover: "null"
 ---
 
 ## 前言：为什么需要自定义目标检测数据集？

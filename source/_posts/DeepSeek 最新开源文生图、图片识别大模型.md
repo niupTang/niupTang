@@ -1,12 +1,14 @@
 ---
-title: "DeepSeek 最新开源文生图、图片识别大模型"
+title: DeepSeek 最新开源文生图、图片识别大模型
 permalink: deepseek-最新开源文生图-图片识别大模型
 date: 2025-01-28 14:11:26
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - DeepSeek
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

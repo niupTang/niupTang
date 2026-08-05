@@ -1,10 +1,14 @@
 ---
 title: GitHub 开源的高赞两款AI 声音克隆
-date: '2026-01-04T16:26:13.000455'
-updated: '2026-01-05T23:18:10.264833'
-tags: []
-categories: []
-cover: null
+permalink: github-ai
+date: 2026-01-04T16:26:13.000455
+updated: 2026-01-05T23:18:10.264833
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

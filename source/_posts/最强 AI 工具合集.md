@@ -1,11 +1,12 @@
 ---
 title: 最强 AI 工具合集
+permalink: ai
 date: 2025-02-18 23:14:25
+categories:
+  - AI工具
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - AI工具
 ---
 
 点击上方🔺公众号🔺关注我✅

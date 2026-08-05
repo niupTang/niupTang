@@ -1,0 +1,377 @@
+# Blog Cleanup Audit
+
+- Posts: 579
+- Direct post images: 0
+- Duplicate index files: 1
+- Garbled posts: 350
+
+## Category Counts
+
+- 副业案例: 3
+- 个人记录: 4
+- 教程实践: 15
+- 开源项目: 525
+- 自动化: 4
+- AI编程: 12
+- AI工具: 16
+
+## Direct Post Images
+
+- None
+
+## Duplicate Index Files
+
+- source/公众号文章分类.md
+
+## Garbled Posts
+
+- source/_posts/. GitHub 55k Star 轻松监控你的服务器.md: . GitHub 55k Star 轻松监控你的服务�?
+- source/_posts/0 元复刻 AI 小智！！.md: 0 元复�?AI 小智！！
+- source/_posts/1.2k Star疯抢！国产版GPT-4o语音神器开源了！复旦团队造，听说读写全免费，本地部署秒杀S.md: 1.2k Star疯抢！国产版GPT-4o语音神器开源了！复旦团队造，听说读写全免费，本地部署秒杀Siri�?
+- source/_posts/10 秒内通过一个简单的命令，微调你的本地大模型！！.md: 10 秒内通过一个简单的命令，微调你的本地大模型！！
+- source/_posts/100 款 AI 开源合集.md: 100 �?AI 开源合�?
+- source/_posts/2025 神仙开源 AI 教程!!! Datawhale  当之无愧.md: 2025 神仙开�?AI 教程!!! Datawhale  当之无愧
+- source/_posts/24小时躺赚播放量！UP主直播神器：自动录播+AI切片+投稿一条龙.md: 24小时躺赚播放量！UP主直播神器：自动录播+AI切片+投稿一条龙
+- source/_posts/27.7K Star！微软开源的量化投资神器 Qlib，助你打造属于自己的AI炒股策略！.md: 27.7K Star！微软开源的量化投资神器 Qlib，助你打造属于自己的AI炒股策略�?
+- source/_posts/3 分钟，把一篇 3000 字长文变成“脱口秀”——开源神器 Twocast 实战指南.md: 3 分钟，把一�?3000 字长文变成“脱口秀”——开源神�?Twocast 实战指南
+- source/_posts/3000 字保姆教程如何打造自己的智能体—— 要AI 帮你打工！.md: 3000 字保姆教程如何打造自己的智能体—�?要AI 帮你打工�?
+- source/_posts/4核 16G 就能 RAGFlow Quick start 快速入门.md: 4�?16G 就能 RAGFlow Quick start 快速入�?
+- source/_posts/50个 AI 开源项目合集.md: 50�?AI 开源项目合�?
+- source/_posts/50元复刻「小智AI聊天机器人」：手把手教你私有化部署自己的智能语音助手！.md: 50元复刻「小智AI聊天机器人」：手把手教你私有化部署自己的智能语音助手！
+- source/_posts/5分钟一个视频！这么方便的剪辑工具我不允许你不知道！！.md: 5分钟一个视频！这么方便的剪辑工具我不允许你不知道！�?
+- source/_posts/80 款AI 开源合集.md: 80 款AI 开源合�?
+- source/_posts/AFFiNE横空出世！这款开源神器正悄悄取代Notion，生产力飙升200%！.md: AFFiNE横空出世！这款开源神器正悄悄取代Notion，生产力飙升200%�?
+- source/_posts/AI + 行业做副业.md: AI + 行业做副�?
+- source/_posts/AI 智能体落地？GitHub 开源 Manus 完美的替代品！！！.md: AI 智能体落地？GitHub 开�?Manus 完美的替代品！！�?
+- source/_posts/AI 编程工具——除了编程不适用，其他的都很实用！！.md: AI 编程工具——除了编程不适用，其他的都很实用！！
+- source/_posts/AI 编程工具横评：字节 Trae、腾讯 CodeBuddy、阿里 Qoder，谁更胜一筹？.md: AI 编程工具横评：字�?Trae、腾�?CodeBuddy、阿�?Qoder，谁更胜一筹？
+- source/_posts/AI 编程新章程， GitHub 自主开源Spec-kit 两周获得27k Stars.md: AI 编程新章程， GitHub 自主开源Spec-kit 两周获得27k Stars
+- source/_posts/AI卷向3D建模！Blender-MCP重磅神器问世，一句话创造一个世界！.md: AI卷向3D建模！Blender-MCP重磅神器问世，一句话创造一个世界！
+- source/_posts/AI工具卷疯了？GitHub 这个项目直接把“卷出来的丝”扎成了锦绣！.md: AI工具卷疯了？GitHub 这个项目直接把“卷出来的丝”扎成了锦绣�?
+- source/_posts/AI新创意，古风养生智能体，24个作品涨粉10W+，全流程拆解，收藏即用！.md: AI新创意，古风养生智能体，24个作品涨�?0W+，全流程拆解，收藏即用！
+- source/_posts/AI能写90的代码了我还能做什么.md: AI 能写百分�?0% 的代码了，我还能做什么？
+- source/_posts/AI配音专家居然完全免费必须分享给你！.md: AI配音专家居然完全免费必须分享给你�?
+- source/_posts/Cherry Studio MCP 协议调用全攻略！.md: Cherry Studio MCP 协议调用全攻略！
+- source/_posts/Claude迎重磅升级，支持像人一样操控计算机：不仅可以查看屏幕、移动光标，还可以单机按钮、键入文本.md: Claude迎重磅升级，支持像人一样操控计算机：不仅可以查看屏幕、移动光标，还可以单机按钮、键入文本！
+- source/_posts/Coze 工作流解析：公众号抖音内容自动化处理系统（提取+总结+存档）.md: Coze 工作流解析：公众�?抖音内容自动化处理系统（提取+总结+存档�?
+- source/_posts/Coze 智能体——免费要AI 给你打工！.md: Coze 智能体——免费要AI 给你打工�?
+- source/_posts/C盘又爆了，我找了款清盘工具.md: C盘又爆了，我找了款清盘工�?
+- source/_posts/DeepSeek 真的不如Gemini ？ 我用 DeepSeek 给我的摄像头加上 人脸识别！！.md: DeepSeek 真的不如Gemini �?我用 DeepSeek 给我的摄像头加上 人脸识别！！
+- source/_posts/Flowise：零代码构建LLM工作流的可视化神器.md: Flowise：零代码构建LLM工作流的可视化神�?
+- source/_posts/Github  5.1k Stars 更好的帮助自己炒股-30天学会量化交易.md: Github  5.1k Stars 更好的帮助自己炒�?30天学会量化交�?
+- source/_posts/Github  学习 从螺丝钉到一人企业.md: Github  学习 从螺丝钉到一人企�?
+- source/_posts/GitHub  开源的顶级过肺小程序.md: GitHub  开源的顶级过肺小程�?
+- source/_posts/GitHub  开源神器：BabelDOC——让文档自动同步代码的神器！.md: GitHub  开源神器：BabelDOC——让文档自动同步代码的神器！
+- source/_posts/GitHub 1.4K Star 项目  Rowboat：AI 多智能体工作流构建神器.md: GitHub 1.4K Star 项目 | Rowboat：AI 多智能体工作流构建神�?
+- source/_posts/GitHub 1.5k Star！视频秒变数据库：你的AI视频记忆库，知识不再丢失！.md: GitHub 1.5k Star！视频秒变数据库：你的AI视频记忆库，知识不再丢失�?
+- source/_posts/GitHub 10 月份最火爆的 9 个开源项目！！.md: GitHub 10 月份最火爆�?9 个开源项目！�?
+- source/_posts/GitHub 10k AB Download Manager：给下载加速，也给效率加分！.md: GitHub 10k AB Download Manager：给下载加速，也给效率加分�?
+- source/_posts/GitHub 10k Star DeepSeek-Coder：让代码自己写自己.md: GitHub 10k Star DeepSeek-Coder：让代码自己写自�?
+- source/_posts/GitHub 10K Star！这个AI系统开源课程，让你彻底搞懂AI底层技术.md: GitHub 10K Star！这个AI系统开源课程，让你彻底搞懂AI底层技�?
+- source/_posts/GitHub 10kGenAI Toolbox：Google 推出的 AI-Agent 到数据库的“.md: GitHub 10kGenAI Toolbox：Google 推出�?AI-Agent 到数据库的“万能桥梁”！
+- source/_posts/GitHub 12.2K Star！必备聚合阅读神器 NewsNow，告别信息焦虑！.md: GitHub 12.2K Star！必备聚合阅读神�?NewsNow，告别信息焦虑！
+- source/_posts/GitHub 14 k stars 开源数字人系统——现实，真的不存在了，.md: GitHub 14 k stars 开源数字人系统——现实，真的不存在了�?
+- source/_posts/GitHub 14.2k Star 开源神器：Bolt.new——自然语言编程颠覆全栈开发！.md: GitHub 14.2k Star 开源神器：Bolt.new——自然语言编程颠覆全栈开发！
+- source/_posts/Github 14.2k Stars 开源事件驱动编排平台.md: Github 14.2k Stars 开源事件驱动编排平�?
+- source/_posts/GitHub 14.6k Stars 开源的矢量图标库.md: GitHub 14.6k Stars 开源的矢量图标�?
+- source/_posts/GitHub 14.7k star Chrome插件（Extensions）开发攻略.md: GitHub 14.7k star Chrome插件（Extensions）开发攻�?
+- source/_posts/GitHub 142 k Stars 开源的技巧、单行命令工具等的集合.md: GitHub 142 k Stars 开源的技巧、单行命令工具等的集�?
+- source/_posts/GitHub 14k Star 项目 Katana：自动化扫描必备的“爬行神器“.md: GitHub 14k Star 项目 Katana：自动化扫描必备的“爬行神器�?
+- source/_posts/GitHub 14k Star！这款开源神器让抖音、TikTok 下载变得前所未有的简单！.md: GitHub 14k Star！这款开源神器让抖音、TikTok 下载变得前所未有的简单！
+- source/_posts/GitHub 15k Claude Code Router：让 Claude Code 接入任意模型.md: GitHub 15k Claude Code Router：让 Claude Code 接入任意模型自由发挥�?
+- source/_posts/GitHub 15k Stars 开源动态壁纸软件，打造个性化桌面体验！.md: GitHub 15k Stars 开源动态壁纸软件，打造个性化桌面体验�?
+- source/_posts/GitHub 16.4k Star！Google Gemini AI 全栈搜索助手，一键搭建！.md: GitHub 16.4k Star！Google Gemini AI 全栈搜索助手，一键搭建！
+- source/_posts/Github 16.5K 开源的全功能下载利器.md: Github 16.5K 开源的全功能下载利�?
+- source/_posts/GitHub 16k Star Postiz-App：AI加持的社交媒体排程工具，运营效率翻倍不是梦.md: GitHub 16k Star Postiz-App：AI加持的社交媒体排程工具，运营效率翻倍不是梦
+- source/_posts/GitHub 16k Star 英语提升必备！让你边打字边学英语开源神器！！.md: GitHub 16k Star 英语提升必备！让你边打字边学英语开源神器！�?
+- source/_posts/GitHub 16k+ Star！快手开源「真人漫改」神器，单图生成动态主播.md: GitHub 16k+ Star！快手开源「真人漫改」神器，单图生成动态主�?
+- source/_posts/GitHub 18.2k Star STORM：用AI打造知识宝库，从零开始撰写维基百科式文章.md: GitHub 18.2k Star STORM：用AI打造知识宝库，从零开始撰写维基百科式文章
+- source/_posts/GitHub 19.2k Star 开源神器：ScrapeGraphAI——自然语言驱动的智能爬虫革.md: GitHub 19.2k Star 开源神器：ScrapeGraphAI——自然语言驱动的智能爬虫革命！
+- source/_posts/GitHub 2.2万 Star  告别广告烦恼的媒体下载神器 Cobalt.md: GitHub 2.2�?Star | 告别广告烦恼的媒体下载神�?Cobalt
+- source/_posts/GitHub 2.5K Star HeyGem.ai：开源界的数字人克隆神器，重塑视频创作新体验.md: GitHub 2.5K Star HeyGem.ai：开源界的数字人克隆神器，重塑视频创作新体验
+- source/_posts/Github 20K Stars 程序员技能图谱.md: Github 20K Stars 程序员技能图�?
+- source/_posts/GitHub 22.7k Star 开源神器：Cherry Studio——零代码玩转AI智能体的终.md: GitHub 22.7k Star 开源神器：Cherry Studio——零代码玩转AI智能体的终极利器�?
+- source/_posts/GitHub 23k Star 在本地轻松运行AI模型的开源项目.md: GitHub 23k Star 在本地轻松运行AI模型的开源项�?
+- source/_posts/GitHub 23k Star：比特币技术指南，从入门到精通.md: GitHub 23k Star：比特币技术指南，从入门到精�?
+- source/_posts/GitHub 24.3k Star！微软开源AI智能体保姆课，10天零基础逆袭.md: GitHub 24.3k Star！微软开源AI智能体保姆课�?0天零基础逆袭
+- source/_posts/Github 24.3k 金融量化交易开源项目.md: Github 24.3k 金融量化交易开源项�?
+- source/_posts/Github 24.6K Stars 开源探索未来浏览体验.md: Github 24.6K Stars 开源探索未来浏览体�?
+- source/_posts/GitHub 24.7k Star 数据工程训练营.md: GitHub 24.7k Star 数据工程训练�?
+- source/_posts/Github 24.8k Star 开源简单漂亮的图标库,适用于所有前端开发.md: Github 24.8k Star 开源简单漂亮的图标�?适用于所有前端开�?
+- source/_posts/Github 25k Stars 数据科学的资源集合.md: Github 25k Stars 数据科学的资源集�?
+- source/_posts/GitHub 25k Star！ AI 和你有个轻对话.md: GitHub 25k Star�?AI 和你有个轻对�?
+- source/_posts/GitHub 26k StarAOS 动画库，让网页动起来！.md: GitHub 26k StarAOS 动画库，让网页动起来�?
+- source/_posts/Github 26k Stars 开源换脸神器.md: Github 26k Stars 开源换脸神�?
+- source/_posts/GitHub 284k Star 的宝藏学习路线图，适合所有人。.md: GitHub 284k Star 的宝藏学习路线图，适合所有人�?
+- source/_posts/Github 3.1k Stars 文档解析器.md: Github 3.1k Stars 文档解析�?
+- source/_posts/GitHub 30.2k Star  ShareX：开源免费的截图与录屏神器.md: GitHub 30.2k Star | ShareX：开源免费的截图与录屏神�?
+- source/_posts/GitHub 30.5k Star Freqtrade：加密货币交易的自动化革命.md: GitHub 30.5k Star Freqtrade：加密货币交易的自动化革�?
+- source/_posts/GitHub 30.5K Star 项目  AI工具设计的藏宝图：揭秘9大顶级AI助手的系统提示词.md: GitHub 30.5K Star 项目 | AI工具设计的藏宝图：揭�?大顶级AI助手的系统提示词
+- source/_posts/GitHub 300K Stars 亚马逊工程师分享的学习故事.md: GitHub 300K Stars 亚马逊工程师分享的学习故�?
+- source/_posts/GitHub 30k Star 开源神器：Tabby——自托管AI编程助手，代码补全效率飙升！.md: GitHub 30k Star 开源神器：Tabby——自托管AI编程助手，代码补全效率飙升！
+- source/_posts/Github 33.3k Stars 可视化网络爬虫工具.md: Github 33.3k Stars 可视化网络爬虫工�?
+- source/_posts/GitHub 330k star 的开源的图书馆.md: GitHub 330k star 的开源的图书�?
+- source/_posts/Github 33k Stars 开源建站软件.md: Github 33k Stars 开源建站软�?
+- source/_posts/GitHub 33k Stars ：NPS 内网穿透一件搞定.md: GitHub 33k Stars ：NPS 内网穿透一件搞�?
+- source/_posts/GitHub 33k Star｜MindsDB：让 AI 模型像 SQL 一样简单，零门槛上手预测分.md: GitHub 33k Star｜MindsDB：让 AI 模型�?SQL 一样简单，零门槛上手预测分析！
+- source/_posts/Github 34.5K Stars 令人惊艳的代码图片.md: Github 34.5K Stars 令人惊艳的代码图�?
+- source/_posts/GitHub 35.6k Star：Awesome Remote Job——远程工作资源大全.md: GitHub 35.6k Star：Awesome Remote Job——远程工作资源大�?
+- source/_posts/Github 36.7K Stars开发者都应该知道的代码检查工具！.md: Github 36.7K Stars开发者都应该知道的代码检查工具！
+- source/_posts/Github 37.8k Stars 简化React应用开发的全面组件库.md: Github 37.8k Stars 简化React应用开发的全面组件�?
+- source/_posts/GitHub 38k  项目 Quivr：打造你的第二大脑，只需几行代码！.md: GitHub 38k  项目 Quivr：打造你的第二大脑，只需几行代码�?
+- source/_posts/GitHub 39k星！音乐播放器新星.md: GitHub 39k星！音乐播放器新�?
+- source/_posts/Github 3k Stars 全网小说下载器及阅读器.md: Github 3k Stars 全网小说下载器及阅读�?
+- source/_posts/Github 3k Stars 微信聊天记录持久化备份本地硬盘，释放手机存储空间。.md: Github 3k Stars 微信聊天记录持久化备份本地硬盘，释放手机存储空间�?
+- source/_posts/GitHub 3个 高赞学 Java 的项目.md: GitHub 3�?高赞�?Java 的项�?
+- source/_posts/GitHub 4.1k Star 神器：把AI 嵌入 draw-io 用自然语言，秒画专业流程图和架.md: GitHub 4.1k Star 神器：把AI 嵌入 draw-io 用自然语言，秒画专业流程图和架构图�?
+- source/_posts/GitHub 4.5K Star 项目  深度揭秘：全球18款顶级AI产品的系统提示词黑箱.md: GitHub 4.5K Star 项目 | 深度揭秘：全�?8款顶级AI产品的系统提示词黑箱
+- source/_posts/GitHub 4.9k Star 开源项目：AI 智能体可视化开发圣器.md: GitHub 4.9k Star 开源项目：AI 智能体可视化开发圣�?
+- source/_posts/GitHub 45 k Star 教你搭建家庭影院：Jellyfin 一步到位.md: GitHub 45 k Star 教你搭建家庭影院：Jellyfin 一步到�?
+- source/_posts/GitHub 46.5k Star 功能全面的Hex编辑器.md: GitHub 46.5k Star 功能全面的Hex编辑�?
+- source/_posts/GitHub 49.6K Stars Pi-hole控制面板：深入解析你的网络流量和广告拦截.md: GitHub 49.6K Stars Pi-hole控制面板：深入解析你的网络流量和广告拦截
+- source/_posts/GitHub 5.0k Star 开源项目：AI 逆向工程神器 GhidraMCP.md: GitHub 5.0k Star 开源项目：AI 逆向工程神器 GhidraMCP
+- source/_posts/GitHub 5.2k Star 开源神器 TaskingAI，或成 Coze 最强平替！.md: GitHub 5.2k Star 开源神�?TaskingAI，或�?Coze 最强平替！
+- source/_posts/GitHub 5.4K 微信 Markdown 编辑器.md: GitHub 5.4K 微信 Markdown 编辑�?
+- source/_posts/Github 5.6k开源微信机器人,接入大模型.md: Github 5.6k开源微信机器人,接入大模�?
+- source/_posts/GitHub 50k Star 开源项目  网页文本提取神器 Trafilatura.md: GitHub 50k Star 开源项�?| 网页文本提取神器 Trafilatura
+- source/_posts/GitHub 50k Star 开源项目  轻量级搜索引擎神器 MeiliSearch.md: GitHub 50k Star 开源项�?| 轻量级搜索引擎神�?MeiliSearch
+- source/_posts/GitHub 50k Star 开源项目 无线投屏神器.md: GitHub 50k Star 开源项�?无线投屏神器
+- source/_posts/GitHub 50k Star 开源项目：LocalSend - 局域网文件传输的革命.md: GitHub 50k Star 开源项目：LocalSend - 局域网文件传输的革�?
+- source/_posts/GitHub 50k Star 连接一切的开源工作流自动化工具.md: GitHub 50k Star 连接一切的开源工作流自动化工�?
+- source/_posts/GitHub 50k+ Star 开源项目  下一代前端构建工具 Astro，快如闪电！.md: GitHub 50k+ Star 开源项�?| 下一代前端构建工�?Astro，快如闪电！
+- source/_posts/GitHub 51.2k Star下一代知识库神器：AI 笔记记录器利 ——AFFiNE重塑Noti.md: GitHub 51.2k Star下一代知识库神器：AI 笔记记录器利 ——AFFiNE重塑Notion式协�?
+- source/_posts/github 51.6k Star 的ChatGPT中文提示词.md: github 51.6k Star 的ChatGPT中文提示�?
+- source/_posts/Github 52K stars 的AI 应用程序的开源平台.md: Github 52K stars 的AI 应用程序的开源平�?
+- source/_posts/GitHub 54 K Stars 科技爱好者周刊.md: GitHub 54 K Stars 科技爱好者周�?
+- source/_posts/GitHub 54k Star 开发者的福音：Alamofire，强大的HTTP网络库.md: GitHub 54k Star 开发者的福音：Alamofire，强大的HTTP网络�?
+- source/_posts/GitHub 5k Star 开源神器：DeepClaude——双模型协作的AI开发新范式！.md: GitHub 5k Star 开源神器：DeepClaude——双模型协作的AI开发新范式�?
+- source/_posts/GitHub 5k Star 开源视频下载神器，让流媒体下载变得简单.md: GitHub 5k Star 开源视频下载神器，让流媒体下载变得简�?
+- source/_posts/GitHub 5K Star 爱盘开源网盘搜索平台，完美支持批量导入导出与在线播放！.md: GitHub 5K Star: 爱盘开源网盘搜索平台，完美支持批量导入导出与在线播放！
+- source/_posts/GitHub 5k+ Star 开源项目  AI 驱动的浏览器自动化神器 Nanobrowser.md: GitHub 5k+ Star 开源项�?| AI 驱动的浏览器自动化神�?Nanobrowser
+- source/_posts/GitHub 6.3k 苹果开源 Embedding Atlas：秒级可视化上百万条向量数据！.md: GitHub 6.3k 苹果开�?Embedding Atlas：秒级可视化上百万条向量数据�?
+- source/_posts/Github 6.4k Star 开源 超级文件管理器.md: Github 6.4k Star 开�?超级文件管理�?
+- source/_posts/GitHub 6.8k Star XPipe：开源界的运维效率神器，重塑远程管理新体验.md: GitHub 6.8k Star XPipe：开源界的运维效率神器，重塑远程管理新体�?
+- source/_posts/Github 6.8k Stars AIGC 落地解决方案，支持11种大模型。.md: Github 6.8k Stars AIGC 落地解决方案，支�?1种大模型�?
+- source/_posts/GitHUb 6.9K Stars 自行托管能强大的聊天机器人构建器。.md: GitHUb 6.9K Stars 自行托管能强大的聊天机器人构建器�?
+- source/_posts/GitHub 60k星项目：程序员必访的36个最佳主题.md: GitHub 60k星项目：程序员必访的36个最佳主�?
+- source/_posts/GitHub 61.8k Star：动画数学的魔法师.md: GitHub 61.8k Star：动画数学的魔法�?
+- source/_posts/GitHub 7.8k star 免费配音开源工具 pyvideotrans.md: GitHub 7.8k star 免费配音开源工�?pyvideotrans
+- source/_posts/github 7.8k star 将小爱音箱接入 ChatGPT 和豆包，改造成你的专属语音助手。.md: github 7.8k star 将小爱音箱接�?ChatGPT 和豆包，改造成你的专属语音助手�?
+- source/_posts/GitHub 7.8k Star 开源神器：一键将代码库变互动图表，代码阅读效率飙升！.md: GitHub 7.8k Star 开源神器：一键将代码库变互动图表，代码阅读效率飙升！
+- source/_posts/GitHub 82k Stars  黑客开源资源.md: GitHub 82k Stars  黑客开源资�?
+- source/_posts/GitHub 84659Stars 开源让视频下载变得简单.md: GitHub 84659Stars 开源让视频下载变得简�?
+- source/_posts/GitHub 9k+ Star！WrenAI 让数据用人话回答你！.md: GitHub 9k+ Star！WrenAI 让数据用人话回答你！
+- source/_posts/GitHub DIY 开源项目 私人定制智能家居控制 Home Assistant.md: GitHub DIY 开源项�?私人定制智能家居控制 Home Assistant
+- source/_posts/GitHub open source AI 小说生成器！！.md: GitHub open source AI 小说生成器！�?
+- source/_posts/GitHub Python开发的领先的开源能源管理系统.md: GitHub Python开发的领先的开源能源管理系�?
+- source/_posts/GitHub Trending  Crawl4AI：为 AI 而生的开源爬虫，轻松产出结构化 Mar.md: GitHub Trending | Crawl4AI：为 AI 而生的开源爬虫，轻松产出结构�?Markdown
+- source/_posts/GitHub UV 极速Python项目管理器.md: GitHub UV: 极速Python项目管理�?
+- source/_posts/GitHub Vibe Coding 指南：小白如何把 AI 变成“全自动开发团队”？.md: GitHub Vibe Coding 指南：小白如何把 AI 变成“全自动开发团队”？
+- source/_posts/GitHub “屎山”代码.md: GitHub “屎山”代�?
+- source/_posts/Github 一天新增1k Stars 的项目是什么？.md: Github 一天新�?k Stars 的项目是什么？
+- source/_posts/GitHub 万字长文项目，从零教你复刻一个 ChatGPT！.md: GitHub 万字长文项目，从零教你复刻一�?ChatGPT�?
+- source/_posts/GitHub 万星项目合集：强大又好用的 LLM 应用库.md: GitHub 万星项目合集：强大又好用�?LLM 应用�?
+- source/_posts/GitHub 上受欢迎的桌面美化神器，MD3 Windows让你的 Windows 变得更酷.md: GitHub 上受欢迎的桌面美化神器，MD3 Windows让你�?Windows 变得更酷
+- source/_posts/GitHub 上的 agents-flex 项目：基于 Java 的 LLM 应用开发框架.md: GitHub 上的 agents-flex 项目：基�?Java �?LLM 应用开发框�?
+- source/_posts/GitHub 中文化插件.md: GitHub 中文化插�?
+- source/_posts/GitHub 今日 5 大 AI 开源项目.md: GitHub 今日 5 �?AI 开源项�?
+- source/_posts/GitHub 今日最热的 10个开源项目.md: GitHub 今日最热的 10个开源项�?
+- source/_posts/GitHub 宝藏工具！一键写出 PDF + 网页的 Markdown 排版神器.md: GitHub 宝藏工具！一键写�?PDF + 网页�?Markdown 排版神器
+- source/_posts/GitHub 实时热点 AI 智能体来了！BiliAgent 助你玩转 B 站数据.md: GitHub 实时热点 AI 智能体来了！BiliAgent 助你玩转 B 站数�?
+- source/_posts/GitHub 开源 100 元就能完成的AI导航眼镜，让视障人士看见世界。.md: GitHub 开�?100 元就能完成的AI导航眼镜，让视障人士看见世界�?
+- source/_posts/Github 开源 10K Stars 自动化 API、后台作业、工作流和 UI 的开发平台.md: Github 开�?10K Stars 自动�?API、后台作业、工作流�?UI 的开发平�?
+- source/_posts/Github 开源 18.7K Stars 手机电脑同屏工具.md: Github 开�?18.7K Stars 手机电脑同屏工具
+- source/_posts/Github 开源 22.5k 国产现代化运维管理面板.md: Github 开�?22.5k 国产现代化运维管理面�?
+- source/_posts/GitHub 开源 50 块钱打造一个 DIY 微型赛车.md: GitHub 开�?50 块钱打造一�?DIY 微型赛车
+- source/_posts/GitHub 开源 50 多个详细的 LLM 智能体教程.md: GitHub 开�?50 多个详细�?LLM 智能体教�?
+- source/_posts/Github 开源 68.2 K Stars 最全的中文NLP资源库.md: Github 开�?68.2 K Stars 最全的中文NLP资源�?
+- source/_posts/GitHub 开源 AI 代码审查神器横空出世！3 分钟搞定 PR 全流程，效率狂飙 300% 还少.md: GitHub 开�?AI 代码审查神器横空出世�? 分钟搞定 PR 全流程，效率狂飙 300% 还少�?90% �?
+- source/_posts/Github 开源 NoteBookLM ， Google 直接被掀桌子.md: Github 开�?NoteBookLM �?Google 直接被掀桌子
+- source/_posts/github 开源 open AI 教你如何使用 AI 编程.md: github 开�?open AI 教你如何使用 AI 编程
+- source/_posts/GitHub 开源 SmolVLM：小体积大能量！在消费级GPU上运行的视觉语言模型.md: GitHub 开�?SmolVLM：小体积大能量！在消费级GPU上运行的视觉语言模型
+- source/_posts/GitHub 开源 xiaohongshu-mcp：当AI智能体学会自动发小红书，内容创作要变天了！.md: GitHub 开�?xiaohongshu-mcp：当AI智能体学会自动发小红书，内容创作要变天了�?
+- source/_posts/GitHub 开源 —— 程序员做副业如何避坑？.md: GitHub 开�?—�?程序员做副业如何避坑�?
+- source/_posts/GitHub 开源 ——多平台直播流自动录制工具.md: GitHub 开�?——多平台直播流自动录制工�?
+- source/_posts/Github 开源 《黑神话：悟空》八项“修改器”.md: Github 开�?《黑神话：悟空》八项“修改器�?
+- source/_posts/Github 开源 边端一体化 AI 平台.md: Github 开�?边端一体化 AI 平台
+- source/_posts/Github 开源AI聊天应用与开发框架，让您轻松免费拥有专属的私人AI助手.md: Github 开源AI聊天应用与开发框架，让您轻松免费拥有专属的私人AI助手
+- source/_posts/Github 开源Java自动投递工具.md: Github 开源Java自动投递工�?
+- source/_posts/github 开源——SSL证书全流程管理工具.md: github 开源——SSL证书全流程管理工�?
+- source/_posts/Github 开源使用 Python 进行更轻量的 Web 自动化程序包.md: Github 开源使�?Python 进行更轻量的 Web 自动化程序包
+- source/_posts/Github 开源如何友好的要 AI 获取到你的网站内容（内附爬虫列表）.md: Github 开源如何友好的�?AI 获取到你的网站内容（内附爬虫列表�?
+- source/_posts/GitHub 开源如何通过 AI 编程 从 1 构建到 N.md: GitHub 开源如何通过 AI 编程 �?1 构建�?N
+- source/_posts/GitHub 开源学习新框架从此不用看文档？Skill Seeker让Claude成为你的技术导师.md: GitHub 开源学习新框架从此不用看文档？Skill Seeker让Claude成为你的技术导�?
+- source/_posts/Github 开源智谱打起的AI手机第一枪.md: Github 开源智谱打起的AI手机第一�?
+- source/_posts/GitHub 开源机器人，打造你的专属智能助手.md: GitHub 开源机器人，打造你的专属智能助�?
+- source/_posts/GitHub 开源的 60 + 技术栈全覆盖！这款 AI 地表最强 Rules，让 Windsurf.md: GitHub 开源的 60 + 技术栈全覆盖！这款 AI 地表最�?Rules，让 Windsurf 编辑器秒懂你的专属代码规�?
+- source/_posts/GitHub 开源的两款自媒体采集工具.md: GitHub 开源的两款自媒体采集工�?
+- source/_posts/Github 开源的无广告搜素引擎.md: Github 开源的无广告搜素引�?
+- source/_posts/GitHub 开源神器，打造自媒体系统聚合平台.md: GitHub 开源神器，打造自媒体系统聚合平台
+- source/_posts/Github 开源给你的 Claude Code 加上海马体！！.md: Github 开源给你的 Claude Code 加上海马体！�?
+- source/_posts/GitHub 开源自然语言生成工作流？.md: GitHub 开源自然语言生成工作流？
+- source/_posts/GitHub 开源设计师专属的 Cursor  —— 有一句话打造一个健康管理系统.md: GitHub 开源设计师专属�?Cursor  —�?有一句话打造一个健康管理系�?
+- source/_posts/GitHub 开源设计师专属的 Cursor.md: GitHub 开源设计师专属�?Cursor
+- source/_posts/GitHub 开源项目  ActivePieces：自动化工作流神器.md: GitHub 开源项�?| ActivePieces：自动化工作流神�?
+- source/_posts/GitHub 开源项目  AI 设计转代码神器MCP ，一键对接 Cursor！.md: GitHub 开源项�?| AI 设计转代码神器MCP ，一键对�?Cursor�?
+- source/_posts/GitHub 开源项目  Anthropic官方课程：学习AI的百科全书.md: GitHub 开源项�?| Anthropic官方课程：学习AI的百科全�?
+- source/_posts/GitHub 开源项目  Cloudflare MCP Server：用自然语言掌控云服务的魔法棒.md: GitHub 开源项�?| Cloudflare MCP Server：用自然语言掌控云服务的魔法�?
+- source/_posts/GitHub 开源项目  Deep Research：科研界的AI 福尔摩斯，一键生成深度研究报告.md: GitHub 开源项�?| Deep Research：科研界的AI 福尔摩斯，一键生成深度研究报�?
+- source/_posts/GitHub 开源项目  KoalaWiki：两天复刻DeepWiki.md: GitHub 开源项�?| KoalaWiki：两天复刻DeepWiki
+- source/_posts/GitHub 开源项目  SkyReels-V2：无限时长电影级AI视频生成神器.md: GitHub 开源项�?| SkyReels-V2：无限时长电影级AI视频生成神器
+- source/_posts/GitHub 开源项目  Stagehand：AI驱动的下一代浏览器自动化框架.md: GitHub 开源项�?| Stagehand：AI驱动的下一代浏览器自动化框�?
+- source/_posts/GitHub 开源项目  WeClone：微信生态的克隆军团，打造聊天记录的大模型.md: GitHub 开源项�?| WeClone：微信生态的克隆军团，打造聊天记录的大模�?
+- source/_posts/GitHub 开源项目  反AI爬虫神器 Anubis：用工作量证明保护你的网站.md: GitHub 开源项�?| 反AI爬虫神器 Anubis：用工作量证明保护你的网�?
+- source/_posts/GitHub 开源项目  微调和部署大型语言模型变得简单.md: GitHub 开源项�?| 微调和部署大型语言模型变得简�?
+- source/_posts/GitHub 开源项目  打通Notion、GitHub、搜索引擎的AI超脑.md: GitHub 开源项�?| 打通Notion、GitHub、搜索引擎的AI超脑
+- source/_posts/GitHub 开源项目  聊天记录分析神器 ChatLog.md: GitHub 开源项�?| 聊天记录分析神器 ChatLog
+- source/_posts/GitHub 开源项目：HivisionIDPhotos——智能证件照生成神器.md: GitHub 开源项目：HivisionIDPhotos——智能证件照生成神器
+- source/_posts/GitHub 开源项目：MCP Registry——AI工具生态的「应用商店」.md: GitHub 开源项目：MCP Registry——AI工具生态的「应用商店�?
+- source/_posts/Github 开源首款开源的一体化 AI 生产力平台.md: Github 开源首款开源的一体化 AI 生产力平�?
+- source/_posts/GitHub 开源黄页 800+ 家真实远程公司.md: GitHub 开源黄页�?00+ 家真实远程公�?
+- source/_posts/GitHub 开源！UI-TARS桌面版：动动嘴就能操控电脑，打工人效率神器！.md: GitHub 开源！UI-TARS桌面版：动动嘴就能操控电脑，打工人效率神器！
+- source/_posts/GitHub 开源！超萌桌面宠物 Bongo Cat，程序员专属解压神器.md: GitHub 开源！超萌桌面宠物 Bongo Cat，程序员专属解压神器
+- source/_posts/GitHub 开源！！OCR效果强的离谱，打工人必备.md: GitHub 开源！！OCR效果强的离谱，打工人必备
+- source/_posts/GitHub 开源： Taskmaster AI ：10 倍 AI 编码并减少 90% 的错误.md: GitHub 开源： Taskmaster AI �?0 �?AI 编码并减�?90% 的错�?
+- source/_posts/GitHub 开源：Meeting Minutes AI：智能会议记录与知识管理神器.md: GitHub 开源：Meeting Minutes AI：智能会议记录与知识管理神器
+- source/_posts/GitHub 开源：侧重于 Claude Code 工具与实战（适合教程工具推荐）.md: GitHub 开源：侧重�?Claude Code 工具与实战（适合教程/工具推荐�?
+- source/_posts/GitHub 开源：把 Claude Code 打造成“六边形战士”.md: GitHub 开源：�?Claude Code 打造成“六边形战士�?
+- source/_posts/Github 技术平权开源两周获取 6 K Stars，要普通人也能打破信息差！！.md: Github 技术平权开源两周获�?6 K Stars，要普通人也能打破信息差！�?
+- source/_posts/Github 推荐！5分钟上手Chrome MCP。.md: Github 推荐�?分钟上手Chrome MCP�?
+- source/_posts/github 搜索快速入门.md: github 搜索快速入�?
+- source/_posts/GitHub 新神器！用你自己的 Chrome，跑出超越 Playwright 的 AI 浏览器！.md: GitHub 新神器！用你自己�?Chrome，跑出超�?Playwright �?AI 浏览器！
+- source/_posts/Github 新秀开源高效的文档解析可视化工具.md: Github 新秀开源高效的文档解析可视化工�?
+- source/_posts/GitHub 智能时钟 CuteClock，让桌面一秒变智能家居中控！.md: GitHub 智能时钟 CuteClock，让桌面一秒变智能家居中控�?
+- source/_posts/Github 最新开源AI 视频笔记 BiliNote：B站学习党的第二大脑.md: Github 最新开源AI 视频笔记| BiliNote：B站学习党的第二大�?
+- source/_posts/Github 最新开源基于MLP 的股票价格预测架构.md: Github 最新开源基于MLP 的股票价格预测架�?
+- source/_posts/GitHub 热点速递：DeepSeek-OCR革新文档处理，200页资料秒转结构化文本！.md: GitHub 热点速递：DeepSeek-OCR革新文档处理�?00页资料秒转结构化文本�?
+- source/_posts/GitHub 热门 开发者必藏！这个开源 深挖 AI 对话机器人的 幕后指令，这个开源项目火了.md: GitHub 热门 开发者必藏！这个开�?深挖 AI 对话机器人的 幕后指令，这个开源项目火�?
+- source/_posts/GitHub 爆款开源机器人项目盘点！开发者必备！.md: GitHub 爆款开源机器人项目盘点！开发者必备！
+- source/_posts/GitHub 爆火的 AI 编程操作系统，这个世界只需要创意了！！.md: GitHub 爆火�?AI 编程操作系统，这个世界只需要创意了！！
+- source/_posts/GitHub 爆火的 Scira：比 Google 更懂你的 AI 搜索引擎， 全网一键检索！.md: GitHub 爆火�?Scira：比 Google 更懂你的 AI 搜索引擎�?全网一键检索！
+- source/_posts/GitHub 超实用插件！让你的 Cursor 更懂代码！用上这个神器就对了！.md: GitHub 超实用插件！让你�?Cursor 更懂代码！用上这个神器就对了�?
+- source/_posts/GitHub 超级热门 4 款RAG（Retrieval-Augmented Generation）.md: GitHub 超级热门 4 款RAG（Retrieval-Augmented Generation�?
+- source/_posts/Github 超过 300K  的项目有哪些？.md: Github 超过 300K  的项目有哪些�?
+- source/_posts/GitHub 趋势  500 AI Agents Projects：人工智能代理用例大全，覆盖20大.md: GitHub 趋势 | 500 AI Agents Projects：人工智能代理用例大全，覆盖20大领�?
+- source/_posts/GitHub 重磅开源！GPT-Crawler：一键爬取网站知识库，打造专属AI大脑！.md: GitHub 重磅开源！GPT-Crawler：一键爬取网站知识库，打造专属AI大脑�?
+- source/_posts/GitHub 重磅推荐  腾讯开源的「AI-Infra-Guard」：AI 基础设施的智能管家，运维.md: GitHub 重磅推荐 | 腾讯开源的「AI-Infra-Guard」：AI 基础设施的智能管家，运维效率提升 50%�?
+- source/_posts/GitHub 高星项目 nanoGPT：小白轻松训练专属 GPT 模型，新手也能快速上手.md: GitHub 高星项目 nanoGPT：小白轻松训练专�?GPT 模型，新手也能快速上�?
+- source/_posts/GitHub25K ：本地部署大模型更简单！Ollama 最佳平替来了！.md: GitHub25K ：本地部署大模型更简单！Ollama 最佳平替来了！
+- source/_posts/GitHub 开源 kiro  提示词系统.md: GitHub 开源 kiro  提示词系�?
+- source/_posts/Github开源 从副业到一人企业：技术人的轻资产创业指南.md: Github开�?从副业到一人企业：技术人的轻资产创业指南
+- source/_posts/GitHub开源30K Stars ：Mem-0 要你的MCP 带上记忆功能！！.md: GitHub开�?0K Stars ：Mem-0 要你的MCP 带上记忆功能！！
+- source/_posts/github开源B站UP主都在用的下载神器！Cobalt让你轻松搬运高清素材！.md: github开源B站UP主都在用的下载神器！Cobalt让你轻松搬运高清素材�?
+- source/_posts/Github开源文本转语音神器Spark-TTS开源了，克隆声音仅需3秒？.md: Github开源文本转语音神器Spark-TTS开源了，克隆声音仅需3秒？
+- source/_posts/GitHub开源最强MCP客户端指南！手把手教你玩转AI交互！.md: GitHub开源最强MCP客户端指南！手把手教你玩转AI交互�?
+- source/_posts/GitHub开源项目：中科院AI神器，一键文档转PPT！.md: GitHub开源项目：中科院AI神器，一键文档转PPT�?
+- source/_posts/GitHub开源：视频一键多平台发布的「社媒管理神器」.md: GitHub开源：视频一键多平台发布的「社媒管理神器�?
+- source/_posts/GitHub热门开源  TrendRadar：全网热点聚合，让你的资讯获取效率翻倍.md: GitHub热门开�?| TrendRadar：全网热点聚合，让你的资讯获取效率翻�?
+- source/_posts/GitHub爆款68.6k星！截图秒变代码神器让前端高呼卧槽！.md: GitHub爆款68.6k星！截图秒变代码神器让前端高呼卧槽！
+- source/_posts/GitHub爆火项目：用Ollama+Langchain打造论文级资料分析机器人.md: GitHub爆火项目：用Ollama+Langchain打造论文级资料分析机器�?
+- source/_posts/GitHub爆火！AI工程师私藏全能工具箱，超 41 款AI 应用教程.md: GitHub爆火！AI工程师私藏全能工具箱，超 41 款AI 应用教程
+- source/_posts/GitHub爆火！AI提示工程3合1秘籍：提示词模板×权威指南×智能体开发.md: GitHub爆火！AI提示工程3�?秘籍：提示词模板×权威指南×智能体开�?
+- source/_posts/GitHub高星推荐  这款免费开源语音转录工具，让创作效率翻倍.md: GitHub高星推荐 | 这款免费开源语音转录工具，让创作效率翻�?
+- source/_posts/GPT Pilot：GitHub开源最原始的 AI 编程插件！！.md: GPT Pilot：GitHub开源最原始�?AI 编程插件！！
+- source/_posts/GPT 终于开源了！！！.md: GPT 终于开源了！！�?
+- source/_posts/HuggingFace热榜第二！IBM联合出品的256M超轻量多模态模型，重新定义文档智能处理.md: HuggingFace热榜第二！IBM联合出品�?56M超轻量多模态模型，重新定义文档智能处理
+- source/_posts/Kimi 真的开源了？.md: Kimi 真的开源了�?
+- source/_posts/KrillinAI：基于AI大模型的视频翻译配音神器——开源免费，一键搞定多语言视频制作！.md: KrillinAI：基于AI大模型的视频翻译配音神器——开源免费，一键搞定多语言视频制作�?
+- source/_posts/LangChain + DeepSeek 全流程开发详解.md: LangChain + DeepSeek 全流程开发详�?
+- source/_posts/LangChain与Embeddings技术：构建高效RAG系统的核心组件.md: LangChain与Embeddings技术：构建高效RAG系统的核心组�?
+- source/_posts/LTX-Video：一个人也能做大片的AI视频神器！.md: LTX-Video：一个人也能做大片的AI视频神器�?
+- source/_posts/Manus 核心技术！！.md: Manus 核心技术！�?
+- source/_posts/Manus 直接被复刻了，Github 这两个项目直接把Manus 剥光了.md: Manus 直接被复刻了，Github 这两个项目直接把Manus 剥光�?
+- source/_posts/Manus爆火，Agent时代已来！Github 5w Stars 的多智能体协同框架.md: Manus爆火，Agent时代已来！Github 5w Stars 的多智能体协同框�?
+- source/_posts/MathModelAgent：数学建模全流程AI助手，让数学建模像聊天一样简单！.md: MathModelAgent：数学建模全流程AI助手，让数学建模像聊天一样简单！
+- source/_posts/MCP提示词服务——让自然语言直接调用你的Prompt库.md: MCP提示词服务——让自然语言直接调用你的Prompt�?
+- source/_posts/n8n 也能 AI 编程了？只需一个 MCP 客户端，直接让模型帮你搭工作流！.md: n8n 也能 AI 编程了？只需一�?MCP 客户端，直接让模型帮你搭工作流！
+- source/_posts/Perplexica：200亿美金估值的Perplexity AI，开源平替版来了！自己搭建AI搜索.md: Perplexica�?00亿美金估值的Perplexity AI，开源平替版来了！自己搭建AI搜索的时代已�?
+- source/_posts/Prompt Engineering 结构化形式.md: Prompt Engineering 结构化形�?
+- source/_posts/vscode 重磅开源AI 编程工具：cursor 护城河在哪？.md: vscode 重磅开源AI 编程工具：cursor 护城河在哪？
+- source/_posts/Warp：号称下一代终端神器，GitHub星标 24.8k+，用完爱不释手.md: Warp：号称下一代终端神器，GitHub星标 24.8k+，用完爱不释�?
+- source/_posts/Wechatsync：一键同步公众号文章到23个平台的自媒体人「效率核弹」.md: Wechatsync：一键同步公众号文章�?3个平台的自媒体人「效率核弹�?
+- source/_posts/​FastGPT --- 一款可以快速部署的本地大模型.md: ​FastGPT --- 一款可以快速部署的本地大模�?
+- source/_posts/“揭秘”一款简单又好用的智能抠图软件.md: “揭秘”一款简单又好用的智能抠图软�?
+- source/_posts/「GitHub 6.8K Star！这款微信Markdown神器，让你3分钟搞定公众号排版！」.md: 「GitHub 6.8K Star！这款微信Markdown神器，让�?分钟搞定公众号排版！�?
+- source/_posts/「GitHub爆款！这个AI提示词神器，让你的DeepSeek秒变职场外挂！」.md: 「GitHub爆款！这个AI提示词神器，让你的DeepSeek秒变职场外挂！�?
+- source/_posts/【GitHub爆火！】仅需1张照片，实时换脸直播！这款开源神器让马斯克“亲临”现场？.md: 【GitHub爆火！】仅需1张照片，实时换脸直播！这款开源神器让马斯克“亲临”现场？
+- source/_posts/【免费封面】.md: 【免费封面�?
+- source/_posts/【免费封面】魔道.md: 【免费封面】魔�?
+- source/_posts/【封面】卡通动漫.md: 【封面】卡通动�?
+- source/_posts/【漫画封面】.md: 【漫画封面�?
+- source/_posts/【福利】免费的50个小时游戏加速器.md: 【福利】免费的50个小时游戏加速器
+- source/_posts/一个命令Claude Code 安装了 73 个小助手.md: 一个命令Claude Code 安装�?73 个小助手
+- source/_posts/一个开源项目解决VSCode所有插件难题.md: 一个开源项目解决VSCode所有插件难�?
+- source/_posts/一款13.5k star 的开源翻译软件 immersive-translate.md: 一�?3.5k star 的开源翻译软�?immersive-translate
+- source/_posts/一款压箱底的清理软件.md: 一款压箱底的清理软�?
+- source/_posts/一键分发，自动化短视频上传，支持主流个自媒体平台，矩阵化运营！.md: 一键分发，自动化短视频上传，支持主流个自媒体平台，矩阵化运营！
+- source/_posts/三分钟教你如何用Github找开源项目--值得一看！.md: 三分钟教你如何用Github找开源项�?-值得一看！
+- source/_posts/下一个AI风口：自主Agent已开源！比Manus更懂多任务协同.md: 下一个AI风口：自主Agent已开源！比Manus更懂多任务协�?
+- source/_posts/下一个AI风口：这四款 Agent 已开源！.md: 下一个AI风口：这四款 Agent 已开源！
+- source/_posts/为 Windows 11 资源管理器加装标签标签页的黑科技.md: �?Windows 11 资源管理器加装标签标签页的黑科技
+- source/_posts/价值 6999 ——《手把手带你玩转大语言模型》开源了.md: 价�?6999 ——《手把手带你玩转大语言模型》开源了
+- source/_posts/免费调用阿里通义千问大模型！这款开源API工具让你轻松实现AI集成.md: 免费调用阿里通义千问大模型！这款开源API工具让你轻松实现AI集成
+- source/_posts/全网开源  揭秘全球首个金融全场景AI平台：你的投资顾问即将失业？.md: 全网开�?| 揭秘全球首个金融全场景AI平台：你的投资顾问即将失业？
+- source/_posts/内容创作者狂喜！GitHub又出效率神器，自动扒视频、出稿、做总结！.md: 内容创作者狂喜！GitHub又出效率神器，自动扒视频、出稿、做总结�?
+- source/_posts/农村程序员：出路在哪？.md: 农村程序员：出路在哪�?
+- source/_posts/几分钟内即可自动将文档网站、GitHub 存储库和 PDF 文件转换为 Claude AI 技能。.md: 几分钟内即可自动将文档网站、GitHub 存储库和 PDF 文件转换�?Claude AI 技能�?
+- source/_posts/别人几周才能做完的对话式 AI，我用 5 分钟上线了！.md: 别人几周才能做完的对话式 AI，我�?5 分钟上线了！
+- source/_posts/别再rm -rf了！这个开源项目：老婆乱按键盘都能保数据.md: 别再rm -rf了！这个开源项目：老婆乱按键盘都能保数�?
+- source/_posts/别再手动“复制粘贴”了！谷歌Gemini新功能，一键把WordPDF转成PPT。（含三种保姆级使用教.md: 别再手动“复制粘贴”了！谷歌Gemini新功能，一键把Word/PDF转成PPT。（含三种保姆级使用教程�?
+- source/_posts/告别Cursor！这款GitHub读代码神器竟能语音编程+自动测试.md: 告别Cursor！这款GitHub读代码神器竟能语音编�?自动测试
+- source/_posts/告别Google Photos！GitHub爆火的自建相册神器，私有部署+AI管理+无限容量！.md: 告别Google Photos！GitHub爆火的自建相册神器，私有部署+AI管理+无限容量�?
+- source/_posts/哔哩哔哩开源 IndexTTS2 ，要你的情绪以假乱真。.md: 哔哩哔哩开�?IndexTTS2 ，要你的情绪以假乱真�?
+- source/_posts/国家发改委——2027 年智能体普及率 超70%！！！.md: 国家发改委�?027 年智能体普及�?�?0%！！�?
+- source/_posts/多智能体协作才是LLM的终极形态？AgentVerse 开源框架解读与未来应用预测.md: 多智能体协作才是LLM的终极形态？AgentVerse 开源框架解读与未来应用预测
+- source/_posts/大模型落地应用开发.md: 大模型落地应用开�?
+- source/_posts/太离谱了 GitHub 开源，具有记忆、知识和推理能力的多智能体系统.md: 太离谱了 GitHub 开源，具有记忆、知识和推理能力的多智能体系�?permalink: 太离谱了-github-开�?具有记忆-知识和推理能力的多智能体系统
+- source/_posts/失业程序员靠AI逆袭：我如何用GitHub打开副业？.md: 失业程序员靠AI逆袭：我如何用GitHub打开副业�?
+- source/_posts/如何实现副业月入三千？.md: 如何实现副业月入三千�?
+- source/_posts/小白如何通过 AI 编程打造免费自己的个人网站（保姆级教程）.md: 小白如何通过 AI 编程打造免费自己的个人网站（保姆级教程�?
+- source/_posts/小米开源Home Assistant，一天就顶热榜.md: 小米开源Home Assistant，一天就顶热�?
+- source/_posts/开源 ChatGPTLLMs 聊天应用与开发框架.md: 开�?ChatGPT/LLMs 聊天应用与开发框�?
+- source/_posts/开源12.8k+star！太强了！本地运行、完全免费，让AI编程效率翻10倍！.md: 开�?2.8k+star！太强了！本地运行、完全免费，让AI编程效率�?0倍！
+- source/_posts/开源电视革命！MoonTV+AI=每个人的电视台.md: 开源电视革命！MoonTV+AI=每个人的电视�?
+- source/_posts/开源的Agent排名——langflow 。.md: 开源的Agent排名——langflow �?
+- source/_posts/开源神器——分分钟爬取小红书、抖音、微博、知乎了！.md: 开源神器——分分钟爬取小红书、抖音、微博、知乎了�?
+- source/_posts/开源视频生成新纪元：Open-Sora让每个人都能创作Sora级视频.md: 开源视频生成新纪元：Open-Sora让每个人都能创作Sora级视�?
+- source/_posts/当AI遇见李白会产生什么样的火花？.md: 当AI遇见李白会产生什么样的火花？
+- source/_posts/微信公众号接入自己的知识库.md: 微信公众号接入自己的知识�?
+- source/_posts/微软开源扔出AI“深水炸弹”：CPU都能跑1000亿参数大模型！.md: 微软开源扔出AI“深水炸弹”：CPU都能�?000亿参数大模型�?
+- source/_posts/微软开源神器Data Formulator：告别代码，用自然语言让数据说话！.md: 微软开源神器Data Formulator：告别代码，用自然语言让数据说话！
+- source/_posts/我以为我会一直热爱技术.md: 我以为我会一直热爱技�?
+- source/_posts/技术小白 5分钟使用微信接入自己的GPT机器人.md: 技术小�?5分钟使用微信接入自己的GPT机器�?
+- source/_posts/抖音直播，一键录制 —— 3.7k star DouyinLiveRecorder开源神器.md: 抖音直播，一键录�?—�?3.7k star DouyinLiveRecorder开源神�?
+- source/_posts/探索 Markdown 的奇妙世界.md: 探索 Markdown 的奇妙世�?
+- source/_posts/推荐 3 个开源 MCP 神器，yyds。.md: 推荐 3 个开�?MCP 神器，yyds�?
+- source/_posts/推荐几个我经常在用的Coze工作流.md: 推荐几个我经常在用的Coze工作�?
+- source/_posts/搞钱必备！github 这个神器能把视频录音秒变小红书爆款文案!!.md: 搞钱必备！github 这个神器能把视频/录音秒变小红书爆款文�?!
+- source/_posts/数据团队效率翻倍的秘密：一个可以 管理上千个工作流的开源项目.md: 数据团队效率翻倍的秘密：一个可�?管理上千个工作流的开源项�?
+- source/_posts/无需写 SQL！！Vanna AI 教你“聊天”式提问，自动生成查询！.md: 无需�?SQL！！Vanna AI 教你“聊天”式提问，自动生成查询！
+- source/_posts/日增stars 超过1000的三个项目.md: 日增stars 超过1000的三个项�?
+- source/_posts/本周最火的 15 个 GitHub 开源项目.md: 本周最火的 15 �?GitHub 开源项�?
+- source/_posts/每个人都该有一个自己的 AI 分身，这个开源项目正在让它成为现实.md: 每个人都该有一个自己的 AI 分身，这个开源项目正在让它成为现�?
+- source/_posts/热门RPA工具盘点：高效自动化，解放重复劳动.md: 热门RPA工具盘点：高效自动化，解放重复劳�?
+- source/_posts/爆！！Github 一天涨1200 Stars 的股票系统.md: 爆！！Github 一天涨1200 Stars 的股票系�?
+- source/_posts/牛皮！ 字节直接把coze智能体 开源！！.md: 牛皮�?字节直接把coze智能�?开源！�?
+- source/_posts/牛皮！！又一个颠覆计算机系统的开源框架.md: 牛皮！！又一个颠覆计算机系统的开源框�?
+- source/_posts/用 AI 赚点小钱之100个案例.md: �?AI 赚点小钱�?00个案�?
+- source/_posts/用 Trae AI Vibe Coding 写一个 AI 智能体.md: �?Trae AI Vibe Coding 写一�?AI 智能�?
+- source/_posts/疯狂斩获1.9k star,开源AI神器AingDesk：一键部署上百模型，本地运行还能联网搜索！.md: 疯狂斩获1.9k star,开源AI神器AingDesk：一键部署上百模型，本地运行还能联网搜索�?
+- source/_posts/碾压同类的阿里 AI 代理来了！GitHub 大佬整理的开源 + 闭源项目清单，每一个都藏着颠覆潜力.md: 碾压同类的阿�?AI 代理来了！GitHub 大佬整理的开�?+ 闭源项目清单，每一个都藏着颠覆潜力
+- source/_posts/终于到了分分钟爬取抖音、B站、快手、小红书的视频链接的方法了.md: 终于到了分分钟爬取抖音、B站、快手、小红书的视频链接的方法�?
+- source/_posts/自制AI机械臂！HuggingFace开源「穷人乐高」LeRobot，特斯拉工程师操刀.md: 自制AI机械臂！HuggingFace开源「穷人乐高」LeRobot，特斯拉工程师操刀
+- source/_posts/自动化任务一键搞定！BrowserOS 教你用 AI 重构上网方式.md: 自动化任务一键搞定！BrowserOS 教你�?AI 重构上网方式
+- source/_posts/被 2 万 + 开发者收藏的 supermemory：用 AI 帮你记住所有重要信息.md: �?2 �?+ 开发者收藏的 supermemory：用 AI 帮你记住所有重要信�?
+- source/_posts/语音合成迎来革命！VoxCPM端到端架构登顶SOTA，在家用显卡上流畅运行.md: 语音合成迎来革命！VoxCPM端到端架构登顶SOTA，在家用显卡上流畅运�?
+- source/_posts/说件事情！可避坑.md: 说件事情！可避坑
+- source/_posts/谷歌插件--快速下载.md: 谷歌插件--快速下�?
+- source/_posts/谷歌这波开源太牛了！让大模型连上数据库!!.md: 谷歌这波开源太牛了！让大模型连上数据库!!
+- source/_posts/资本下一个抛儿——程序员 ，成熟程序员是什么？.md: 资本下一个抛儿——程序员，成熟程序员是什么？
+- source/_posts/超全的红包封面汇总点关注还有意想不到的惊喜哦!!!​.md: 超全的红包封面汇总点关注还有意想不到的惊喜哦!!!�?
+- source/_posts/超级全的红包封面汇总，点关注还有意想不到的惊喜哦！！!.md: 超级全的红包封面汇总，点关注还有意想不到的惊喜哦！�?
+- source/_posts/轻松穿透内网：Frpc-Desktop，开源免费的内网穿透工具.md: 轻松穿透内网：Frpc-Desktop，开源免费的内网穿透工�?
+- source/_posts/这两款开源 AI 编程工具绝对是王者级别！！！.md: 这两款开�?AI 编程工具绝对是王者级别！！！
+- source/_posts/这个月最火的7个GitHub开源项目.md: 这个月最火的7个GitHub开源项�?
+- source/_posts/金融界的开源神器，居然能白嫖“彭博终端”？！.md: 金融界的开源神器，居然能白嫖“彭博终端”？�?
+- source/_posts/闲鱼捡漏神器！开源AI监控机器人，7×24小时帮你运营咸鱼.md: 闲鱼捡漏神器！开源AI监控机器人，7×24小时帮你运营咸鱼
+- source/_posts/阿里新发布Qwen3，自然语言编程落地了!!.md: 阿里新发布Qwen3，自然语言编程落地�?!

@@ -1,11 +1,14 @@
-﻿---
-title: GitHub UV: 极速Python项目管理�?
+---
+title: "GitHub UV: 极速Python项目管理�?"
+permalink: github-uv-python
 date: 2024-12-10 22:05:56
-tags:
-  - 公众�?
-  - 原创
 categories:
-  - 公众号文�?
+  - 开源项目
+tags:
+  - GitHub
+  - 自动化
+  - 开源项目
+cleanup_status: needs_review
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

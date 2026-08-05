@@ -1,10 +1,15 @@
 ---
 title: GitHub 12.8k Star AI副业赚钱实践
-date: '2026-01-04T16:26:13.621637'
-updated: '2026-01-05T23:18:09.447569'
-tags: []
-categories: []
-cover: null
+permalink: github-12-8k-star-ai
+date: 2026-01-04T16:26:13.621637
+updated: 2026-01-05T23:18:09.447569
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 副业
+  - 开源项目
+cover: "null"
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

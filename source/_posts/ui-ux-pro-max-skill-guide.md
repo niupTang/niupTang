@@ -1,10 +1,16 @@
 ---
-title: 告别“直男审美”：开源神器 UI/UX Pro Max 让 AI 变身设计大师
-date: '2026-01-04T16:26:14.850630'
-updated: '2026-01-05T23:18:08.044973'
-tags: []
-categories: []
-cover: null
+title: "告别“直男审美”：开源神器 UI/UX Pro Max 让 AI 变身设计大师"
+permalink: ui-ux-pro-max-skill-guide
+date: 2026-01-04T16:26:14.850630
+updated: 2026-01-05T23:18:08.044973
+categories:
+  - 开源项目
+tags:
+  - GitHub
+  - 自动化
+  - 教程
+  - 开源项目
+cover: "null"
 ---
 
 作为一名全栈开发者，我们往往面临一个尴尬的境地：**后端代码写得行云流水，前端页面却设计得“惨不忍睹”。** 

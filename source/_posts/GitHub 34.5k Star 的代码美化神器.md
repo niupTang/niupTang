@@ -1,11 +1,14 @@
 ---
 title: GitHub 34.5k Star 的代码美化神器
+permalink: github-34-5k-star
 date: 2025-01-27 22:45:56
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

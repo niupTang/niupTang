@@ -1,10 +1,14 @@
 ---
-title: AI 副业 | 创作儿童动画
-date: '2026-01-04T16:26:12.763669'
-updated: '2026-01-05T23:18:10.420441'
-tags: []
-categories: []
-cover: null
+title: "AI 副业 | 创作儿童动画"
+permalink: ai
+date: 2026-01-04T16:26:12.763669
+updated: 2026-01-05T23:18:10.420441
+categories:
+  - 自动化
+tags:
+  - 副业
+  - 自动化
+cover: "null"
 ---
 
 * 戳上方蓝字�?*牛皮糖不吹牛**”关注我

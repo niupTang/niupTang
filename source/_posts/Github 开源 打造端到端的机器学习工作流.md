@@ -1,11 +1,15 @@
 ---
 title: Github 开源 打造端到端的机器学习工作流
+permalink: github
 date: 2025-01-15 21:50:35
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 自动化
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

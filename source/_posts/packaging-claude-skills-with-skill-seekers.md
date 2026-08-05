@@ -1,15 +1,16 @@
 ---
-title: "实战教程：用 Skill Seekers 将 Claude Skills 仓库打包成可用 Skill"
+title: 实战教程：用 Skill Seekers 将 Claude Skills 仓库打包成可用 Skill
 permalink: packaging-claude-skills-with-skill-seekers
 date: 2026-01-20 23:20:00
+categories:
+  - 开源项目
 tags:
   - Skill Seekers
   - Claude Skills
   - AI Agent
   - 实战教程
   - 开源工具
-categories:
-  - 公众号文章
+  - GitHub
 ---
 
 如果你正在使用 Claude Code，你一定听说过 **Skills** 的重要性。但手动创建 Skills 实在太耗时了。

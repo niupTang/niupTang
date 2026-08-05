@@ -2,6 +2,8 @@
 title: "2025 AI 商业化落地：从“破局”年会看 6 大变现风口"
 permalink: 2025-ai-commercialization-trends
 date: 2026-01-18 22:45:00
+categories:
+  - 开源项目
 tags:
   - AI
   - 商业化
@@ -9,8 +11,6 @@ tags:
   - AI编程
   - AI出海
   - 破局年会
-categories:
-  - 公众号文章
 ---
 
 2025 年，我们不得不接受一个事实：**AI 进步太快了**。

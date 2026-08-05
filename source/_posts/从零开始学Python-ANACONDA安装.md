@@ -1,10 +1,14 @@
 ---
 title: 从零开始学Python-ANACONDA安装
-date: '2026-01-04T16:26:13.986628'
-updated: '2026-01-05T23:18:08.822204'
-tags: []
-categories: []
-cover: null
+permalink: python-anaconda
+date: 2026-01-04T16:26:13.986628
+updated: 2026-01-05T23:18:08.822204
+categories:
+  - 开源项目
+tags:
+  - 教程
+  - 开源项目
+cover: "null"
 ---
 
 一般的Python 安装都是直接到Python 的官网进行安装Python3.0 或者是Python2.0的版本，但是实际上这样针对于不同的项目会有不同的Python版本所以大多数情况都是安装ANACONDA�?

@@ -1,12 +1,14 @@
 ---
-title: "GitHub开源宝典：从零开始掌握大型语言模型（LLMs）"
+title: GitHub开源宝典：从零开始掌握大型语言模型（LLMs）
 permalink: github开源宝典-从零开始掌握大型语言模型-llms
 date: 2025-01-19 20:49:01
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我

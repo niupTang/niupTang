@@ -1,12 +1,14 @@
 ---
-title: "GitHub 上的宝藏：30k星标全栈开发模板曝光！"
+title: GitHub 上的宝藏：30k星标全栈开发模板曝光！
 permalink: github-上的宝藏-30k星标全栈开发模板曝光
 date: 2025-02-21 23:09:22
+categories:
+  - 开源项目
 tags:
   - 公众号
-  - 原创
-categories:
-  - 公众号文章
+  - GitHub
+  - 教程
+  - 开源项目
 ---
 
 * 戳上方蓝字“**牛皮糖不吹牛**”关注我
